@@ -12,12 +12,15 @@ void Class_Engine::Button_Launch_Dedicated_onClick()
 
 void Class_Engine::LaunchGame(ExeType L_ExeType)
 {
-	std::string ExeName;
-	if (L_ExeType == ExeType_DedicatedServer) ExeName = "mb_warband_wse2_dedicated.exe";
-	else  ExeName = "mb_warband_wse2.exe";
-
-	std::string Arguments = ExeName + " --module " + ComboBoxModule->getSelectedItemId().toStdString() + " --no-intro";
-	std::cout << Arguments << std::endl;
+	std::string ExeName, Arguments;
+	if (L_ExeType == ExeType_DedicatedServer) {
+		ExeName = "mb_warband_wse2_dedicated.exe";
+		Arguments = ExeName + "--config-path server_config.ini -r " + CurrentModule() + ".txt --module" + CurrentModule();
+	}
+	else  {
+		ExeName = "mb_warband_wse2.exe";
+		Arguments = ExeName + " --module " + CurrentModule() + " --no-intro";
+		}
 
 	STARTUPINFO info = { sizeof(info) };
 	PROCESS_INFORMATION processInfo;
@@ -25,6 +28,6 @@ void Class_Engine::LaunchGame(ExeType L_ExeType)
 	{
 		CloseHandle(processInfo.hProcess);
 		CloseHandle(processInfo.hThread);
-		Window->close();
+		Window_Main->close();
 	}
 }

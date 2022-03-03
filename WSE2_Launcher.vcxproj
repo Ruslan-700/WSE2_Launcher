@@ -151,16 +151,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Button_Launch_onClick.cpp" />
+    <ClCompile Include="Button_Options_onClick.cpp" />
     <ClCompile Include="Engine_Interact.cpp" />
     <ClCompile Include="Engine_RefreshModulesList.cpp" />
     <ClCompile Include="Engine_Start.cpp" />
     <ClCompile Include="Engine_Initialize.cpp" />
     <ClCompile Include="Engine_Runtime.cpp" />
+    <ClCompile Include="Engine_Options.cpp" />
     <ClCompile Include="Start.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine.h" />
     <ClInclude Include="Global.h" />
+    <ClInclude Include="Image_Options.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
