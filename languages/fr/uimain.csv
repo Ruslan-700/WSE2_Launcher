@@ -1,0 +1,94 @@
+lockitver|DO NOT DELETE THIS LINE! 2896
+ui_texture_detail|Détails des textures :
+ui_max_frame_rate|Taux de rafraîchissement max :
+ui_enable_bumpmap|Utiliser le bump mapping
+ui_disable_blood|Masquer le sang
+ui_disable_music|Désactiver la musique
+ui_disable_sound|Désactiver les sons
+ui_enable_cheats|Activer les triches
+ui_enable_edit_mode|Activer le mode Édition (Attention, les performances diminuent)
+ui_enable_pixel_shaders|Utiliser les Pixel Shaders
+ui_enable_sound_variation|Activer les variations sonores
+ui_enable_vertex_shaders|Méthode de rendu :
+ui_shadow_quality|Qualité des ombres :
+ui_directx_7|DirectX 7
+ui_directx_9|DirectX 9
+ui_show_framerate|Afficher le taux de rafraîchissement
+ui_start_windowed|Lancer en mode fenêtré
+ui_trialmode_caption|Activation
+ui_trialmode|Veuillez prendre un instant pour activer Mount&Blade Warband à l'aide de votre numéro de série. Votre numéro de série personnel se trouve à l'intérieur de la boîte du jeu.\nSi vous ne souhaitez pas activer le jeu maintenant, vous pouvez toujours continuer à l’utiliser dans sa version d'évaluation. Cependant, il vous sera impossible de faire évoluer votre personnage au-delà du niveau 8.
+ui_launch_buy|Acheter une licence sur TaleWorlds.com
+ui_launch_faq|Foire aux questions sur l'activation
+ui_trialmode2|Afin d'activer le jeu dès maintenant...
+ui_trialmode3|Sinon, vous pouvez également...
+ui_trialmode4|Si vous avez des questions concernant le processus d'activation, vous pouvez consulter...
+ui_serial_key_caption|Numéro de série
+ui_notification_serial_input|Saisissez votre numéro de série ci-dessous (vous pouvez effectuer un copier-coller) puis cliquez sur le bouton Activer
+ui_activate|Activer
+ui_paste|Coller
+ui_notification_serial_internet_connection|Vous devez être connecté à Internet pour l'activation.
+ui_notification_serial_offline|Si cet ordinateur n'a pas accès à Internet, vous pouvez également utiliser :
+ui_manual_activation|Activation manuelle
+ui_offline_activation|Activation hors ligne
+ui_manual_activation_caption|Activation manuelle
+ui_offline_activation_caption|Activation hors ligne
+ui_cancel2|Annuler
+ui_close|Fermer
+ui_ok2|Valider
+ui_activation_successful|Le jeu a été activé avec succès.
+ui_activation_denied|Activation refusée !
+ui_notification_serial_already_used|Ce numéro de série est déjà utilisé sur un autre ordinateur. Vous devez attendre quelques semaines avant de réactiver le jeu sur cet ordinateur.
+ui_notification_unable_to_connect_to_activation_server|Impossible de se connecter au serveur d'activation !
+ui_notification_unable_to_connect_to_activation_server2|Veuillez vous assurer que votre connexion Internet est active et qu'elle fonctionne correctement puis recommencez. Si vous utilisez un pare-feu, vous devrez peut-être le paramétrer pour qu'il accepte que le jeu se connecte à Internet. Si aucune méthode ne fonctionne, vous pouvez toujours utiliser l'activation manuelle.
+ui_incorrect_serial_number|Numéro de série incorrect !
+ui_incorrect_hardware_hash|Hachage matériel incorrect !
+ui_incorrect_activation_code|Code d'activation incorrect !
+ui_cant_write_to_registry|Impossible d'inscrire dans le registre !
+ui_video|Vidéo
+ui_audio|Audio
+ui_game|Jeu
+ui_advanced|Avancé
+ui_mount_and_blade_is_ready|Mount&&Blade Warband est prêt.
+ui_there_are_no_modules_installed|Aucun module n'est installé !
+ui_new_version_found|Nouvelle version trouvée !
+ui_notification_unable_to_retreive_new_version|Impossible de récupérer les informations concernant la nouvelle version. Veuillez réessayer ultérieurement.
+ui_new_version|Nouvelle version :
+ui_off|Désactiver
+ui_continue_playing_the_trial_mode|Continuer à jouer en version d'évaluation
+ui_faq_caption|FAQ
+ui_faq_text|Q : Qu'est-ce que l'activation ?\r\nR : Le système d'activation est une méthode intuitive de protection contre la copie qui consiste à fournir un numéro de série unique avec chaque copie du jeu. Il vous faut activer le jeu avec votre numéro de série une fois pour chaque ordinateur avec lequel vous souhaitez jouer. Après une activation, il ne vous faut rien d'autre pour pouvoir jouer au jeu, pas même garder le disque du jeu dans le lecteur. Tant que vous conserverez votre numéro de série, il vous sera facile d'activer le jeu puis d'y jouer, même après de nombreuses années.\r\n\r\nQ : Où se trouve mon numéro de série ?\r\nR : Chaque boîte du jeu inclut un numéro de série unique. Un fournisseur donné peut éventuellement distribuer les numéros de série différemment, mais généralement, celui-ci est collé sur la couverture de votre manuel. Si vous avez acheté votre jeu en ligne, le vendeur doit normalement vous fournir votre numéro de série.\r\n\r\nQ : Comment fonctionne le processus d'activation ?\r\nR : Le jeu crée une valeur de hachage à partir des spécifications de votre ordinateur puis l'envoie vers un serveur d'activation sur Internet en même temps que votre numéro de série. Le serveur d'activation enregistre le numéro de série comme correspondant à votre ordinateur puis répond par un numéro d'activation, qui permet de déverrouiller la version complète du jeu.\r\n\r\nQ : Puis-je activer le jeu sur plusieurs ordinateurs ?\r\nR : Oui, vous le pouvez. Mais gardez à l'esprit que la licence d'utilisation du jeu n'a été accordée qu'à vous, pour votre utilisation personnelle. Le serveur d'activation peut éventuellement rejeter temporairement un numéro de série si celui-ci est utilisé pour un grand nombre d'ordinateurs sur une courte période. \r\n\r\nQ : Le programme cesse de répondre après avoir cliqué sur le bouton Activer.\r\nR : Le processus d'activation peut parfois prendre jusqu'à trente secondes avant de se terminer. Soyez patient, le jeu affichera le résultat de l'activation à la fin du processus.\r\n\r\nQ : Je n'ai pas accès à Internet sur mon ordinateur. Comment puis-je activer le jeu ?\r\nR : Dans ce cas, activez le jeu manuellement. Pour cela, cliquez sur les boutons « Saisir le numéro de série » puis « Activation manuelle ». Il vous faudra quand même ouvrir la page web d'activation manuelle à partir d'un autre ordinateur relié à Internet.\r\n
+ui_auto_adjust|Ajustement auto
+ui_screen_size|Résolution de l'écran :
+ui_antialiasing|Anti-crénelage :
+ui_use_desktop_resolution|Utiliser la résolution du bureau
+ui_play|Jouer à Mount&Blade Warband
+ui_check_for_new_version|Rechercher une nouvelle version
+ui_configure|Configurer
+ui_configure_caption|Configurer
+ui_current_setting|           Module actuel :
+ui_manual_activation_text1|1) Dans votre navigateur web, saisissez l'adresse suivante :
+ui_manual_activation_text2|2) Saisissez votre numéro de série sur la page web qui s'affiche...
+ui_manual_activation_text3|3) ...ainsi que le hachage matériel de cette machine :
+ui_manual_activation_text4|4) La page vous donnera ensuite un code d'activation. Saisissez-le ou faites un copier-coller puis cliquez sur Valider.
+ui_activation_code|Code d'activation :
+ui_force_vsync|Forcer la synchronisation verticale
+ui_module_newer_than_application|Le module sélectionné a été identifié comme NE FONCTIONNANT PAS avec la version actuelle du jeu. Il est fortement recommandé de ne pas jouer avec cette configuration. Pour y remédier, essayez de rechercher une nouvelle version du jeu.
+ui_module_older_than_application|Le module sélectionné a été créé pour une version plus ancienne du jeu. Vous pouvez essayer de démarrer le jeu mais il y a des chances que soyez confronté à certains problèmes. Pour y remédier, recherchez une nouvelle version de ce module.
+ui_m_low|Faible
+ui_m_high|Élevé
+ui_m_ultra_high|Très élevé
+ui_force_single_threading|Forcer le Single Threading
+ui_SavegamesText|Voulez-vous conserver vos fichiers de sauvegarde ?
+ui_launch_activate|Saisir votre numéro de série
+ui_trialmode2_online|Après avoir acheté une licence, vous obtiendrez un numéro de série.\nPour déverrouiller la version complète, veuillez...
+ui_trialmode3_online|Par contre, si vous ne souhaitez pas acheter le jeu pour le moment, vous pouvez également...
+ui_trialmode4_online|Notre système de vente en ligne est parfaitement sécurisé et respecte les droits de nos clients à la sécurité, le respect de leur vie privée, la possibilité de posséder des copies de sauvegarde de leur jeu et la mise à niveau de leur ordinateur/matériel. Si vous souhaitez en savoir plus sur notre politique de vente, veuillez consulter :
+ui_ondemand_textures|Charger les textures à la demande
+ui_language|Langue :
+ui_steam_not_running|L'initialisation de Steam n'a pas pu s'effectuer correctement. Steam doit être en cours d'exécution pour utiliser ce jeu.
+ui_switch_to_turkish_explanation|Oyunun dilini Turkce'ye cevirmek ister misiniz?
+ui_switch_to_turkish_yes|Evet
+ui_switch_to_turkish_no|Hayir
+ui_new_version_message|Une nouvelle version du jeu est disponible. Voulez-vous accéder à la page de téléchargement ?
+ui_enable_version_check|Activer la recherche de nouvelles versions
+ui_disable|Désactiver

@@ -1,0 +1,113 @@
+
+ui_texture_detail|纹理精细度：
+ui_max_frame_rate|最大帧速率：
+ui_enable_bumpmap|使用凹凸贴图
+ui_disable_blood|关闭流血效果
+ui_disable_music|关闭音乐
+ui_disable_sound|关闭声效
+ui_enable_cheats|打开作弊模式
+ui_enable_edit_mode|打开编辑模式（会使游戏变慢）
+ui_enable_pixel_shaders|使用像素着色引擎
+ui_enable_sound_variation|打开声效变化
+ui_enable_vertex_shaders|渲染方式：
+ui_shadow_quality|阴影质量：
+ui_directx_7|DirectX 7
+ui_directx_9|DirectX 9
+ui_show_framerate|显示帧率
+ui_start_windowed|窗口模式启动
+ui_trialmode_caption|激活
+ui_trialmode|请花一点时间用你的序列号激活Mount＆Blade Warband。你的独一无二的16位序列号包含在你的盒装的副本里。\n不论出于什么原因，如果你现在不想激活游戏，你也可以在试玩模式下继续进行游戏，直到人物到达8级。
+ui_launch_buy|从TaleWorlds.com购买游戏（英文）
+ui_launch_faq|在线销售FAQ（英文）
+ui_trialmode2|现在，为了激活游戏……
+ui_trialmode3|或者，你也可以……
+ui_trialmode4|如果你对激活过程有任何疑问，你可以阅读……
+ui_serial_key_caption|序列号
+ui_notification_serial_input|在下面输入你的序列号（你可以拷贝/粘贴）并选取激活按钮
+ui_activate|激活
+ui_paste|粘贴
+ui_notification_serial_internet_connection|激活需要一个互联网连接！
+ui_notification_serial_offline|如果这台电脑无法连接互联网你也可以使用：
+ui_manual_activation|手动激活
+ui_offline_activation|离线激活
+ui_manual_activation_caption|手动激活
+ui_offline_activation_caption|离线激活
+ui_cancel2|取消
+ui_close|关闭
+ui_ok2|确定
+ui_activation_successful|Mount＆Blade已经成功激活！
+ui_activation_successful2|你保管好你的序列号以做备用。以后你在别的电脑上安装Mount＆Blade Warband的时候将再次用到。
+ui_activation_denied|激活请求被拒绝！
+ui_notification_serial_already_used|这个序列号已经在另外一台电脑上使用过了，你必须过几个星期才能在这台电脑上重新激活。
+ui_notification_unable_to_connect_to_activation_server|无法连接到激活服务器！
+ui_notification_unable_to_connect_to_activation_server2|请确认你的网络连接是有效的并工作正常，然后再试一遍。如果你安装了防火墙，你可能需要允许这个游戏连接并访问网络。如果都失败了，你需要使用手动激活。
+ui_incorrect_serial_number|错误的序列号！
+ui_incorrect_hardware_hash|错误的硬件HASH！
+ui_incorrect_activation_code|错误的激活码！
+ui_cant_write_to_registry|无法写入注册表！
+ui_video|图像
+ui_audio|声音
+ui_game|游戏
+ui_advanced|高级选项
+ui_mount_and_blade_is_ready|Mount＆Blade Warband已经可以用了。
+ui_notification_trial_mode|Mount＆Blade Warband现在运行在试用模式。在这个模式下你可以一直玩到角色级别第六级。之后你需要从TaleWorlds.com购买一个许可证，在线购买只需要花很短的时间。之后你就可以解锁游戏并接着玩下去了。
+ui_there_are_no_modules_installed|没有安装剧本（Module）！
+ui_notification_new_version|发现一个新版本的Mount＆Blade Warband游戏。\n当前安装的版本为%d.%d%d%d。\n最新版本为%d.%d%d%d。\n你可以从www.taleworlds.com下载到最新版本。
+ui_new_version_found|发现新版本！
+ui_notification_unable_to_retreive_new_version|无法获得新版本信息，请稍候再试。
+ui_new_version|新版本：
+ui_notification_latest_version|你已经安装了最新的Mount＆Blade Warband了。
+ui_mount_and_blade_is_up_to_date|Mount＆Blade Warband已经是最新的了！
+ui_off|关闭
+ui_continue_playing_the_trial_mode|继续在试用模式下玩
+ui_faq_caption|常见问题解答
+ui_faq_text|Q: 什么是游戏激活？\r\nA: 这个激活系统是一个简易的防拷方法，发放的一个独一无二的序列号可以用到这个游戏的每个副本。你只需要在每台你想玩这个游戏的电脑上用你的序列号激活这个游戏一次就可以了。一次激活以后，你就可以进行游戏了，其他的什么也不需要做了，比如不需要把游戏光碟一直放在光驱里。只要你保管好你的序列号，你将能很容易地激活并进行游戏，即使很多年以后。\r\n\r\nQ:我在哪里能找到我的序列号？\r\nA:这个游戏的每个盒装的副本里都包含有一个独一无二的序列号。不同的经销商也许会以不同的方式分发序列号，但是较典型的是会印刷在发布手册的封面上。\r\n\r\nQ:这个激活程序是如何工作的？\r\nA:游戏会根据你电脑硬件的详细信息产生一个哈希值，并且连同你的序列号一起发送到激活网上的服务器。激活服务器将序列号注册到你的电脑里，并且通过一个激活号码来解除游戏试玩限制，以开启游戏的完整模式。\r\n\r\nQ:我可以在多台电脑上激活这个游戏吗？\r\nA:是的，你可以。但是请你记住这个游戏仅是授权给你个人使用的。激活服务器可能会暂时拒绝一个在短时间内激活太多次数的序列号。\r\n\r\nQ:当我点了激活按钮以后，程序停止响应了。\r\nA:通常需要片刻的时间来实现激活过程。耐心点，游戏最终会报告激活结果的。\r\n\r\nQ:我的电脑没有联网。我如何才能激活这个游戏？\r\nA: 这种情况下，你可以使用手动激活。点击“输入你的序列号”按钮，在点击“手动激活”按钮。你仍然需要在别的能连接到网络的电脑上打开手动激活页面。\r\n
+ui_auto_adjust|自动设置
+ui_screen_size|屏幕分辨率：
+ui_antialiasing|反锯齿：
+ui_use_desktop_resolution|使用桌面分辨率
+ui_play|开始玩Mount＆Blade Warband
+ui_check_for_new_version|检查新版本
+ui_configure|配置
+ui_configure_caption|配置
+ui_mountandblade_website|访问Mount＆Blade Warband网站
+ui_current_setting|           当前剧本：
+ui_manual_activation_text1|1) 在你的浏览器地址栏中输入这个地址：
+ui_manual_activation_text2|2) 在网页上输入你的序列号……
+ui_manual_activation_text3|3) ……和这台机器的硬件HASH：
+ui_manual_activation_text4|4) 网页上会给出一个激活码，在下面键入或者粘贴，并点击确定。
+ui_activation_code|激活码：
+ui_force_vsync|强制垂直同步
+ui_module_newer_than_application|你选用的设置与这个游戏的版本非常不匹配。强烈建议你不要运行这些设置。为了解决这个问题，你可以检查一下这个游戏是否有新版本。
+ui_module_older_than_application|你选用的设置是这个游戏旧版本的设置，在新版本里可能不能生效。你可以继续进行游戏，但很有可能你会遇到麻烦。为了解决这个问题，你可以检查一下新版本的一些设置是否开启。
+ui_m_low|低
+ui_m_high|高
+ui_m_ultra_high|极高
+ui_force_single_threading|强制单线性
+ui_not_enough_memory|似乎你现在的可用的磁盘空间和虚拟内存的总大小为%d MB。Mount&Blade Warband需要至少700 MB的可用空间才能保证运行不会出问题。如果你在玩Mount&Blade Warband的时候屏幕不断闪动，那么在开始玩Mount&Blade Warband前请关掉一些运行的项目。或者在控制面板里的系统菜单里调大你的虚拟内存。
+ui_install|安装Mount&Blade Warband
+DirectXText|Mount＆Blade Warband需求DirectX 9.0c及以上才能正常运行。你的电脑未达到这个要求。你可以到微软的官方网站下载并安装最新的DirectX来解决这个问题。你现在想访问TaleWorlds网站的DirectX下载页面吗？
+NoMountAndBladeText|Mount＆Blade Warband未被装于这个电脑上。请到www.taleworlds.com网站下载完全的安装文件并安装。
+ui_SavegamesText|你想保存你的文件吗？
+ui_trialmode_online|Mount＆Blade Warband现在运行在试用模式。在这个模式下你可以一直玩到角色级别第七级。之后你需要从TaleWorlds.com购买一个许可证，在线购买只需要花很短的时间。之后你就可以解锁游戏并接着玩下去了。
+ui_launch_activate|输入你的序列号
+ui_trialmode2_online|购买一个许可证之后，你将获得你的序列号。\n要解锁游戏……
+ui_trialmode3_online|或者，如果你现在还不想购买游戏，你也可以……
+ui_trialmode4_online|我们的在线销售流程是足够安全的，而且我们非常尊重我们顾客的权利，比如：安全性，隐私，拷贝游戏的副本和升级他们的电脑硬件。如果你想要对我们的销售策略有更多的了解，请看一下：
+ui_ondemand_textures|在需要时再载入纹理
+ui_language|语言：
+ui_steam_not_running|无法正确初始化Steam。必须启动Steam来进行游戏。
+ui_switch_to_turkish_explanation|Oyunun dilini Turkce'ye cevirmek ister misiniz?
+ui_switch_to_turkish_yes|Evet
+ui_switch_to_turkish_no|Hayir
+ui_new_version_message|已有更新的游戏版本可用。你是否要现在访问下载页面？
+ui_enable_version_check|允许检查新版本
+ui_disable|不允许
+ui_yes2|是
+ui_no2|否
+ui_new_version_message2|已有更新的游戏版本可用。请访问你购买该游戏的网站主页来下载更新的版本。
+ui_napoleonic_key_does_not_exist|这个MOD需要拿破仑战争DLC才能玩！
+ui_delete_module_workshop|你确定你想取消订阅这个MOD？
+ui_delete_module|你确定你想删除这个MOD？
+ui_delete_native_module|你不能删除Native这个MOD。
+ui_incompatible_module|服务器与你当前的MOD不兼容。你可以用配置工具来改变MOD。

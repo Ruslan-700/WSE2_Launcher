@@ -21,25 +21,28 @@
     <ClCompile Include="Engine_Start.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Engine_Initialize.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Engine_Runtime.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Engine_Interact.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Button_Launch_onClick.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Engine_RefreshModulesList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Button_Options_onClick.cpp">
+    <ClCompile Include="Engine_Options.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Engine_Options.cpp">
+    <ClCompile Include="Engine_Buttons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Initialize_Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Initialize_Options.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -50,7 +53,10 @@
     <ClInclude Include="Engine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Image_Options.h">
+    <ClInclude Include="Images.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Fonts.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>

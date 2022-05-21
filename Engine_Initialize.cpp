@@ -2,74 +2,167 @@
 
 void Class_Engine::Initialize()
 {
-	Panel_Main = tgui::Panel::create();
-	GUI_Main.add(Panel_Main, "Panel_Main");
-
-	tgui::Label::Ptr Label_Title = tgui::Label::create("WSE2 Launcher");
-	Label_Title->setTextSize(20);
-	Label_Title->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Center);
-	Label_Title->setOrigin(0.5, 0.5);
-	Label_Title->setPosition("50%", "5%");
-
-	Texture_Options.loadFromMemory(Image_Options, Image_Options_Length);
-
-	tgui::Button::Ptr Button_Options = tgui::Button::create();
-	Button_Options->getRenderer()->setBorders(tgui::Borders::Outline(1));
-	Button_Options->getRenderer()->setBorderColor(tgui::Color::Black);
-	Button_Options->getRenderer()->setTexture(Texture_Options);
-	Button_Options->setOrigin(0.5, 0.5);
-	Button_Options->setPosition("85%", "20%");
-	Button_Options->setSize("5.5%", "7%");
-	Button_Options->onClick(&Class_Engine::Button_Options_onClick, this);
-
-	tgui::Label::Ptr Label_Module = tgui::Label::create("Module");
-	Label_Module->setTextSize(14);
-	Label_Module->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Center);
-	Label_Module->setOrigin(0, 0.5);
-	Label_Module->setPosition("5%", "20%");
-
+	ReadCurrentUserPath();
+	ReadCurrentLanguage();
+	ReadLocalizationFiles();
 	RefreshModulesList();
 
-	ComboBoxModule = tgui::ComboBox::create();
-	ComboBoxModule->setOrigin(0.5, 0.5);
-	ComboBoxModule->setPosition("50%", "20%");
-	ComboBoxModule->setSize("50%", "7%");
+	Initialize_UI_Main();
+	Initialize_UI_Options();
 
-	for (size_t i = 0; i < Modules.size(); i++)
-	{
-		ComboBoxModule->addItem(Modules[i], Modules[i]);
+	BuildLanguagesList();
+	UpdateTextures();
+	UpdateText();
+	UpdateModPreviewImage();
+}
+
+void Class_Engine::Close() {
+	Window_Main->close();
+}
+
+std::wstring Class_Engine::GetLastModule()
+{
+	std::wstring Result = L"Native";
+	WCHAR Buffer[512];
+	DWORD BufferSize = sizeof(Buffer);
+	ULONG Error;
+	HKEY Key;
+	RegOpenKeyExW(HKEY_CURRENT_USER, L"SOFTWARE\\MountAndBladeWarbandKeys", 0, KEY_READ, &Key);
+	Error = RegQueryValueExW(Key, L"last_module_warband", 0, NULL, (LPBYTE)Buffer, &BufferSize);
+	if (Error == ERROR_SUCCESS) Result = Buffer;
+	return Result;
+}
+
+void Class_Engine::UpdateTextures()
+{
+	Texture_MainBackground.loadFromMemory(Image_MainBackground, Image_MainBackground_Length);
+	Texture_OptionsBackground.loadFromMemory(Image_OptionsBackground, Image_OptionsBackground_Length);
+	Panel_Main->getRenderer()->setTextureBackground(Texture_MainBackground);
+	Panel_Options->getRenderer()->setTextureBackground(Texture_OptionsBackground);
+	Font_Latin = tgui::Font(RawFont_Latin, RawFont_Latin_Length);
+	Font_Cyrillic = tgui::Font(RawFont_Cyrillic, RawFont_Cyrillic_Length);
+}
+
+void Class_Engine::UpdateText()
+{
+	float DefaultTextSize = 18;
+	if (CurrentLanguage == "ru") DefaultTextSize = 15;
+
+	GUI_Main.setFont(Font_Latin);
+	GUI_Options.setFont(Font_Latin);
+
+	tgui::Button::Ptr Button_Launch = GUI_Main.get<tgui::Button>("Button_Launch");
+	tgui::Button::Ptr Button_Launch_Dedicated = GUI_Main.get<tgui::Button>("Button_Launch_Dedicated");
+	tgui::Button::Ptr Button_Options = GUI_Main.get<tgui::Button>("Button_Options");
+	tgui::Button::Ptr Button_Exit = GUI_Main.get<tgui::Button>("Button_Exit");
+
+	Button_Launch->setText(GetLocalizedTextEntry(L"ui_wse2_start_game"));
+	Button_Launch_Dedicated->setText(GetLocalizedTextEntry(L"ui_wse2_start_dedicated"));
+	Button_Options->setText(GetLocalizedTextEntry(L"ui_configure"));
+	Button_Exit->setText(GetLocalizedTextEntry(L"ui_close"));
+
+	Button_Launch->setTextSize(DefaultTextSize);
+	Button_Launch_Dedicated->setTextSize(DefaultTextSize);
+	Button_Options->setTextSize(DefaultTextSize);
+	Button_Exit->setTextSize(DefaultTextSize);
+
+	if (CurrentLanguage == "en") Button_Options->setText("Options");
+	if (CurrentLanguage == "ru") {
+		GUI_Main.setFont(Font_Cyrillic);
+		GUI_Options.setFont(Font_Cyrillic);
 	}
+}
 
-	ComboBoxModule->setItemsToDisplay(5);
-	ComboBoxModule->setSelectedItemByIndex(0);
+std::wstring Class_Engine::GetLocalizedTextEntry(std::wstring Key)
+{
+	if (LocalizedText.find(Key) != LocalizedText.end()) return LocalizedText.find(Key)->second;
+	return Key;
+}
 
-	tgui::Button::Ptr Button_Launch = tgui::Button::create("Launch game");
-	Button_Launch->getRenderer()->setBorders(tgui::Borders::Outline(2));
-	Button_Launch->getRenderer()->setBorderColor(tgui::Color::Black);
-	Button_Launch->setOrigin(0.5, 0.5);
-	Button_Launch->setPosition("40%", "88%");
-	Button_Launch->setSize("60%", "10%");
-	Button_Launch->onClick(&Class_Engine::Button_Launch_onClick, this);
+void Class_Engine::InitializeTextButton(tgui::Button::Ptr TguiButton) {
+	TguiButton->getRenderer()->setBorders(tgui::Borders::Outline(0));
+	TguiButton->getRenderer()->setBackgroundColor(tgui::Color::Transparent);
+	TguiButton->getRenderer()->setBackgroundColorDown(tgui::Color::Transparent);
+	TguiButton->getRenderer()->setBackgroundColorHover(tgui::Color::Transparent);
+	TguiButton->getRenderer()->setBackgroundColorFocused(tgui::Color::Transparent);
+	TguiButton->getRenderer()->setBackgroundColorDownFocused(tgui::Color::Transparent);
+	TguiButton->setOrigin(0.5, 0.5);
+}
 
-	tgui::Button::Ptr Button_Launch_Dedicated = tgui::Button::create("Launch game\n(dedicated server)");
-	Button_Launch_Dedicated->getRenderer()->setBorders(tgui::Borders::Outline(2));
-	Button_Launch_Dedicated->getRenderer()->setBorderColor(tgui::Color::Black);
-	Button_Launch_Dedicated->setOrigin(0.5, 0.5);
-	Button_Launch_Dedicated->setPosition("85%", "88%");
-	Button_Launch_Dedicated->setSize("18%", "10%");
-	Button_Launch_Dedicated->onClick(&Class_Engine::Button_Launch_Dedicated_onClick, this);
+void Class_Engine::ReadCurrentUserPath()
+{
+	tgui::Label::Ptr Label_Message1 = GUI_Main.get<tgui::Label>("Label_Message1");
+	HRESULT Result = SHGetFolderPath(NULL, CSIDL_PROFILE, NULL, SHGFP_TYPE_CURRENT, CurentUserPath);
+	if (Result != S_OK) {
+		Label_Message1->setText(Label_Message1->getText() + "Error - could not open current user folder. ");
+	}
+}
 
-	tgui::Label::Ptr Label_Message1 = tgui::Label::create(" ");
-	Label_Message1->setTextSize(10);
-	Label_Message1->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Center);
-	Label_Message1->setOrigin(0.5, 0.5);
-	Label_Message1->setPosition("50%", "78%");
+void Class_Engine::ReadCurrentLanguage()
+{
+	std::ifstream File_language(std::string(CurentUserPath) + std::string("\\AppData\\Roaming\\Mount&Blade Warband WSE2\\language.txt"));
+	if (File_language.good())
+	{
+		std::getline(File_language, CurrentLanguage);
+	}
+}
 
-	Panel_Main->add(Button_Launch, "Button_Connect");
-	Panel_Main->add(Button_Options, "Button_Options");
-	Panel_Main->add(Button_Launch_Dedicated, "Button_Launch_Dedicated");
-	Panel_Main->add(Label_Module, "Label_Module");
-	Panel_Main->add(Label_Title, "Label_Title");
-	Panel_Main->add(Label_Message1, "Label_Message1");
-	Panel_Main->add(ComboBoxModule, "ComboBoxModule");
+void Class_Engine::ReadLocalizationFiles()
+{
+	LocalizedText.clear();
+	std::wifstream File_uimain(std::string("languages\\" + CurrentLanguage + "\\uimain.csv"));
+	std::wifstream File_uiwse2(std::string("languages\\" + CurrentLanguage + "\\uiwse2.csv"));
+	std::wstring Line;
+	if (File_uimain.is_open()) {
+		while (std::getline(File_uimain, Line))
+		{
+			std::string::size_type Position = Line.find('|');
+			if (Position != std::string::npos)
+			{
+				LocalizedText.insert(std::pair(Line.substr(0, Position), Line.substr(Position + 1)));
+			}
+		}
+		File_uimain.close();
+	}
+	if (File_uiwse2.is_open()) {
+		while (std::getline(File_uiwse2, Line))
+		{
+			std::string::size_type Position = Line.find('|');
+			if (Position != std::string::npos)
+			{
+				LocalizedText.insert(std::pair(Line.substr(0, Position), Line.substr(Position + 1)));
+			}
+		}
+		File_uiwse2.close();
+	}
+}
+
+void Class_Engine::UpdateModPreviewImage()
+{
+	tgui::Picture::Ptr Picture_ModPreview = GUI_Main.get<tgui::Picture>("Picture_ModPreview");
+	Texture_ModPreview.loadFromFile("Modules\\" + CurrentModule() + "\\main.bmp");
+	Picture_ModPreview->getRenderer()->setTexture(Texture_ModPreview);
+}
+
+void Class_Engine::BuildLanguagesList()
+{
+	tgui::ComboBox::Ptr ComboBox_Languages = GUI_Options.get<tgui::ComboBox>("ComboBox_Languages");
+	std::string Path = "languages\\";
+	if (!std::filesystem::is_directory(std::filesystem::path(L"languages\\"))) {
+		tgui::Label::Ptr Label_Message1 = GUI_Main.get<tgui::Label>("Label_Message1");
+		Label_Message1->setText(Label_Message1->getText() + "Error - languages folder not found. ");
+		return;
+	}
+	for (const auto& Entry : std::filesystem::directory_iterator(Path)) {
+		std::size_t Pos = Entry.path().generic_string().find("\\");
+		if (std::filesystem::exists(Entry.path().generic_string() + "\\uimain.csv")) {
+			ComboBox_Languages->addItem(Entry.path().generic_string().substr(Pos + 11), Entry.path().generic_string().substr(Pos + 11));
+		}
+	}
+	ComboBox_Languages->setSelectedItemById(CurrentLanguage);
+}
+
+void Class_Engine::ChangeLanguage()
+{
+
 }

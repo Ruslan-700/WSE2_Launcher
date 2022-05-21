@@ -1,0 +1,107 @@
+ui_texture_detail|Texturareszletesseg:
+ui_max_frame_rate|Max. kép/másodperc:
+ui_enable_bumpmap|Bump Mapping használata
+ui_disable_blood|Vér kikapcsolása
+ui_disable_music|Zene kikapcsolása
+ui_disable_sound|Hangok kikapcsolása
+ui_enable_cheats|Csalások bekapcsolása
+ui_enable_edit_mode|Tervezõ mód bekapcsolása (lelassíthatja a játékot)
+ui_enable_pixel_shaders|Pixel shaderek használata
+ui_enable_sound_variation|Változatos beszédhangok bekapcsolása
+ui_enable_vertex_shaders|Renderelés modja:
+ui_shadow_quality|Árnyékminõség:
+ui_directx_7|DirectX 7
+ui_directx_9|DirectX 9
+ui_show_framerate|Képkocka/másodperc kijelzõ
+ui_start_windowed|Futtatás ablakban
+ui_trialmode_caption|Aktiválás
+ui_trialmode|Kérlek, szánj egy kis idõt a Mount&&Blade Warband aktiválására. Egyedi, 16 számjegyû termékazonosítódat a dobozban találod.\nHa valamiért mégsem szeretnéd aktiválni a játékodat, tovább játszhatsz próbamódban, de tudnod kell, hogy nem fejlõdhetsz tovább 8. szintnél.
+ui_launch_buy|Licenc vásárlása a TaleWorlds.com-on
+ui_launch_faq|Gyakorta ismétlõdõ kérdések az aktiválásról
+ui_trialmode2|Ahhoz, hogy aktiváld a játékodat, most...
+ui_trialmode3|Avagy...
+ui_trialmode4|Ha bármi kérdésed van az aktiválási folyamattal kapcsolatban, olvasd el az alábbiakat:
+ui_serial_key_caption|Termékazonosító
+ui_notification_serial_input|Kérlek, add meg a termékazonosítódat (megteheted másolás/beillesztés útján is), és kattints az Aktiválás gombra
+ui_activate|Aktivál
+ui_paste|Beilleszt
+ui_notification_serial_internet_connection|Az aktiváláshoz mûködõ internet kapcsolatra van szükség!
+ui_notification_serial_offline|Ha a számítógéped nem csatlakozik az internethez, a következõk közül választhatsz:
+ui_manual_activation|Kézi aktiválás
+ui_offline_activation|Hálózat nélküli aktiválás
+ui_manual_activation_caption|Kézi aktiválás
+ui_offline_activation_caption|Hálózat nélküli aktiválás
+ui_cancel2|Mégsem
+ui_close|Bezárás
+ui_ok2|Rendben
+ui_activation_successful|A játék aktiválása sikerült.
+ui_activation_successful2|Tartsd meg a termékazonosítódat a késõbbiekre, hogyha esetleg egy másik gépre is szeretnéd telepíteni a Mount&&Blade Warbandet.
+ui_activation_denied|Az aktiválás sikertelen.
+ui_notification_serial_already_used|Ezt a termékazonosítót már más játékos használja, néhány hét múlva válik újra aktiválhatóvá ezen a számítógépen.
+ui_notification_unable_to_connect_to_activation_server|Nem lehet kapcsolódni az aktivációs kiszolgálóhoz!
+ui_notification_unable_to_connect_to_activation_server2|Gyõzõdj meg róla, hogy az internet kapcsolatod él és helyesen mûködik, majd próbáld újra! Ha tûzfalat használsz, lehet, hogy engedélyezned kell a játék kommunikációját. Ha semmi más nem sikerül, próbáld meg a kézi aktiválást!
+ui_incorrect_serial_number|Nem megfelelõ termékazonosító!
+ui_incorrect_hardware_hash|Nem megfelelõ hardverazonosító.
+ui_incorrect_activation_code|Nem megfelelõ aktivációs kód.
+ui_cant_write_to_registry|A rendszerleíró-adatbázis nem írható! 
+ui_video|Videó
+ui_audio|Audió
+ui_game|Játék
+ui_advanced|Haladó
+ui_mount_and_blade_is_ready|A Mount&&Blade Warband készen áll.
+ui_notification_trial_mode|Ez a Mount&&Blade Warband próbaváltozata. A játék szabadon játszható, amíg a játékos el nem éri a hatodik szintet. A folytatáshoz licenc vásárolható a TaleWorlds.com-on. Az internetes vásárlás mindössze egy percet vesz igénybe, és onnantól kezdve a játék korlátlan, teljes verziója játszhatóvá válik.
+ui_there_are_no_modules_installed|Nem található telepített modul.
+ui_notification_new_version|Elérhetõ a Mount&&Blade Warband újabb változata.\nA telepített változat verziószáma: %d.%d%d%d.\nA Mount&&Blade Warband legújabb verziójának száma: %d.%d%d%d.\nAz új verzió letölthetõ a www.taleworlds.com-on.
+ui_new_version_found|Új verzió érhetõ el!
+ui_notification_unable_to_retreive_new_version|Nem érhetõ el újabb verzió. Kérlek próbáld meg késõbb!
+ui_new_version|Az új verzió száma:
+ui_notification_latest_version|A Mount&&Blade Warband legújabb verziója van telepítve a számítógépeden.
+ui_mount_and_blade_is_up_to_date|A Mount&&Blade Warband naprakész!
+ui_off|Ki
+ui_continue_playing_the_trial_mode|A játék folytatása Próba üzemmódban
+ui_faq_caption|GYIK
+ui_faq_text|K: Mi az az aktiválás?\r\nV: Az aktiválási rendszer egy felhasználóbarát másolásvédelmi megoldás, amely egy egyedi termékazonosítón alapul. Minden számítógépen egyszer kell csak aktiválnod a játékodat. Ha aktiváltad, semmi mást nem kell tenned, csak a meghajtóba helyezned a megfelelõ lemezt. Amíg megtartod a termékazonosítódat, akár éveken keresztül is zavartalanul játszhatsz ezzel a játékkal.\r\n\r\nK: Hol találom a termékazonosítómat?\r\nV: Minden doboz tartalmaz egy egyedi termékazonosítót. A különbözõ terjesztõk máshol helyezhetik el ezt az azonosítót, de legvalószínûbb, hogy a nyomtatott kézikönyv hátulján találod. Ha online vásároltad meg a teljes játékot, akkor az online eladó lát el a termékazonosítóval.\r\n\r\nK: Hogy mûködik az aktivációs folyamat?\r\nV: A játék készít egy leírást a számítógéped specifikációjáról, és azt elküldi a termékazonosítóddal együtt az aktivációs szervernek. Ez a szerver regisztrálja a számítógépedet, majd visszaküld egy aktivációs számot, amely engedélyezi a teljes játékot a gépeden.\r\n\r\nK: Aktiválhatom a játékot több számítógépen?\r\nV: Igen, de ne feledd, hogy a játék licence csak a te személyes használatodra vonatkozik. Az aktivációs szerver ideiglenesen visszautasíthat egy termékazonosítót, ha rövid idõ alatt túl sok gépre akarod feltelepíteni.\r\n\r\nK: A program nem válaszol, amint megnyomom az aktiváció gombját.\r\nV: Néha több mint fél percbe kerül az aktivációs folyamat végrehajtása. Légy türelmes, a játék jelenteni fogja az eredményt.\r\n\r\nK: A számítógépem nem csatlakozik internethez. Hogyan tudom aktiválni a játékot?\r\nV: Ebben az esetben a kézi aktiválást kell választanod. Csak kattints a termékazonosító megadása gombra, majd válaszd a 'Kézi aktiválás' gombot. Azonban ekkor is meg kell nyitnod a kézi aktiválás honlapját egy másik számítógéprõl, amely rendelkezik internet-eléréssel.\r\n
+ui_auto_adjust|Automatikus beállítás
+ui_screen_size|Képernyõ felbontása:
+ui_antialiasing|Elsimitas:
+ui_use_desktop_resolution|Az Asztal felbontásának átvétele
+ui_play|A Mount&&Blade Warband indítása
+ui_check_for_new_version|Új verzió keresése
+ui_configure|Beállítások
+ui_configure_caption|Beállítások
+ui_mountandblade_website|Mount & Blade Warband honlap
+ui_current_setting|           Beállított modul:
+ui_manual_activation_text1|1.) Nyisd meg a böngészõdben a következõ honlapot: 
+ui_manual_activation_text2|2.) A megjelenõ honlapon gépeld be a termékazonosítódat... 
+ui_manual_activation_text3|3.) És a számítógéped hardverazonosítóját...
+ui_manual_activation_text4|4.) Az oldal ekkor ad egy aktivációs kódot. Gépeld be, vagy másold be alulra, majd nyomd meg a Rendben-t.
+ui_activation_code|Aktivációs kód:
+ui_force_vsync|Vertikális szinkronizáció használata
+ui_module_newer_than_application|Az általad választott modul valószínûleg nem mûködik a játék jelenleg telepített verziójával, ezért nem javasolt a beállítás jóváhagyása. A kompatibilitás megteremtése érdekében megnézheted, elérhetõ-e a játék újabb verziója.
+ui_module_older_than_application|A választott modul a játék egy korábbi verziójához készült, így elképzelhetõ, hogy nem mûködik a jelenlegi verzióval. Ettõl függetlenül megpróbálhatod használni, de ez jó eséllyel nehézségekbe fog ütközni. Ennek elkerülése érdekében nézd meg, elérhetõ-e a modul újabb verziója.
+ui_m_low|Al.
+ui_m_high|Magas
+ui_m_ultra_high|Nagyon magas
+ui_force_single_threading|Egyszálú hozzáférés használata
+ui_not_enough_memory|Úgy tûnik, jelenleg mindösszesen %d MB szabad fizikai és virtuális memória van a gépedben. A Mount&&Blade Warband problémamentes futtatásához legalább 700 MB szabad memória szükséges. Ha a Mount&&Blade Warband futtatása közben folyamatos fagyásokat tapasztalsz, próbálj meg futtatás elõtt annyi futó programot bezárni, amennyit csak lehetséges, vagy növeld meg a virtuális memória méretét a Vezérlõpult -> Rendszer menüpontban.
+ui_install|Mount&Blade Warband telepítése
+DirectXText|A Mount&Blade Warband futtatásához DirectX 9.0c vagy újabb verzió szükséges. Ez a számítógép nem teljesíti ezt a követelményt. Ahhoz, hogy megoldd ezt a problémát, le kell töltened és telepítened kell a DirectX legújabb verzióját a Microsoft's honlapjáról. Szeretnéd most meglátogatni a TaleWorlds DirectX letöltõ oldalát?
+NoMountAndBladeText|A Mount&Blade Warband nem lett feltelepítve erre a számítógépre. Kérjük, töltsd le a teljes telepítõt a www.taleworlds.com honlapról, és telepítsd fel a játékot.
+ui_SavegamesText|Szeretnéd megtartani a mentett állásaidat?
+ui_trialmode_online|A Mount&&Blade Warband jelenleg próbamódban mûködik. Ebben a módban szabadon játszhatod a játékot egészen 7-es szintig. Ahhoz, hogy tovább folytathasd, meg kell venned a teljes verziót a Taleworlds.com-ról. Csak egy percet vesz igénybe megvenni a licencet online, és feloldani a teljes verziót.
+ui_launch_activate|Termékazonosító megadása
+ui_trialmode2_online|A licenc megvétele után megkapod a termékazonosítódat.\nA teljes verzió feloldásához menj ide:
+ui_trialmode3_online|Vagy, ha nem szeretnéd megvenni a teljes verziót, akkor teheted ezt is:
+ui_trialmode4_online|Az online eladási folyamatunk teljesen biztonságos. Teljes mértékben tiszteletben tartjuk a vásárlók személyes adatait, és elismerjük jogait a biztonsághoz és egyebekhez. Sõt, megértjük a hardver/szoftverfejlesztésbõl adódó újratelepítéseket is. Ha szeretnél többet tudni az eladási elveinkrõl, látogass el ide:
+ui_ondemand_textures|Textúrák kívánság szerinti betöltése
+ui_language|Nyelv:
+ui_steam_not_running|A Steam nem indult el megfelelõen. A játékhoz szükséges a Steam futtatása.
+ui_switch_to_turkish_explanation|Szeretnéd a játék nyelvét törökre állítani?
+ui_switch_to_turkish_yes|Igen
+ui_switch_to_turkish_no|Nem
+ui_new_version_message|Elérhetõ a játék újabb verziója. Szeretnéd meglátogatni a frissítés oldalát?
+ui_enable_version_check|Verzió-ellenõrzés bekapcsolása
+ui_disable|Kikapcsolás
+ui_yes2|Igen
+ui_no2|Nem
+ui_new_version_message2|A játék egy újabb verziója elérhetõ. Kérjük, látogass el az online oldalunkra, hogy letölthesd az új verziót!

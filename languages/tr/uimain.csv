@@ -1,0 +1,108 @@
+lockitver|DO NOT DELETE THIS LINE! 2552
+ui_texture_detail|Doku Detayý:
+ui_max_frame_rate|Saniyede Maksimum Kare Sayýsý:
+ui_enable_bumpmap|Bump Mapping Kullan
+ui_disable_blood|Kan Gösterme
+ui_disable_music|Müziði Kapat
+ui_disable_sound|Sesi Kapat
+ui_enable_cheats|Hileyi Aç
+ui_enable_edit_mode|Edit Modunu Aç
+ui_enable_pixel_shaders|Pixel Shaderlarý Aç
+ui_enable_sound_variation|Ses Varyasyonunu Aç
+ui_enable_vertex_shaders|Gösterim Yöntemi:
+ui_shadow_quality|Gölge Kalitesi:
+ui_directx_7|DirectX 7
+ui_directx_9|DirectX 9
+ui_show_framerate|Saniyedeki Kare Sayýsýný Göster
+ui_start_windowed|Pencereli Baþlat
+ui_trialmode_caption|Aktivasyon
+ui_trialmode|Mount&&Blade Warband'i aktive etmeniz gerekmektedir. Size ait 16 haneli seri numaranýzý satýn aldýðýnýz kutuda ya da internet üzerinden aldýysanýz e-postanýzda bulabilirsiniz. Herhangi bir nedenden ötürü oyunu þu anda aktive etmek istemiyorsanýz oyunu deneme modunda oynamaya devam edebilirsiniz, fakat bu modda 8. seviyeyi geçmeniz mümkün olmayacaktýr.
+ui_launch_buy|TaleWorlds.com'dan Lisans Satýn Al
+ui_launch_faq|Ýnternet Üzerinden Satýþ SSS
+ui_trialmode2|Oyununuzu þimdi aktive etmek için...
+ui_trialmode3|Veya...
+ui_trialmode4|Aktivasyon sistemi hakkýnda sorularýnýz varsa, þurayý okuyabilirsiniz...
+ui_serial_key_caption|Seri Numarasý
+ui_notification_serial_input|Seri numaranýzý aþaðýya yazýn (kopyalayýp yapýþtýrabilirsiniz) ve Aktifleþtir butonuna týklayýn
+ui_notification_serial_input_vc|Bu modül çalýþmak için Viking Conquest seri numarasý gerektirir. Viking Conquest seri numaranýzý aþaðýya yazýn (kopyalayýp yapýþtýrabilirsiniz) ve Aktifleþtir butonuna týklayýn
+ui_activate|Aktifleþtir
+ui_paste|Yapýþtýr
+ui_notification_serial_internet_connection|Aktifleþtirme iþlemi internet baðlantýsý gerektirir!
+ui_notification_serial_offline|Eðer bu bilgisayarýn internete baðlantýsý yoksa þunu deneyebilirsiniz:
+ui_manual_activation|Manüel Aktivasyon
+ui_offline_activation|Çevrimdýþý Aktivasyon
+ui_manual_activation_caption|Manüel Aktivasyon
+ui_offline_activation_caption|Çevrimdýþý Aktivasyon
+ui_cancel2|Ýptal
+ui_close|Kapat
+ui_ok2|Tamam
+ui_activation_successful|Oyun baþarýlý bir þekilde aktive edildi.
+ui_activation_successful2|Lütfen seri numaranýzý gelecekte rahatça bulabilmeniz için saklayýn. Ýleride Mount&&Blade Warband'i yeni bir makineye kurmak isterseniz, seri numaranýza ihtiyacýnýz olacaktýr.
+ui_activation_denied|Aktivasyon Baþarýsýz!
+ui_notification_serial_already_used|Seri Numarasý baþka bir bilgisayar için kullanýlmýþ. Bu bilgisayarda yeniden aktifleþtirebilmek için birkaç hafta beklemeniz gerekiyor.
+ui_notification_unable_to_connect_to_activation_server|Aktivasyon sunucusuna baðlanýlamýyor!
+ui_notification_unable_to_connect_to_activation_server2|Lütfen internet baðlantýnýzý kontrol edip tekrar deneyin. Eðer güvenlik duvarý kullanýyorsanýz, oyuna internete eriþme izni vermeniz gerekebilir. Eðer bunlarýn hiçbiri iþe yaramazsa, her zaman manüel aktivasyonu kullanabilirsiniz.
+ui_incorrect_serial_number|Hatalý Seri Numarasý!
+ui_incorrect_hardware_hash|Hatalý Donaným Kodu!
+ui_incorrect_activation_code|Hatalý Aktivasyon Kodu!
+ui_cant_write_to_registry|Registry'e Yazým Yapýlamýyor!
+ui_video|Ekran
+ui_audio|Ses
+ui_game|Oyun
+ui_advanced|Detaylar
+ui_mount_and_blade_is_ready|Mount&&Blade Warband hazýr.
+ui_notification_trial_mode|Mount&&Blade Warband þu anda deneme sürümünde çalýþýyor. Bu sürümde, karakteriniz 6. düzeye gelene kadar oyunu serbestçe oynayabilirsiniz. Daha ilerisini oynayabilmek için, lütfen TaleWorlds.com'dan lisans satýn alýn. Ýnternet üzerinden lisans satýn almak ve tam sürümü açmak sadece bir dakikanýzý alacaktýr.
+ui_there_are_no_modules_installed|Yüklenmiþ hiçbir modül bulunmuyor!
+ui_notification_new_version|Mount&&Blade Warband'in yeni bir versiyonu bulundu.\nYüklü olan versiyon: %d.%d%d%d.\nAt&Kýlýç'ýn en son versiyonu: %d.%d%d%d.\nYeni versiyonu www.taleworlds.com'dan indirebilirsiniz.
+ui_new_version_found|Yeni Versiyon Bulundu!
+ui_notification_unable_to_retreive_new_version|Yeni versiyon bilgisi alýnamadý. Lütfen daha sonra tekrar deneyin.
+ui_new_version|Yeni Versiyon:
+ui_notification_latest_version|Þu anda Mount&&Blade Warband'in en güncel versiyonunu kullanýyorsunuz.
+ui_mount_and_blade_is_up_to_date|Mount&&Blade Warband güncel!
+ui_off|Kapalý
+ui_continue_playing_the_trial_mode|Deneme Sürümünü Oynamaya Devam Edin
+ui_faq_caption|Sýkça Sorulan Sorular
+ui_faq_text|S: Aktifleþtirme nedir?\r\nC: Aktivasyon sistemi kullanýmý kolay bir kopya korumasý yöntemidir. Bu yöntemde, oyunla birlikte her kullanýcýya özel bir seri numarasý verilir. Oyunu oynamak istediðiniz her bilgisayarda, bir defaya mahsus olmak üzere oyunu seri numaranýzý kullanarak aktifleþtirmeniz gerekmektedir. Seri numaranýzý kaybetmediðiniz müddetçe, yýllar boyu sahip olacaðýnýz bütün bilgisayarlarda oyunu kolayca aktifleþtirip oynayabilirsiniz.\r\n\r\nS: Seri numaramý nerede bulabilirim?\r\nC: Her oyun kutusunda bir seri numarasý bulunmaktadýr. Farklý daðýtýmcýlar bu numaralarý farklý þekillerde daðýtýyor olabilirler, fakat çoðunlukla bu numara oyunun el kitabýnýn arka kapaðýnda bulunmaktadýr. Eðer oyunu internet üzerinden satýn aldýysanýz, seri numaranýz size oyunu satýn aldýðýnýz esnada veya daha sonra e-posta kanalýyla iletilir.\r\n\r\nS: Oyunu birden fazla bilgisayarda aktifleþtireblir miyim?\r\nC: Evet, bunu yapabilirsiniz. Örneðin evinizde ve iþyerinizdeki farklý bilgisayarlarýnýza ayný lisansla kurulum yapýlmasýnda bir sakýnca yoktur. Fakat lütfen unutmayýn ki oyun sizin kiþisel kullanýmýnýz için lisanslanmýþtýr, bu nedenle bir seri numarasýnýn baþka kiþilerle paylaþýlmamasý gerekmektedir. Bir seri numarasý kýsa zaman içerisinde birçok kez kullanýlýrsa, aktivasyon sunucusu bu seri numarasýný geçici olarak reddedebilir.\r\n\r\nS: Aktifleþtir düðmesine týkladýðýmda oyun takýlýyor.\r\nC: Bazen aktifleþtirme iþlemi yarým dakikaya kadar zaman alabilir. Beklediðiniz takdirde, oyun size sonucu bildirecektir.\r\n\r\nS: Bilgisayarýmýn internet baðlantýsý yok. Oyunu nasýl aktifleþtirebilirim?\r\nC: Bu durumda manüel aktivasyon seçeneðini kullanabilirsiniz. "Seri Numaranýzý Girin" düðmesine bastýktan sonra, "Manüel Aktivasyon" düðmesine basýnýz. Daha sonra ekranda gelen talimatlarý takip edin. Bu iþlemi gerçekleþtirebilmek için her halükarda internete baðlý bir bilgisayara ihtiyacýnýz olacaktýr (örneðin telefon vasýtasý ile bir arkadaþýnýzdan yardým alabilirsiniz).\r\n
+ui_auto_adjust|Otomatik Ayarla
+ui_screen_size|Ekran Çözünürlüðü:
+ui_antialiasing|Antialiasing:
+ui_use_desktop_resolution|Masaüstü Çözünürlüðü
+ui_play|Mount&&Blade Warband'i Oyna
+ui_check_for_new_version|Yeni Versiyon Kontrolü Yap
+ui_configure|Ayarlar
+ui_configure_caption|Ayarlar
+ui_gamersgate_website|Gamersgate Web Sitesi
+ui_mountandblade_website|Mount&&Blade Warband Web Sitesi
+ui_current_setting|           Þu Anki Senaryo:
+ui_manual_activation_text1|1) Tarayýcýnýzda þu adresi açýn:
+ui_manual_activation_text2|2) Açýlan sayfada seri numaranýzý girin...
+ui_manual_activation_text3|3) ...ve bu makinenin donaným kodunu girin:
+ui_manual_activation_text4|4) Sonrasýnda sayfa size bir aktivasyon kodu dönecektir. Aþaðýdaki alana bu kodu girin veya yapýþtýrýn ve Tamam'a basýn.
+ui_activation_code|Aktivasyon Kodu:
+ui_force_vsync|Dikey Senkronizasyon
+ui_module_newer_than_application|Bu senaryonun oyunun bilgisayarýnýzda kurulu olan versiyonuyla çalýþmayacaðý belirtilmiþ. Bu nedenle seçmiþ olduðunuz senaryoyu çalýþtýrmamanýz tavsiye edilir. Bu problemi gidermek için oyunun yeni versiyonunu yükleyebilirsiniz.
+ui_module_older_than_application|Bu senaryo oyunun eski bir versiyonu için oluþturulmuþ ve þu anki versiyonuyla uyumlu olmayabilir. Senaryoyu çalýþtýrýp deneyebilirsiniz, fakat bazý sorunlarla karþýlaþma ihtimaliniz bulunuyor. Bu problemi gidermek için seçmiþ olduðunuz senaryonun yeni versiyonunun olup olmadýðýný kontrol edebilirsiniz.
+ui_m_low|Düþük
+ui_m_high|Yüksek
+ui_m_ultra_high|Aþýrý Yüksek
+ui_force_single_threading|Tek Ýþlemci Ýle Çalýþ
+ui_not_enough_memory|Þu anda görüldüðü kadarýyla %d MB boþ fiziksel ve sanal hafýzanýz bulunuyor. Mount&&Blade Warband sorunsuz bir þekilde çalýþmak için en az 700 MB hafýzaya ihtiyaç duyar. Eðer oyununuz sýrasýnda At&Kýlýç durmadan hata vererek kapanýyorsa, lütfen At&Kýlýç'ý açmadan önce bazý programlarýnýzý kapatýn veya sanal hafýzanýzý Kontrol Paneli -> Sistem menüsünden artýrýn.
+ui_trialmode_online|Mount&&Blade Warband þu an deneme modunda çalýþýyor. Bu modda 8. seviyeye kadar serbestçe oynayabilirsiniz. Devam etmek için seri numaranýzý girerek oyunu aktifleþtirmeniz gerekmektedir. Eðer oyunu halihazýrda satýn aldýysanýz, lütfen þimdi seri numaranýzý girin. Aksi halde oyunu internet üzerinden satýn alabilirsiniz. Lisansýnýzý satýn alýp oyuna devam etmek yalnýzca birkaç dakika sürecektir.
+ui_launch_activate|Seri Numaranýzý Girin
+ui_trialmode2_online|Lisansýnýzý aldýktan sonra seri numaranýzý elde edeceksiniz.\nOyunun tam sürümünü açmak için...
+ui_trialmode3_online|Veya, eðer þu anda oyunu satýn almak istemiyorsanýz...
+ui_trialmode4_online|Satýn alma sistemimiz tamamen güvenli olup müþterilerimizin gizliliðine ve haklarýna son derece önem vermekteyiz. Satýþ ilkelerimiz hakkýnda daha fazla bilgi edinmek isterseniz, lütfen þu adrese göz atýn:
+ui_ondemand_textures|Dokularý Ýhtiyaç Halinde Yükle
+ui_language|Dil:
+ui_steam_not_running|Steam düzgün bir þekilde baþlatýlamadý. Bu oyunu oynamak için Steam'in çalýþtýrýlmasý gerekiyor.
+ui_switch_to_turkish_explanation|Oyunun dilini Turkce'ye cevirmek ister misiniz?
+ui_switch_to_turkish_yes|Evet
+ui_switch_to_turkish_no|Hayir
+ui_install|Mount&Blade Warband'i Yükle
+ui_new_version_message|Oyunun yeni bir versiyonu mevcut. Ýndirme sayfasýna gitmek ister misiniz?
+ui_enable_version_check|Versiyon Kontrolü Yap
+ui_disable|Engelle
+ui_yes2|Evet
+ui_no2|Hayýr
+ui_new_version_message2|Oyunun yeni bir versiyonu mevcut. Oyunu indirdiðiniz portalý ziyaret edip yeni versiyonu indirebilirsiniz.
+ 

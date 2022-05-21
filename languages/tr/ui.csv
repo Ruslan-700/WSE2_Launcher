@@ -1,0 +1,751 @@
+ui_napoleonic_key_does_not_exist|This mod requires the Napoleonic Wars DLC to play!
+ui_delete_module_workshop|Are you sure you want to delete and unsubscribe from the module?
+ui_delete_module|Are you sure you want to delete the module?
+ui_delete_native_module|You cannot delete Native.
+
+lockitver|DO NOT DELETE THIS LINE! 2665
+ui_music_volume|Müzik:
+ui_sound_volume|Ses:
+ui_mouse_sensitivity|Fare Hassasiyeti:
+ui_invert_mouse_y_axis|Fare Y Eksenini Ters Çevir:
+ui_enabled|Açık
+ui_disabled|Kapalı
+ui_damage_to_player|Oyuncunun Aldığı Zarar:
+ui_reduced_to_1_over_4_easiest|1/4 oranına indirilmiş (En Kolayı)
+ui_reduced_to_1_over_2_easy|1/2 oranına indirilmiş (Kolay)
+ui_damage_to_friends|Dostların Aldığı Zarar:
+ui_reduced_to_1_over_2_easiest|1/2 oranına indirilmiş (En Kolayı)
+ui_reduced_to_3_over_4_easy|3/4 oranına indirilmiş (Kolay)
+ui_normal|Normal
+ui_combat_ai|Dövüş Yapay Zekası:
+ui_combat_speed|Dövüş Hızı:
+ui_good|İyi
+ui_average_caps|Ortalama
+ui_poor|Zayıf
+ui_faster|Hızlı
+ui_slower|Yavaş
+ui_control_block_direction|Bloklama Yönü Kontrolü:
+ui_automatic_recommended|Otomatik
+ui_manual_easy|Manüel (Kolay)
+ui_manual_hard|Manüel (Zor)
+ui_by_mouse_movement|Fare hareketine göre
+ui_control_attack_direction|Saldırma Yönü Kontrölü:
+ui_lance_control|Kargı Kontrolü:
+ui_by_relative_enemy_position|Düşmanın konumuna göre
+ui_by_inverse_mouse_movement|Fare hareketinin tersine göre
+ui_battle_size|Muharebe Büyüklüğü:
+ui_show_attack_direction|Saldırı Yönünü Göster
+ui_show_targeting_reticule|Hedef Noktasını Göster
+ui_show_names_of_friendly_troops|Dost Askerlerin İsimlerini Göster
+ui_report_damage|Zararı Bildir
+ui_report_shot_difficulty|Vuruş Zorluğunu Bildir
+ui_difficulty_rating_percentage|Zorluk Derecesi = %d%%
+ui_controls|Kontroller
+ui_video_options|Ekran Seçenekleri
+ui_done|Tamam
+ui_factions|Taraflar
+ui_item_itemname|Eşya - %s
+ui_prop_propname|Prop - %s
+ui_unknown_unknownname|Bilinmeyen - %s
+ui_entry_point_entrypointname|Giriş Noktası %d
+ui_passage_menu_item_passagename|Geçit (menü objesi %d)
+ui_plant_plantname|Bitki - %s
+ui_export_file_for_character_playername_already_exists_overwrite_it|%s karakteri için ihraç dosyası zaten mevcut. Üstüne yazılsın mı?
+ui_yes|Evet
+ui_no|Hayır
+ui_set_save_file_name|Bu kayıt dosyasına isim verin:
+ui_enter_new_name|Yeni bir isim girin:
+ui_export_character|Karakter İhraç Et
+ui_import_character|Karakter İthal Et
+ui_character_playername_exported_successfully|%s karakteri başarılı bir şekilde ihraç edildi.
+ui_character_playername_imported_successfully|%s karakteri başarılı bir şekilde ithal edildi.
+ui_unable_to_open_import_file|İthalat dosyası açılamıyor.
+ui_are_you_sure_you_want_to_import_the_character|Karakteri ithal etmek istediğinize emin misiniz?
+ui_unable_to_find_character_import_file|İthalat dosyası bulunamıyor.
+ui_mount_and_blade_is_running_in_trial_mode_please_buy_the_game_for_importing_a_character|At&Kılıç deneme sürümünde çalışıyor. Karakter ithal etmek için lütfen oyunu satın alın.
+ui_change_skin|Cilt
+ui_change_hair|Saç
+ui_change_hair_color|Saç rengini değiştir
+ui_change_beard|Sakal
+ui_tutorial|Başlangıç Yardımı
+ui_tutorial_face_generator|Butonlarla ve ayar çubuklarıyla karakterinizin yüzünü değiştirin. Başı döndürmek için, üzerine tıklayın ve tuşu bırakmadan fareyi oynatın.
+ui_restore|Yükle
+ui_cancel|İptal
+ui_delete|Sil
+ui_confirm_delete_game|Bu oyunu silmek istediğinize emin misiniz?
+ui_error_removing_file|Dosyayı silmede hata...
+ui_day_datedisplay|Gün %d (%d:%d%d)
+ui_reset_changes|Eskiye Dön
+ui_weapon_proficiencies|Hünerler
+ui_skills|Beceriler
+ui_attributes|Özellikler 
+ui_enter_name_here|*İsminizi Buraya Yazın*
+ui_edit_face|Yüzü Değiştir
+ui_statistics|İstatistikler
+ui_next|Sonraki
+ui_prev|Önceki
+ui_learn|Öğren
+ui_question_saving_policy|Oyunun kaydetme yöntemi nasıl olsun?
+ui_saving_policy_realistic|Gerçekçi! Kaydetmeden çıkmak olmasın!
+ui_saving_policy_nonrealistic|Kaydetmeden çıkma hakkım olsun.
+ui_tutorial_character_generation|Şimdi isminizi girip özellik, yetenek ve silah hüneri puanlarını dağıtın. Ekrandaki değişik ögelere tıklayarak her birinin karakterinizi nasıl etkileyeceğini öğrenebilirsiniz.
+ui_str|GÜÇ
+ui_agi|ÇVK
+ui_int|ZEKA
+ui_cha|KRZM
+ui_at_learning_limit|(Öğrenme limitinde)
+ui_not_enough_skill_points_to_learn|(Öğrenmek için yeterli beceri puanı yok)
+ui_strength|güç
+ui_agility|çeviklik
+ui_intelligence|zeka
+ui_charisma|karizma
+ui_not_enough_attributetype_to_learn_this_skill|(Bu beceriyi öğrenmek için yeterli %s yok)
+ui_explanation_one_handed_weapon|Tek elli kılıçların, baltaların ve keskin olmayan silahların kullanımını kapsar.
+ui_explanation_two_handed_weapon|Çift elli kılıçların, büyük baltaların ve balyozların kullanımını kapsar.
+ui_explanation_polearm|Mızrak, kargı, asa gibi uzun silahların kullanımını kapsar.
+ui_explanation_archery|Yayların kullanımını kapsar.
+ui_explanation_crossbow|Kundaklı yaylarının kullanımını kapsar.
+ui_explanation_throwing|Cirit, dart, taş gibi fırlatılan silahların kullanımını kapsar.
+ui_explanation_firearms|Tabanca ve tüfeklerin kullanımını kapsar.
+ui_explanation_strength|Güç: Her iki puan sağlığınıza +1 ekler. Şu beceriler Güç puanınızın 1/3'ünden daha fazla yükseltilemez: demirvücut, güçlü darbe, güçlü fırlatma, güçlü germe.
+ui_explanation_agility|Çeviklik: Her puan beş silah hüneri puanı verir ve silah hızını %0.5 artırır. Şu beceriler Çeviklik puanınızın 1/3'ünden daha fazla yükseltilemez: kalkan, atletizm, silah ustası, binicilik, atlı okçuluk.
+ui_explanation_intelligence|Zeka: Zekaya verilen her puan fazladan bir beceri puanı kazandırır. Şu beceriler Zeka puanınızın 1/3'ünden daha fazla yükseltilemez: talimci, iz sürme, taktik, yön bulma, tesbit etme, envanter yönetimi, yara bakımı, cerrahlık, ilk yardım.
+ui_explanation_charisma|Karizma: Her puan grup asker sayısı limitinize +1 ekler. Şu beceriler Karizma puanınızın 1/3'ünden daha fazla yükseltilemez: liderlik, esir yönetimi, ticaret.
+ui_level|Seviye: %d
+ui_xp|Tecrübe: %d
+ui_next_level_at|Sonraki Seviye: %d
+ui_health_player|Sağlık: %d/%d
+ui_health|Sağlık: %d
+ui_attribute_points|Özellik puanı: %d
+ui_skill_points|Beceri puanı: %d
+ui_weapon_points|Silah hüneri puanı: %d
+ui_mission_losses_none| hiç.
+ui_mission_losses_wounded|yaralı :
+ui_mission_losses_killed|ölü :
+ui_party_losses|%s  : %d yaralı --- %d ölü (%d kişiden).
+ui_casualties_sustained|Verdirilen zaiyat:
+ui_advantage_change|Avantaj değişimi = %c%d 
+ui_overall_battle_casualties|Genel muharebe zaiyatı:
+ui_advantage_outnumbered| Ümitsiz bir durumdasınız.
+ui_advantage_major_disadvantage| Büyük miktarda dezavantajınız var.
+ui_advantage_slight_disadvantage| Küçük miktarda dezavantajınız var.
+ui_advantage_balanced| Durum dengeli.
+ui_advantage_fair_advantage| Kazanmaya daha yakınsınız.
+ui_advantage_greatly_favored| Sayıca çok üstünsünüz.
+ui_tactical_advantage|Taktiksel avantaj: %d (%s)
+ui_order_group|Gruba emir ver:
+ui_question_save_changes|Objelerde değişiklik yaptınız. Değişiklikleri kaydetmek istiyor musunuz?
+ui_yes_save|Evet, kaydet
+ui_no_discard_changes|Hayır, kaydetme
+ui_everyone_control|Herkes!
+ui_everyone_around_control|Yakındaki askerler!
+ui_others_control|Diğerleri!
+ui_question_give_up_fight|Savaşı bırakmak istiyor musun?
+ui_give_up|Bırak
+ui_keep_fighting|Savaşa devam et
+ui_question_leave_area|Bölgeyi Terket
+ui_cant_retreat_there_are_enemies_nearby|Geri çekilemezsin. Yakınlarda düşmanlar var!
+ui_question_retreat_battle|Muharebeden geri çekilmek istiyor musun?
+ui_retreated_battle|%s savaş alanından kaçtı.
+ui_retreat|Geri Çekil
+ui_talk|Konuş
+ui_duel|Düello Yap
+ui_mount|At Bin
+ui_riding_skill_not_adequate_to_mount|(At binmek için binicilik becerisi yetersiz)
+ui_dismount|At İn
+ui_exit|Çık
+ui_door_to|Kapı: 
+ui_open|Aç
+ui_equip|Kuşan
+ui_baggage|Bagaj
+ui_access_inventory|Envantere Eriş
+ui_chest|Sandık
+ui_passage|Geçit
+ui_go|Git
+ui_retreat_battle|Muharebeden Çekil
+ui_leave_area|Bölgeyi Terket
+ui_reports|Raporlar
+ui_camp|Kamp
+ui_terrain|Arazi
+ui_quests|Notlar
+ui_inventory|Envanter
+ui_character|Karakter
+ui_party|Grup
+ui_paused|Pause
+ui_click_left_button_to_cancel_wait|Bekleme modunda... (çıkmak için sol tıklayın)
+ui_midnight|Geceyarısı
+ui_late_night|Gece
+ui_dawn|Şafak
+ui_early_morning|Kuşluk vakti
+ui_morning|Sabah
+ui_noon|Öğlen
+ui_afternoon|İkindi
+ui_late_afternoon|Akşamüstü
+ui_dusk|Alacakaranlık
+ui_evening|Akşam
+ui_level_limit_reached|Seviye Sınırına Gelindi!
+ui_explanation_level_limit|Selam Maceracı, At&Kılıç deneme sürümünde 6. seviyeye kadar sınırlıdır. Umarız oyunu beğenmişsinizdir ve lisans almak için devam edersiniz. Lisansı internet üzerinden satın almak ve tam sürümü aktifleştirmek çok kolaydır ve sadece bir dakikanızı alır. Aldıktan sonra tekrar bu noktadan oyununuza devam edebilirsiniz. Şimdi, At&Kılıç oyununuzu kaydedecek ve çıkacaktır.
+ui_time_limit_reached|Zaman Sınırına Gelindi!
+ui_explanation_time_limit|Selam Maceracı, At&Kılıç deneme sürümünde 30 oyun gününe kadar sınırlıdır. Umarız oyunu beğenmişsinizdir ve lisans almak için devam edersiniz. Lisansı internet üzerinden satın almak ve tam sürümü aktifleştirmek çok kolaydır ve sadece bir dakikanızı alır. Aldıktan sonra tekrar bu noktadan oyununuza devam edebilirsiniz. Şimdi, At&Kılıç oyununuzu kaydedecek ve çıkacaktır.
+ui_target_lost|Hedef kayboldu
+ui_waiting|Bekliyor.
+ui_travelling_to|Gidiyor: 
+ui_following|Takip ediyor: 
+ui_accompanying|Eşlik ediyor: 
+ui_running_from|Kaçıyor: 
+ui_patrolling|Devriye geziyor
+ui_patrolling_around|Devriye geziyor: 
+ui_holding|Duruyor
+ui_travelling|Yolculuk ediyor
+ui_fighting_against|Savaşıyor: 
+ui_speed_equals|Hız: %2.1f
+ui_defenders|Savunanlar:
+ui_prisoners|Esirler:
+ui_1_hour|1 saat
+ui_n_hours|%d saat
+ui_between_hours|%d - %d saat
+ui_combatants|Savaşanlar: %d
+ui_party_size|Kişi sayısı: %d
+ui_party_size_between|Kişi sayısı: %d - %d
+ui_merchant|Tüccar
+ui_return|Geri Dön
+ui_no_cost|Ödeme yok
+ui_rename|Rename
+ui_use|Use
+ui_destroy|Yok et
+ui_destructible_target|Tahrip edilebilir hedef
+ui_tutorial_inventory|Burası ticaret ekranıdır. Bir eşyayı hızlı bir şekilde satın almak veya satmak için Ctrl tuşuna basılı tutarak eşyaların üzerine tıklayabilirsiniz.
+ui_head_armor|Baş Zırhı: %d
+ui_body_armor|Vücut Zırhı: %d
+ui_leg_armor|Bacak Zırhı: %d
+ui_encumbrance|Yük: %2.1f
+ui_you_dont_have_value|Yeterli paran (%s) yok.
+ui_merchant_cant_afford_value|%s: Bu miktarı (%s) karşılayamam. Bende yalnızca %s var.
+ui_merchant_pay_whatever|Tamam tamam, ne kadar verebiliyorsan ver.
+ui_merchant_think_of_something_else|Hmm. Başka bir şey düşünelim.
+ui_dumping_value_items|%d adet eşya kaybolacak, emin misin?
+ui_dumping_value_item|Bir adet eşya kaybolacak, emin misin?
+ui_question_slaughter_food_and_eat|Bunu kesip yemek mi istiyorsun: %s?
+ui_money_value|Para: %s
+ui_dump|Çöp
+ui_outfit|Giysi
+ui_arms|Silahlar
+ui_horse|At
+ui_food|Yiyecek
+ui_reclaim_your_sold_goods|Bu malı satın almadan önce satmış olduğunuz malları geri alın!
+ui_return_your_bought_goods|Bu malı satmadan önce satın almış olduğunuz malları iade edin!
+ui_polearm_no_shield|Gönderli silah (Kalkansız)
+ui_polearm|Gönderli silah
+ui_two_handed|Çift elli
+ui_two_handed_one_handed|Çift elli/Tek elli
+ui_one_handed|Tek elli
+ui_return_price|İade fiyatı: %d
+ui_sell_price|Satış fiyatı: %d
+ui_reclaim_price|Geri alış fiyatı: %d
+ui_buying_price|Alış fiyatı: %d
+ui_default_item|Varsayılan öge
+ui_buying_price_free|Fiyat: Ücretsiz
+ui_weight|Ağırlık: %2.1f
+ui_plus_value_to_head_armor|Baş zırhına +%d
+ui_plus_value_to_body_armor|Gövde zırhına +%d
+ui_plus_value_to_leg_armor|Bacak zırhına +%d
+ui_swing|Savurma: %d%s
+ui_damage|Zarar: %d%s
+ui_thrust|Saplama: %d%s
+ui_accuracy|İsabet: %d
+ui_speed_rating|Hız: %d
+ui_value_to_damage|Zarara %c%d
+ui_value_to_morale|Grup moraline +%1.1f
+ui_resistance|Direnç: %d
+ui_size|Boyut: %d
+ui_weapon_reach|Silah erimi: %d
+ui_armor|Zırh: %d
+ui_speed|Hız: %d
+ui_maneuver|Manevra: %d
+ui_charge|Hücum: %d
+ui_hit_points|Sağlık: %d/%d
+ui_requires_value_difficulty|Gereken %s: %d
+ui_bonus_against_shields|Kalkanlara karşı bonus
+ui_cant_be_used_to_block|Bloklama için kullanılamaz
+ui_troop_cant_use_item|%s: BU EŞYAYI KULLANAMAM!!!!!
+ui_notification_riding_skill_not_enough|Bu ata binebilmek için yeterli binicilik becerin yok.
+ui_notification_requirements_not_met|Bu silahı kullanabilmek için yeterli beceri veya özelliğin yok.
+ui_notification_payment_value|%s ödenecek.
+ui_notification_payment_receive_value|%s alınacak.
+ui_one_handed_weapons|Tek Elli Silahlar
+ui_two_handed_weapons|Çift Elli Silahlar
+ui_polearms|Gönderli Silahlar
+ui_archery|Okçuluk
+ui_crossbows|Kundaklı Yaylar
+ui_throwing|Fırlatma
+ui_firearms|Ateşli Silahlar
+ui_reset|Eskiye dön
+ui_release_one|Tekini bırak
+ui_move_up|Yukarı
+ui_move_down| Aşağı 
+ui_upgrade_one|Tekini terfi et
+ui_party_skills|Grup Becerileri:
+ui_morale|Moral: %s
+ui_terrible|Berbat
+ui_very_low|Çok düşük
+ui_low|Düşük
+ui_below_average|Ortalamanın altında
+ui_average|Ortalamada
+ui_above_average|Ortalamanın üstünde
+ui_high|Yüksek
+ui_very_high|Çok yüksek
+ui_excellent|Mükemmel
+ui_starving|Açlık çekiyor! %d%%
+ui_weekly_cost_value|Haftalık ücret: %s
+ui_company|Birlik: %d / %d
+ui_prisoners_equal_value|Esirler: %d / %d
+ui_choose_prisoners|Esirleri Seç
+ui_choose_companions|Adamları Seç
+ui_rescued_prisoners|Kurtarılmış Esirler
+ui_captured_enemies|Ele Geçirilmiş Düşmanlar
+ui_disband|Dağıt
+ui_take_prisoner|Esir al
+ui_take_back|Geri al
+ui_give|Ver
+ui_take|Al
+ui_sell|Sat
+ui_hire|Yanına al
+ui_notification_cant_hire|(Alınamıyor: yeterli para yok)
+ui_uncapture|Bırak
+ui_capture|Yanına al
+ui_party_capcity_reached|(Grup kapasitesine erişildi)
+ui_all| hepsi
+ui_joining_cost_weekly_wage|Katılma ücreti: %d, Haftalık maaş: %d
+ui_weekly_wage|Haftalık maaş: %d dinar
+ui_price|Fiyat: %d
+ui_number_ready_to_upgrade|%d kişi terfi edilmeye hazır.
+ui_upgrade_to_value|%s olarak terfi et (%dd)
+ui_notification_no_slot_for_upgrade|%s olarak terfi etmek için yer yok!
+ui_shield_broken|Kalkan kırıldı.
+ui_shield_cracked|Kalkan çatladı.
+ui_shield_deformed|Kalkan deforme oldu.
+ui_you_hit_a_friendly_troop|Bir dost askere vurdun!
+ui_hit_shield_on_back|Sırtındaki kalkana isabet etti!
+ui_delivered_couched_lance_damage|Koltuklanmış kargı vuruşu yaptın!
+ui_received_couched_lance_damage|Koltuklanmış kargı vuruşu yedin!
+ui_speed_bonus_plus|Hız bonusu: +%d%%
+ui_speed_bonus|Hız bonusu: %d%%
+ui_cant_reload_this_weapon_on_horseback|Bu silah at üstünde doldurulamaz.
+ui_no_more_bolts|Kundaklı yay oku kalmadı...
+ui_you_are_not_carrying_any_bolts|Hiç kundaklı yay oku taşımıyorsun.
+ui_no_more_arrows|Ok kalmadı...
+ui_you_are_not_carrying_any_arrows|Hiç ok taşımıyorsun.
+ui_head_shot|Kafadan vuruş!
+ui_delivered_number_damage|%d zarar verildi.
+ui_delivered_number_damage_to_horse|Ata %d zarar verildi.
+ui_horse_charged_for_number_damage|At çarparak %d zarar verdi.
+ui_received_number_damage|%d zarar aldın.
+ui_horse_received_number_damage|At %d zarar aldı.
+ui_value_killed_teammate|%s bir takım arkadaşını öldürdü!
+ui_horse_fell_dead|At öldü...
+ui_horse_crippled|At sakatlandı...
+ui_shot_difficulty|Vuruş zorluğu: %2.1f
+ui_you_have_improved_your_proficiency_in_value_to_number|%s alanındaki hünerin %d seviyesine yükseldi.
+ui_your_proficiency_in_value_has_improved_by_number_to_number|%s alanındaki hünerin +%d artarak %d seviyesine yükseldi.
+ui_value_killed_by_value|%s %s tarafından öldürüldü.
+ui_value_fell_dead|%s öldü.
+ui_value_knocked_unconscious_by_value|%s %s tarafından bayıltıldı.
+ui_value_fell_unconscious|%s bayıldı.
+ui_troop_routed|%s has been routed.(***)
+ui_troop_panicked|%s panikledi.
+ui_troop_fled|%s savaştan kaçtı.
+ui_you_got_number_experience|%d tecrübe kazandın.
+ui_you_have_advanced_to_level_number|%d seviyesine yükseldin.
+ui_value_has_advanced_to_level_number|%s %d seviyesine yükseldi.
+ui_you_got_value|%s kazandın.
+ui_new_quest_taken|Yeni görev alındı: %s.
+ui_quest_completed_value|Görev tamamlandı: %s.
+ui_quest_succeeded_value|Görev başarıldı: %s.
+ui_quest_failed_value|Görev başarılamadı: %s.
+ui_quest_concluded_value|Görev sonuçlandırıldı: %s.
+ui_quest_cancelled_value|Görev iptal edildi: %s.
+ui_lost_value| (%s kaybedildi)
+ui_items_lost| (Kaybedilen eşya:
+ui_party_has_nothing_to_eat|Grubun yiyecek hiçbir şeyi yok!
+ui_days_training_is_complete|Bugünün talimi bitti...
+ui_total_experience_gained_through_training_number|Talimde elde edilen toplam tecrübe: %d
+ui_some_soldiers_are_ready_to_upgrade|Bazı askerler terfi için hazır.
+ui_number_of_companions_exceeds_leadership_limit| Adamlarının sayısı liderlik sınırını aşıyor.
+ui_number_of_prisoners_exceeds_prisoner_management_limit| Esirlerinin sayısı esir yönetimi sınırını aşıyor.
+ui_party_morale_is_low| Grubun morali düşük!
+ui_and_one_space| ve
+ui_has_deserted_the_party| grubu terk etti.
+ui_have_deserted_the_party| grubu terk etti.
+ui_weekly_report|Haftalık rapor
+ui_shared_number_experience_within_party|%d tecrübe grup arasında paylaşıldı.
+ui_got_item_value|Eşya elde edildi: %s.
+ui_game_saved_successfully|Oyun başarılı bir şekilde kaydedildi.
+ui_autosaving|Otomatik kayıt...
+ui_quick_saving|Hızlı kayıt yapılıyor...
+ui_cant_quick_save|Savaş sırasında hızlı kayıt yapılamaz...
+ui_screenshot_taken_to_value|Ekran görüntüsü %s dosyasına kaydedildi.
+ui_screenshot_failed|Ekran görüntüsü alınamıyor.
+ui_value_joined_your_party|%s grubuna katıldı.
+ui_value_joined_party_as_prisoner|%s grubuna esir olarak katıldı.
+ui_value_has_joined_party|%s gruba katıldı.
+ui_value_has_been_taken_prisoner|%s esir olarak alındı.
+ui_value_left_the_party|%s gruptan ayrıldı.
+ui_number_values_left_the_party|%d %s gruptan ayrıldı.
+ui_number_value_left_the_party|%d %s birliği terk etti.
+ui_your_relations_with_value_has_improved_from_number_to_number|%s ile ilişkin %d değerinden %d değerine yükseldi.
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|%s ile ilişkin %d değerinden %d değerine düştü.
+ui_you_lost_value|%s kaybettin.
+ui_lost_item_value|Eşya kaybedildi: %s.
+ui_got_number_value|%d %s elde ettin.
+ui_lost_number_value|%d %s kaybettin.
+ui_set_default_keys|Varsayılan tuşları kullan
+ui_undo_changes|Değişiklikleri geri al
+ui_press_a_key|Bir tuşa basın
+ui_return_to_game|Oyuna Geri Dön
+ui_options|Seçenekler
+ui_save_and_exit|Kaydet ve Çık
+ui_save|Kaydet
+ui_save_as|Farklı Kaydet
+ui_quit_without_saving|Kaydetmeden Çık
+ui_empty_slot|Boş Kutu
+ui_game_saved|Oyun kaydedildi...
+ui_confirm_overwrite| %s üzerine yazılacak. Emin misin?
+ui_dynamic_lighting|Dinamik Işıklandırma
+ui_character_shadows|Karakter Gölgeleri
+ui_grass_density|Çim Yoğunluğu:
+ui_environment_shadows|Ortam Gölgeleri
+ui_realistic_shadows_on_plants|Bitkilerde Gerçekçi Gölgeler:
+ui_particle_systems|Parçacık Sistemi
+ui_gamma|Monitör Gama Ayarı:
+ui_character_detail|Karakter Detayı:
+ui_character_shadow_detail|Karakter Gölgesi Detayı:
+ui_blood_stains|Kan Lekeleri:
+ui_on|Açık
+ui_off|Kapalı
+ui_near_player_only|Yalnızca oyuncu yakınında
+ui_default|Varsayılan
+ui_3d_grass|3 Boyutlu Çim:
+ui_number_of_ragdolls|Kukla Fiziği Sayısı:
+ui_number_of_corpses|Ceset Sayısı:
+ui_unlimited|Limitsiz
+ui_anisotropic_filtering|Anisotropik Filtreleme
+ui_fast_water_reflection|Hızlı Su Yansıması
+ui_maximum_framerate|Azami Frame sayısı:
+ui_show_framerate|Frame sayısını göster:
+ui_estimated_performance|Tahmini Performans: %%%d
+ui_change_graphics_settings_explanation|Yaptığınız bazı değişiklikler yeni bir bölgeye girdiğinizde etkinleşecektir.
+ui_start_tutorial|Başlangıç Eğitimi
+ui_start_a_new_game|Yeni Oyuna Başla
+ui_restore_a_saved_game|Kayıtlı Oyunlar
+ui_exit_to_windows|Çıkış
+ui_credits|Hazırlayanlar
+ui_version_value|v%s
+ui_active_quests|Aktif Görevler
+ui_finished_quests|Bitmiş Görevler
+ui_given_on_date|Veriliş zamanı: %s
+ui_days_since_given|Verildiğinden bu yana geçen gün: %d
+ui_quest_progression_number|Görev ilerleyişi: %d%%
+ui_too_many_quests|Çok fazla görev var
+ui_ok|Tamam
+ui_move_forward|İleri Git
+ui_move_backward|Geri Git
+ui_move_left|Sola Git
+ui_move_right|Sağa Git
+ui_action|Eylem
+ui_jump|Zıpla
+ui_attack|Saldır
+ui_parry_then_attack|Karşı Saldırı
+ui_defend|Savun
+ui_kick|Tekme
+ui_equip_weapon_1|1. Öğeyi Kuşan
+ui_equip_weapon_2|2. Öğeyi Kuşan
+ui_equip_weapon_3|3. Öğeyi Kuşan
+ui_equip_weapon_4|4. Öğeyi Kuşan
+ui_equip_next_weapon|Sonraki Silahı Kuşan
+ui_equip_next_shield|Sonraki Kalkanı Kuşan
+ui_sheath_weapon|Silahı Kınına Koy
+ui_character_window|Karakter Penceresi
+ui_inventory_window|Envanter Penceresi
+ui_party_window|Grup Penceresi
+ui_quests_window|Görevler Penceresi
+ui_game_log_window|Kayıt Defteri Penceresi
+ui_leave_location_retreat|Bölgeden Ayrıl/Geri Çekil
+ui_zoom|Görüntüyü Yakınlaştır/Uzaklaştır
+ui_view_outfit|Teçhizata Bak
+ui_toggle_first_person_view|Birinci Kişi Görüşüne Geç
+ui_view_orders|Emirlere bak
+ui_quick_save|Hızlı Kayıt
+ui_no_key_assigned|Hiçbir tuş atanmadı
+ui_new_enemies_have_arrived|Yeni düşman kuvvetleri geldi.
+ui_reinforcements_have_arrived|Destek kuvvetler yetişti.
+ui_report_casualties|Kayıpları Rapor Et
+ui_report_experience|Tecrübeyi Rapor Et
+ui_current_level_value|Seviye: %d
+ui_base_attribute_value|Öz Nitelik: %s
+ui_battle_controls|Savaş Kontrolleri
+ui_map_controls|Harita Kontrolleri
+ui_general_controls|General Controls
+ui_zoom_in|Yakınlaştır
+ui_zoom_out|Uzaklaştır
+ui_wait|Bekle
+ui_take_screenshot|Ekran Görüntüsü Kaydet
+ui_randomize|Rastgele
+ui_hint|Tüyo
+ui_press_left_mouse_button_to_continue|Devam etmek için farenin sol tuşuna bas...
+ui_loot|Boşalt
+ui_cut_short|k
+ui_pierce_short|d
+ui_blunt_short|b
+ui_battle|Savaş
+ui_siege|Kuşatma
+ui_troops|Birlikler:
+ui_loading_module_info_file|Modül Bilgisi Yükleniyor...
+ui_processing_ini_file|INI Dosyası İşlemede...
+ui_loading_music|Müzik Yükleniyor...
+ui_loading_data|Veriler Aktarılıyor...
+ui_loading_setting_data|Ayarlar Yükleniyor...
+ui_loading_textures|Kaplamalar Yükleniyor...
+ui_finished|Bitti.
+ui_creating_game|Oyun Kuruluyor...
+ui_loading_savegame_file|Kayıtlı Oyun Yükleniyor...
+ui_loading_map_file|Harita Dosyası Yükleniyor...
+ui_initializing_map|Harita Oluşturuluyor...
+ui_launching_game|Oyun Başlatılıyor...
+ui_capital_battle|Savaş:
+ui_capital_versus|--Karşısında--
+ui_tracks|İzler
+ui_battleground|Savaş Meydanı
+ui_order_1|1. Grubu Seç
+ui_order_2|2. Grubu Seç
+ui_order_3|3. Grubu Seç
+ui_order_4|4. Grubu Seç
+ui_order_5|5. Grubu Seç
+ui_order_6|6. Grubu Seç
+ui_order_button_hold_this_position|Bu konumda kal
+ui_order_button_follow_me|Beni izle
+ui_order_button_charge|Hücum
+ui_order_button_stand_ground|Yerini koru
+ui_order_button_retreat|Çekil
+ui_order_button_advance|On adım öne çık
+ui_order_button_fall_back|On adım gerile
+ui_order_button_spread_out|Dağıl
+ui_order_button_stand_closer|Yakın dur
+ui_order_button_mount_horses|Ata bin
+ui_order_button_dismount|Attan in
+ui_order_button_hold_fire|Ateş etme
+ui_order_button_fire_at_will|Atış serbest
+ui_order_button_use_blunt_weapons|Sadece ezici silahlar kullan
+ui_order_button_use_any_weapon|Silahlar serbest
+ui_order_button_movement_orders|Manevra talimatları
+ui_order_button_formation_orders|Dizilim talimatları
+ui_order_button_fire_orders|Ateş etme talimatları
+ui_follow_me_e_|%s, beni takip edin!
+ui_charge_e_|%s, hücum!!!
+ui_stand_ground_e_|%s, olduğun yerde kal!
+ui_retreat_e_|%s, geri çekilin!
+ui_mount_horses_e_|%s, ata binin!
+ui_dismount_e_|%s, attan inin!
+ui_advance_e_|%s, on adım ilerleyin!
+ui_fall_back_e_|%s, on adım geri çekilin!
+ui_stand_closer_e_|%s, yakın durun!
+ui_spread_out_e_|%s, açılın!
+ui_use_blunt_weapons_e_|%s, bayıltıcı silahlar kullanın!
+ui_use_any_weapon_e_|%s, silahlar serbest!
+ui_hold_fire_e_|%s, ateşi kes!
+ui_fire_at_will_e_|%s, atış serbest!
+ui_hold_this_position_e_|%s, bu konumda kalın!
+ui_infantry|Piyade
+ui_archers|Okçu
+ui_cavalry|Süvari
+ui_companions|Yoldaşlar
+ui_everyone_hear_me|Herkes beni dinlesin!
+ui_everyone|Herkes
+ui_everyone_around_me|Yakındaki Askerler
+ui_str_hear_me|%s, beni dinleyin!
+ui_str_and_str|%s ve %s
+ui_str_comma_str|%s, %s
+ui_need_to_learn_prisoner_management|Esir alabilmek için Esir Yönetimi Becerisi sahibi olman gerekiyor.
+ui_game_log|Oyun Kayıtları
+ui_recent_messages|En Son Mesajlar
+ui_custom_battle|Hızlı Savaş
+ui_player|Oyuncu
+ui_value_denars|%d dinar
+ui_back|Geri
+ui_forward|İleri
+ui_display_on_map|Haritada Göster
+ui_info_pages|Oyun Kavramları
+ui_troops2|Karakterler
+ui_locations|Yerler
+ui_click_button_to_view_note|Bilgi için bağlantıya tıkla.
+ui_this_page_contains_no_information|Bu sayfa bilgi içermez
+ui_other_pages_that_link_here|Buraya bağlanan diğer sayfalar: 
+ui_report_is_value_days_old| (Rapor %d günlük.)
+ui_report_is_current| (Rapor güncel)
+ui_button_party_member_healthy_total|%s (%d/%d)
+ui_button_party_member_total|%s (%d)
+ui_button_party_member_hero_percentage_wounded|%s (%d%% - yaralı)
+ui_button_party_member_hero_percentage|%s (%d%%)
+ui_percentage_value|%d%%
+ui_full|Tam
+ui_quick|Hızlı
+ui_none|Hiçbiri
+ui_change|Değiştir
+ui_how_to_change|Nasıl Değiştirilir?
+ui_change_directx_explanation|Çizim metodunu başlangıç ekranındaki Ayarlar düğmesine tıklayarak ulaşacağın ekranda DirectX 7 veya DirectX 9 olarak değiştirebilirsin.
+ui_dropping_picking_up| %s bırakılıyor; %s alınıyor.
+ui_dropping|%s bırakılıyor.
+ui_picking_up| %s alınıyor.
+ui_unable_to_take|Bunu alamazsın.
+ui_age|Yaş
+ui_cannot_be_used_on_horseback|At sırtında kullanılamaz.
+ui_enable_vertex_shaders2|Çizim Metodu:
+ui_screen_size2|Ekran Çözünürlüğü:
+ui_use_desktop_resolution2|Masaüstü Çözünürlüğünü Kullan
+ui_shadow_quality2|Gölge Kalitesi:
+ui_m_low2|Düşük
+ui_m_high2|Yüksek
+ui_m_ultra_high2|Ultra Yüksek
+ui_off2|Kapalı
+ui_group_header|Birlik sınıfı
+ui_group_rename|Grubu Yeniden Adlandır
+ui_group_1|Piyadeler
+ui_group_2|Okçular
+ui_group_3|Süvariler
+ui_group_4|Adsız 1
+ui_group_5|Adsız 2
+ui_group_6|Adsız 3
+ui_group_7|Adsız 4
+ui_group_8|Adsız 5
+ui_group_9|Adsız 6
+ui_group_close|Kapat
+ui_party_b_group_information|%s, %s grubuna ait
+ui_thrown_or_s|Fırlatma/%s
+ui_ranged_damage|Menzilli: %d%s
+ui_overall_quality|Genel Kalite
+ui_shader_quality|Shader Kalitesi:
+ui_flora_lod_detail|Ağaç Detayı:
+ui_flora_degrade_distance|Ağaç Seyrelme Mesafesi:
+ui_antialiasing|Kenar Yumuşatma (Antialiasing):
+ui_use_depth_effects|Derinlik Etkisi Kullan
+ui_hdr_mode|HDR Modu:
+ui_autoexpore|Otomatik Pozlama
+ui_choose_profile|Profil Seç
+ui_create|Yarat
+ui_edit|Düzenle
+ui_join_game|Bir Oyuna Katıl
+ui_host_game|Bir Oyun Başlat
+ui_custom|Özel
+ui_medium|Orta
+ui_male|Erkek
+ui_female|Kadın
+ui_gender|Cinsiyet Seç:
+ui_edit_profile|Profili Düzenle
+ui_new_profile|Profil Yarat
+ui_enter_username|Kullanıcı Adı Girin:
+ui_invalid_username|Kullanıcı adları sadece harf, sayı ve _ - [ ] * ~ karakterlerini içerebilir.
+ui_confirmation|Emin misiniz?
+ui_multiplayer|Çok Oyunculu Oyun
+ui_server_name|Sunucu
+ui_module_name|Modül
+ui_game_type|Oyun Türü
+ui_map_name|Harita
+ui_ping|Ping
+ui_dedicated|Adanmış
+ui_number_of_players|Oyuncular
+ui_password_protected|Şifre
+ui_connect|Bağlan
+ui_local_area_network|Yerel Ağ
+ui_internet|İnternet
+ui_favorites|Favoriler
+ui_source|Kaynak:
+ui_server_password|Sunucu Şifresi:
+ui_refresh|Yenile
+ui_start_search|Aramayı Başlat
+ui_add_to_favorites|Favorilere Ekle
+ui_remove_from_favorites|Favorilerden Kaldır
+ui_use_speedtree|Speedtree Kullan
+ui_use_instancing|Model Kopyalama Kullan
+ui_error|Hata
+ui_error_server_full|Sunucu dolu.
+ui_error_server_full_for_non_private|Sunucuda özel şifresi olmayan kullanıcılar için boş yer yok.
+ui_error_server_password_incorrect|Hatalı şifre.
+ui_error_incorrect_serial|Hatalı seri numarası.
+ui_error_incorrect_authorization_key|Hatalı giriş anahtarı.
+ui_error_banned_from_server|Bu sunucudan atıldınız.
+ui_error_username_taken|Profil adınız başka bir kullanıcı tarafından kullanılıyor.
+ui_error_authentication_failed|Giriş başarısız.
+ui_unable_to_connect_to_server|Sunucuya bağlanılamadı.
+ui_connection_to_server_is_lost|Sunucuyla olan bağlantı kaybedildi.
+ui_switch_to_module_question|Bu sunucu, sizin şu anda kullandığınız modülden farklı bir sürümde çalışıyor. MB Warband'in bu modüle geçmesini ister misiniz?
+ui_download_module_question|Bu sunucu, şu anda sizde kurulu olmayan bir modül ile çalışıyor. Bu modül için indirme sayfasını ziyaret etmek ister misiniz?
+ui_download_mb_new_version_question|Bu sunucu, sizin şu anda çalıştırdığınızdan daha yeni bir sürüme sahip (%d.%d%d%d, sizin sürümünüz: %d.%d%d%d). TaleWorlds indirme sayfasını ziyaret etmek ister misiniz?
+ui_download_mb_old_version_question|Bu sunucu, sizin şu anda çalıştırdığınızdan daha eski bir sürüme sahip (%d.%d%d%d, sizin sürümünüz: %d.%d%d%d).
+ui_download_module_new_version_question|Bu sunucu, kullandığınız modülün daha yeni bir sürümünü çalıştırıyor (%d.%d%d%d, sizin sürümünüz %d.%d%d%d). Bu modül için indirme sayfasını ziyaret etmek ister misiniz?
+ui_download_module_old_version_question|Bu sunucu, kullandığınız modülün daha eski bir sürümünü çalıştırıyor (%d.%d%d%d, sizin sürümünüz %d.%d%d%d).
+ui_authenticating_with_steam|Steam ile giriş yapılıyor...
+ui_validating_serial_number|Seri numarası doğrulanıyor...
+ui_scanning_lan|Yerel Ağ taranıyor...
+ui_retrieving_servers|Sunucu listesi alınıyor...
+ui_shield_size2|Boyut: %dx%d
+ui_click_to_view_notes|Notları görüntülemek için tıklayın
+ui_retrieving_server_infos|Sunuculardan bilgi alınıyor(%d)...
+ui_connecting_to_server|Sunucuya bağlanılıyor...
+ui_requesting_to_join_the_game|Oyuna katılma talebi iletiliyor...
+ui_loading|Yükleniyor...
+ui_group_value_control|Grup %d!
+ui_drop_weapon|Silahı Bırak
+ui_multiplayer_message_all|Herkese İleti Gönder
+ui_multiplayer_message_team|Takıma İleti Gönder
+ui_command_line|Komut Satırı
+ui_use_ranged_weapon_as_melee|Silah Modunu Değiştir
+ui_send_message_all|Herkese İleti Gönder
+ui_send_message_team|Takıma İleti Gönder
+ui_select|Seç
+ui_context_menu|İçerik Menüsü
+ui_round_starts_in_value_seconds|Raund %d saniye içinde başlıyor...
+ui_watching_value|Sıradaki %s
+ui_capital_spec|İZL
+ui_capital_dead|ÖLÜ
+ui_instancing_error1|Model Kopyalama Arabelleği Kilitlenemedi (boyut: %d), Örgü olumlama devre dışı (Hata Kodu: %d)
+ui_instancing_error2|Model kopyalamalı nesneler yerleştirilemedi, Mesh kopyalama devre dışı
+ui_by_keyboard|Hareket tuşlarını kullanarak
+ui_combat_speed_slowest|En yavaş
+ui_combat_speed_slower|Yavaş
+ui_combat_speed_normal|Normal
+ui_combat_speed_faster|Hızlı
+ui_combat_speed_fastest|En hızlı
+ui_module_newer_than_application|Seçtiğiniz modül, oyunun daha yeni bir sürümünü gerektiriyor.
+ui_module_older_than_application|Seçtiğiniz modül, oyunun daha eski bir sürümünü gerektiriyor.
+ui_unbalanced|Dengesiz
+ui_can_crush_through_blocks|Blokla durdurulamayabilir
+ui_turn_camera_with_horse|Birinci Kişi Modundayken kamerayı atla birlikte çevir:
+ui_widescreen_mode_on|Çoklu Ekran Modu Etkin
+ui_widescreen_mode_off|Çoklu Ekran Modu Devre Dışı
+ui_notification_cant_upgrade|(Yükseltme yapılamıyor: yeterli para yok)
+ui_turn_never|Asla
+ui_turn_ranged_only|Sadece menzilli
+ui_turn_melee_only|Sadece kesici
+ui_turn_always|Her Zaman
+ui_general_options|Genel Ayarlar
+ui_kicked_from_server|Sunucudan atıldınız.
+ui_vac_enabled|Valve Anti Cheat Aktif
+ui_campaign_ai|Strateji Yapay Zekası:
+ui_downloading_map|Harita indiriliyor (%d KB)
+ui_download_completed|İndirme işlemi tamamlandı.
+ui_server_filter|Sunucu filtresi
+ui_has_players|Oynayan olsun
+ui_is_not_full|Dolu olmasın
+ui_is_password_free|Şifresiz
+ui_native_only|Sadece native
+ui_ping_limit|Ping limiti
+ui_filter_info|%d oyun ve %d oyuncu filtrelendi
+ui_is_version_compatible|Modülle uyumlu
+ui_ttnet_account|TTNET Oyun Hesabı
+ui_username|Kullanıcı adı:
+ui_password|Şifre:
+ui_error_incorrect_username_or_password|Hatalı kullanıcı adı veya şifre.
+ui_validating_account|Hesap doğrulanıyor...
+ui_plase_enter_your_serial_key|Lütfen seri numaranızı girin
+ui_texture_detail2|Doku Detayı:
+ui_antialiasing2|Antialiasing:
+ui_incompatible_module|This server is incompatible with your current module. You can use the configuration utility to change module.

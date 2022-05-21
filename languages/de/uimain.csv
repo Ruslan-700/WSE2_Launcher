@@ -1,0 +1,104 @@
+lockitver|DO NOT DELETE THIS LINE! 2896
+ui_texture_detail|Texturdetail:
+ui_max_frame_rate|Max. Bildwiederholrate:
+ui_enable_bumpmap|Bump Mapping verwenden
+ui_disable_blood|Blut ausblenden
+ui_disable_music|Musik deaktivieren
+ui_disable_sound|Sound deaktivieren
+ui_enable_cheats|Cheats aktivieren
+ui_enable_edit_mode|Bearbeitungsmodus aktivieren (Achtung, dies verlangsamt das Spiel.)
+ui_enable_pixel_shaders|Pixelshaders verwenden
+ui_enable_sound_variation|Soundvariation aktivieren
+ui_enable_vertex_shaders|Rendermethode:
+ui_shadow_quality|Schattenqualität:
+ui_directx_7|DirectX 7
+ui_directx_9|DirectX 9
+ui_show_framerate|Bildwiederholrate anzeigen
+ui_start_windowed|Im Fenstermodus starten
+ui_trialmode_caption|Aktivierung
+ui_trialmode|Bitte nehmen Sie sich einen Moment Zeit, um Mount&&Blade mit Ihrer individuellen, 16-stelligen Seriennummer zu aktivieren, die Ihrem Spiel beigefügt ist.\nWenn Sie das Spiel noch nicht aktivieren möchten, können Sie es im Testmodus fortsetzen. In diesem Modus können Sie Ihren Charakter jedoch nur bis auf Stufe 8 bringen.
+ui_launch_buy|Erwerben Sie eine Lizenz bei Gamersgate.com
+ui_launch_faq|FAQs zur Aktivierung
+ui_trialmode2|Zur Aktivierung des Spiels müssen Sie ...
+ui_trialmode3|Alternativ können Sie auch ...
+ui_trialmode4|Wenn Sie Fragen zum Aktivierungsvorgang haben, können Sie Folgendes lesen ...
+ui_serial_key_caption|Seriennummer
+ui_notification_serial_input|Geben Sie Ihre Seriennummer unten ein (Sie können sie auch kopieren und einfügen) und klicken Sie auf die Schaltfläche Aktivieren
+ui_activate|Aktivieren
+ui_paste|Einfügen
+ui_notification_serial_internet_connection|Aktivierung erfordert eine aktive Internetverbindung!
+ui_notification_serial_offline|Sollte Ihr Computer keine Internetverbindung haben, haben Sie folgende Alternative:
+ui_manual_activation|Manuelle Aktivierung
+ui_offline_activation|Offline-Aktivierung
+ui_manual_activation_caption|Manuelle Aktivierung
+ui_offline_activation_caption|Offline-Aktivierung
+ui_cancel2|Abbrechen
+ui_close|Schließen
+ui_ok2|OK
+ui_activation_successful|Das Spiel wurde erfolgreich aktiviert.
+ui_activation_successful2|Bitte heben Sie Ihre Seriennummer zur späteren Referenz auf. Wenn Sie Mount&&Blade Warband auf einem anderem Computer installieren möchten, werden Sie sie wieder benötigen.
+ui_activation_denied|Aktivierung verweigert!
+ui_notification_serial_already_used|Die Seriennummer wurde bereits auf einem anderen Computer verwendet. Zur Reaktivierung des Spiels auf diesem Computer müssen Sie ein paar Wochen warten.
+ui_notification_unable_to_connect_to_activation_server|Verbindung zum Aktivierungsserver nicht möglich 
+ui_notification_unable_to_connect_to_activation_server2|Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut. Wenn Sie eine Firewall verwenden, müssen Sie dem Spiel evt. Zugriffsberechtigung auf das Internet gewähren. Notfalls müssen Sie das Spiel manuell aktivieren.
+ui_incorrect_serial_number|Falsche Seriennummer!
+ui_incorrect_hardware_hash|Falscher Hardware-Hash!
+ui_incorrect_activation_code|Falscher Aktivierungscode!
+ui_cant_write_to_registry|Registry-Eintrag nicht möglich!
+ui_video|Video
+ui_audio|Audio
+ui_game|Game
+ui_advanced|Erweitert
+ui_mount_and_blade_is_ready|Mount&&Blade Warband ist bereit.
+ui_notification_trial_mode|Mount&&Blade Warband läuft momentan im Testmodus. In diesem Modus können Sie das Spiel uneingeschränkt spielen, bis Ihr Charakter Stufe 8 erreicht. Kaufen Sie zum Weiterspielen bitte eine Lizenz von taleworlds.com. Der Online-Kauf einer Lizenz und die Freischaltung des Spiels dauert nur eine Minute.
+ui_there_are_no_modules_installed|Keine Module installiert!
+ui_notification_new_version|Eine neuere Version von Mount&Blade Warband wurde gefunden.\nDie derzeit installierte Version ist %d.%d%d%d.\nDie neueste Version von Mount&Blade Warband ist %d.%d%d%d.\nSie können die neue Version von www.taleworlds.com downloaden.
+ui_new_version_found|Neue Version gefunden!
+ui_notification_unable_to_retreive_new_version|Informationen der neuen Version nicht abrufbar. Bitte versuchen Sie es später erneut.
+ui_new_version|Neue Version:
+ui_notification_latest_version|Die installierte Version von Mount&&Blade Warband ist die aktuellste.
+ui_mount_and_blade_is_up_to_date|Mount&Blade Warband ist aktuell!
+ui_off|Aus
+ui_continue_playing_the_trial_mode|Im Testmodus weiterspielen
+ui_faq_caption|FAQ
+ui_faq_text|F: Was ist die Aktivierung?\r\nA: Das Aktivierungssystem ist eine benutzerfreundliche Kopierschutzmethode, die auf der Ausgabe individueller Seriennummern für jedes Spiel beruht. Zum Spielen des Spiels müssen Sie es auf jedem dafür vorgesehenen Computer mit  Hilfe der Seriennummer aktivieren. Nach der Aktivierung müssen Sie zum Spielen lediglich die Spiel-CD im Laufwerk lassen. So lange Sie Ihre Seriennummer aufbewahren, können Sie Ihr Spiel immer wieder auf einfache Art und Weise aktivieren, selbst noch nach vielen Jahren.\r\n\r\nF: Wo finde ich meine Seriennummer?\r\nA: Jeder Einzelhandelsversion des Spiels ist eine individuelle Seriennummer beigefügt. Die Ausgabe der Seriennummern kann sich je nach Verkäufer unterscheiden, doch normalerweise befindet sie sich auf der Druckversion Ihres Handbuchs.\r\n\r\nF: Wie funktioniert der Aktivierungsvorgang?\r\nA: Das Spiel erzeugt anhand der technischen Daten Ihres Computers einen Hash-Wert und sendet diesen dann zusammen mit Ihrer Seriennummer über das Internet an einen Aktivierungsserver. Der Aktivierungsserver registriert die Seriennummer für Ihren Computer und antwortet mit einer Aktivierungsnummer, die wiederum den Vollspielmodus des Spiels freischaltet.\r\n\r\nF: Kann ich das Spiel auf mehreren Computern aktivieren?\r\nA: Ja, das ist möglich. Vergessen Sie jedoch nicht, dass das Spiel auf Sie persönlich lizenziert wurde. Wenn eine Seriennummer innerhalb einer kurzen Zeitspanne auf zu vielen Computern verwendet wird, kann sie vom Aktivierungsserver vorübergehend abgelehnt werden. \r\n\r\nF: Nachdem ich die Aktivierungsschaltfläche betätigt habe, reagiert das Programm nicht mehr. Was ist passiert?\r\nA: Manchmal kann die Durchführung des Aktivierungsvorgangs bis zu einer halben Minute dauern. Bitte gedulden Sie sich, das Spiel wird schließlich das Ergebnis des Aktivierungsvorgangs anzeigen.\r\n\r\nF: Mein Computer hat keinen Zugang zum Internet. Wie kann ich das Spiel trotzdem aktivieren?\r\nA: In diesem Fall müssen Sie das Spiel manuell aktivieren. Klicken Sie dazu auf ""Seriennummer eingeben"" und dann auf “Manuelle Aktivierung”. Dazu müssen Sie jedoch auf einem anderen Computer mit Internetverbindung die Webseite für manuelle Aktivierungen aufrufen.\r\n
+ui_auto_adjust|Autom. Anpassung
+ui_screen_size|Bildschirmauflösung:
+ui_antialiasing|Antialiasing:
+ui_use_desktop_resolution|Desktop-Bildschirmauflösung verwenden
+ui_play|Mount&&Blade Warband spielen
+ui_check_for_new_version|Nach neuer Version suchen
+ui_configure|Konfigurieren
+ui_configure_caption|Konfigurieren
+ui_mountandblade_website|Mount & Blade Warband-Website
+ui_current_setting|           Aktuelles Modul:
+ui_manual_activation_text1|1) Gehen Sie in Ihrem Webbrowser zu folgender Adresse:
+ui_manual_activation_text2|2) Geben Sie in dieser Webseite Ihre Seriennummer ein ...
+ui_manual_activation_text3|3) ... und den Hardware-Hash dieses Computers:
+ui_manual_activation_text4|4) Die Webseite zeigt daraufhin einen Aktivierungscode an. Geben bzw. fügen Sie ihn unten ein und klicken Sie auf OK.
+ui_activation_code|Aktivierungscode:
+ui_force_vsync|Vertical Sync erzwingen
+ui_module_newer_than_application|Das ausgewählte Modul funktioniert NICHT mit der aktuellen Spielversion. Wir raten Ihnen dringend, diese Einstellungen nicht zu verwenden. Zur Behebung dieses Problems können Sie nach einer neueren Spielversion suchen.
+ui_module_older_than_application|Das ausgewählte Modul wurde für eine ältere Spielversion entwickelt und könnte daher nicht kompatibel mit der aktuellen Spielversion sein. Sie können es zwar trotzdem versuchen, doch es besteht die Möglichkeit, dass dies zu Konflikten führen wird. Zur Behebung dieses Problems können Sie nach einer neueren Spielversion suchen.
+ui_m_low|Niedrig
+ui_m_high|Hoch
+ui_m_ultra_high|Sehr hoch
+ui_force_single_threading|Force Single Threading
+ui_not_enough_memory|Sie haben derzeit insgesamt %d MB physischen und virtuellen Speicher zur Verfügung. Mount&Blade Warband benötigt zum problemlosen Spielen mindestens 700 MB Speicherplatz. Sollte Mount&Blade Warband während des Spiels kontinuierlich abstürzen, sollten Sie einige Ihrer Programme vor dem Spielstart schließen oder den virtuellen Speicher über Systemsteuerung -> System erhöhen.
+ui_install|Mount&Blade Warband installieren
+DirectXText|Mount&Blade Warband benötigt DirectX 9.0c oder eine höhere Version. Dieser Computer entspricht dieser Anforderung nicht. Zur Problembehebung müssen Sie die neueste DirectX-Version von Microsofts Webseite downloaden und installieren. Möchten Sie jetzt die DirectX-Downloadseite von TaleWorlds besuchen?
+NoMountAndBladeText|Mount&Blade Warband wurde nicht auf diesem Computer installiert. Bitte downloaden Sie das vollständige Installationsprogramm von www.taleworlds.com und installieren das Spiel damit.
+ui_SavegamesText|Möchten Sie Ihre gespeicherten Spielstände behalten?
+ui_launch_activate|Geben Sie Ihre Seriennummer ein
+ui_trialmode2_online|Nach dem Kauf einer Lizenz erhalten Sie Ihre Seriennummer.\nGehen Sie zum Freischalten des Vollspielmodus zu ...
+ui_trialmode3_online|Wenn Sie das Spiel noch nicht kaufen möchten, können Sie auch ...
+ui_trialmode4_online|Unser Online-Kaufsystem ist absolut sicher und wir respektieren die Rechte unserer Kunden bezüglich ihrer Sicherheit, ihrer Privatsphäre, Sicherheitskopien ihrer Spiele und Upgrades ihrer Computer/Hardware. Wenn Sie mehr über unsere Verkaufspolitik erfahren möchten, klicken Sie bitte auf den folgenden Link:
+ui_ondemand_textures|Texturen nach Bedarf laden
+ui_language|Sprache:
+ui_steam_not_running|Steam konnte nicht korrekt initialisiert werden. Zum Spielen dieses Spiels muss Steam laufen.
+ui_new_version_message|Eine neuere Spielversion ist verfügbar. Möchten Sie jetzt die Downloadseite besuchen?
+ui_enable_version_check|Versionsprüfung aktivieren
+ui_disable|Versionsprüfung deaktivieren
+ui_switch_to_turkish_explanation|Oyunun dilini Turkce'ye cevirmek ister misiniz?
+ui_switch_to_turkish_yes|Evet
+ui_switch_to_turkish_no|Hayir

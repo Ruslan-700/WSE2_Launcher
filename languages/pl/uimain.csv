@@ -1,0 +1,107 @@
+ui_texture_detail|Poziom detali tekstur:
+ui_max_frame_rate|Maks. liczba klatek:
+ui_enable_bumpmap|W³¹cz Bump Mapping
+ui_disable_blood|Ukryj krew
+ui_disable_music|Wy³¹cz muzykê
+ui_disable_sound|Wy³¹cz dŸwiêki
+ui_enable_cheats|W³¹cz oszustwa
+ui_enable_edit_mode|W³¹cz tryb edycji (Uwa¿aj! Ta opcja spowalnia grê)
+ui_enable_pixel_shaders|Wykorzystaj Pixel Shader
+ui_enable_sound_variation|W³¹cz odmianê dŸwiêków
+ui_enable_vertex_shaders|Metoda renderowania:
+ui_shadow_quality|Jakoœæ cieni:
+ui_directx_7|DirectX 7
+ui_directx_9|DirectX 9
+ui_show_framerate|Poka¿ klatki/sek.
+ui_start_windowed|Uruchom w oknie
+ui_trialmode_caption|Aktywacja
+ui_trialmode|Mo¿esz teraz dokonaæ aktywacji gry Mount&&Blade Warband za pomoc¹ swojego klucza seryjnego. Twój unikalny, 16-cyfrowy numer seryjny znajduje siê w pude³ku z gr¹.\nJeœli z jakiegokolwiek powodu nie chcesz aktywowaæ gry, nadal mo¿esz kontynuowaæ zabawê w trybie próbnym, ale Twoja postaæ nie bêdzie mog³a osi¹gn¹æ poziomu wy¿szego ni¿ 8.
+ui_launch_buy|Kup licencjê z TaleWorlds.com
+ui_launch_faq|Sprzeda¿ online - Najczêœciej Zadawane Pytania
+ui_trialmode2|Aby aktywowaæ grê...
+ui_trialmode3|Lub mo¿esz te¿...
+ui_trialmode4|Jeœli masz jakiekolwiek pytania o proces aktywacji, mo¿esz przeczytaæ...
+ui_serial_key_caption|Klucz seryjny
+ui_notification_serial_input|WprowadŸ poni¿ej swój numer seryjny (mo¿esz go skopiowaæ i wkleiæ) i kliknij przycisk Aktywuj
+ui_activate|Aktywuj
+ui_paste|Wklej
+ui_notification_serial_internet_connection|Aktywacja wymaga aktywnego po³¹czenia z Internetem!
+ui_notification_serial_offline|Jeœli komputer nie ma dostêpu do Internetu, mo¿esz równie¿ u¿yæ:
+ui_manual_activation|Aktywacja rêczna
+ui_offline_activation|Aktywacja offline
+ui_manual_activation_caption|Aktywacja rêczna
+ui_offline_activation_caption|Aktywacja offline
+ui_cancel2|Anuluj
+ui_close|Zamknij
+ui_ok2|OK
+ui_activation_successful|Aktywacja zakoñczona powodzeniem!
+ui_activation_successful2|Zachowaj swój klucz seryjny. Mo¿esz go potrzebowaæ w przysz³oœci do zainstalowania gry Mount&&Blade Warband na nowym komputerze.
+ui_activation_denied|Odmowa aktywacji!
+ui_notification_serial_already_used|Numer seryjny zosta³ ju¿ u¿yty na innym komputerze. Musisz odczekaæ kilka tygodni, aby ponownie aktywowaæ na tym komputerze.
+ui_notification_unable_to_connect_to_activation_server|Nie mo¿na po³¹czyæ siê z serwerem aktywacji!
+ui_notification_unable_to_connect_to_activation_server2|Nie mo¿na siê po³¹czyæ z serwerem aktywacji! Upewnij siê, czy twoje po³¹czenie z Internetem jest aktywne i dzia³a prawid³owo, a nastêpnie spróbuj ponownie.
+ui_incorrect_serial_number|Nieprawid³owy numer seryjny!
+ui_incorrect_hardware_hash|Nieprawid³owy identyfikator komputera!
+ui_incorrect_activation_code|Nieprawid³owy kod aktywacyjny!
+ui_cant_write_to_registry|Nie mo¿na zapisaæ w rejestrze!
+ui_video|Grafika
+ui_audio|DŸwiêk
+ui_game|Gra
+ui_advanced|Zaawansowane
+ui_mount_and_blade_is_ready|Gra Mount&&Blade Warband jest gotowa.
+ui_notification_trial_mode|Mount&&Blade Warband pracuje aktualnie w trybie próbnym. W tym trybie mo¿esz swobodnie graæ, dopóki Twoja postaæ nie osi¹gnie 6. poziomu. Aby graæ dalej, kup licencjê na taleworlds.com. Zakup licencji i odblokowanie pe³nego trybu trwa tylko chwilê.
+ui_there_are_no_modules_installed|Nie zainstalowano ¿adnych modu³ów!
+ui_notification_new_version|Dostêpna jest nowsza wersja gry Mount&Blade Warband.\nObecnie zainstalowana jest wersja %d.%d%d%d.\nNajnowsza wersja Mount&Blade Warband to %d.%d%d%d.\nNow¹ wersjê mo¿esz pobraæ z witryny www.taleworlds.com.
+ui_new_version_found|Dostêpna jest nowa wersja!
+ui_notification_unable_to_retreive_new_version|Nie mo¿na uzyskaæ informacji o nowej wersji. Proszê spróbowaæ póŸniej.
+ui_new_version|Nowa wersja:
+ui_notification_latest_version|Zainstalowana jest najnowsza wersja gry Mount&&Blade Warband.
+ui_mount_and_blade_is_up_to_date|Gra Mount&Blade Warband jest w aktualnej wersji!
+ui_off|Wy³¹cz
+ui_continue_playing_the_trial_mode|Kontynuuj grê w Trybie Próbnym
+ui_faq_caption|FAQ
+ui_faq_text|Q: Czym jest aktywacja?\r\nA: System aktywacyjny jest przyjaznym u¿ytkownikowi sposobem ochrony przed kopiowaniem, polegaj¹cym na dystrybucji unikalnego klucza seryjnego, razem z oryginaln¹ wersj¹ gry. Gra musi zostaæ aktywowana, za pomoc¹ tego klucza, na ka¿dym komputerze, na którym bêdzie uruchamiana. Po aktywacji, wystarczy tylko trzymaæ dysk z gr¹ w napêdzie. Klucz seryjny mo¿na wykorzystywaæ do aktywacji nawet po up³ywie kilku lat.\r\n\r\nQ: Gdzie mogê znaleŸæ swój klucz seryjny?\r\nA: Ka¿de oryginalne pude³ko z gr¹ zawiera unikalny klucz seryjny. Zwykle jest on naklejany na ok³adkê drukowanej wersji instrukcji. Jeœli zakupi³eœ grê przez internet, klucz seryjny powinien byæ dostarczony t¹ sam¹ drog¹\r\n\r\nQ: Jak dzia³a proces aktywacji?\r\nA: Gra tworzy pewn¹ sumê kontroln¹ na podstawie specyfikacji danego komputera i przesy³a j¹ do serwera aktywacyjnego razem z kluczem seryjnym. Serwer aktywacyjny przypisuje klucz seryjny do danego komputera i tworzy numer aktywacyjny, który odblokowuje pe³ny tryb gry.\r\n\r\nQ: Czy mo¿na aktywowaæ grê na wielu komputerach?\r\nA: Mo¿na, ale nale¿y pamiêtaæ, ¿e gra jest licencjonowana tylko na Twój osobisty u¿ytek. Serwer aktywacyjny mo¿e czasowo odrzuciæ klucz seryjny, jeœli jest on u¿ywany w zbyt krótkim okresie czasu na zbyt wielu komputerach.\r\n\r\nQ: Program nie odpowiada, po klikniêciu na przycisk aktywacji.\r\nA: B¹dŸ cierpliwy, czasami proces aktywacji mo¿e trwaæ nawet 30 sekund.\r\n\r\nQ: Mój komputer nie ma dostêpu do internetu. Jak mogê aktywowaæ grê?\r\nA: W tym przypadku mo¿na u¿yæ aktywacji rêcznej. Wystarczy klikn¹æ na przycisk 'Podaj swój klucz seryjny', a póŸniej na 'Aktywacja rêczna'. Nale¿y pamiêtaæ, ¿e i tak bêdzie trzeba otworzyæ stronê www aktywacji rêcznej, za pomoc¹ innego komputera pod³¹czonego do internetu.\r\n
+ui_auto_adjust|Autoregulacja
+ui_screen_size|Rozdzielczoœæ ekranu:
+ui_antialiasing|Antyaliasing:
+ui_use_desktop_resolution|U¿yj rozdzielczoœci pulpitu
+ui_play|Graj w Mount&&Blade Warband
+ui_check_for_new_version|SprawdŸ dostêpnoœæ nowej wersji
+ui_configure|Konfiguracja gry
+ui_configure_caption|Konfiguracja gry
+ui_mountandblade_website|Oficjalna strona Mount & Blade Warband
+ui_current_setting|           Aktualny modu³:
+ui_manual_activation_text1|1) Otwórz w przegl¹darce nastêpuj¹cy adres:
+ui_manual_activation_text2|2) Na otwartej stronie wpisz swój numer seryjny...
+ui_manual_activation_text3|3) ...oraz identyfikator tego komputera:
+ui_manual_activation_text4|4) Na stronie pojawi siê wówczas kod aktywacyjny. Wpisz go lub wklej poni¿ej i kliknij OK.
+ui_activation_code|Kod aktywacyjny:
+ui_force_vsync|Wymuœ synchronizacjê pionow¹
+ui_module_newer_than_application|Wybrany modu³ NIE PRACUJE z obecn¹ wersj¹ gry. Zaleca siê nie korzystaæ z tego ustawienia. Aby rozwi¹zaæ problem, sprawdŸ dostêpnoœæ nowszej wersji gry.
+ui_module_older_than_application|Wybrany modu³ zosta³ przygotowany dla wczeœniejszej wersji gry i mo¿e nie pracowaæ z aktualn¹ wersj¹. Mo¿esz kontynuowaæ i wypróbowaæ modu³, lecz istnieje mo¿liwoœæ wyst¹pienia problemów. Aby rozwi¹zaæ problem, sprawdŸ dostêpnoœæ nowszej wersji gry.
+ui_m_low|Niska
+ui_m_high|Wysoka
+ui_m_ultra_high|Bardzo wysoka
+ui_force_single_threading|Wymuœ jednow¹tkowoœæ
+ui_not_enough_memory|Dysponujesz obecnie %d MB dostêpnej fizycznej i wirtualnej pamiêci. Gra Mount&Blade Warband wymaga przynajmniej 700 MB dostêpnej pamiêci, aby dzia³aæ bez problemów. Jeœli podczas zabawy Mount&Blade Warband regularnie siê zawiesza, zamknij czêœæ dzia³aj¹cych programów przed uruchomieniem gry lub zwiêksz iloœæ pamiêci wirtualnej w Panelu sterowania -> menu System.
+ui_install|Zainstaluj Mount&Blade Warband
+DirectXText|Mount&Blade Warband wymaga do uruchomienia programu DirectX 9.0c lub nowszego. Ten komputer nie spe³nia tego wymagania. Aby naprawiæ ten problem, œci¹gnij i zainstaluj najnowsz¹ wersjê DirectX ze strony Microsoftu. Czy chcesz wejœæ teraz na stronê TaleWorlds, aby œci¹gn¹æ DirectX?
+NoMountAndBladeText|Mount&Blade Warband nie zosta³ zainstalowany na tym komputerze. Œci¹gnij pe³n¹ wersjê instalatora ze strony www.taleworlds.com i u¿yj go, aby zainstalowaæ grê.
+ui_SavegamesText|Czy chcesz zachowaæ swoje zapisane stany gry?
+ui_trialmode_online|Mount&&Blade Warband pracuje aktualnie w trybie próbnym. W tym trybie mo¿esz swobodnie graæ, dopóki Twoja postaæ nie osi¹gnie 7. poziomu. Aby graæ dalej, musisz podaæ klucz seryjny i aktywowaæ grê. Jeœli kupi³eœ ju¿ grê, wpisz swój klucz seryjny teraz. Jeœli nie, zakupu mo¿esz ³atwo dokonaæ na stronie Taleworlds.com. Zakup licencji i odblokowanie pe³nego trybu trwa tylko chwilê.
+ui_launch_activate|WprowadŸ swój numer seryjny
+ui_trialmode2_online|Po zakupieniu licencji, otrzymasz klucz seryjny.\nAby odblokowaæ pe³n¹ wersjê gry przejdŸ po prostu do...
+ui_trialmode3_online|Lub, jeœli nie chcesz jeszcze kupowaæ gry, mo¿esz tak¿e...
+ui_trialmode4_online|Nasz proces zakupów online jest w pe³ni bezpieczny, a nasz personel szanuje prawa klientów do prywatnoœci, tworzenia kopii zapasowych swoich egzemplarzy gry i ulepszania swojego oprogramowania/sprzêtu.Jeœli chcesz dowiedzieæ siê czegoœ wiêcej o tej polityce, zobacz:
+ui_ondemand_textures|Wczytaj tekstury na ¿¹danie
+ui_language|Jêzyk:
+ui_steam_not_running|Nie mo¿na zainicjowaæ Steam. Steam musi byæ w³¹czony, by graæ w tê grê.
+ui_switch_to_turkish_explanation|Czy chcesz zmieniæ jêzyk gry na turecki?
+ui_switch_to_turkish_yes|Tak
+ui_switch_to_turkish_no|Nie
+ui_new_version_message|Nowsza wersja gry jest ju¿ dostêpna. Czy chcesz teraz przejœæ na stronê, z której mo¿na j¹ pobieraæ?
+ui_enable_version_check|W³¹cz sprawdzanie wersji
+ui_disable|Wy³¹czono
+ui_yes2|Tak
+ui_no2|Nie
+ui_new_version_message2|Dostêpna jest nowsza wersja gry. OdwiedŸ portal, przez który zosta³a zakupiona gra, aby pobraæ najnowsz¹ wersjê.

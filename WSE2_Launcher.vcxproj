@@ -85,13 +85,17 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PreprocessorDefinitions>SFML_STATIC;TGUI_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\src\sfml\SFML-2.5.1\include\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\src\vcpkg\installed\x86-windows-static\debug\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-window-s-d.lib;sfml-system-s-d.lib;opengl32.lib;winmm.lib;gdi32.lib;sfml-graphics-s-d.lib;freetyped.lib;brotlidec-static.lib;bz2d.lib;zlibd.lib;libpng16d.lib;brotlicommon-static.lib;tgui-s-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -150,20 +154,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Button_Launch_onClick.cpp" />
-    <ClCompile Include="Button_Options_onClick.cpp" />
+    <ClCompile Include="Engine_Buttons.cpp" />
+    <ClCompile Include="Engine_Initialize_Main.cpp" />
+    <ClCompile Include="Engine_Initialize_Options.cpp" />
     <ClCompile Include="Engine_Interact.cpp" />
     <ClCompile Include="Engine_RefreshModulesList.cpp" />
     <ClCompile Include="Engine_Start.cpp" />
-    <ClCompile Include="Engine_Initialize.cpp" />
+    <ClCompile Include="Engine.cpp" />
     <ClCompile Include="Engine_Runtime.cpp" />
     <ClCompile Include="Engine_Options.cpp" />
     <ClCompile Include="Start.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine.h" />
+    <ClInclude Include="Fonts.h" />
     <ClInclude Include="Global.h" />
-    <ClInclude Include="Image_Options.h" />
+    <ClInclude Include="Images.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

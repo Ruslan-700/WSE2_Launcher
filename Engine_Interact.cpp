@@ -6,7 +6,7 @@ void Class_Engine::Interact_Main()
 	while (Window_Main->pollEvent(event))
 	{
 		if (event.type == sf::Event::Closed) Window_Main->close();
-		bool L_InteractionResult = GUI_Main.handleEvent(event);
+		bool InteractionResult = GUI_Main.handleEvent(event);
 	}
 }
 void Class_Engine::Interact_Options()
@@ -15,6 +15,6 @@ void Class_Engine::Interact_Options()
 	while (Window_Options->pollEvent(event))
 	{
 		if (event.type == sf::Event::Closed) Window_Options->close();
-		bool L_InteractionResult = GUI_Options.handleEvent(event);
+		bool InteractionResult = GUI_Options.handleEvent(event);
 	}
 }

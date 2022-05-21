@@ -1,0 +1,779 @@
+﻿
+ui_music_volume|音 樂 音 量 ： 
+ui_sound_volume|聲 效 音 量 ： 
+ui_mouse_sensitivity|鼠 標 靈 敏 度 ： 
+ui_invert_mouse_y_axis|反 轉 鼠 標 Y軸 
+ui_enabled|已 使 用 
+ui_disabled|已 禁 用 
+ui_damage_to_player|玩 家 受 到 的 傷 害 ： 
+ui_reduced_to_1_over_4_easiest|減 少 到 1/4（ 最 簡 單 ） 
+ui_reduced_to_1_over_2_easy|減 少 到 1/2（ 簡 單 ） 
+ui_damage_to_friends|友 軍 受 到 的 傷 害 ： 
+ui_reduced_to_1_over_2_easiest|減 少 到 1/2（ 最 簡 單 ） 
+ui_reduced_to_3_over_4_easy|減 少 到 3/4（ 簡 單 ） 
+ui_normal|正 常 
+ui_combat_ai|戰 斗 AI： 
+ui_combat_speed|戰 斗 速 度 ： 
+ui_good|好 
+ui_average_caps|一 般 
+ui_poor|差 
+ui_faster|加 快 
+ui_slower|減 慢 
+ui_control_block_direction|控 制 格 擋 方 向 ： 
+ui_automatic_recommended|自 動 
+ui_manual_easy|手 動 （ 簡 單 ） 
+ui_manual_hard|手 動 （ 困 難 ） 
+ui_by_mouse_movement|根 據 鼠 標 運 動 方 向 
+ui_control_attack_direction|控 制 進 攻 方 向 ： 
+ui_lance_control|騎 槍 控 制 ： 
+ui_by_relative_enemy_position|根 據 敵 人 的 相 對 位 置 
+ui_by_inverse_mouse_movement|根 據 鼠 標 運 動 的 反 方 向 
+ui_battle_size|戰 斗 規 模 ： 
+ui_show_attack_direction|顯 示 進 攻 方 向 
+ui_show_targeting_reticule|顯 示 瞄 准 星 
+ui_show_names_of_friendly_troops|顯 示 友 軍 和 部 下 頭 上 的 旗 幟 
+ui_report_damage|報 告 傷 害 值 
+ui_report_shot_difficulty|報 告 射 擊 難 度 
+ui_difficulty_rating_percentage|難 度 等 級 = %d%%
+ui_controls|按 鍵 設 置 
+ui_video_options|顯 示 選 項 
+ui_done|完 成 
+ui_factions|陣 營 
+ui_item_itemname|物 品 - %s
+ui_prop_propname|屬 性 - %s
+ui_unknown_unknownname|未 知 - %s
+ui_entry_point_entrypointname|入 口 %d
+ui_passage_menu_item_passagename|通 道 （ 菜 單 欄 %d） 
+ui_plant_plantname|植 物 - %s
+ui_export_file_for_character_playername_already_exists_overwrite_it|玩 家 %s的 導 出 文 件 已 經 存 在 ， 是 否 覆 蓋 ？ 
+ui_yes|是 
+ui_no|否 
+ui_set_save_file_name|為 這 個 存 檔 起 個 名 字 ： 
+ui_enter_new_name|鍵 入 新 名 字 ： 
+ui_export_character|導 出 玩 家 角 色 
+ui_import_character|導 入 玩 家 角 色 
+ui_character_playername_exported_successfully|成 功 導 出 玩 家 角 色 %s。 
+ui_character_playername_imported_successfully|成 功 導 入 玩 家 角 色 %s。 
+ui_unable_to_open_import_file|無 法 導 入 玩 家 文 件 。 
+ui_are_you_sure_you_want_to_import_the_character|你 確 定 想 要 導 入 這 個 角 色 ？ 
+ui_unable_to_find_character_import_file|找 不 到 玩 家 導 入 文 件 。 
+ui_mount_and_blade_is_running_in_trial_mode_please_buy_the_game_for_importing_a_character|Mount ＆ Blade現 在 運 行 在 試 玩 模 式 ， 請 購 買 游 戲 後 再 導 入 。 
+ui_change_skin|皮 膚 
+ui_change_hair|發 型 
+ui_change_hair_color|發 色 
+ui_change_beard|胡 子 
+ui_tutorial|教 程 
+ui_tutorial_face_generator|用 這 些 按 鈕 和 滑 動 條 來 調 整 臉 形 。 在 圖 上 拖 動 鼠 標 可 以 轉 動 頭 部 。 
+ui_restore|載 入 
+ui_cancel|取 消 
+ui_delete|刪 除 
+ui_confirm_delete_game|你 確 定 你 想 要 刪 除 這 個 進 度 嗎 ？ 
+ui_error_removing_file|刪 除 文 件 時 出 錯 … … 
+ui_day_datedisplay|第 %d天 （ %d： %d%d） 
+ui_reset_changes|重 置 
+ui_weapon_proficiencies|武 器 熟 練 度 
+ui_skills|技 能 
+ui_attributes|屬 性 
+ui_enter_name_here|*在 這 裡 輸 入 名 字 * 
+ui_edit_face|修 改 容 貌 
+ui_statistics|統 計 
+ui_next|下 一 頁 
+ui_prev|上 一 頁 
+ui_learn|學 習 
+ui_question_saving_policy|請 選 擇 游 戲 的 存 盤 策 略 ： 
+ui_saving_policy_realistic|直 面 人 生 ！ 不 存 盤 就 不 能 退 出 ！ 
+ui_saving_policy_nonrealistic|允 許 我 不 存 盤 就 退 出 。 
+ui_tutorial_character_generation|現 在 輸 入 你 的 名 字 ， 分 配 你 的 屬 性 ， 技 能 和 武 器 點 數 。 點 取 某 一 項 的 名 稱 獲 知 具 體 信 息 。 
+ui_str|力 
+ui_agi|敏 
+ui_int|智 
+ui_cha|魅 
+ui_at_learning_limit|（ 達 到 學 習 限 度 ） 
+ui_not_enough_skill_points_to_learn|（ 沒 有 足 夠 的 技 能 點 ） 
+ui_strength|力 量 
+ui_agility|敏 捷 
+ui_intelligence|智 力 
+ui_charisma|魅 力 
+ui_not_enough_attributetype_to_learn_this_skill|（ 沒 有 足 夠 的 %s來 學 習 這 項 技 能 ） 
+ui_explanation_one_handed_weapon|單 手 格 斗 武 器 ， 如 劍 ， 單 手 斧 ， 鈍 器 。 
+ui_explanation_two_handed_weapon|雙 手 格 斗 武 器 ， 如 雙 手 劍 ， 長 斧 ， 錘 。 
+ui_explanation_polearm|長 桿 武 器 ， 如 短 槍 ， 長 槍 ， 棍 棒 等 。 
+ui_explanation_archery|弓 。 
+ui_explanation_crossbow|弩 。 
+ui_explanation_throwing|投 擲 武 器 ， 如 標 槍 ， 飛 鏢 ， 投 石 器 等 。 
+ui_explanation_firearms|火 器 ， 如 手 銃 ， 毛 瑟 槍 。 
+ui_explanation_strength|力 量 ： 每 點 增 加 1點 生 命 。 下 列 技 能 不 能 超 過 力 量 的 1/3： 鐵 骨 ， 強 擊 ， 強 擲 ， 強 弓 。 
+ui_explanation_agility|敏 捷 ： 每 一 點 增 加 5點 武 器 熟 練 度 ， 並 且 略 微 提 高 移 動 速 度 。 下 列 技 能 不 能 超 過 敏 捷 的 1/3： 盾 防 ， 跑 動 ， 武 器 掌 握 ， 騎 術 ， 騎 射 ， 掠 奪 。 
+ui_explanation_intelligence|智 力 ： 每 點 智 力 增 加 額 外 1點 技 能 點 。 下 列 技 能 不 能 超 過 智 力 的 1/3： 教 練 ， 跟 蹤 ， 戰 術 ， 向 導 ， 偵 察 ， 等 等 。 
+ui_explanation_charisma|魅 力 ： 每 點 增 加 部 隊 上 限 1人 。 下 列 技 能 不 能 超 過 魅 力 的 1/3： 統 御 ， 俘 虜 管 理 ， 交 易 。 
+ui_level|等 級 ： %d
+ui_xp|經 驗 值 ： %d
+ui_next_level_at|升 級 所 需 經 驗 值 ： %d
+ui_health_player|生 命 值 ： %d/%d
+ui_health|生 命 值 ： %d
+ui_attribute_points|屬 性 點 ： %d
+ui_skill_points|技 能 點 ： %d
+ui_weapon_points|武 器 點 ： %d
+ui_mission_losses_none|無 。 
+ui_mission_losses_wounded|受 傷 ： 
+ui_mission_losses_killed|死 亡 ： 
+ui_party_losses|%s ： %d人 受 傷 ---%d人 死 於 %d。 
+ui_casualties_sustained|傷 亡 狀 況 ： 
+ui_advantage_change|優 勢 改 變 = %c%d
+ui_overall_battle_casualties|戰 斗 傷 亡 ： 
+ui_advantage_outnumbered|你 被 潮 水 般 的 敵 人 包 圍 了 。 
+ui_advantage_major_disadvantage|情 況 對 你 不 利 。 
+ui_advantage_slight_disadvantage|你 略 處 於 劣 勢 。 
+ui_advantage_balanced|雙 方 勢 均 力 敵 。 
+ui_advantage_fair_advantage|你 掌 握 了 優 勢 。 
+ui_advantage_greatly_favored|你 掌 握 絕 對 優 勢 。 
+ui_tactical_advantage|戰 術 優 勢 ： %d（ %s） 
+ui_order_group|命 令 部 隊 ： 
+ui_question_save_changes|你 改 變 了 某 些 對 象 ， 你 想 保 存 這 些 改 變 嗎 ？ 
+ui_yes_save|是 的 ， 保 存 
+ui_no_discard_changes|不 ， 放 棄 改 變 
+ui_everyone_control|所 有 人 聽 令 ！ 
+ui_everyone_around_control|附 近 兵 士 聽 令 ！ 
+ui_others_control|其 他 人 聽 令 ！ 
+ui_question_give_up_fight|放 棄 戰 斗 ？ 
+ui_give_up|放 棄 
+ui_keep_fighting|繼 續 戰 斗 
+ui_question_leave_area|離 開 
+ui_cant_retreat_there_are_enemies_nearby|不 能 撤 退 ， 附 近 有 敵 人 ！ 
+ui_question_retreat_battle|要 撤 退 嗎 ？ 
+ui_retreated_battle|%s被 擊 潰 了 。 
+ui_retreated_battle|%s從 戰 場 上 逃 走 了 。 
+ui_retreat|撤 退 
+ui_talk|交 談 
+ui_duel|決 斗 
+ui_mount|上 馬 
+ui_riding_skill_not_adequate_to_mount|（ 你 的 騎 術 不 夠 ） 
+ui_dismount|下 馬 
+ui_exit|離 開 
+ui_door_to|通 往 
+ui_open|打 開 
+ui_equip|裝 備 
+ui_baggage|行 李 
+ui_access_inventory|打 開 物 品 欄 
+ui_chest|箱 子 
+ui_passage|通 道 
+ui_go|前 往 
+ui_retreat_battle|撤 退 
+ui_leave_area|離 開 
+ui_reports|報 告 
+ui_camp|扎 營 
+ui_terrain|地 形 
+ui_quests|記 錄 
+ui_inventory|物 品 
+ui_character|角 色 
+ui_party|部 隊 
+ui_paused|已 暫 停 
+ui_click_left_button_to_cancel_wait|等 待 … … （ 點 左 鍵 返 回 ） 
+ui_midnight|午 夜 
+ui_late_night|深 夜 
+ui_dawn|黎 明 
+ui_early_morning|清 晨 
+ui_morning|上 午 
+ui_noon|中 午 
+ui_afternoon|午 後 
+ui_late_afternoon|下 午 
+ui_dusk|黃 昏 
+ui_evening|夜 晚 
+ui_midnight|午 夜 
+ui_level_limit_reached|已 到 達 等 級 限 制 ！ 
+ui_explanation_level_limit|冒 險 者 ， Mount ＆ Blade在 試 玩 模 式 中 只 能 玩 到 第 8級 。 如 果 你 喜 歡 這 個 游 戲 的 話 ， 可 以 從 網 上 購 買 一 個 使 用 許 可 。 在 線 購 買 使 用 許 可 是 十 分 方 便 的 。 然 後 你 就 可 以 繼 續 玩 下 去 了 。 現 在 Mount ＆ Blade會 存 盤 然 後 退 出 。 
+ui_time_limit_reached|已 到 達 時 間 限 制 ！ 
+ui_explanation_time_limit|冒 險 者 ， Mount ＆ Blade在 試 玩 模 式 中 只 能 玩 到 第 30天 。 如 果 你 喜 歡 這 個 游 戲 的 話 ， 可 以 從 網 上 購 買 一 個 使 用 許 可 。 在 線 購 買 使 用 許 可 是 十 分 方 便 的 。 然 後 你 就 可 以 繼 續 玩 下 去 了 。 現 在 Mount ＆ Blade會 存 盤 然 後 退 出 。 
+ui_target_lost|丟 失 目 標 
+ui_waiting|等 待 中 。 
+ui_travelling_to|前 往 
+ui_following|跟 隨 
+ui_accompanying|伴 隨 
+ui_running_from|逃 離 
+ui_patrolling|巡 邏 中 
+ui_patrolling_around|巡 邏 於 
+ui_holding|駐 扎 中 
+ui_travelling|移 動 中 
+ui_fighting_against|對 戰 
+ui_speed_equals|速 度 = %2.1f 
+ui_defenders|駐 軍 ： 
+ui_prisoners|俘 虜 ： 
+ui_1_hour|1小 時 
+ui_n_hours|%d小 時 
+ui_between_hours|%d-%d小 時 
+ui_combatants|戰 斗 人 數 ： %d
+ui_party_size|部 隊 人 數 ： %d
+ui_party_size_between|部 隊 人 數 ： %d-%d
+ui_merchant|商 人 
+ui_return|返 回 
+ui_no_cost|免 費 
+ui_rename|重 命 名 
+ui_use|使 用 
+ui_destroy|摧 毀 
+ui_destructible_target|摧 毀 目 標 
+ui_tutorial_inventory|這 是 交 易 窗 口 ， 按 住 Ctrl鍵 點 取 物 品 可 以 快 速 購 買 /出 售 。 
+ui_head_armor|頭 部 護 甲 ： %d
+ui_body_armor|身 體 護 甲 ： %d
+ui_leg_armor|腿 部 護 甲 ： %d
+ui_encumbrance|累 贅 度 ： %2.1f 
+ui_you_dont_have_value|你 沒 有 %s。 
+ui_merchant_cant_afford_value|%s ： 我 付 不 起 %s那 麼 多 ， 我 只 有 %s。 
+ui_merchant_pay_whatever|好 吧 ， 你 有 多 少 就 付 多 少 。 
+ui_merchant_think_of_something_else|嗯 ， 讓 我 想 想 別 的 。 
+ui_dumping_value_items|%d件 物 品 將 永 久 消 失 ， 你 確 定 要 繼 續 嗎 ？ 
+ui_dumping_value_item|1 件 物 品 將 永 久 消 失 ， 你 確 定 要 繼 續 嗎 ？ 
+ui_question_slaughter_food_and_eat|屠 宰 這 個 %s作 為 食 品 ？ 
+ui_money_value|錢 ： %s
+ui_dump|丟 棄 
+ui_outfit|服 裝 
+ui_arms|武 器 
+ui_horse|馬 匹 
+ui_food|食 物 
+ui_reclaim_your_sold_goods|購 買 物 品 前 ， 先 收 回 賣 掉 的 同 類 物 品 ！ 
+ui_return_your_bought_goods|出 售 物 品 前 ， 先 退 回 買 走 的 同 類 物 品 ！ 
+ui_polearm_no_shield|長 桿 （ 不 能 配 盾 ） 
+ui_polearm|長 桿 
+ui_two_handed|雙 手 
+ui_two_handed_one_handed|雙 手 /單 手 
+ui_one_handed|單 手 
+ui_return_price|退 回 價 格 ： %d
+ui_sell_price|出 售 價 格 ： %d
+ui_reclaim_price|收 回 價 格 ： %d
+ui_buying_price|購 買 價 格 ： %d
+ui_default_item|默 認 裝 備 
+ui_buying_price_free|免 費 
+ui_weight|重 量 ： %2.1f 
+ui_plus_value_to_head_armor|+%d頭 部 護 甲 
+ui_plus_value_to_body_armor|+%d身 體 護 甲 
+ui_plus_value_to_leg_armor|+%d腿 部 護 甲 
+ui_swing|揮 砍 ： %d%s
+ui_damage|傷 害 ： %d%s
+ui_thrust|穿 刺 ： %d%s
+ui_accuracy|精 度 ： %d
+ui_speed_rating|速 度 ： %d
+ui_value_to_damage|%c%d點 傷 害 
+ui_value_to_morale|+%1.1f部 隊 士 氣 
+ui_resistance|抗 擊 ： %d
+ui_size|尺 寸 ： %d
+ui_weapon_reach|攻 擊 范 圍 ： %d
+ui_armor|護 甲 ： %d
+ui_speed|速 度 ： %d
+ui_maneuver|操 縱 ： %d
+ui_charge|沖 撞 ： %d
+ui_hit_points|生 命 ： %d/%d
+ui_requires_value_difficulty|需 要 %s ： %d
+ui_bonus_against_shields|對 盾 加 成 
+ui_cant_be_used_to_block|不 能 用 來 格 擋 
+ui_troop_cant_use_item|%s ： 我 無 法 使 用 這 個 ！ 
+ui_notification_riding_skill_not_enough|騎 術 太 低 ， 不 能 騎 這 匹 馬 。 
+ui_notification_requirements_not_met|技 能 或 屬 性 值 太 低 ， 不 能 使 用 此 武 器 。 
+ui_notification_payment_value|你 必 須 支 付 %s
+ui_notification_payment_receive_value|你 將 獲 得 %s
+ui_one_handed_weapons|單 手 武 器 
+ui_two_handed_weapons|雙 手 武 器 
+ui_polearms|長 桿 武 器 
+ui_archery|弓 箭 
+ui_crossbows|弩 
+ui_throwing|投 擲 
+ui_firearms|火 器 
+ui_reset|重 設 
+ui_release_one|釋 放 一 個 
+ui_move_up|上 移 
+ui_move_down|下 移 
+ui_upgrade_one|升 級 一 個 
+ui_party_skills|部 隊 技 能 
+ui_morale|士 氣 ： %s
+ui_terrible|極 差 
+ui_very_low|很 低 
+ui_low|較 低 
+ui_below_average|稍 低 
+ui_average|一 般 
+ui_above_average|稍 好 
+ui_high|較 高 
+ui_very_high|很 高 
+ui_excellent|極 好 
+ui_starving|沒 吃 的 了 ！ %d%%
+ui_weekly_cost_value|每 周 花 費 ： %s
+ui_company|同 伴 ： %d/%d
+ui_prisoners_equal_value|俘 虜 ： %d/%d
+ui_choose_prisoners|選 擇 俘 虜 
+ui_choose_companions|選 擇 同 伴 
+ui_rescued_prisoners|獲 救 的 俘 虜 
+ui_captured_enemies|俘 獲 的 敵 人 
+ui_disband|解 散 
+ui_take_prisoner|抓 俘 虜 
+ui_take_back|取 回 
+ui_give|給 出 
+ui_take|取 回 
+ui_sell|賣 出 
+ui_hire|聘 用 
+ui_notification_cant_hire|（ 不 能 聘 用 ， 錢 不 夠 ） 
+ui_uncapture|釋 放 
+ui_capture|扣 留 
+ui_party_capcity_reached|（ 到 達 部 隊 上 限 ） 
+ui_all|所 有 人 
+ui_joining_cost_weekly_wage|加 入 價 格 ： %d， 每 周 工 資 ： %d
+ui_weekly_wage|每 周 工 資 ： %d第 納 爾 
+ui_price|價 格 ： %d
+ui_number_ready_to_upgrade|%d個 人 可 以 升 級 了 。 
+ui_upgrade_to_value|升 級 到 %s（ %d第 納 爾 ） 
+ui_notification_no_slot_for_upgrade|沒 有 位 置 可 以 升 級 到 %s!
+ui_shield_broken|盾 牌 壞 了 。 
+ui_shield_cracked|盾 牌 裂 了 。 
+ui_shield_deformed|盾 牌 變 型 了 。 
+ui_you_hit_a_friendly_troop|你 打 到 了 自 己 人 ！ 
+ui_hit_shield_on_back|擊 中 背 上 的 盾 牌 ！ 
+ui_delivered_couched_lance_damage|施 加 長 槍 沖 刺 傷 害 ！ 
+ui_received_couched_lance_damage|受 到 長 槍 沖 刺 傷 害 ！ 
+ui_speed_bonus_plus|速 度 獎 勵 ： +%d%%
+ui_speed_bonus|速 度 獎 勵 ： %d%%
+ui_cant_reload_this_weapon_on_horseback|在 馬 背 上 無 法 裝 填 。 
+ui_no_more_bolts|沒 有 弩 箭 了 … … 
+ui_you_are_not_carrying_any_bolts|你 沒 有 帶 弩 箭 。 
+ui_no_more_arrows|沒 有 箭 了 … … 
+ui_you_are_not_carrying_any_arrows|你 沒 有 帶 箭 。 
+ui_head_shot|射 中 頭 部 ！ 
+ui_delivered_number_damage|給 對 方 %d點 傷 害 。 
+ui_delivered_number_damage_to_horse|給 對 方 的 馬 %d點 傷 害 。 
+ui_horse_charged_for_number_damage|馬 沖 撞 對 方 %d點 傷 害 。 
+ui_received_number_damage|受 到 %d點 傷 害 。 
+ui_horse_received_number_damage|馬 受 到 %d點 傷 害 。 
+ui_value_killed_teammate|%s殺 死 了 一 名 隊 友 ！ 
+ui_horse_fell_dead|馬 死 了 … … 
+ui_horse_crippled|馬 瘸 了 … … 
+ui_shot_difficulty|射 擊 難 度 ： %2.1f 
+ui_you_have_improved_your_proficiency_in_value_to_number|你 %s的 熟 練 度 提 高 到 了 %d點 。 
+ui_your_proficiency_in_value_has_improved_by_number_to_number|你 %s的 熟 練 度 提 高 了 %d點 ， 到 了 %d點 。 
+ui_value_killed_by_value|%s被 %s殺 了 。 
+ui_value_fell_dead|%s死 了 。 
+ui_value_knocked_unconscious_by_value|%s被 %s擊 昏 了 。 
+ui_value_fell_unconscious|%s被 擊 昏 了 。 
+ui_troop_routed|%s被 擊 潰 了 。 
+ui_troop_panicked|%s陷 入 恐 慌 。 
+ui_troop_fled|%s逃 離 了 戰 場 。 
+ui_you_got_number_experience|你 獲 得 %d點 經 驗 值 。 
+ui_you_have_advanced_to_level_number|你 已 升 到 第 %d級 。 
+ui_value_has_advanced_to_level_number|%s已 升 到 第 %d級 。 
+ui_you_got_value|你 獲 得 %s。 
+ui_new_quest_taken|接 受 新 任 務 ： %s。 
+ui_quest_completed_value|任 務 完 成 ： %s。 
+ui_quest_succeeded_value|任 務 成 功 ： %s。 
+ui_quest_failed_value|任 務 失 敗 ： %s。 
+ui_quest_concluded_value|任 務 結 束 ： %s。 
+ui_quest_cancelled_value|任 務 取 消 ： %s。 
+ui_lost_value|（ 失 去 %s） 
+ui_items_lost|（ 失 去 物 品 ： 
+ui_party_has_nothing_to_eat|部 隊 沒 吃 的 了 ！ 
+ui_days_training_is_complete|每 日 訓 練 結 束 … … 
+ui_total_experience_gained_through_training_number|從 訓 練 中 獲 得 的 總 經 驗 值 ： %d
+ui_some_soldiers_are_ready_to_upgrade|有 些 士 兵 可 以 升 級 了 。 
+ui_number_of_companions_exceeds_leadership_limit|同 伴 人 數 超 過 統 御 技 能 限 制 。 
+ui_number_of_prisoners_exceeds_prisoner_management_limit|俘 虜 人 數 超 過 俘 虜 管 理 技 能 限 制 。 
+ui_party_morale_is_low|部 隊 士 氣 低 下 ！ 
+ui_and_one_space|並 且 
+ui_has_deserted_the_party|從 部 隊 中 叛 逃 。 
+ui_have_deserted_the_party|從 部 隊 中 叛 逃 。 
+ui_weekly_report|每 周 報 告 
+ui_shared_number_experience_within_party|在 部 隊 中 分 享 %d點 經 驗 。 
+ui_got_item_value|獲 得 物 品 ： %s。 
+ui_game_saved_successfully|成 功 保 存 進 度 。 
+ui_autosaving|自 動 保 存 中 … … 
+ui_quick_saving|快 速 保 存 中 … … 
+ui_cant_quick_save|戰 斗 中 不 能 快 速 保 存 … … 
+ui_screenshot_taken_to_value|截 圖 保 存 到 %s了 。 
+ui_screenshot_failed|不 能 保 存 截 圖 。 
+ui_value_joined_your_party|%s加 入 了 你 的 隊 伍 。 
+ui_value_joined_party_as_prisoner|%s作 為 俘 虜 加 入 了 隊 伍 。 
+ui_value_has_joined_party|%s加 入 了 隊 伍 。 
+ui_value_has_been_taken_prisoner|%s被 俘 虜 了 。 
+ui_value_left_the_party|%s離 開 了 隊 伍 。 
+ui_number_values_left_the_party|%d%s離 開 了 隊 伍 。 
+ui_number_value_left_the_party|%d%s離 開 了 隊 伍 。 
+ui_your_relations_with_value_has_improved_from_number_to_number|你 和 %s的 關 系 從 %d提 高 到 了 %d。 
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|你 和 %s的 關 系 從 %d惡 化 到 %d。 
+ui_you_lost_value|你 失 去 了 %s。 
+ui_lost_item_value|失 去 物 品 ： %s。 
+ui_got_number_value|得 到 %d數 量 的 %s。 
+ui_lost_number_value|失 去 %d數 量 的 %s。 
+ui_set_default_keys|恢 復 默 認 鍵 
+ui_undo_changes|撤 銷 改 變 
+ui_press_a_key|按 一 個 鍵 
+ui_return_to_game|回 到 游 戲 
+ui_options|選 項 
+ui_save_and_exit|保 存 並 退 出 
+ui_save|保 存 
+ui_save_as|保 存 為 
+ui_quit_without_saving|退 出 且 不 保 存 
+ui_empty_slot|空 槽 
+ui_game_saved|進 度 已 經 保 存 … … 
+ui_confirm_overwrite|存 檔 %s將 被 覆 蓋 ， 你 確 定 ？ 
+ui_dynamic_lighting|動 態 光 影 
+ui_character_shadows|人 物 陰 影 
+ui_grass_density|草 叢 密 度 ： 
+ui_environment_shadows|環 境 陰 影 
+ui_realistic_shadows_on_plants|植 物 陰 影 ： 
+ui_particle_systems|粒 子 系 統 
+ui_gamma|伽 瑪 校 正 ： 
+ui_character_detail|人 物 細 節 ： 
+ui_character_shadow_detail|人 物 陰 影 細 節 ： 
+ui_blood_stains|血 跡 ： 
+ui_on|打 開 
+ui_off|關 閉 
+ui_near_player_only|只 顯 示 玩 家 附 近 
+ui_default|默 認 值 
+ui_3d_grass|3D 草 叢 ： 
+ui_number_of_ragdolls|布 娃 娃 數 目 ： 
+ui_number_of_corpses|屍 體 數 目 ： 
+ui_unlimited|無 限 
+ui_anisotropic_filtering|各 向 異 性 過 濾 
+ui_fast_water_reflection|快 速 水 面 倒 影 
+ui_maximum_framerate|最 大 幀 速 率 ： 
+ui_show_framerate|顯 示 幀 率 ： 
+ui_estimated_performance|性 能 估 計 ： %d%%
+ui_change_graphics_settings_explanation|一 些 變 化 需 要 進 入 新 的 場 景 後 才 能 生 效 。 
+ui_start_tutorial|游 戲 教 程 
+ui_start_a_new_game|開 始 新 游 戲 
+ui_restore_a_saved_game|載 入 游 戲 
+ui_exit_to_windows|離 開 
+ui_credits|貢 獻 者 名 單 
+ui_version_value|v%s
+ui_active_quests|當 前 任 務 
+ui_finished_quests|已 完 成 任 務 
+ui_given_on_date|始 於 ： %s
+ui_days_since_given|現 在 ： 第 %d天 
+ui_quest_progression_number|任 務 進 度 ： %d%%
+ui_too_many_quests|任 務 太 多 了 
+ui_ok|確 定 
+ui_move_forward|前 進 
+ui_move_backward|後 退 
+ui_move_left|左 移 
+ui_move_right|右 移 
+ui_action|動 作 
+ui_jump|跳 躍 
+ui_attack|攻 擊 
+ui_parry_then_attack|反 擊 
+ui_defend|防 守 
+ui_kick|腳 踢 
+ui_equip_weapon_1|裝 備 物 品 1 
+ui_equip_weapon_2|裝 備 物 品 2 
+ui_equip_weapon_3|裝 備 物 品 3 
+ui_equip_weapon_4|裝 備 物 品 4 
+ui_equip_next_weapon|裝 備 下 一 件 武 器 
+ui_equip_next_shield|裝 備 下 一 面 盾 牌 
+ui_sheath_weapon|收 起 武 器 
+ui_character_window|角 色 窗 口 
+ui_inventory_window|物 品 窗 口 
+ui_party_window|隊 伍 窗 口 
+ui_quests_window|任 務 窗 口 
+ui_game_log_window|日 志 窗 口 
+ui_leave_location_retreat|離 開 /撤 退 
+ui_zoom|縮 放 
+ui_view_outfit|查 看 全 身 
+ui_toggle_first_person_view|切 換 第 一 人 稱 視 角 
+ui_view_orders|查 看 命 令 
+ui_quick_save|快 速 保 存 
+ui_no_key_assigned|沒 有 分 配 按 鍵 
+ui_new_enemies_have_arrived|新 的 敵 人 到 達 了 。 
+ui_reinforcements_have_arrived|援 軍 到 達 了 。 
+ui_report_casualties|報 告 傷 亡 
+ui_report_experience|報 告 經 驗 值 
+ui_current_level_value|當 前 等 級 ： %d
+ui_base_attribute_value|基 本 屬 性 ： %s
+ui_battle_controls|戰 斗 控 制 
+ui_map_controls|地 圖 控 制 
+ui_general_controls|總 體 控 制 
+ui_zoom_in|放 大 
+ui_zoom_out|縮 小 
+ui_wait|等 待 
+ui_take_screenshot|截 圖 
+ui_randomize|隨 機 
+ui_hint|提 示 
+ui_press_left_mouse_button_to_continue|按 鼠 標 左 鍵 繼 續 … … 
+ui_loot|戰 利 品 
+ui_chest|箱 子 
+ui_cut_short|砍 
+ui_pierce_short|刺 
+ui_blunt_short|鈍 
+ui_battle|戰 斗 
+ui_siege|圍 攻 
+ui_troops|部 隊 ： 
+ui_loading_module_info_file|載 入 劇 本 信 息 文 件 … … 
+ui_processing_ini_file|處 理 配 置 文 件 … … 
+ui_loading_music|載 入 音 樂 … … 
+ui_loading_data|載 入 數 據 … … 
+ui_loading_setting_data|載 入 數 據 設 置 … … 
+ui_loading_textures|載 入 紋 理 … … 
+ui_finished|完 成 。 
+ui_creating_game|新 建 游 戲 … … 
+ui_loading_savegame_file|載 入 游 戲 … … 
+ui_loading_map_file|裝 載 地 圖 … … 
+ui_initializing_map|初 始 化 地 圖 … … 
+ui_launching_game|啟 動 游 戲 … … 
+ui_capital_battle|戰 斗 ： 
+ui_capital_versus|--對 決 --
+ui_tracks|蹤 跡 
+ui_battleground|戰 場 
+ui_order_1|選 擇 命 令 1 
+ui_order_2|選 擇 命 令 2 
+ui_order_3|選 擇 命 令 3 
+ui_order_4|選 擇 命 令 4 
+ui_order_5|選 擇 命 令 5 
+ui_order_6|選 擇 命 令 6 
+ui_order_button_hold_this_position|堅 守 這 裡 
+ui_order_button_follow_me|跟 我 來 
+ui_order_button_charge|沖 啊 
+ui_order_button_stand_ground|站 在 原 地 
+ui_order_button_retreat|撤 退 
+ui_order_button_advance|前 進 十 步 
+ui_order_button_fall_back|後 退 十 步 
+ui_order_button_spread_out|散 開 
+ui_order_button_stand_closer|靠 攏 
+ui_order_button_mount_horses|上 馬 
+ui_order_button_dismount|下 馬 
+ui_order_button_hold_fire|停 止 射 擊 
+ui_order_button_fire_at_will|隨 意 射 擊 
+ui_order_button_use_blunt_weapons|只 使 用 鈍 器 
+ui_order_button_use_any_weapon|使 用 隨 意 武 器 
+ui_order_button_movement_orders|移 動 命 令 
+ui_order_button_formation_orders|編 隊 命 令 
+ui_order_button_fire_orders|射 擊 命 令 
+ui_follow_me_e_|%s， 隨 我 來 ！ 
+ui_charge_e_|%s， 沖 鋒 ！ ！ ！ 
+ui_stand_ground_e_|%s， 站 在 原 地 ！ 
+ui_retreat_e_|%s， 撤 退 ！ 
+ui_mount_horses_e_|%s， 上 馬 ！ 
+ui_dismount_e_|%s， 下 馬 ！ 
+ui_advance_e_|%s， 前 進 十 步 ！ 
+ui_fall_back_e_|%s， 後 退 十 步 ！ 
+ui_stand_closer_e_|%s， 靠 攏 ！ 
+ui_spread_out_e_|%s， 散 開 ！ 
+ui_use_blunt_weapons_e_|%s， 只 使 用 鈍 器 ！ 
+ui_use_any_weapon_e_|%s， 使 用 隨 意 武 器 ！ 
+ui_hold_fire_e_|%s， 停 止 射 擊 ！ 
+ui_fire_at_will_e_|%s， 自 由 射 擊 ！ 
+ui_hold_this_position_e_|%s， 堅 守 此 地 ！ 
+ui_infantry|步 兵 
+ui_archers|射 手 
+ui_cavalry|騎 兵 
+ui_companions|盟 友 
+ui_everyone_hear_me|所 有 人 ， 聽 令 ！ 
+ui_everyone|所 有 人 
+ui_everyone_around_me|附 近 士 兵 
+ui_str_hear_me|%s， 聽 令 ！ 
+ui_str_and_str|%s和 %s
+ui_str_comma_str|%s，%s
+ui_need_to_learn_prisoner_management|你 需 要 學 習 俘 虜 管 理 技 能 ， 隊 伍 才 能 帶 俘 虜 。 
+ui_game_log|游 戲 日 志 
+ui_recent_messages|最 近 消 息 
+ui_custom_battle|自 定 義 戰 斗 
+ui_player|玩 家 
+ui_value_denars|%d第 納 爾 
+ui_back|後 退 
+ui_forward|前 進 
+ui_display_on_map|在 大 地 圖 上 指 出 
+ui_info_pages|游 戲 概 念 
+ui_troops2|人 物 
+ui_locations|地 點 
+ui_click_button_to_view_note|點 擊 鏈 接 看 詳 情 
+ui_this_page_contains_no_information|本 頁 無 信 息 
+ui_other_pages_that_link_here|其 他 頁 的 鏈 接 在 此 ： 
+ui_report_is_value_days_old|（ %d天 前 的 報 告 ） 
+ui_report_is_current|（ 最 近 的 報 告 ） 
+ui_button_party_member_healthy_total|%s(%d/%d)
+ui_button_party_member_total|%s(%d)
+ui_button_party_member_hero_percentage_wounded|%s(%d%% - 受 傷 )
+ui_button_party_member_hero_percentage|%s(%d%%)
+ui_percentage_value|%d%%
+ui_full|完 全 
+ui_quick|快 速 
+ui_none|無 
+ui_change|改 變 
+ui_how_to_change|怎 樣 改 變 這 個 ？ 
+ui_change_directx_explanation|要 切 換 DirectX 7及 DirectX 9的 選 擇 ， 請 點 擊 啟 動 菜 單 （ 一 打 開 游 戲 彈 出 的 那 個 ） 上 的 配 置 按 鈕 。 
+ui_dropping_picking_up|丟 掉 %s； 撿 起 %s。 
+ui_dropping|丟 掉 %s。 
+ui_picking_up|撿 起 %s。 
+ui_unable_to_take|不 能 拾 取 。 
+ui_age|年 齡 
+ui_cannot_be_used_on_horseback|在 馬 背 上 無 法 使 用 
+ui_enable_vertex_shaders2|渲 染 方 式 ： 
+ui_screen_size2|屏 幕 分 辨 率 ： 
+ui_use_desktop_resolution2|使 用 桌 面 分 辨 率 
+ui_shadow_quality2|陰 影 質 量 
+ui_m_low2|較 低 
+ui_m_high2|較 高 
+ui_m_ultra_high2|超 高 
+ui_off2|關 閉 
+ui_group_header|兵 種 分 組 
+ui_group_rename|重 新 命 名 分 組 
+ui_group_1|步 兵 
+ui_group_2|射 手 
+ui_group_3|騎 兵 
+ui_group_4|第 1組 
+ui_group_5|第 2組 
+ui_group_6|第 3組 
+ui_group_7|第 4組 
+ui_group_8|第 5組 
+ui_group_9|第 6組 
+ui_group_rename|重 新 命 名 分 組 
+ui_group_close|關 閉 
+ui_party_b_group_information|%s隸 屬 於 %s分 組 
+ui_thrown_or_s|投 擲 /%s
+ui_ranged_damage|投 擲 ： %d%s
+ui_overall_quality|總 體 質 量 
+ui_shader_quality|渲 染 質 量 ： 
+ui_flora_lod_detail|樹 木 細 節 ： 
+ui_flora_degrade_distance|樹 木 降 質 距 離 ： 
+ui_antialiasing|反 鋸 齒 ： 
+ui_use_depth_effects|景 深 效 果 
+ui_hdr_mode|HDR 模 式 
+ui_autoexpore|自 動 調 光 
+ui_choose_profile|選 擇 角 色 
+ui_create|創 建 
+ui_edit|編 輯 
+ui_join_game|加 入 游 戲 
+ui_host_game|創 建 游 戲 
+ui_custom|自 定 義 
+ui_medium|中 
+ui_male|男 
+ui_female|女 
+ui_gender|性 別 
+ui_edit_profile|修 改 角 色 
+ui_new_profile|新 角 色 
+ui_enter_username|輸 入 名 稱 ： 
+ui_invalid_username|玩 家 名 稱 只 能 包 含 字 母 、 數 字 和 下 劃 線 。 
+ui_confirmation|確 定 了 嗎 ？ 
+ui_multiplayer|多 人 聯 網 模 式 
+ui_server_name|服 務 器 
+ui_module_name|劇 本 
+ui_game_type|游 戲 類 型 
+ui_map_name|地 圖 
+ui_ping|Ping 值 
+ui_dedicated|測 試 版 
+ui_number_of_players|玩 家 人 數 
+ui_password_protected|密 碼 
+ui_connect|加 入 
+ui_local_area_network|局 域 網 
+ui_internet|互 聯 網 
+ui_favorites|收 藏 夾 
+ui_source|資 源 ： 
+ui_server_password|服 務 器 密 碼 ： 
+ui_refresh|刷 新 
+ui_start_search|搜 尋 
+ui_add_to_favorites|加 入 收 藏 夾 
+ui_remove_from_favorites|從 收 藏 夾 刪 除 
+ui_use_speedtree|使 用 快 速 樹 形 
+ui_use_instancing|使 用 實 體 化 
+ui_error|出 錯 
+ui_error_server_full|服 務 器 人 數 已 滿 。 
+ui_error_server_full_for_non_private|服 務 器 上 沒 有 VIP密 碼 的 人 數 已 滿 。 
+ui_error_server_password_incorrect|密 碼 錯 誤 。 
+ui_error_incorrect_serial|序 列 號 有 誤 。 
+ui_error_incorrect_authorization_key|授 權 碼 有 誤 。 
+ui_error_banned_from_server|你 被 禁 止 進 入 此 服 務 器 。 
+ui_error_username_taken|你 的 角 色 名 稱 有 人 正 在 使 用 。 
+ui_error_authentication_failed|驗 證 失 敗 。 
+ui_unable_to_connect_to_server|無 法 連 接 服 務 器 。 
+ui_connection_to_server_is_lost|服 務 器 連 接 中 斷 。 
+ui_kicked_from_server|被 服 務 器 踢 出 。 
+ui_switch_to_module_question|此 服 務 器 運 行 的 是 另 一 個 MOD。 需 要 切 換 到 此 MOD麼 ？ 
+ui_download_module_question|此 服 務 器 運 行 的 MOD您 還 沒 有 安 裝 。 需 要 訪 問 下 載 網 頁 麼 ？ 
+ui_download_mb_new_version_question|此 服 務 器 上 運 行 的 是 較 新 的 %d.%d%d%d版 本 ， 而 你 現 在 運 行 的 版 本 是 較 老 的 %d.%d%d%d。 需 要 訪 問 官 方 網 站 下 載 新 版 本 嗎 ？ 
+ui_download_mb_old_version_question|此 服 務 器 上 運 行 的 是 較 老 的 %d.%d%d%d版 本 ， 而 你 現 在 運 行 的 版 本 是 較 新 的 %d.%d%d%d。 
+ui_download_module_new_version_question|此 服 務 器 上 運 行 的 MOD是 較 新 的 %d.%d%d%d版 本 ， 而 你 現 在 運 行 的 MOD版 本 是 較 老 的 %d.%d%d%d。 需 要 訪 問 網 站 並 下 載 這 個 MOD的 新 版 本 麼 ？ 
+ui_download_module_old_version_question|此 服 務 器 上 運 行 的 MOD是 較 老 的 %d.%d%d%d版 本 ， 而 你 現 在 運 行 的 MOD版 本 是 較 新 的 %d.%d%d%d。 
+ui_authenticating_with_steam|Steam 驗 證 中 … … 
+ui_validating_serial_number|確 認 序 列 號 … … 
+ui_scanning_lan|搜 索 局 域 網 … … 
+ui_retrieving_servers|檢 索 服 務 器 名 單 … … 
+ui_shield_size2|尺 寸 ： %dx%d
+ui_click_to_view_notes|點 擊 查 看 紀 錄 
+ui_retrieving_server_infos|檢 索 服 務 器 資 源 (%d)… … 
+ui_connecting_to_server|連 接 到 服 務 器 … … 
+ui_requesting_to_join_the_game|請 求 加 入 游 戲 
+ui_loading|載 入 … … 
+ui_group_value_control|第 %d組 ！ 
+ui_drop_weapon|丟 掉 武 器 
+ui_multiplayer_message_all|發 言 至 全 體 
+ui_multiplayer_message_team|發 言 至 隊 內 
+ui_command_line|命 令 行 
+ui_use_ranged_weapon_as_melee|切 換 武 器 使 用 模 式 
+ui_send_message_all|發 言 至 全 體 
+ui_send_message_team|發 言 至 隊 內 
+ui_select|選 擇 
+ui_context_menu|子 菜 單 
+ui_round_starts_in_value_seconds|下 一 回 合 %d秒 開 始 … … 
+ui_watching_value|跟 隨 %s
+ui_capital_spec|【 圍 觀 】 
+ui_capital_dead|【 陣 亡 】 
+ui_instancing_error1|不 能 鎖 定 即 時 緩 沖 （ 數 據 量 ： %d） ， 禁 止 模 型 創 建 （ 錯 誤 代 碼 ： %d） 
+ui_instancing_error2|不 能 生 成 即 時 對 象 ， 禁 止 模 型 創 建 
+ui_by_keyboard|根 據 鍵 盤 動 作 
+ui_combat_speed_slowest|最 慢 
+ui_combat_speed_slower|減 慢 
+ui_combat_speed_normal|正 常 
+ui_combat_speed_faster|加 快 
+ui_combat_speed_fastest|最 快 
+ui_module_newer_than_application|你 所 選 擇 的 MOD需 要 該 游 戲 的 較 新 版 本 。 
+ui_module_older_than_application|你 所 選 擇 的 MOD需 要 該 游 戲 的 較 老 版 本 。 
+ui_unbalanced|重 心 不 穩 的 
+ui_can_crush_through_blocks|能 突 破 對 方 的 格 擋 
+ui_turn_camera_with_horse|第 一 人 稱 時 隨 坐 騎 而 轉 動 視 角 ： 
+ui_widescreen_mode_on|開 啟 分 屏 模 式 
+ui_widescreen_mode_off|關 閉 分 屏 模 式 
+ui_notification_cant_upgrade|（ 無 法 升 級 ： 費 用 不 足 ） 
+ui_turn_never|從 不 
+ui_turn_ranged_only|僅 遠 程 
+ui_turn_melee_only|僅 近 戰 
+ui_turn_always|總 是 
+ui_general_options|常 規 選 項 
+ui_vac_enabled|開 啟 反 作 弊 閥 
+ui_campaign_ai|戰 略 AI： 
+ui_downloading_map|下 載 地 圖 中 (%dKB)
+ui_download_completed|下 載 完 成 。 
+ui_server_filter|服 務 器 篩 選 
+ui_has_players|有 玩 家 的 
+ui_is_not_full|沒 滿 員 的 
+ui_is_password_free|無 密 碼 的 
+ui_native_only|限 Native劇 本 
+ui_ping_limit|Ping 限 制 
+ui_filter_info|%d游 戲 服 務 器 和 %d玩 家 被 過 濾 
+ui_is_version_compatible|版 本 一 致 
+ui_ttnet_account|TTNET Oyun 賬 號 
+ui_username|用 戶 名 
+ui_password|密 碼 
+ui_error_incorrect_username_or_password|錯 誤 的 用 戶 名 或 密 碼 
+ui_validating_account|賬 號 確 認 中 … … 
+ui_plase_enter_your_serial_key|請 輸 入 你 的 序 列 號 
+ui_texture_detail2|紋 理 細 節 ： 
+ui_antialiasing2|反 鋸 齒 ： 
+ui_use_melee_weapons_e_|%s， 使 用 近 戰 武 器 ！ 
+ui_use_ranged_weapons_e_|%s， 使 用 遠 程 武 器 ！ 
+ui_order_button_use_melee_weapons|使 用 近 戰 武 器 
+ui_order_button_use_ranged_weapons|使 用 遠 程 武 器 
+ui_order_button_weapon_usage_orders|武 器 使 用 命 令 
+ui_fire_at_my_command_e_|%s， 聽 命 射 擊 ！ 
+ui_fire_now_e_|%s， 射 擊 ！ 
+ui_order_button_fire_at_my_command|聽 命 射 擊 
+ui_order_button_fire_now|射 擊 
+ui_order_form_1_row|排 成 1行 
+ui_order_form_2_row|排 成 2行 
+ui_order_form_3_row|排 成 3行 
+ui_order_form_4_row|排 成 4行 
+ui_order_form_5_row|排 成 5行 
+ui_form_1_row_e_|%s， 排 成 1行 ！ 
+ui_form_2_row_e_|%s， 排 成 2行 ！ 
+ui_form_3_row_e_|%s， 排 成 3行 ！ 
+ui_form_4_row_e_|%s， 排 成 4行 ！ 
+ui_form_5_row_e_|%s， 排 成 5行 ！ 
+ui_order_7|選 擇 命 令 7
+ui_order_8|選 擇 命 令 8
+ui_all_fire_now_e_|%s， 全 體 射 擊 ！ 
+ui_left_fire_now_e_|%s， 左 翼 射 擊 ！ 
+ui_middle_fire_now_e_|%s， 中 路 射 擊 ！ 
+ui_right_fire_now_e_|%s， 右 翼 射 擊 ！ 
+ui_order_button_all_fire_now|全 體 射 擊 
+ui_order_button_left_fire_now|左 翼 射 擊 
+ui_order_button_middle_fire_now|中 路 射 擊 
+ui_order_button_right_fire_now|右 翼 射 擊 
+ui_crouch|下 蹲 

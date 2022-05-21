@@ -1,0 +1,753 @@
+ui_music_volume|Zene hangereje:
+ui_sound_volume|Hangerő:
+ui_mouse_sensitivity|Egér érzékenysége:
+ui_invert_mouse_y_axis|Inverz egér
+ui_enabled|Bekapcsolva
+ui_disabled|Letiltva
+ui_damage_to_player|Játékos sérülései:
+ui_reduced_to_1_over_4_easiest|1/4-re csökkentett (Nagyon könnyű)
+ui_reduced_to_1_over_2_easy|1/2-re csökkentett (Könnyű)
+ui_damage_to_friends|Szöv. sérülései:
+ui_reduced_to_1_over_2_easiest|1/2-re csökkentett (Nagyon könnyű)
+ui_reduced_to_3_over_4_easy|3/4-re csökkentett (Könnyű)
+ui_normal|Normális
+ui_combat_ai|Harci MI:
+ui_combat_speed|Harc sebessége:
+ui_good|Jó
+ui_average_caps|Átlagos
+ui_poor|Gyenge
+ui_faster|Gyorsabb
+ui_slower|Lassabb
+ui_control_block_direction|Védekezés irányának vez.:
+ui_automatic_recommended|Automatikus
+ui_manual_easy|Kézi (egyszerű)
+ui_manual_hard|Kézi (nehéz)
+ui_by_mouse_movement|Egérmozgatáshoz igazodó
+ui_control_attack_direction|Támadás irányának vez.:
+ui_lance_control|Lándzsa irányítása:
+ui_by_relative_enemy_position|Az ellenség helyzete szerint
+ui_by_inverse_mouse_movement|Egérmozgással ellentétesen
+ui_battle_size|Csata méret:
+ui_show_attack_direction|Támadási irány kijelzése
+ui_show_targeting_reticule|Célkereszt
+ui_show_names_of_friendly_troops|Baráti egységek zászlaja
+ui_report_damage|Sebzés jelzése
+ui_report_shot_difficulty|Lövés nehézségének jelzése
+ui_difficulty_rating_percentage|Nehézség = %d%%
+ui_controls|Irányítás
+ui_video_options|Grafikai beáll.
+ui_done|Kész
+ui_factions|Érdekcsoportok
+ui_item_itemname|Tárgy - %s
+ui_prop_propname|Tereptárgy - %s
+ui_unknown_unknownname|Ismeretlen - %s
+ui_entry_point_entrypointname|Belépési pont %d
+ui_passage_menu_item_passagename|Átjárás (%d. menüelem)
+ui_plant_plantname|Növény - %s
+ui_export_file_for_character_playername_already_exists_overwrite_it|%s exportfájlja már létezik. Felülírod?
+ui_yes|Igen
+ui_no|Nem
+ui_set_save_file_name|Add meg e mentett állás nevét:
+ui_enter_new_name|Adj meg új nevet:
+ui_export_character|Karakter exportálása
+ui_import_character|Karakter importálása
+ui_character_playername_exported_successfully|%s - a karaktert sikeresen exportáltad.
+ui_character_playername_imported_successfully|%s - a karaktert sikeresen importáltad.
+ui_unable_to_open_import_file|Az importfájlt nem lehet megnyitni.
+ui_are_you_sure_you_want_to_import_the_character|Biztosan importálod a karaktert?
+ui_unable_to_find_character_import_file|A karakter importfájlja nem található.
+ui_mount_and_blade_is_running_in_trial_mode_please_buy_the_game_for_importing_a_character|A Mount&Blade próbaverziójával játszol. Kérlek, vásárold meg a teljes változatot, hogy importálhasd a karaktert.
+ui_change_skin|Bőrszín
+ui_change_hair|Hajviselet
+ui_change_hair_color|Hajszín
+ui_change_beard|Arcszőrzet
+ui_tutorial|Oktatómód
+ui_tutorial_face_generator|Karaktered arcvonásait a gombok és a csúszkák segítségével változtathatod. A fejet rákattintással és az egérgomb nyomva tartásával forgathatod. 
+ui_restore|Betöltés
+ui_cancel|Mégsem
+ui_delete|Törlés
+ui_confirm_delete_game|Biztosan törlöd a játékállást?
+ui_error_removing_file|Hiba a törlésnél...
+ui_day_datedisplay|%d. (%d:%d%d) nap
+ui_reset_changes|Visszavonás
+ui_weapon_proficiencies|Jártasságok
+ui_skills|Képességek
+ui_attributes|Tulajdonságok
+ui_enter_name_here|*Írd be a neved*
+ui_edit_face|Kattints az arc szerkesztéséhez!
+ui_statistics|Statisztikák
+ui_next|Következő
+ui_prev|Előző
+ui_learn|Tanulás
+ui_question_saving_policy|Milyen mentési elvet szeretnél alkalmazni?
+ui_saving_policy_realistic|Realisztikusat. A játék minden kilépés előtt ment.
+ui_saving_policy_nonrealistic|Ki lehessen lépni mentés nélkül.
+ui_tutorial_character_generation|Itt beírhatod a neved, eloszthatod a tulajdonság, képesség és jártasság-pontjaidat. A képernyő adott pontjára kattintva megnézheted, a különböző elemek miként befolyásolják karakteredet.
+ui_str|ERŐ
+ui_agi|ÜGY
+ui_int|ÉRT
+ui_cha|SZE
+ui_at_learning_limit|(Többet most nem tanulhatsz.)
+ui_not_enough_skill_points_to_learn|(Nincs elég képesség-pontod a megtanulásához.)
+ui_strength|erő
+ui_agility|ügyesség
+ui_intelligence|értelem
+ui_charisma|személyiség
+ui_not_enough_attributetype_to_learn_this_skill|(Nincs elég %s a képesség megtanulásához)
+ui_explanation_one_handed_weapon|Az egykezes kardok, bárdok és ütőfegyverek használatát befolyásolja.
+ui_explanation_two_handed_weapon|A kétkezes fegyverek, nagyobb bárdok és pörölyök használatát befolyásolja.
+ui_explanation_polearm|A szálfegyverek használatát befolyásolja (pl. lándzsák, dárdák, botok stb.)
+ui_explanation_archery|Az íjak használatát befolyásolja.
+ui_explanation_crossbow|A számszeríjak használatát befolyásolja. 
+ui_explanation_throwing|A dobófegyverek használatát befolyásolja (pl. gerely, dárdák, kövek stb.)
+ui_explanation_firearms|A pisztolyok és muskéták használatát befolyásolja. 
+ui_explanation_strength|Erő: Minden pont eggyel növeli az életerődet. Az alábbi képességek nem fejleszthetők az erő 1/3-ánál magasabb értékre: acéltest, ütőerő, dobóerő, lövőerő.
+ui_explanation_agility|Ügyesség: Minden pont öttel növeli a fegyveres jártasság-pontokat, és enyhén növeli a mozgási sebességet. Az alábbi képességek nem fejleszthetők az ügyesség 1/3-ánál magasabb értékre: védelem, futás, fegyverforgatás, lovaglás, lovas íjászat, fosztogatás.
+ui_explanation_intelligence|Értelem: Minden értelem-pont azonnali +1 képesség-pontot jelent. Az alábbi képességek nem fejleszthetők az értelem 1/3-ánál magasabb értékre: kiképzés, nyomkövetés, taktika, útkeresés, észlelés, felszereléskezelés, sebkezelés, sebészet, elsősegély, mérnöki tudás, meggyőzés.
+ui_explanation_charisma|Személyiség: Minden pont +1-gyel növeli sereged maximális méretét. Az alábbi képességek nem fejleszthetők a személyiség 1/3-ánál magasabb értékre: vezetői képesség, fogolytartás, kereskedelem.
+ui_level|Szint: %d
+ui_xp|Tapasztalat: %d
+ui_next_level_at|Következő szint: %d
+ui_health_player|Egészség: %d/%d
+ui_health|Egészség: %d
+ui_attribute_points|Tulajdonság-pontok: %d
+ui_skill_points|Képesség-pontok: %d
+ui_weapon_points|Jártasság-pontok: %d
+ui_mission_losses_none| nincs.
+ui_mission_losses_wounded|sebesült :
+ui_mission_losses_killed|elesett :
+ui_party_losses|%s  : %d sebesült --- %d elesett, összes: %d.
+ui_casualties_sustained|Elszenvedett veszteségek:
+ui_advantage_change|Kezdőelőny változása = %c%d 
+ui_overall_battle_casualties|Csatában elszenvedett összesített veszteség:
+ui_advantage_outnumbered| Reménytelenül nagy a túlerő.
+ui_advantage_major_disadvantage| Óriási hátrányban vagy.
+ui_advantage_slight_disadvantage| Kissé hátrányosabb helyzetben vagy az ellenségnél.
+ui_advantage_balanced| A helyzet kiegyenlített.
+ui_advantage_fair_advantage| Jó esélyed van a győzelemre.
+ui_advantage_greatly_favored| A csata kimenetele minden bizonnyal számodra fog kedvezni.
+ui_tactical_advantage|Taktikai előny: %d (%s)
+ui_order_group|Csoportparancs:
+ui_question_save_changes|Változtatásokat tettél. El akarod menteni őket?
+ui_yes_save|Igen, mentés
+ui_no_discard_changes|Nem, változások figyelmen kívül hagyása
+ui_everyone_control|Mindenki!
+ui_everyone_around_control|Katonák a közelben!
+ui_others_control|Többiek!
+ui_question_give_up_fight|Feladod a küzdelmet?
+ui_give_up|Feladás
+ui_keep_fighting|Harc folytatása
+ui_question_leave_area|Helyszín elhagyása
+ui_cant_retreat_there_are_enemies_nearby|Nem vonulhatsz vissza. Ellenség van a közelben.
+ui_question_retreat_battle|Visszavonulsz a csatából?
+ui_retreated_battle|%s megszökött.
+ui_retreated_battle|%s elmenekült a csatatérről.
+ui_retreat|Visszavonulás
+ui_talk|Beszéd
+ui_duel|Párbaj
+ui_mount|Nyeregbe
+ui_riding_skill_not_adequate_to_mount|(Lovaglási képességeid elégtelensége miatt nem szállhatsz lóra)
+ui_dismount|Lóról le
+ui_exit|Kilépés
+ui_door_to|Kapu ide:
+ui_open|Nyitás
+ui_equip|Kézbe vesz
+ui_baggage|Zsák
+ui_access_inventory|Felszerelések megtekintése
+ui_chest|Láda
+ui_passage|Átjáró
+ui_go|Tovább
+ui_retreat_battle|Visszavonulás a csatából
+ui_leave_area|Helyszín elhagyása
+ui_reports|Jelentések
+ui_camp|Tábor
+ui_terrain|Tovább
+ui_quests|Jegyzetek
+ui_inventory|Felszerelés
+ui_character|Karakter
+ui_party|Sereg
+ui_paused|Leállítva
+ui_click_left_button_to_cancel_wait|Várakozás... (Bal kattintással folytathatod)
+ui_midnight|Éjfél
+ui_late_night|Késő éjjel
+ui_dawn|Pirkadat
+ui_early_morning|Kora reggel
+ui_morning|Reggel
+ui_noon|Délidő
+ui_afternoon|Délután
+ui_late_afternoon|Késő délután
+ui_dusk|Alkonyat
+ui_evening|Este
+ui_midnight|Éjfél
+ui_level_limit_reached|Elérted a szintkorlátot!
+ui_explanation_level_limit|Üdvözöllek, Kalandozó! A Mount&Blade még nem lett aktiválva, ezért próbamódban fut. Ebben a verzióban csak 8. szintig játszhatsz. Ahhoz, hogy folytathasd a játékot, indítsd újra, és aktiváld a 16 számjegyű termékazonosítóddal, amelyet a dobozban találsz. Ezt követően ugyaninnen folytathatod a játékot. A Mount&Blade most elmenti a játékállást, és kilép.
+ui_time_limit_reached|Elérted az időkorlátot!
+ui_explanation_time_limit|Üdvözöllek, Kalandozó! A Mount&Blade még nem lett aktiválva, ezért próbamódban fut. Ebben a verzióban csak harminc játéknapig játszható. Ahhoz, hogy folytathasd a játékot, indítsd újra, és aktiváld a 16 számjegyű termékazonosítóddal, amelyet a dobozban találsz. Ezt követően ugyaninnen folytathatod a játékot. A Mount&Blade most elmenti a játékállást, és kilép. 
+ui_target_lost|Elvesztetted a célt
+ui_waiting|Várakozás.
+ui_travelling_to|Utazás ide:
+ui_following|Követés:
+ui_accompanying|Kíséret:
+ui_running_from|Menekülés:
+ui_patrolling|Őrjáratozás
+ui_patrolling_around|Őrjáratozás e körül:
+ui_holding|Állások tartása
+ui_travelling|Utazás
+ui_fighting_against|Küzdelem ellene:
+ui_speed_equals|Sebesség = %2.1f
+ui_defenders|Helyőrség:
+ui_prisoners|Foglyok:
+ui_1_hour|1 óra
+ui_n_hours|%d óra
+ui_between_hours|%d - %d óra
+ui_combatants|Harcosok száma: %d
+ui_party_size|Sereg mérete: %d
+ui_party_size_between|Sereg mérete: %d - %d
+ui_merchant|Kalmár
+ui_return|Vissza
+ui_no_cost|Nem kerül semmibe
+ui_rename|Átnevezés
+ui_use|Használat
+ui_destroy|Megsemmisítés
+ui_destructible_target|Megsemmisíthető célpont
+ui_tutorial_inventory|Ez a kereskedő-felület. A gyors eladáshoz vagy vásárláshoz tartsd lenyomva a Ctrl billentyűt.
+ui_head_armor|Fejvédő: %d
+ui_body_armor|Testpáncélzat: %d
+ui_leg_armor|Lábpáncélzat: %d
+ui_encumbrance|Megterheltség: %2.1f
+ui_you_dont_have_value|Nincs nálad %s.
+ui_merchant_cant_afford_value|%s: Nem vásárolhatom meg. Mindössze %s van a nálam.
+ui_merchant_pay_whatever|Rendben, akkor fizess, amivel tudsz.
+ui_merchant_think_of_something_else|Hmm. Hadd gondolkodjak.
+ui_dumping_value_items|%d tárgyat véglegesen itt hagysz Jól meggondoltad?
+ui_dumping_value_item|Egy tárgyat véglegesen itt hagysz Jól meggondoltad?
+ui_question_slaughter_food_and_eat|%s megölése és elfogyasztása?
+ui_money_value|Pénz: %s
+ui_dump|Elhagyás
+ui_outfit|Öltözék
+ui_arms|Fegyverek
+ui_horse|Ló
+ui_food|Étel
+ui_reclaim_your_sold_goods|Eladott javaid visszavétele vásárlás előtt.
+ui_return_your_bought_goods|Megvett javak visszaadása eladás előtt.
+ui_polearm_no_shield|Szálfegyver (pajzs nélkül)
+ui_polearm|Szálfegyver
+ui_two_handed|Kétkezes
+ui_two_handed_one_handed|Kétkezes/Egykezes
+ui_one_handed|Egykezes
+ui_return_price|Visszaadási ár: %d
+ui_sell_price|Eladási ár: %d
+ui_reclaim_price|Visszavételi ár: %d
+ui_buying_price|Megvételi ár: %d
+ui_default_item|Alapértelmezett eszköz
+ui_buying_price_free|Vételár: Ingyenes
+ui_weight|Tömeg: %2.1f
+ui_plus_value_to_head_armor|+%d a fejpáncélzat értékéhez
+ui_plus_value_to_body_armor|+%d a testpáncélzat értékéhez
+ui_plus_value_to_leg_armor|+%d a lábpáncélzat értékéhez
+ui_swing|Lendítés: %d%s
+ui_damage|Sebzés: %d%s
+ui_thrust|Szúrás: %d%s
+ui_accuracy|Pontosság: %d
+ui_speed_rating|Sebesség: %d
+ui_value_to_damage|%c%d a sebzési értékhez
+ui_value_to_morale|+%1.1f a sereg harci szelleméhez
+ui_resistance|Ellenállás: %d
+ui_size|Méret: %d
+ui_weapon_reach|Hatótáv: %d
+ui_armor|Páncélzat: %d
+ui_speed|Sebesség: %d
+ui_maneuver|Fordulékonyság: %d
+ui_charge|Roham: %d
+ui_hit_points|Életerő: %d/%d
+ui_requires_value_difficulty|Szükséges %s: legalább %d
+ui_bonus_against_shields|Bónusz pajzsokkal szemben
+ui_cant_be_used_to_block|Nem használható védekezésre
+ui_troop_cant_use_item|%s: Nem tudom használni!
+ui_notification_riding_skill_not_enough|Lovaglási képességed nem elég jó ahhoz, hogy megüld ezt a lovat.
+ui_notification_requirements_not_met|Nem rendelkezel szükséges mértékű képességgel és tulajdonsággal a fegyver használatához.
+ui_notification_payment_value|Fizetendő: %s.
+ui_notification_payment_receive_value|Bevételed: %s.
+ui_one_handed_weapons|Egykezes fegyverek
+ui_two_handed_weapons|Kétkezes fegyverek
+ui_polearms|Szálfegyverek
+ui_archery|Íjak
+ui_crossbows|Számszeríjak
+ui_throwing|Dobófegyverek
+ui_firearms|Tűzfegyverek
+ui_reset|Visszaállítás
+ui_release_one|Valamelyik eldobása
+ui_move_up|Mozgatás fel
+ui_move_down| Mozgatás le 
+ui_upgrade_one|Valamelyik fejlesztése
+ui_party_skills|Sereg képességei
+ui_morale|Harci szellem: %s
+ui_terrible|Borzalmas
+ui_very_low|Nagyon alacsony
+ui_low|Al.
+ui_below_average|Átlag alatti
+ui_average|Átlagos
+ui_above_average|Átlag feletti
+ui_high|Magas
+ui_very_high|Nagyon magas
+ui_excellent|Kiváló
+ui_starving|Éheznek az embereid! %d%%
+ui_weekly_cost_value|Heti költség: %s
+ui_company|Társak: %d / %d
+ui_prisoners_equal_value|Foglyok: %d / %d
+ui_choose_prisoners|Válassz a foglyok közül
+ui_choose_companions|Válassz társaid közül
+ui_rescued_prisoners|Kiszabadított foglyok
+ui_captured_enemies|Foglyul ejtett ellenségek
+ui_disband|Feloszlatás
+ui_take_prisoner|Elfogás
+ui_take_back|Visszavitel
+ui_give|Átadás
+ui_take|Elvétel
+ui_sell|Eladás
+ui_hire|Felfogadás
+ui_notification_cant_hire|(Nem fogadhatsz fel:Nincs elég pénzed.)
+ui_uncapture|Szabadon engedés
+ui_capture|Foglyul ejtés
+ui_party_capcity_reached|(A sereg elérte a maximumát.)
+ui_all| mind
+ui_joining_cost_weekly_wage|Egyszeri juttatás: %d, Heti zsold: %d
+ui_weekly_wage|Heti zsold: %d dénár
+ui_price|Ár: %d
+ui_number_ready_to_upgrade|%d készen áll a fejlesztésre.
+ui_upgrade_to_value| Fejlesztés %s egységre (%dd)
+ui_notification_no_slot_for_upgrade|Nincs hely a következő fejlesztéshez: %s!
+ui_shield_broken|A pajzs eltört.
+ui_shield_cracked|A pajzs megrepedt.
+ui_shield_deformed|A pajzs deformálódott.
+ui_you_hit_a_friendly_troop|Saját katonádra mértél csapást.
+ui_hit_shield_on_back|Pajzsot le!
+ui_delivered_couched_lance_damage|Előreszegett lándzsás találatot vittél be.
+ui_received_couched_lance_damage|Előreszegett lándzsás találatot kaptál.
+ui_speed_bonus_plus|Sebességelőny: +%d%%
+ui_speed_bonus|Sebességelőny: %d%%
+ui_cant_reload_this_weapon_on_horseback|Lóháton ülve ez a fegyver nem tölthető újra.
+ui_no_more_bolts|Elfogyott a nyílvessző...
+ui_you_are_not_carrying_any_bolts|Nincs nálad nyílvessző.
+ui_no_more_arrows|Elfogyott a nyíl...
+ui_you_are_not_carrying_any_arrows|Nincs több nyilad.
+ui_head_shot|Fejlövés!
+ui_delivered_number_damage|%d pontnyi sebzés.
+ui_delivered_number_damage_to_horse|%d pontnyi sebzés a lovon.
+ui_horse_charged_for_number_damage|Lovasroham sebzése: %d 
+ui_received_number_damage|%d pontnyi sérülést szenvedtél el.
+ui_horse_received_number_damage|Lovad %d pontnyi sérülést szenvedett.
+ui_value_killed_teammate|%d megölt egy csapattársat!
+ui_horse_fell_dead|Lovad elpusztult...
+ui_horse_crippled|Lovad lerokkant...
+ui_shot_difficulty|Lövés nehézsége: %2.1f
+ui_you_have_improved_your_proficiency_in_value_to_number|Jártasságodat %s tulajdonságban %d értékre fejlesztetted.
+ui_your_proficiency_in_value_has_improved_by_number_to_number|Jártasságod %s tulajdonságban +%d ponttal, %d értékre nőtt.
+ui_value_killed_by_value|%s elesett %s keze által.
+ui_value_fell_dead|%s elesett.
+ui_value_knocked_unconscious_by_value|%s eszméletlenül terült el %s találata révén.
+ui_value_fell_unconscious|%s elvesztette az eszméletét.
+ui_troop_routed|%s megfutamodott.
+ui_troop_panicked|%s bepánikolt.
+ui_troop_fled|%s elmenekült a csatatérről.
+ui_you_got_number_experience|Nyertél %d tapasztalati pontot.
+ui_you_have_advanced_to_level_number|A %d. szintre léptél.
+ui_value_has_advanced_to_level_number|%s a %d. szintre lépett.
+ui_you_got_value|%s értéket kaptál.
+ui_new_quest_taken|Új küldetést fogadtál el: %s.
+ui_quest_completed_value|Befejezted a küldetést: %s.
+ui_quest_succeeded_value|Küldetésed sikerrel járt: %s.
+ui_quest_failed_value|Küldetésed kudarcba fulladt: %s.
+ui_quest_concluded_value|A küldetés lezárult: %s.
+ui_quest_cancelled_value|Küldetés elvetve: %s.
+ui_lost_value| (Értékvesztés: %s)
+ui_items_lost| (Elveszett tárgyak:
+ui_party_has_nothing_to_eat|Nincs mit ennie a seregnek!
+ui_days_training_is_complete|A mai kiképzés befejeződött...
+ui_total_experience_gained_through_training_number|A kiképzés során szerzett tapasztalati pontok: %d
+ui_some_soldiers_are_ready_to_upgrade|Néhány katona készen áll a fejlődésre.
+ui_number_of_companions_exceeds_leadership_limit| A társaid száma meghaladja a vezetői képességed alapján meghatározott maximumot.
+ui_number_of_prisoners_exceeds_prisoner_management_limit| A foglyok száma meghaladja a fogolytartás által meghatározott maximumot.
+ui_party_morale_is_low| Alacsony a sereg harci szelleme.
+ui_and_one_space| és
+ui_has_deserted_the_party| katonád dezertált.
+ui_have_deserted_the_party| katonád dezertált.
+ui_weekly_report|Heti jelentés
+ui_shared_number_experience_within_party|%d tapasztalati pontot megosztottál a sereggel.
+ui_got_item_value|Szerzet eszközök: %s.
+ui_game_saved_successfully|A játékállás sikeresen mentve.
+ui_autosaving|Automatikus mentés...
+ui_quick_saving|Gyorsmentés...
+ui_cant_quick_save|Csata folyamán nem végezhetsz gyorsmentést...
+ui_screenshot_taken_to_value|Képernyő lementve ide: %s
+ui_screenshot_failed|Képernyő mentése sikertelen.
+ui_value_joined_your_party|%s katona csatlakozott seregedhez.
+ui_value_joined_party_as_prisoner|%s foglyot ejtettél
+ui_value_has_joined_party|%s katona csatlakozott seregedhez.
+ui_value_has_been_taken_prisoner|%s foglyot ejtettél.
+ui_value_left_the_party|%s katona lépett ki a seregből.
+ui_number_values_left_the_party|%d %s lépett ki a seregből.
+ui_number_value_left_the_party|%d %s lépett ki a seregből.
+ui_your_relations_with_value_has_improved_from_number_to_number|%s felé fennálló viszonyod %d értékről %d értékre javult.
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|%s felé fennálló viszonyod %d értékről %d értékre romlott.
+ui_you_lost_value|Veszteség: %s.
+ui_lost_item_value|Vesztett eszközök: %s.
+ui_got_number_value|Növekmény: %d %s.
+ui_lost_number_value|Csökkenés: %d %s.
+ui_set_default_keys|Alapért. bill. beáll.:
+ui_undo_changes|Visszaállítás
+ui_press_a_key|Nyomj meg egy billentyűt
+ui_return_to_game|Vissza a játékba
+ui_options|Beállítások
+ui_save_and_exit|Mentés és kilépés
+ui_save|Mentés
+ui_save_as|Mentés másként
+ui_quit_without_saving|Kilépés mentés nélkül
+ui_empty_slot|Üres
+ui_game_saved|Játékállás mentve...
+ui_confirm_overwrite|Ezzel felülírod a %s játékállást. Biztos vagy benne?
+ui_dynamic_lighting|Dinamikus fények
+ui_character_shadows|Karakterek árnyéka
+ui_grass_density|Fű sűrűsége:
+ui_environment_shadows|Környezeti árnyékok
+ui_realistic_shadows_on_plants|Növényzet árnyéka:
+ui_particle_systems|Részecske rendszerek
+ui_gamma|Monitor gamma:
+ui_character_detail|Karakterek részletessége:
+ui_character_shadow_detail|Karakterárnyék részletessége:
+ui_blood_stains|Vérfoltok:
+ui_on|Be
+ui_off|Ki
+ui_near_player_only|Csak a játékos közelében
+ui_default|Alapért.
+ui_3d_grass|3D-s fű:
+ui_number_of_ragdolls|Rongybabák száma:
+ui_number_of_corpses|Holttestek száma:
+ui_unlimited|Korlátlan
+ui_anisotropic_filtering|Anizotropikus szűrés
+ui_fast_water_reflection|Gyors víztükröződés
+ui_maximum_framerate|Max. képkocka/másodperc:
+ui_show_framerate|Képkocka/másodperc kijelzése:
+ui_estimated_performance|Becsült teljesítmény: %d%%
+ui_change_graphics_settings_explanation|Egyes változtatások csak a következő helyszínen lépnek életbe.
+ui_start_tutorial|Játék oktatómódban
+ui_start_a_new_game|Új játék
+ui_restore_a_saved_game|Betöltés
+ui_exit_to_windows|Kilépés
+ui_credits|Készítők
+ui_version_value|v%s
+ui_active_quests|Folyamatban lévő küldetések
+ui_finished_quests|Befejezett küldetések
+ui_given_on_date|Elfogadás időpontja: %s
+ui_days_since_given|Eltelt napok száma: %d
+ui_quest_progression_number|Küldetés állása: %d%%
+ui_too_many_quests|Túl sok a küldetésed
+ui_ok|Rendben
+ui_move_forward|Mozgás előre
+ui_move_backward|Mozgás hátra
+ui_move_left|Mozgás balra
+ui_move_right|Mozgás jobbra
+ui_action|Cselekvés
+ui_jump|Ugrás
+ui_attack|Támadás
+ui_parry_then_attack|Ellentámadás
+ui_defend|Védekezés
+ui_kick|Rúgás
+ui_equip_weapon_1|Fegyver kézbevétele
+ui_equip_weapon_2|Fegyver kézbevétele
+ui_equip_weapon_3|Fegyver kézbevétele
+ui_equip_weapon_4|Fegyver kézbevétele
+ui_equip_next_weapon|Következő fegyver
+ui_equip_next_shield|Következő pajzs
+ui_sheath_weapon|Fegyver eltétele
+ui_character_window|Karakter ablak
+ui_inventory_window|Felszerelés ablak
+ui_party_window|Sereg ablak
+ui_quests_window|Küldetés ablak
+ui_game_log_window|Napló ablak
+ui_leave_location_retreat|Helyszín elhagyása/Visszavonulás
+ui_zoom|Nagyítás
+ui_view_outfit|Öltözék nézet
+ui_toggle_first_person_view|Váltás belső nézetre
+ui_view_orders|Utasítások megtek.
+ui_quick_save|Gyorsmentés
+ui_no_key_assigned|Nincs hozzárendelve billentyű
+ui_new_enemies_have_arrived|Új ellenség érkezett.
+ui_reinforcements_have_arrived|Megérkezett az utánpótlás.
+ui_report_casualties|Veszteségek jelentése
+ui_report_experience|Tapasztalat jelentése
+ui_current_level_value|Jelenlegi szint: %d
+ui_base_attribute_value|Alaptulajdonság: %s
+ui_battle_controls|Csata irányító gombok
+ui_map_controls|Térkép irányítás
+ui_general_controls|Általános iránybill.
+ui_zoom_in|Nagyítás
+ui_zoom_out|Nagyítás vissza
+ui_wait|Várakozás
+ui_take_screenshot|Képernyő mentése
+ui_randomize|Véletlenszerű
+ui_hint|Tipp
+ui_press_left_mouse_button_to_continue|Kattints a bal egérgombbal a folytatáshoz...
+ui_loot|Fosztogatás
+ui_chest|Láda
+ui_cut_short|
+ui_pierce_short|
+ui_blunt_short|
+ui_battle|Csata
+ui_siege|Ostrom
+ui_troops|Katonák:
+ui_loading_module_info_file|Modul információinak betöltése...
+ui_processing_ini_file|INI fájl feldolgozása...
+ui_loading_music|Zene betöltése...
+ui_loading_data|Adatok betöltése...
+ui_loading_setting_data|Beállítások betöltése...
+ui_loading_textures|Textúrák betöltése...
+ui_finished|Befejezve.
+ui_creating_game|Játék előkészítése...
+ui_loading_savegame_file|Mentett játékállás betöltése...
+ui_loading_map_file|Térkép betöltése...
+ui_initializing_map|Térkép előkészítése...
+ui_launching_game|Játék indítása...
+ui_capital_battle|CSATA:
+ui_capital_versus|--ELLENSÉG--
+ui_tracks|Nyomok
+ui_battleground|Csatatér
+ui_order_1|Parancs kiválasztása
+ui_order_2|Parancs kiválasztása
+ui_order_3|Parancs kiválasztása
+ui_order_4|Parancs kiválasztása
+ui_order_5|Parancs kiválasztása
+ui_order_6|Parancs kiválasztása
+ui_order_button_hold_this_position|Pozíció tartása
+ui_order_button_follow_me|Kövessetek!
+ui_order_button_charge|Támadás
+ui_order_button_stand_ground|Pozíció őrzése
+ui_order_button_retreat|Visszavonulás
+ui_order_button_advance|Előre tíz lépés
+ui_order_button_fall_back|Vissza tíz lépést
+ui_order_button_spread_out|Szétszóródás
+ui_order_button_stand_closer|Közelebb férkőzés
+ui_order_button_mount_horses|Nyeregbe!
+ui_order_button_dismount|Lóról le!
+ui_order_button_hold_fire|Tüzet szüntess!
+ui_order_button_fire_at_will|Tüzelés szabadon
+ui_order_button_use_blunt_weapons|Csak ütőfegyverek használata
+ui_order_button_use_any_weapon|Szabad fegyverhasználat
+ui_order_button_movement_orders|Mozgási parancsok
+ui_order_button_formation_orders|Alakzati parancsok
+ui_order_button_fire_orders|Tűzparancsok
+ui_follow_me_e_|%s, utánam!
+ui_charge_e_|%s, támadás!!!
+ui_stand_ground_e_|%s, őrizzétek a pozíciót!
+ui_retreat_e_|%s, visszakozz!
+ui_mount_horses_e_|%s, lóra fel!
+ui_dismount_e_|%s, lóról le!
+ui_advance_e_|%s, tíz lépést előre!
+ui_fall_back_e_|%s, tíz lépést hátra!
+ui_stand_closer_e_|%s, közelebb férkőzni!
+ui_spread_out_e_|%s, szétszóródni!
+ui_use_blunt_weapons_e_|%s, csak ütőfegyvereket használjatok!
+ui_use_any_weapon_e_|%s, szabad fegyverhasználat!
+ui_hold_fire_e_|%s, tüzet szüntess!
+ui_fire_at_will_e_|%s, tüzelés szabadon!
+ui_hold_this_position_e_|%s, tartsátok a pozíciót!
+ui_infantry|Gyalogság
+ui_archers|Íjászok
+ui_cavalry|Lovasság
+ui_companions|Társak
+ui_everyone_hear_me|Mindenki figyeljen!
+ui_everyone|Mindenki
+ui_everyone_around_me|Katonák a közelben
+ui_str_hear_me|%s, figyelem!
+ui_str_and_str|%s és %s
+ui_str_comma_str|%s, %s
+ui_need_to_learn_prisoner_management|Ahhoz, hogy foglyokat ejthess, ki kell tanulnod a fogolytartás képességet.
+ui_game_log|Játéknapló
+ui_recent_messages|Aktuális üzenetek
+ui_custom_battle|Egyedi csata
+ui_player|Játékos
+ui_value_denars|%d dénár
+ui_back|Vissza
+ui_forward|Előre
+ui_display_on_map|Megjelenítés a térképen
+ui_info_pages|Játékkoncepciók
+ui_troops2|Karakterek
+ui_locations|Helyszínek
+ui_click_button_to_view_note|Kattints a linkre a feljegyzések megtekintéséhez.
+ui_this_page_contains_no_information|Ez az oldal nem tartalmaz használható információt.
+ui_other_pages_that_link_here|Más kapcsolódó oldalak: 
+ui_report_is_value_days_old| (A jelentés %d napja készült.)
+ui_report_is_current| (Naprakész jelentés.)
+ui_button_party_member_healthy_total|%s (%d/%d)
+ui_button_party_member_total|%s (%d)
+ui_button_party_member_hero_percentage_wounded|%s (%d%% - sebesült)
+ui_button_party_member_hero_percentage|%s (%d%%)
+ui_percentage_value|%d%%
+ui_full|Teljes
+ui_quick|Gyors
+ui_none|Kikapcsolva
+ui_change|Változtatás
+ui_how_to_change|Hogyan változtassam meg?
+ui_change_directx_explanation|A renderelés módját az első indításkor megjelenő menüben, a Beállítás gomb megnyomására megjelenő menüben válthatod át DirectX 7-ről DirectX 9-re.
+ui_dropping_picking_up|Eldobva: %s; felvéve: %s.
+ui_dropping|Eldobva: %s.
+ui_picking_up|Felvéve: %s.
+ui_unable_to_take|Nem tudod elvinni.
+ui_age|Kor
+ui_cannot_be_used_on_horseback|Lóháton nem használható
+ui_enable_vertex_shaders2|Renderelés módja:
+ui_screen_size2|Képernyőfelbontás:
+ui_use_desktop_resolution2|Asztali képernyőfelbontás használata
+ui_shadow_quality2|Árnyékok minősége:
+ui_m_low2|Al.
+ui_m_high2|Magas
+ui_m_ultra_high2|Nagyon magas
+ui_off2|Ki
+ui_group_header|Katona osztálya
+ui_group_rename|Csoport átnevezése
+ui_group_1|Gyalogság
+ui_group_2|Íjászok
+ui_group_3|Lovasság
+ui_group_4|Névtelen
+ui_group_5|Névtelen
+ui_group_6|Névtelen
+ui_group_7|Névtelen
+ui_group_8|Névtelen
+ui_group_9|Névtelen
+ui_group_rename|Csoport átnevezése
+ui_group_close|Bezárás
+ui_party_b_group_information|%s csoportja: %s
+ui_thrown_or_s|Eldobva/%s
+ui_ranged_damage|Becélozva: %d%s
+ui_overall_quality|Minőség
+ui_shader_quality|Árnyékolás min.:
+ui_flora_lod_detail|Növényzet részl.:
+ui_flora_degrade_distance|Látótáv:
+ui_antialiasing|Elsimítás:
+ui_use_depth_effects|Mélységeffektek haszn.
+ui_hdr_mode|HDR mód:
+ui_autoexpore|Automatikus expozíció
+ui_choose_profile|Profil választása
+ui_create|Létrehozás
+ui_edit|Szerkesztés
+ui_join_game|Csatlakozás játékhoz
+ui_host_game|Játék szervezése
+ui_custom|Egyéni
+ui_medium|Közepes
+ui_male|Férfi
+ui_female|Nő
+ui_gender|Nem kiválasztása:
+ui_edit_profile|Profil szerkesztése
+ui_new_profile|Új profil
+ui_enter_username|Felhasználói név:
+ui_invalid_username|A felhasználói név csak betűket és számokat, vagy _ karaktert tartalmazhat.
+ui_confirmation|Biztos vagy benne?
+ui_multiplayer|Többjátékos mód
+ui_server_name|Kiszolgáló
+ui_module_name|Modul
+ui_game_type|Játéktípus
+ui_map_name|Térkép
+ui_ping|Ping
+ui_dedicated|Dedikált
+ui_number_of_players|Játékosok
+ui_password_protected|Jelszó
+ui_connect|Csatlakozás
+ui_local_area_network|Helyi hálózat
+ui_internet|Internet
+ui_favorites|Kedvencek
+ui_source|Forrás:
+ui_server_password|Kiszolgáló jelszó:
+ui_refresh|Frissítés
+ui_start_search|Keresés indítása
+ui_add_to_favorites|Hozzáadás a kedvencekhez
+ui_remove_from_favorites|Eltávolítás a kedvencek közül
+ui_use_speedtree|Speedtree haszn.
+ui_use_instancing|Instancing haszn.
+ui_error|Hiba
+ui_error_server_full|A kiszolgáló megtelt.
+ui_error_server_full_for_non_private|A kiszolgáló nem fogad több saját tagi jelszóval nem rendelkező játékost.
+ui_error_server_password_incorrect|Hibás jelszó.
+ui_error_incorrect_serial|Hibás sorozatszám.
+ui_error_incorrect_authorization_key|Hibás azonosító kulcs.
+ui_error_banned_from_server|Erről a kiszolgálóról kitiltottak.
+ui_error_username_taken|A profilnevedet már használja egy másik játékos.
+ui_error_authentication_failed|Hibás azonosítás.
+ui_unable_to_connect_to_server|Sikertelen csatlakozás a kiszolgálóhoz.
+ui_connection_to_server_is_lost|Megszűnt a kapcsolat a kiszolgálóval.
+ui_kicked_from_server|Kirúgtak a kiszolgálóról.
+ui_switch_to_module_question|A kiszolgálón más modul fut, mint amivel te játszol. Szeretnéd, ha a Mount&Blade átváltana a megfelelő modulra?
+ui_download_module_question|A kiszolgálón olyan modul fut, amit még nem telepítettél a számítógépedre. Ellátogatsz a letöltési helyre?
+ui_download_mb_new_version_question|Ezen a kiszolgálón a Mount&Blade újabb változata fut (%d.%d%d%d), mint amelyikkel te játszol (%d.%d%d%d). Ellátogatsz a TaleWorlds letöltő oldalára?
+ui_download_mb_old_version_question|Ezen a kiszolgálón a Mount&Blade régebbi változata fut (%d.%d%d%d), mint amelyikkel te játszol (%d.%d%d%d).
+ui_download_module_new_version_question|Ezen a kiszolgálón a használt modul újabb változata fut (%d.%d%d%d), mint amelyikkel te játszol (%d.%d%d%d). Ellátogatsz a modul letöltési helyére?
+ui_download_module_old_version_question|Ezen a kiszolgálón a használt modul régebbi változata fut (%d.%d%d%d), mint amelyikkel te játszol (%d.%d%d%d).
+ui_authenticating_with_steam|Azonosítás a Steamen...
+ui_validating_serial_number|Sorozatszám érvényesítése...
+ui_scanning_lan|Helyi hálózat vizsgálata...
+ui_retrieving_servers|Kiszolgálólista fogadása...
+ui_shield_size2|Méret: %dx%d
+ui_click_to_view_notes|Kattints a jegyzetek megtekintéséhez
+ui_retrieving_server_infos|Információ fogadása a kiszolgálóról (%d)...
+ui_connecting_to_server|Csatlakozás a kiszolgálóhoz...
+ui_requesting_to_join_the_game|Csatlakozási kérelem elküldése...
+ui_loading|Betöltés...
+ui_group_value_control|%d csoport!
+ui_drop_weapon|Fegyver eldobása
+ui_multiplayer_message_all|Üzenet küldése mindenkinek
+ui_multiplayer_message_team|Üzenet küldése a csapatnak
+ui_command_line|Parancssor
+ui_use_ranged_weapon_as_melee|Fegyvermód váltása
+ui_send_message_all|Üzenet küldése mindenkinek
+ui_send_message_team|Üzenet küldése a csapatnak
+ui_select|Kiválasztás
+ui_context_menu|Tartalomérzékeny menü
+ui_round_starts_in_value_seconds|A forduló %d másodperc múlva kezdődik...
+ui_watching_value|%s követése
+ui_capital_spec|SPEC
+ui_capital_dead|HALOTT
+ui_instancing_error1|Nem sikerült lezárni az instancing puffert (mérete: %d), mesh-instancing letiltva (Hibakód: %d)
+ui_instancing_error2|Nem sikerült beilleszteni az instancing objektumokat, Hálós instancing letiltása 
+ui_by_keyboard|A mozgásbillentyűkkel
+ui_combat_speed_slowest|Leglassabb
+ui_combat_speed_slower|Lassabb
+ui_combat_speed_normal|Normál
+ui_combat_speed_faster|Gyorsabb
+ui_combat_speed_fastest|Leggyorsabb
+ui_module_newer_than_application|A választott modulhoz a játék újabb változata szükséges.
+ui_module_older_than_application|A választott modulhoz a játék régebbi változata szükséges.
+ui_unbalanced|Kiegyensúlyozatlan
+ui_can_crush_through_blocks|Blokkokon átpréselődés lehetséges
+ui_turn_camera_with_horse|A kamera a lóval együtt fordul:
+ui_widescreen_mode_on|Többképernyős mód engedélyezve
+ui_widescreen_mode_off|Többképernyős mód letiltva
+ui_notification_cant_upgrade|(Nem sikerült fejleszteni: nincs elegendő pénz)
+ui_turn_never|Soha
+ui_turn_ranged_only|Csak célzófegyver
+ui_turn_melee_only|Csak közelharci
+ui_turn_always|Mindig
+ui_general_options|Általános beáll.
+ui_vac_enabled|Valve csalásellenes eng.
+ui_campaign_ai|Hadjárat MI:
+ui_downloading_map|Térkép letöltése (%d Kb)
+ui_download_completed|Letöltés kész.
+ui_server_filter|Szerverszűrés
+ui_has_players|Vannak játékosok
+ui_is_not_full|Nincs tele
+ui_is_password_free|Nincs jelszó
+ui_native_only|Csak anyanyelvi
+ui_ping_limit|Ping korlát
+ui_filter_info|%d játék és %d játékos kiszűrve
+ui_is_version_compatible|Kompatibilis ezzel a verzióval:
+ui_ttnet_account|TTnet Oyun felh. fiók
+ui_username|Felhasználónév
+ui_password|Jelszó
+ui_error_incorrect_username_or_password|Érvénytelen felhasználónév vagy jelszó
+ui_validating_account|Felhasználói fiók érvényesítése...
+ui_plase_enter_your_serial_key|Írd be a termékaktivációs kódodat
+ui_texture_detail2|Texturareszletesseg:
+ui_antialiasing2|Elsimitas:
+ui_napoleonic_key_does_not_exist|This mod requires the Napoleonic Wars DLC to play!
+ui_delete_module_workshop|Are you sure you want to delete and unsubscribe from the module?
+ui_delete_module|Are you sure you want to delete the module?
+ui_delete_native_module|You cannot delete Native.
+ui_incompatible_module|This server is incompatible with your current module. You can use the configuration utility to change module.

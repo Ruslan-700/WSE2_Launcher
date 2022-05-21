@@ -11,6 +11,7 @@
 #include <shlobj.h>
 #include <fstream>
 #include <cstdio>
+#include <WinUser.h>
 
 enum ExeType { ExeType_DedicatedServer, ExeType_NotDedicatedServer};
 
@@ -18,4 +19,5 @@ class Class_Engine;
 
 #include "Engine.h"
 
-#include "Image_Options.h"
+#include "Images.h"
+#include "Fonts.h"

@@ -1,0 +1,107 @@
+ui_texture_detail|Detaily textur:
+ui_max_frame_rate|Max. poèet snímkù za sekundu:
+ui_enable_bumpmap|Použít bump-mapping
+ui_disable_blood|Nezobrazovat krev
+ui_disable_music|Vypnout hudbu
+ui_disable_sound|Vypnout zvuk
+ui_enable_cheats|Povolit cheaty
+ui_enable_edit_mode|Povolit editaèní režim (Pozor, zpomaluje hru.)
+ui_enable_pixel_shaders|Používat pixelshadery
+ui_enable_sound_variation|Povolit zvukové variace
+ui_enable_vertex_shaders|Metoda renderu:
+ui_shadow_quality|Kvalita stínování:
+ui_directx_7|DirectX 7
+ui_directx_9|DirectX 9
+ui_show_framerate|Zobrazit poèet snímkù za sekundu:
+ui_start_windowed|Spustit v oknì
+ui_trialmode_caption|Aktivace
+ui_trialmode|Najdi si prosím chvilku na aktivaci Mount&&Blade Warband pomocí sériového èísla. Unikátní šestnácticiferné sériové èíslo máš v krabièce od hry. \nPokud si z nìjakého dùvodu nechceš hru aktivovat, mùžeš hrát ve zkušebním režimu, ale tvá postava pak nedosáhne vyšší úrovnì než 8.
+ui_launch_buy|Kup si licenci od TaleWorlds.com
+ui_launch_faq|Aktivace - odpovìdi na èasto kladené dotazy
+ui_trialmode2|Pokud si chceš hru aktivovat teï...
+ui_trialmode3|Nebo taky mùžeš...
+ui_trialmode4|Pokud máš ohlednì zpùsobu aktivace nìjaké otázky, mùžeš si pøeèíst...
+ui_serial_key_caption|Sériové èíslo
+ui_notification_serial_input|Zadej níže uvedené sériové èíslo (mùžeš ho i zkopírovat a vložit) a klikni na tlaèítko 'aktivovat'.
+ui_activate|Aktivovat
+ui_paste|Vložit
+ui_notification_serial_internet_connection|Pro aktivaci je potøeba funkèní pøipojení na internet!
+ui_notification_serial_offline|Pokud tvùj poèítaè nemá pøipojení na internet, mùžeš použít také:
+ui_manual_activation|Manuální aktivace
+ui_offline_activation|Aktivace offline
+ui_manual_activation_caption|Manuální aktivace
+ui_offline_activation_caption|Aktivace offline
+ui_cancel2|Zrušit
+ui_close|Zavøít
+ui_ok2|OK
+ui_activation_successful|Hra byla úspìšnì aktivována.
+ui_activation_successful2|Zadej prosím sériové èíslo, pod kterým se budeš napøíštì pøihlašovat. Pokud si nìkdy Mount&&Blade Warband nainstaluješ na nový poèítaè, budeš muset toto èíslo zadat znovu.
+ui_activation_denied|Aktivace zamítnuta!
+ui_notification_serial_already_used|Sériové èíslo už se používá na jiném poèítaèi. Musíš nìkolik týdnù poèkat, než budeš hru moct znovu aktivovat na tomto poèítaèi.
+ui_notification_unable_to_connect_to_activation_server|Pøipojení k aktivaènímu serveru se nezdaøilo!
+ui_notification_unable_to_connect_to_activation_server2|Zkontroluj prosím, zda máš aktivní pøipojení k internetu a že ti správnì funguje, a zkus to znovu. Pokud používáš firewall, budeš muset høe povolit pøístup k internetu. Kdyby ani to nepomohlo, vždycky mùžeš zkusit hru aktivovat manuálnì.
+ui_incorrect_serial_number|Neplatné sériové èíslo!
+ui_incorrect_hardware_hash|Neplatný hardwarový hash!
+ui_incorrect_activation_code|Neplatný aktivaèní kód!
+ui_cant_write_to_registry|Nelze zapisovat do registrù!
+ui_video|Obraz
+ui_audio|Zvuk
+ui_game|Hra
+ui_advanced|Pokroèilé nastavení
+ui_mount_and_blade_is_ready|Hra Mount&&Blade Warband je pøipravena.
+ui_notification_trial_mode|Mount&&Blade Warband právì bìží ve zkušebním režimu. V tomto režimu si mùžeš hrát zdarma, dokud tvá postava nedosáhne úrovnì 6. Pokud budeš chtít pokraèovat dál, kup si prosím licenci od TaleWorlds.com. Po internetu se dá licence koupit za minutku a odemkneš si tím plný režim hry.
+ui_there_are_no_modules_installed|Nejsou nainstalovány žádné moduly!
+ui_notification_new_version|Byla nalezena novìjší verze Mount&Blade Warband.\n Nyní máš nainstalovanou verzi %d.%d%d%d.\n Nejnovìjší verze této hry je %d.%d%d%d.\nNovou verzi si mùžeš stáhnout z www.taleworlds.com.
+ui_new_version_found|Nalezena nová verze!
+ui_notification_unable_to_retreive_new_version|Informace o nové verzi se nepodaøilo stáhnout. Zkus to prosím pozdìji znovu.
+ui_new_version|Nová verze:
+ui_notification_latest_version|Nainstalovaná verze hry Mount&&Blade Warband je dosud nejaktuálnìjší.
+ui_mount_and_blade_is_up_to_date|Mount&Blade Warband je stále aktuální!
+ui_off|Vypnout
+ui_continue_playing_the_trial_mode|Pokraèovat ve høe ve zkušebním režimu.
+ui_faq_caption|Odpovìdi na nejèastìjší dotazy
+ui_faq_text|Dotaz: Co je to ta aktivace?\r\nOdpovìï: Aktivaèní systém je k uživateli pøátelská metoda ochrany proti kopírování, založená na distribuci unikátních CD klíèù s každou kopií hry. Na každém poèítaèi, na kterém chceš hru hrát, ji musíš jednou aktivovat pomocí svého CD klíèe. Když si hru jednou aktivuješ, mùžeš hrát - staèí, abys mìl CDèko v mechanice. Dokud CD kíè neztratíš, mùžeš hru snadno aktivovat a hrát ji, a to i po mnoha letech.\r\n\r\nDotaz: Kde najdu svùj CD klíè?\r\nOdpovìï: V každé krabièce se hrou je unikátní CD klíè hry. Rùzní prodejci mohou distribuovat CD klíè rùznì, ale zpravidla se nalepuje na obálku papírového návodu ke høe. Pakliže sis koupil hru online, mìl by prodejce CD klíè dodat.\r\n\r\nDotaz: Jak ta aktivace funguje?\r\nOdpovìï: Hra vygeneruje zahashovanou hodnotu na základì specifikací tvého poèítaèe a pošle ji po Internetu na aktivaèní server spolu s tvým CD klíèem. Aktivaèní server zaregistruje CD klíè pro tvùj poèítaè a vyšle aktivaèní èíslo, které odblokuje plný režim hry.\r\n\r\nDotaz: Mùžu si hru aktivovat na víc poèítaèích?\r\nOdpovìï: Ano, mùžeš. Ale pamatuj si, že je hra licencovaná pro tvoje osobní použití. Aktivaèní server ti mùže CD klíè doèasnì odmítnout, pokud ho bìhem krátké doby použiješ pro pøíliš mnoho poèítaèù. \r\n\r\nDotaz: Když jsem klikl na aktivaèní tlaèítko, program pøestal reagovat.\r\nOdpovìï: Aktivaèní proces nìkdy trvá i pùl minuty. Buï trpìlivý, hra ti nakonec ohlásí výsledek.\r\n\r\nDotaz: Nemám poèítaè pøipojený k Internetu. Jak si mùžu aktivovat hru?\r\nOdpovìï: V tom pøípadì mùžeš použít manuální aktivaci. Klikni prostì na tlaèítko 'Zadat CD klíè' a pak na tlaèítko 'Manuální aktivace'. Budeš se ale muset podívat na internetovou stránku pro manuální aktivaci z nìjakého jiného poèítaèe, který má pøipojení k Internetu.\r\n
+ui_auto_adjust|Automaticky
+ui_screen_size|Rozlišení obrazovky:
+ui_antialiasing|Antialiasing:
+ui_use_desktop_resolution|Rozlišení pracovní plochy
+ui_play|Hrát Mount&&Blade Warband
+ui_check_for_new_version|Zjistit aktualizaci
+ui_configure|Nastavení
+ui_configure_caption|Nastavení
+ui_mountandblade_website|Webová stránka hry Mount&&Blade Warband
+ui_current_setting|           Aktuální modul:
+ui_manual_activation_text1|1) V internetovém prohlížeèi otevøi následující adresu:
+ui_manual_activation_text2|2) Na internetové stránce, která se naète, zadej své sériové èíslo...
+ui_manual_activation_text3|3)... a tento poèítaèový hardwarový hash:
+ui_manual_activation_text4|4) Stránka ti pøidìlí aktivaèní kód. Zadej ho sem dolù, nebo ho tam zkopíruj, a stiskni OK.
+ui_activation_code|Aktivaèní kód:
+ui_force_vsync|Nucená vertikální synchronizace
+ui_module_newer_than_application|U modulu, který sis vybral, je výslovnì uvedeno, že NEBUDE FUNGOVAT pro tvou verzi hry. Mùžeš to napravit tím, že necháš hru podívat, jestli už nevydali novou verzi.
+ui_module_older_than_application|Modul, který sis vybral, byl vytvoøen pro starší verzi hry a se souèasnou verzí nemusí fungovat. Mùžeš pokraèovat a zkusit ho spustit, ale je možné, že se díky tomu dostaneš do problémù. Mùžeš se jim vyhnout tím, že se zkusíš podívat, jestli už nevydali novou verzi modulu.
+ui_m_low|Nižší
+ui_m_high|Vyšší
+ui_m_ultra_high|Nejvyšší
+ui_force_single_threading|Nucené jednoduché øetìzení
+ui_not_enough_memory|Zdá se, že ve fyzické a virtuální pamìti máš %d MB volného místa. Mount&Blade Warband vyžaduje k bezproblémovému chodu alespoò 700 MB pamìti. Pokud by byla hra pøíliš nestabilní, vypni prosím pøed spuštìním hry Mount&Blade Warband ostatní programy, nebo v nabídce Ovládací panely -> Systém zvyš velikost virtuální pamìti.
+ui_install|Instalovat Mount&Blade Warband
+DirectXText|Hra Mount&Blade Warband vyžaduje ke svému chodu rozhraní DirectX 9.0c nebo novìjší. Tento požadavek tvùj poèítaè nesplòuje. Problém odstraníš tak, že si nainstaluješ nejnovìjší verzi DirectX z internetové stránky firmy Microsoft. Chceš pøepnout na stránku TaleWorlds pro stahování DirectX? 
+NoMountAndBladeText|Hra Mount&Blade Warband není na tomto poèítaèi nainstalovaná. Stáhni si prosím plný instalaèní program ze stránky www.taleworlds.com a použij ho k nainstalování hry.
+ui_SavegamesText|Chceš zachovat uložené soubory?
+ui_trialmode_online|Hra Mount&&Blade Warband je momentálnì spuštìna ve zkušebním módu. V nìm mùžeš hrát bez omezení do okamžiku, než tvoje postava dosáhne úrovnì 7. Chceš-li pokraèovat dále, kup si prosím licenci na Taleworlds.com. Zakoupení licence online zabere pouhou minutu a odemkneš si tak kompletní hru.
+ui_launch_activate|Zadej sériové èíslo
+ui_trialmode2_online|Po zakoupení licence obdržíš CD klíè.\nChceš-li si odemknout hru, pøejdi na...
+ui_trialmode3_online|Nebo pokud si hru prozatím koupit nechceš, mùžeš také...
+ui_trialmode4_online|Náš systém online prodeje splòuje veškeré bezpeènostní standardy a plnì respektujeme práva zákazníkù na bezpeènost, soukromí, možnost vlastnit záložní kopie a upgradovat hardware. Pokud se chceš dozvìdìt více o našich pravidlech prodeje, navštiv prosím:
+ui_ondemand_textures|Naèíst textury na požádání
+ui_language|Jazyk:
+ui_steam_not_running|Nelze správnì inicializovat Steam. Tento program je nutno spustit, jinak hra nebude fungovat.
+ui_switch_to_turkish_explanation|Pøeješ si zmìnit jazyk hry na tureètinu?
+ui_switch_to_turkish_yes|Ano
+ui_switch_to_turkish_no|Ne
+ui_new_version_message|K dispozici je novìjší verze hry. Chceš pøejít na internetové stránky, odkud ji lze stáhnout?
+ui_enable_version_check|Aktivovat kontrolu verze
+ui_disable|Vypnout
+ui_yes2|Ano
+ui_no2|Ne
+ui_new_version_message2|Je dostupná nová verze hry. Navštivte prosím online portál, kde jste hru zakoupili a novou verzi si stáhnìte.

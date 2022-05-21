@@ -1,0 +1,753 @@
+ui_music_volume|Hlasitost hudby:
+ui_sound_volume|Hlasitost zvuku:
+ui_mouse_sensitivity|Citlivost myši:
+ui_invert_mouse_y_axis|Převrácení osy Y u myši:
+ui_enabled|Zapnuto
+ui_disabled|Vypnuto
+ui_damage_to_player|Zranění hráče:
+ui_reduced_to_1_over_4_easiest|Sníženo na 1/4 (Nejsnadnější)
+ui_reduced_to_1_over_2_easy|Sníženo na 1/2 (Snadné)
+ui_damage_to_friends|Zranění přátel:
+ui_reduced_to_1_over_2_easiest|Sníženo na 1/2 (Nejsnadnější)
+ui_reduced_to_3_over_4_easy|Sníženo na 3/4 (Snadné)
+ui_normal|Normální
+ui_combat_ai|Bojová UI:
+ui_combat_speed|Rychlost boje:
+ui_good|Dobrá
+ui_average_caps|Průměrná
+ui_poor|Mizerná
+ui_faster|Rychlejší
+ui_slower|Pomalejší
+ui_control_block_direction|Směr blokování
+ui_automatic_recommended|Automaticky
+ui_manual_easy|Ruční (snadné)
+ui_manual_hard|Ruční (těžké)
+ui_by_mouse_movement|Podle pohybu myši
+ui_control_attack_direction|Směr útoku
+ui_lance_control|Ovládání kopí:
+ui_by_relative_enemy_position|Podle relativní polohy nepřítele
+ui_by_inverse_mouse_movement|Podle inverze pohybu myši
+ui_battle_size|Velikost bitev:
+ui_show_attack_direction|Zobrazovat směry útoku:
+ui_show_targeting_reticule|Zobrazovat zaměřovač:
+ui_show_names_of_friendly_troops|Zobrazovat jména spřátelených jednotek:
+ui_report_damage|Hlášení o škodách:
+ui_report_shot_difficulty|Hlášení o obtížnosti zásahu:
+ui_difficulty_rating_percentage|Obtížnost = %d%%
+ui_controls|Ovládání
+ui_video_options|Grafika
+ui_done|Hotovo
+ui_factions|Frakce
+ui_item_itemname|Předměty - %s
+ui_prop_propname|Majetek - %s
+ui_unknown_unknownname|Neznámé - %s
+ui_entry_point_entrypointname|Vstupní bod %d
+ui_passage_menu_item_passagename|Průchod (položka v nabídce %d)
+ui_plant_plantname|Rostlina - %s
+ui_export_file_for_character_playername_already_exists_overwrite_it|Exportovaný soubor pro postavu %s již existuje. Chceš ho přepsat?
+ui_yes|Ano
+ui_no|Ne
+ui_set_save_file_name|Zadej název, pod kterým chceš hru uložit:
+ui_enter_new_name|Zadej nové jméno:
+ui_export_character|Exportovat postavu
+ui_import_character|Importovat postavu
+ui_character_playername_exported_successfully|Postava %s byla exportována.
+ui_character_playername_imported_successfully|Postava %s byla importována.
+ui_unable_to_open_import_file|Importovací soubor se nepodařilo otevřít.
+ui_are_you_sure_you_want_to_import_the_character|Opravdu chceš naimportovat postavu?
+ui_unable_to_find_character_import_file|Importovací soubor se nepodařilo najít.
+ui_mount_and_blade_is_running_in_trial_mode_please_buy_the_game_for_importing_a_character|Hra Mount&Blade běží ve zkušebním režimu. Aby sis mohl naimportovat postavu, kup si prosím plnou verzi hry.
+ui_change_skin|Etnikum
+ui_change_hair|Vlasy
+ui_change_hair_color|Barva vlasů
+ui_change_beard|Vousy
+ui_tutorial|Výuka
+ui_tutorial_face_generator|Uprav si obličej své postavy pomocí tlačítek a posuvných lišt. Pokud budeš chtít hlavu natočit, klikni na ni a zatáhni za ni myší.
+ui_restore|Načíst
+ui_cancel|Zrušit
+ui_delete|Smazat
+ui_confirm_delete_game|Chceš opravdu smazat hru?
+ui_error_removing_file|Chyba při odstraňování souboru...
+ui_day_datedisplay|Den %d (%d:%d%d)
+ui_reset_changes|Vynulovat změny
+ui_weapon_proficiencies|Dovednosti
+ui_skills|Schopnosti
+ui_attributes|Vlastnosti
+ui_enter_name_here|*Sem zadej jméno*
+ui_edit_face|Editovat obličej (klikni)
+ui_statistics|Statistiky
+ui_next|Další
+ui_prev|Předchozí
+ui_learn|Naučit se
+ui_question_saving_policy|Jak chceš nastavit ukládání hry?
+ui_saving_policy_realistic|  Bez uložení nebude možné opustit hru!  
+ui_saving_policy_nonrealistic|  Nechte mě opustit hru bez uložení.  
+ui_tutorial_character_generation|Teď si zadej jméno a rozděl postavě vlastnosti, schopnosti a zbraňové body. Můžeš klikat na různé věci na obrazovce a zjišťovat, jak která z nich ovlivní tvou postavu.
+ui_str|SIL
+ui_agi|POH
+ui_int|INT
+ui_cha|CHA
+ui_at_learning_limit|(Maximální zvládnutí)
+ui_not_enough_skill_points_to_learn|(Na to nemáš dost bodů)
+ui_strength|síla
+ui_agility|pohyblivost
+ui_intelligence|inteligence
+ui_charisma|charisma
+ui_not_enough_attributetype_to_learn_this_skill|(K této schopnosti ti chybí %s.)
+ui_explanation_one_handed_weapon|Sem patří používání jednoručních mečů, seker a drtivých zbraní.
+ui_explanation_two_handed_weapon|Sem patří používání obouručních mečů, velkých seker a kyjů.
+ui_explanation_polearm|Sem patří používání dřevcových zbraní, jako jsou halapartny, kopí, hole atd.
+ui_explanation_archery|Sem patří používání luků.
+ui_explanation_crossbow|Sem patří používání kuší.
+ui_explanation_throwing|Sem patří používání vrhacích zbraní, jako jsou oštěpy, šipky, kameny atd.
+ui_explanation_firearms|Sem patří používání pistolí a mušket.
+ui_explanation_strength|Síla: Každý bod přidává +1 bod zdraví. Nad 1/3 síly se nelze naučit tyto schopnosti: železné svaly, mocný úder, silný hod, síla k natažení luku.
+ui_explanation_agility|Pohyblivost: Za každý bod dostaneš pět zbraňových bodů a mírně zvyšuje rychlost zacházení se zbraní. Nad 1/3 pohyblivosti se nelze naučit tyto schopnosti: mistrovství zbraně, štít, atletika, jezdectví, jízdní lukostřelba, kořistnictví.
+ui_explanation_intelligence|Inteligence: Každý bod inteligence ihned přidává jeden bod schopností navíc. Nad 1/3 inteligence se nelze naučit tyto schopnosti: cvičitel, stopování, taktika, hledání cesty, pozorování, skladování zásob, ošetřování ran, chirurgie, první pomoc, stavebnictví a přesvědčování.
+ui_explanation_charisma|Charisma: Každý bod zvyšuje maximální velikost tvé družiny o +1. Nad 1/3 charismatu se nelze naučit tyto schopnosti: správa vězňů, velitelství a obchod.
+ui_level|Úroveň: %d
+ui_xp|Zkušenosti: %d
+ui_next_level_at|Další úroveň při: %d
+ui_health_player|Zdraví: %d/%d
+ui_health|Zdraví: %d
+ui_attribute_points|Body vlastností: %d
+ui_skill_points|Body schopností: %d
+ui_weapon_points|Zbraňové body: %d
+ui_mission_losses_none| nic.
+ui_mission_losses_wounded|Zraněno:
+ui_mission_losses_killed|Zabito:
+ui_party_losses|%s  : %d zraněných --- zabito %d z %d.
+ui_casualties_sustained|Utrpěné škody:
+ui_advantage_change|Změna výhody = %c%d 
+ui_overall_battle_casualties|Celkové následky bitvy:
+ui_advantage_outnumbered| Nepřátelé mají beznadějnou přesilu.
+ui_advantage_major_disadvantage| Máš velkou nevýhodu.
+ui_advantage_slight_disadvantage| Máš mírnou nevýhodu.
+ui_advantage_balanced| Situace je vyrovnaná.
+ui_advantage_fair_advantage| Máš slušnou výhodu, můžeš vyhrát.
+ui_advantage_greatly_favored| Pravděpodobnost je silně nakloněna ve tvůj prospěch.
+ui_tactical_advantage|Taktická výhoda: %d (%s)
+ui_order_group|Rozkazy skupině:
+ui_question_save_changes|Provedl jsi změny objektů. Chceš změny uložit?
+ui_yes_save|Ano, uložit.
+ui_no_discard_changes|Ne, zrušit změny.
+ui_everyone_control|Všichni!
+ui_everyone_around_control|Vojáci v okolí!
+ui_others_control|Ostatní!
+ui_question_give_up_fight|Vzdát boj?
+ui_give_up|Vzdát se
+ui_keep_fighting|Pokračovat v boji
+ui_question_leave_area|Opustit oblast
+ui_cant_retreat_there_are_enemies_nearby|Nemůžeš se stáhnout. Nepřátelé jsou moc blízko!
+ui_question_retreat_battle|Ustoupit z bitvy?
+ui_retreated_battle|%s je na straně poražených.
+ui_retreated_battle|%s utíká z bitevního pole.
+ui_retreat|Ústup
+ui_talk|Promluvit
+ui_duel|Duel
+ui_mount|Nasednout
+ui_riding_skill_not_adequate_to_mount|(Nedostatečné jezdecké schopnosti neumožňují nasednout).
+ui_dismount|Sesednout z koně
+ui_exit|Východ
+ui_door_to|Dveře do
+ui_open|Otevřít
+ui_equip|Použít
+ui_baggage|Zavazadlo
+ui_access_inventory|Otevřít inventář
+ui_chest|Truhla
+ui_passage|Průchod
+ui_go|Jít
+ui_retreat_battle|Ustoupit z bitvy
+ui_leave_area|Opustit oblast
+ui_reports|Hlášení
+ui_camp|Tábor
+ui_terrain|Terén
+ui_quests|Poznámky
+ui_inventory|Inventář
+ui_character|Postava
+ui_party|Družina
+ui_paused|Pauza
+ui_click_left_button_to_cancel_wait|Čekám... (pro návrat stiskni levé tlačítko myši.)
+ui_midnight|Půlnoc
+ui_late_night|Pozdě v noci
+ui_dawn|Svítání
+ui_early_morning|Brzy ráno
+ui_morning|Dopoledne
+ui_noon|Poledne
+ui_afternoon|Odpoledne
+ui_late_afternoon|Pozdě odpoledne
+ui_dusk|Soumrak
+ui_evening|Večer
+ui_midnight|Půlnoc
+ui_level_limit_reached|Dosažen limit úrovní!
+ui_explanation_level_limit|Buď pozdraven, dobrodruhu. Hra Mount&Blade je ve zkušebním režimu omezena na úroveň 8. Abys mohl hrát dál, restartuj prosím hru a aktivuj ji pomocí šestnácticiferného sériového čísla, které máš v krabičce od hry. Po aktivaci budeš moct pokračovat ve hře přímo od místa, kde jsi právě skončil. Mount&Blade teď hru uloží a ukončí ji.
+ui_time_limit_reached|Časový limit vypršel!
+ui_explanation_time_limit|Buď pozdraven, dobrodruhu. Hra Mount&Blade je ve zkušebním režimu omezena na 30 herních dní. Abys mohl hrát dál, restartuj prosím hru a aktivuj ji pomocí šestnácticiferného sériového čísla, které máš v krabičce od hry. Po aktivaci budeš moct pokračovat ve hře přímo od místa, kde jsi právě skončil. Mount&Blade teď hru uloží a ukončí ji.
+ui_target_lost|Cíl ztracen
+ui_waiting|Vyčkává
+ui_travelling_to|Cíl cesty: 
+ui_following|Sleduje: 
+ui_accompanying|Dělá společnost: 
+ui_running_from|Prchá před: 
+ui_patrolling|Hlídkuje
+ui_patrolling_around|Hlídkuje v okolí: 
+ui_holding|Stojí
+ui_travelling|Cestuje 
+ui_fighting_against|Bojuje proti: 
+ui_speed_equals|Rychlost = %2.1f
+ui_defenders|Posádka:
+ui_prisoners|Vězni:
+ui_1_hour|1 hodina
+ui_n_hours|%d hodin
+ui_between_hours|%d - %d hodin
+ui_combatants|Bojovníci: %d
+ui_party_size|Velikost družiny: %d
+ui_party_size_between|Velikost družiny: %d - %d
+ui_merchant|Kupec
+ui_return|Návrat
+ui_no_cost|Zdarma
+ui_rename|Přejmenovat
+ui_use|Použít
+ui_destroy|Zničit
+ui_destructible_target|Zničitelný cíl
+ui_tutorial_inventory|Toto je obchodní obrazovka. Podrž klávesu Control a klikni na předmět, který chceš koupit nebo prodat.
+ui_head_armor|Zbroj - hlava: %d
+ui_body_armor|Zbroj - tělo: %d
+ui_leg_armor|Zbroj - nohy: %d
+ui_encumbrance|Zatížení: %2.1f
+ui_you_dont_have_value|Nemáš %s.
+ui_merchant_cant_afford_value|%s: Nemůžu si dovolit %s. Mám jenom %s.
+ui_merchant_pay_whatever|Nevadí. Zaplať, kolik můžeš.
+ui_merchant_think_of_something_else|Hmm. Tak to zkusíme jinak.
+ui_dumping_value_items|Trvale přijdeš o %d předmětů, opravdu to chceš?
+ui_dumping_value_item|Trvale přijdeš o jeden předmět, opravdu to chceš?
+ui_question_slaughter_food_and_eat|Porazit %s a sníst?
+ui_money_value|Peníze: %s
+ui_dump|Odhodit
+ui_outfit|Oblečení
+ui_arms|Zbraně
+ui_horse|Kůň
+ui_food|Jídlo
+ui_reclaim_your_sold_goods|Vyžádej si zpět své prodané zboží, než si to koupíš!
+ui_return_your_bought_goods|Vrať zboží, které jsi nakoupil, než to prodáš!
+ui_polearm_no_shield|Dřevcová zbraň (bez štítu)
+ui_polearm|Dřevcová zbraň
+ui_two_handed|Obouruční
+ui_two_handed_one_handed|Obouruční / Jednoruční
+ui_one_handed|Jednoruční
+ui_return_price|Cena za vrácení: %d
+ui_sell_price|Prodejní cena: %d
+ui_reclaim_price|Vyžádaná cena: %d
+ui_buying_price|Nákupní cena: %d
+ui_default_item|Implicitní předmět
+ui_buying_price_free|Nákupní cena: zdarma
+ui_weight|Hmotnost: %2.1f
+ui_plus_value_to_head_armor| +%d ke zbroji hlavy
+ui_plus_value_to_body_armor| +%d ke zbroji těla
+ui_plus_value_to_leg_armor| +%d ke zbroji nohou
+ui_swing|Sek: %d
+ui_damage|Zranění: %d%s
+ui_thrust|Výpad: %d
+ui_accuracy|Přesnost: %d
+ui_speed_rating|Rychlostní faktor: %d
+ui_value_to_damage|%c%d ke zranění
+ui_value_to_morale| +%1.1f k morálce družiny
+ui_resistance|Odolnost: %d
+ui_size|Velikost: %d
+ui_weapon_reach|Dosah zbraně: %d
+ui_armor|Zbroj: %d
+ui_speed|Rychlost: %d
+ui_maneuver|Manévrování: %d
+ui_charge|Útok: %d
+ui_hit_points|Zdraví: %d / %d
+ui_requires_value_difficulty|Vyžaduje vlastnost: %s %d
+ui_bonus_against_shields|Bonus proti štítům
+ui_cant_be_used_to_block|Nelze použít k blokování
+ui_troop_cant_use_item|%s: Nemůžu tento předmět používat!
+ui_notification_riding_skill_not_enough|Nemáš potřebné jezdecké schopnosti k jízdě na tomto koni.
+ui_notification_requirements_not_met|Nemáš potřebné schopnosti nebo vlastnosti pro používání této zbraně.
+ui_notification_payment_value|Musíš zaplatit %s.
+ui_notification_payment_receive_value|Dostaneš %s.
+ui_one_handed_weapons|Jednoruční zbraně
+ui_two_handed_weapons|Obouruční zbraně
+ui_polearms|Dřevcové zbraně
+ui_archery|Lukostřelba
+ui_crossbows|Kuše
+ui_throwing|Vrhací zbraně
+ui_firearms|Palné zbraně
+ui_reset|Vynulovat
+ui_release_one|První vydání
+ui_move_up|Výš
+ui_move_down|Níž
+ui_upgrade_one|První aktualizace
+ui_party_skills|Schopnosti družiny
+ui_morale|Morálka: %s
+ui_terrible|Příšerná
+ui_very_low|Mizerná
+ui_low|Nižší
+ui_below_average|Podprůměr
+ui_average|Průměr
+ui_above_average|Nadprůměr
+ui_high|Vyšší
+ui_very_high|Vynikající
+ui_excellent|Nejvyšší
+ui_starving|Hlad! %d%%
+ui_weekly_cost_value|Týdenní žold: %s
+ui_company|Družina: %d / %d
+ui_prisoners_equal_value|Vězni: %d / %d
+ui_choose_prisoners|Vybrat vězně
+ui_choose_companions|Vybrat společníky
+ui_rescued_prisoners|Zachránění vězni
+ui_captured_enemies|Chycení nepřátelé
+ui_disband|Propustit
+ui_take_prisoner|Vzít do zajetí
+ui_take_back|Vzít zpět
+ui_give|Dát
+ui_take|Vzít
+ui_sell|Prodat
+ui_hire|Najmout
+ui_notification_cant_hire|(Nelze najmout: nemáš dost peněz)
+ui_uncapture|Propustit
+ui_capture|Zajmout
+ui_party_capcity_reached|(Dosaženo max. kapacity!)
+ui_all|všechno
+ui_joining_cost_weekly_wage|Cena za vstup do družiny: %d, týdenní žold: %d
+ui_weekly_wage|Týdenní žold: %d denárů
+ui_price|Cena: %d
+ui_number_ready_to_upgrade|Připraveno na vylepšení: %d 
+ui_upgrade_to_value| Povýšit na: %s.
+ui_notification_no_slot_for_upgrade|Nemáš volný slot na vylepšení %s!
+ui_shield_broken|Štít se zlomil.
+ui_shield_cracked|Štít praskl.
+ui_shield_deformed|Štít se ohnul.
+ui_you_hit_a_friendly_troop|Zasáhl jsi spřátelenou jednotku!
+ui_hit_shield_on_back|Zásah do štítu na zádech!
+ui_delivered_couched_lance_damage|Povedl se ti zásah kopím!
+ui_received_couched_lance_damage|Zasáhli tě kopím!
+ui_speed_bonus_plus|Bonus za rychlost: +%d%%
+ui_speed_bonus|Bonus za rychlost: %d%%
+ui_cant_reload_this_weapon_on_horseback|Tuto zbraň nelze dobíjet na koni.
+ui_no_more_bolts|Už nemáš střely...
+ui_you_are_not_carrying_any_bolts|Nemáš u sebe žádné střely.
+ui_no_more_arrows|Už nemáš šípy...
+ui_you_are_not_carrying_any_arrows|Nemáš u sebe žádné šípy.
+ui_head_shot|Zásah do hlavy!
+ui_delivered_number_damage|Působíš zranění za %d.
+ui_delivered_number_damage_to_horse|Působíš zranění koni za %d.
+ui_horse_charged_for_number_damage|Kůň zaútočil za %d.
+ui_received_number_damage|Dostáváš zranění za %d.
+ui_horse_received_number_damage|Kůň utrpěl zranění za %d.
+ui_value_killed_teammate|%s zabíjí člena svého týmu!
+ui_horse_fell_dead|Kůň padl mrtev...
+ui_horse_crippled|Kůň byl zmrzačen...
+ui_shot_difficulty|Obtížnost zásahu: %2.1f
+ui_you_have_improved_your_proficiency_in_value_to_number|Zlepšila se ti dovednost '%s' na %d.
+ui_your_proficiency_in_value_has_improved_by_number_to_number|Tvá dovednost '%s' se zlepšila o +%d na %d.
+ui_value_killed_by_value|%s umírá, může za to %s.
+ui_value_fell_dead|%s padá k zemi.
+ui_value_knocked_unconscious_by_value|%s upadá do bezvědomí, může za to %s.
+ui_value_fell_unconscious|%s upadá do bezvědomí.
+ui_troop_routed|%s se dává na útěk.
+ui_troop_panicked|%s propadá panice.
+ui_troop_fled|%s utíká z bitevního pole.
+ui_you_got_number_experience|Získané zkušenosti: %d bodů.
+ui_you_have_advanced_to_level_number|Postupuješ na %d. úroveň.
+ui_value_has_advanced_to_level_number|%s postupuje na %d. úroveň.
+ui_you_got_value|Dostáváš %s.
+ui_new_quest_taken|Máš nový úkol: %s.
+ui_quest_completed_value|Úkol splněn: %s.
+ui_quest_succeeded_value|Úkol splněn: %s.
+ui_quest_failed_value|Úkol %s se nepodařilo splnit.
+ui_quest_concluded_value|Uzavíráš úkol: %s.
+ui_quest_cancelled_value|Úkol zrušen: %s.
+ui_lost_value| (Ztraceno: %s)
+ui_items_lost| (Ztracený předmět:
+ui_party_has_nothing_to_eat|Družina nemá co jíst!
+ui_days_training_is_complete|Denní trénink dokončen...
+ui_total_experience_gained_through_training_number|Celková zkušenost získaná během tréninku: %d.
+ui_some_soldiers_are_ready_to_upgrade|Někteří vojáci jsou připraveni na vylepšení.
+ui_number_of_companions_exceeds_leadership_limit| Počet členů družiny přesáhl limit daný vůdcovskými schopnostmi.
+ui_number_of_prisoners_exceeds_prisoner_management_limit| Počet vězňů přesáhl limit daný správou vězňů.
+ui_party_morale_is_low|Družina má nízkou morálku!
+ui_and_one_space| a
+ui_has_deserted_the_party| zbíhá z družiny.
+ui_have_deserted_the_party| zběhli z družiny.
+ui_weekly_report|Týdenní hlášení
+ui_shared_number_experience_within_party|Družina se podělila o %d zkušenosti.
+ui_got_item_value|Získáváš předmět: %s.
+ui_game_saved_successfully|Hra byla automaticky uložena.
+ui_autosaving|Probíhá automatické ukládání...
+ui_quick_saving|Probíhá rychlé ukládání...
+ui_cant_quick_save|Během bitvy nelze používat rychlé ukládání...
+ui_screenshot_taken_to_value|Screenshot byl uložen do %s
+ui_screenshot_failed|Screenshot nelze uložit.
+ui_value_joined_your_party|%s se připojuje k družině.
+ui_value_joined_party_as_prisoner|%s se připojuje k družině jako zajatec.
+ui_value_has_joined_party|%s se připojuje k družině.
+ui_value_has_been_taken_prisoner|%s byl vzat do zajetí.
+ui_value_left_the_party|%s opouští družinu.
+ui_number_values_left_the_party|%d %s opouští družinu.
+ui_number_value_left_the_party|%d %s opouští družinu.
+ui_your_relations_with_value_has_improved_from_number_to_number|%s zlepšil vztah k tobě o %d na %d.
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|%s zhoršil vztah k tobě o %d na %d.
+ui_you_lost_value|Ztrácíš %s.
+ui_lost_item_value|Ztracený předmět: %s.
+ui_got_number_value|Získáváš %d jednotky zboží %s.
+ui_lost_number_value|Přicházíš o %d jednotky zboží %s.
+ui_set_default_keys|Původní nastavení
+ui_undo_changes|Vrátit změny
+ui_press_a_key|Stiskni klávesu
+ui_return_to_game|Návrat do hry
+ui_options|Nastavení
+ui_save_and_exit|Uložit a ukončit
+ui_save|Uložit
+ui_save_as|Uložit jako
+ui_quit_without_saving|Ukončit bez uložení
+ui_empty_slot|Prázdná pozice
+ui_game_saved|Hra byla uložena...
+ui_confirm_overwrite|Uložená hra pro %s se přepíše. Chceš ji opravdu přepsat?
+ui_dynamic_lighting|Dynamické nasvětlení:
+ui_character_shadows|Stíny postav:
+ui_grass_density|Hustota trávy:
+ui_environment_shadows|Stíny prostředí:
+ui_realistic_shadows_on_plants|Realistické stíny na rostlinách:
+ui_particle_systems|Částicové systémy:
+ui_gamma|Gamma monitoru:
+ui_character_detail|Detaily postav:
+ui_character_shadow_detail|Detaily stínů postav:
+ui_blood_stains|Krvavé skvrny:
+ui_on|Zapnuto
+ui_off|Vypnuto
+ui_near_player_only|Pouze hráči v okolí
+ui_default|Původ. nastavení
+ui_3d_grass|3D tráva:
+ui_number_of_ragdolls|Počet ragdoll modelů:
+ui_number_of_corpses|Počet mrtvol:
+ui_unlimited|Neomezeně
+ui_anisotropic_filtering|Anizotropní filtrování:
+ui_fast_water_reflection|Rychlé odrazy na vodě:
+ui_maximum_framerate|Max. počet snímků za sekundu:
+ui_show_framerate|Zobrazit počet snímků za sekundu:
+ui_estimated_performance|Odhadovaný výkon: %d%%
+ui_change_graphics_settings_explanation|Některé změny se projeví teprve při vstupu do nové oblasti.
+ui_start_tutorial|Hrát výuku
+ui_start_a_new_game|Začít novou hru
+ui_restore_a_saved_game|Načíst uloženou hru
+ui_exit_to_windows|Ukončit hru
+ui_credits|Autoři
+ui_version_value|%s
+ui_active_quests|Aktivní úkoly:
+ui_finished_quests|Splněné úkoly:
+ui_given_on_date|Zadáno dne: %s
+ui_days_since_given|Dnů od zadání úkolu: %d
+ui_quest_progression_number|Postup plnění úkolu: %d%%
+ui_too_many_quests|Příliš mnoho úkolů
+ui_ok|OK
+ui_move_forward|Pohyb vpřed
+ui_move_backward|Pohyb zpět
+ui_move_left|Pohyb doleva
+ui_move_right|Pohyb doprava
+ui_action|Akce
+ui_jump|Skok
+ui_attack|Útok
+ui_parry_then_attack|Protiútok
+ui_defend|Obrana
+ui_kick|Kop
+ui_equip_weapon_1|Vybavit se předmětem 1
+ui_equip_weapon_2|Vybavit se předmětem 2
+ui_equip_weapon_3|Vybavit se předmětem 3
+ui_equip_weapon_4|Vybavit se předmětem 
+ui_equip_next_weapon|Vzít další zbraň
+ui_equip_next_shield|Vzít další štít
+ui_sheath_weapon|Schovat zbraň
+ui_character_window|Okno postavy
+ui_inventory_window|Okno inventáře
+ui_party_window|Okno družiny
+ui_quests_window|Okno úkolů
+ui_game_log_window|Okno herního záznamu
+ui_leave_location_retreat|Opustit lokaci / ustoupit
+ui_zoom|Zvětšování
+ui_view_outfit|Prohlížet vybavení
+ui_toggle_first_person_view|Pohled první osoby
+ui_view_orders|Prohlédnout si rozkazy
+ui_quick_save|Rychlé ukládání
+ui_no_key_assigned|Nebyla přiřazena žádná klávesa
+ui_new_enemies_have_arrived|Dorazili noví nepřátelé.
+ui_reinforcements_have_arrived|Dorazily posily.
+ui_report_casualties|Hlášení o ztrátách:
+ui_report_experience|Hlášení o zkušenostech:
+ui_current_level_value|Momentální úroveň: %d
+ui_base_attribute_value|Základní atribut: %s
+ui_battle_controls|Bitevní ovládání
+ui_map_controls|Ovládání mapy
+ui_general_controls|Všeobecné ovládání
+ui_zoom_in|Přiblížit
+ui_zoom_out|Oddálit
+ui_wait|Počkat
+ui_take_screenshot|Vyfotit screenshot
+ui_randomize|Náhodně
+ui_hint|Nápověda
+ui_press_left_mouse_button_to_continue|Pro pokračování stiskni levé tlačítko myši...
+ui_loot|Kořist
+ui_chest|Truhlice
+ui_cut_short| sek
+ui_pierce_short| výpad
+ui_blunt_short| úder
+ui_battle|Bitva
+ui_siege|Obléhání
+ui_troops|Jednotky:
+ui_loading_module_info_file|Modul se načítá do souboru...
+ui_processing_ini_file|Zpracovává se soubor *.ini...
+ui_loading_music|Načítá se hudba...
+ui_loading_data|Načítají se data...
+ui_loading_setting_data|Načítají se data nastavení...
+ui_loading_textures|Načítají se textury...
+ui_finished|Hotovo.
+ui_creating_game|Vytváří se hra...
+ui_loading_savegame_file|Načítá se uložená hra...
+ui_loading_map_file|Načítá se mapový soubor...
+ui_initializing_map|Inicializuje se mapa...
+ui_launching_game|Spouští se hra...
+ui_capital_battle|BITVA:
+ui_capital_versus| -- PROTI --
+ui_tracks|Stopa
+ui_battleground|Bojiště
+ui_order_1|Vybrat příkaz 1
+ui_order_2|Vybrat příkaz 2
+ui_order_3|Vybrat příkaz 3
+ui_order_4|Vybrat příkaz 4
+ui_order_5|Vybrat příkaz 5
+ui_order_6|Vybrat příkaz 6
+ui_order_button_hold_this_position|Držet tuto pozici
+ui_order_button_follow_me|Za mnou
+ui_order_button_charge|Útok
+ui_order_button_stand_ground|Stát na místě
+ui_order_button_retreat|Ustupte
+ui_order_button_advance|O deset kroků vpřed
+ui_order_button_fall_back|O deset kroků vzad
+ui_order_button_spread_out|Rozptýlit se
+ui_order_button_stand_closer|Semknout se
+ui_order_button_mount_horses|Nasednout na koně
+ui_order_button_dismount|Sesednout
+ui_order_button_hold_fire|Zadržet palbu
+ui_order_button_fire_at_will|Pálit dle uvážení
+ui_order_button_use_blunt_weapons|Bojovat pouze tupými zbraněmi
+ui_order_button_use_any_weapon|Bojovat libovolnými zbraněmi
+ui_order_button_movement_orders|Příkazy k pohybu
+ui_order_button_formation_orders|Příkazy k formaci
+ui_order_button_fire_orders|Příkazy k palbě
+ui_follow_me_e_|%s, za mnou!
+ui_charge_e_|%s, útok!
+ui_stand_ground_e_|%s, stát na místě!
+ui_retreat_e_|%s, ústup!
+ui_mount_horses_e_|%s, nasedat na koně!
+ui_dismount_e_|%s, sesedat z koní!
+ui_advance_e_|%s, postup o deset kupředu!
+ui_fall_back_e_|%s, ústup o deset zpět!
+ui_stand_closer_e_|%s, držte se pohromadě!
+ui_spread_out_e_|%s, rozptylte se!
+ui_use_blunt_weapons_e_|%s, používejte jen drtivé zbraně!
+ui_use_any_weapon_e_|%s, používejte zbraně podle vlastního uvážení!
+ui_hold_fire_e_|%s, zastavte palbu!
+ui_fire_at_will_e_|%s, střílejte dle vlastního uvážení!
+ui_hold_this_position_e_|%s, držet tuto pozici!
+ui_infantry|Pěchota
+ui_archers|Lučištníci
+ui_cavalry|Jízda
+ui_companions|Doprovod
+ui_everyone_hear_me|Poslouchejte mě, všichni!
+ui_everyone|Všichni
+ui_everyone_around_me|Vojáci v okolí
+ui_str_hear_me|%s, poslouchejte mě!
+ui_str_and_str|%s a %s
+ui_str_comma_str|%s, %s
+ui_need_to_learn_prisoner_management|Musíš se naučit spravovat vězně, jinak nemůžeš brát zajatce.
+ui_game_log|Herní záznam
+ui_recent_messages|Poslední vzkazy
+ui_custom_battle|Rychlá bitva
+ui_player|Hráč
+ui_value_denars|Denáry: %d
+ui_back|Zpět
+ui_forward|Kupředu
+ui_display_on_map|Zobrazit na mapě
+ui_info_pages|Herní koncepty
+ui_troops2|Postavy
+ui_locations|Místa
+ui_click_button_to_view_note|Kliknutím na odkaz se zobrazí poznámky
+ui_this_page_contains_no_information|Na této stránce nejsou žádné informace
+ui_other_pages_that_link_here|Jiné stránky, z nichž sem vede odkaz: 
+ui_report_is_value_days_old| (Zpráva je stará %d dní)
+ui_report_is_current| (Zpráva je aktuální)
+ui_button_party_member_healthy_total|%s (%d/%d)
+ui_button_party_member_total|%s (%d)
+ui_button_party_member_hero_percentage_wounded|%s (%d %% - Zranění)
+ui_button_party_member_hero_percentage|%s (%d %%)
+ui_percentage_value|%d %%
+ui_full|Plné
+ui_quick|Rychlé
+ui_none|Vypnuto
+ui_change|Změnit
+ui_how_to_change|Jak to mám změnit?
+ui_change_directx_explanation|Můžeš přepínat mezi renderovacími metodami pro DirectX 7 a DirectX 9, když si klikneš na tlačítko 'nastavení' v nabídce spuštění hry, která se zobrazí, když začneš hru poprvé hrát.
+ui_dropping_picking_up|Pokládáš %s sbíráš %s. 
+ui_dropping|Upuštění: %s.
+ui_picking_up|Sbíráš %s.
+ui_unable_to_take|To nemůžeš vzít.
+ui_age|Věk
+ui_cannot_be_used_on_horseback|Tohle nelze používat v sedle.
+ui_enable_vertex_shaders2|Metoda vykreslování:
+ui_screen_size2|Rozlišení obrazovky:
+ui_use_desktop_resolution2|Použít rozlišení plochy
+ui_shadow_quality2|Kvalita stínů:
+ui_m_low2|Nižší
+ui_m_high2|Vyšší
+ui_m_ultra_high2|Nejvyšší
+ui_off2|Vypnuto
+ui_group_header|Kategorie
+ui_group_rename|Přejmenovat
+ui_group_1|Pěchota
+ui_group_2|Střelci
+ui_group_3|Jízda
+ui_group_4|Bez názvu 1
+ui_group_5|Bez názvu 2
+ui_group_6|Bez názvu 3
+ui_group_7|Bez názvu 4
+ui_group_8|Bez názvu 5
+ui_group_9|Bez názvu 6
+ui_group_rename|Přejmenovat
+ui_group_close|Zavřít
+ui_party_b_group_information|%s patří ke skupině %s
+ui_thrown_or_s|Vrhací/%s
+ui_ranged_damage|Na dálku: %d%s
+ui_overall_quality|Celková kvalita:
+ui_shader_quality|Kvalita stínů:
+ui_flora_lod_detail|Detaily stromů
+ui_flora_degrade_distance|Vzdálenost mezi stromy:
+ui_antialiasing|Antialiasing:
+ui_use_depth_effects|Hloubkové efekty:
+ui_hdr_mode|HDR režim:
+ui_autoexpore|Aut. expozice:
+ui_choose_profile|Vybrat profil
+ui_create|Vytvořit
+ui_edit|Upravit
+ui_join_game|Připojit se ke hře
+ui_host_game|Vytvořit hru
+ui_custom|Vlastní
+ui_medium|Střední
+ui_male|Muž
+ui_female|Žena
+ui_gender|Vybrat pohlaví:
+ui_edit_profile|Upravit profil
+ui_new_profile|Nový profil
+ui_enter_username|Zadej uživatelské jméno:
+ui_invalid_username|Uživatelské jméno může obsahovat pouze písmena, čísla nebo podtržítko.
+ui_confirmation|Víš to jistě?
+ui_multiplayer|Více hráčů
+ui_server_name|Server
+ui_module_name|Modul
+ui_game_type|Typ hry
+ui_map_name|Mapa
+ui_ping|Ping
+ui_dedicated|Dedik.
+ui_number_of_players|Hráči
+ui_password_protected|Heslo
+ui_connect|Připojit
+ui_local_area_network|Místní síť
+ui_internet|Internet
+ui_favorites|Oblíbené
+ui_source|Zdroj:
+ui_server_password|Heslo serveru:
+ui_refresh|Obnovit
+ui_start_search|Zahájit hledání
+ui_add_to_favorites|Přidat k oblíbeným
+ui_remove_from_favorites|Odstranit z oblíbených
+ui_use_speedtree|Použít Speedtree
+ui_use_instancing|Použít instancování
+ui_error|Chyba
+ui_error_server_full|Server je plný.
+ui_error_server_full_for_non_private|Pro hráče, kteří neznají privátní heslo, je server plný.
+ui_error_server_password_incorrect|Nesprávné heslo.
+ui_error_incorrect_serial|Nesprávné sériové číslo.
+ui_error_incorrect_authorization_key|Nesprávný autorizační klíč.
+ui_error_banned_from_server|Z tohoto serveru tě vyhodili.
+ui_error_username_taken|Název tvého profilu už používá někdo jiný.
+ui_error_authentication_failed|Autentizace se nezdařila.
+ui_unable_to_connect_to_server|Nelze se připojit k serveru.
+ui_connection_to_server_is_lost|Připojení k serveru se ztratilo.
+ui_kicked_from_server|Vyhozen ze serveru.
+ui_switch_to_module_question|Tento server běží na jiném modulu, než jaký v současné době používáš ty. Chceš, aby hra přepnula na serverový modul?
+ui_download_module_question|Tento server běží na modulu, který nemáš nainstalován. Chceš se připojit na internetovou adresu, odkud si budeš moci tento modul stáhnout?
+ui_download_mb_new_version_question|Tento server běží na novější verzi (%d.%d%d%d) hry Mount&Blade, než jakou v současné době používáš ty (%d.%d%d%d). Chceš nyní navštívit internetové stránky TaleWorlds a stáhnout si aktualizace?
+ui_download_mb_old_version_question|Tento server běží na starší verzi (%d.%d%d%d) hry Mount&Blade, než jakou v současné době používáš ty (%d.%d%d%d).
+ui_download_module_new_version_question|Tento server běží na novější verzi (%d.%d%d%d) aktuálního modulu, než jakou v současné době používáš ty (%d.%d%d%d). Chceš navštívit příslušné webové stránky a nový modul si stáhnout?
+ui_download_module_old_version_question|Tento server běží na starší verzi (%d.%d%d%d) aktuálního modulu, než jakou v současné době používáš ty (%d.%d%d%d).
+ui_authenticating_with_steam|Autentizace na systému Steam...
+ui_validating_serial_number|Ověřování sériového čísla...
+ui_scanning_lan|Prohledávání místní sítě...
+ui_retrieving_servers|Stahování seznamu serverů...
+ui_shield_size2|Velikost: %dx%d
+ui_click_to_view_notes|Kliknutím zobrazíš poznámky
+ui_retrieving_server_infos|Získávání informací od serverů (%d)...
+ui_connecting_to_server|Připojování k serveru...
+ui_requesting_to_join_the_game|Požadování připojení ke hře...
+ui_loading|Načítání...
+ui_group_value_control|Skupiny %d!
+ui_drop_weapon|Upustit zbraň
+ui_multiplayer_message_all|Poslat zprávu všem
+ui_multiplayer_message_team|Poslat zprávu týmu
+ui_command_line|Příkazová řádka
+ui_use_ranged_weapon_as_melee|Zapnout režim zbraně
+ui_send_message_all|Poslat zprávu všem
+ui_send_message_team|Poslat zprávu týmu
+ui_select|Zvolit
+ui_context_menu|Kontextová nabídka
+ui_round_starts_in_value_seconds|Kolo začíná za %d s.
+ui_watching_value|Sledování: %s
+ui_capital_spec|SPEC.
+ui_capital_dead|MRTVÝ
+ui_instancing_error1|Nelze uzamknout instanční buffer (velikost: %d), síťové instancování je zrušeno (kód chyby: %d)
+ui_instancing_error2|Neodpovídá instancovaným objektům, instancování sítě zrušeno
+ui_by_keyboard|Klávesami pro pohyb
+ui_combat_speed_slowest|Nejpomalejší
+ui_combat_speed_slower|Pomalejší
+ui_combat_speed_normal|Normální
+ui_combat_speed_faster|Rychlejší
+ui_combat_speed_fastest|Nejrychlejší
+ui_module_newer_than_application|Zvolený modul vyžaduje novější verzi hry.
+ui_module_older_than_application|Zvolený modul vyžaduje starší verzi hry.
+ui_unbalanced|Nevyváženo
+ui_can_crush_through_blocks|Dokáže prorazit bloky
+ui_turn_camera_with_horse|Otáčet kameru s koněm (pohled 1. osoby)
+ui_widescreen_mode_on|Režim více obrazovek povolen
+ui_widescreen_mode_off|Režim více obrazovek zakázán
+ui_notification_cant_upgrade|(Není možné vylepšit: nedostatek peněz)
+ui_turn_never|Nikdy
+ui_turn_ranged_only|Pouze z dálky
+ui_turn_melee_only|Pouze zblízka
+ui_turn_always|Vždy
+ui_general_options|Obecné
+ui_vac_enabled|Valve Anti Cheat zapnut
+ui_campaign_ai|AI pro kampaň:
+ui_downloading_map|Stahování mapy (%d KB)
+ui_download_completed|Stahování dokončeno.
+ui_server_filter|Filtr serverů
+ui_has_players|Má hráče
+ui_is_not_full|Není plno
+ui_is_password_free|Bez hesla
+ui_native_only|Pouze native
+ui_ping_limit|Limit ping
+ui_filter_info|%d her a %d hráčů vyfiltrováno
+ui_is_version_compatible|Kompatibilní s verzí
+ui_ttnet_account|Účet na Ttnet Oyun
+ui_username|Jméno
+ui_password|Heslo
+ui_error_incorrect_username_or_password|Nesprávné jméno nebo heslo
+ui_validating_account|Ověřování účtu...
+ui_plase_enter_your_serial_key|Zadej prosím své sériové číslo
+ui_texture_detail2|Detaily textur:
+ui_antialiasing2|Antialiasing:
+ui_napoleonic_key_does_not_exist|Tento mod vyžaduje DLC Napoleonské války!
+ui_delete_module_workshop|Opravdu chceš tento mod odinstalovat a odhlásit?
+ui_delete_module|Opravdu chceš tento modul smazat?
+ui_delete_native_module|Modul Native smazat nemůžeš.
+ui_incompatible_module|Tento server není kompatibilní s tvým stávajícím modulem. Modul můžeš změnit v nastavení.
