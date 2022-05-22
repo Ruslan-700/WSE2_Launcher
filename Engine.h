@@ -5,6 +5,7 @@
 class Class_Engine {
 public:
 	void Start();
+private:
 	std::shared_ptr<sf::RenderWindow> Window_Main = nullptr, Window_Options = nullptr;
 	std::shared_ptr<tgui::Panel> Panel_Main = nullptr, Panel_Options = nullptr;
 	tgui::Gui GUI_Main, GUI_Options;
@@ -33,16 +34,23 @@ public:
 	void CancelChanges();
 	void UpdateModPreviewImage();
 	void FillMissingLocalizationKeys();
+	void MoveWindow_Main();
+	void MoveWindow_Options();
+	void ReadWSE2Version();
+	std::string GetLanguageNameById(std::string);
 	std::string GetLocalizedTextEntry(std::string);
 	std::wstring GetLastModule();
+	void SetLastModule();
 	bool UpdateOptions();
 	bool ApplyOptions();
-	std::string CurrentModule();
+	std::wstring WSE2Version = L"";
+	std::string GetCurrentModule();
 	std::vector<std::string> Modules;
-	sf::Texture Texture_Options, Texture_MainBackground, Texture_OptionsBackground, Texture_ModPreview, Texture_Close, Texture_CloseDown, Texture_Minimize, Texture_MinimizeDown;
+	sf::Texture Texture_Options, Texture_MainBackground, Texture_OptionsBackground, Texture_ModPreview, Texture_Close, Texture_CloseDown, Texture_Minimize, Texture_MinimizeDown, Texture_Button, Texture_Button_Hover, Texture_Button_Down, Texture_Combobox, Texture_Combobox_Arrow;
 	std::map<std::string, std::string> Options;
 	std::map<std::string, std::string> LocalizedText;
 	tgui::Font Font_Latin, Font_Universal;
 	std::string CurrentLanguage = "en", PreviousLanguage = "en";
+	int MoveBar_X = -1, MoveBar_Y = 0, Options_MoveBar_X = -1, Options_MoveBar_Y = 0;
 	CHAR CurentUserPath[MAX_PATH] = "";
 };

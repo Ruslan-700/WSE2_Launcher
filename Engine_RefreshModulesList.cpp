@@ -15,7 +15,7 @@ void Class_Engine::RefreshModulesList()
 	}
 }
 
-std::string Class_Engine::CurrentModule()
+std::string Class_Engine::GetCurrentModule()
 {
 	return ComboBoxModule->getSelectedItemId().toStdString();
 }

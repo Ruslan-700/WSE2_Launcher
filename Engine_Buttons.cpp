@@ -15,11 +15,11 @@ void Class_Engine::LaunchGame(ExeType L_ExeType)
 	std::string ExeName, Arguments;
 	if (L_ExeType == ExeType_DedicatedServer) {
 		ExeName = "mb_warband_wse2_dedicated.exe";
-		Arguments = ExeName + "--config-path server_config.ini -r " + CurrentModule() + ".txt --module" + CurrentModule();
+		Arguments = ExeName + "--config-path server_config.ini -r " + GetCurrentModule() + ".txt --module" + GetCurrentModule();
 	}
 	else  {
 		ExeName = "mb_warband_wse2.exe";
-		Arguments = ExeName + " --module " + CurrentModule() + " --no-intro";
+		Arguments = ExeName + " --module " + GetCurrentModule() + " --no-intro";
 		}
 
 	STARTUPINFO info = { sizeof(info) };

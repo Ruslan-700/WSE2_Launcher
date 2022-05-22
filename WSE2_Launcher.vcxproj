@@ -89,7 +89,7 @@
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PreprocessorDefinitions>SFML_STATIC;TGUI_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\src\sfml\SFML-2.5.1\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\src\vcpkg\installed\x86-windows-static\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -117,7 +117,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <AdditionalIncludeDirectories>C:\src\vcpkg\installed\x86-windows-static\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -163,6 +163,7 @@
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="Engine_Runtime.cpp" />
     <ClCompile Include="Engine_Options.cpp" />
+    <ClCompile Include="Engine_UpdateText.cpp" />
     <ClCompile Include="Start.cpp" />
   </ItemGroup>
   <ItemGroup>
