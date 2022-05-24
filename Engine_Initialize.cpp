@@ -92,7 +92,7 @@ void Class_Engine::InitializeTextButton(tgui::Button::Ptr TguiButton) {
 void Class_Engine::ReadCurrentUserPath()
 {
 	tgui::Label::Ptr Label_Message1 = GUI_Main.get<tgui::Label>("Label_Message1");
-	HRESULT Result = SHGetFolderPath(NULL, CSIDL_PROFILE, NULL, SHGFP_TYPE_CURRENT, CurentUserPath);
+	HRESULT Result = SHGetFolderPath(NULL, CSIDL_PROFILE, NULL, SHGFP_TYPE_CURRENT, CurentDocumentsPath);
 	if (Result != S_OK) {
 		Label_Message1->setText(Label_Message1->getText() + "Error - could not open current user folder. ");
 	}
@@ -100,7 +100,7 @@ void Class_Engine::ReadCurrentUserPath()
 
 void Class_Engine::ReadCurrentLanguage()
 {
-	std::ifstream File_language(std::string(CurentUserPath) + std::string("\\AppData\\Roaming\\Mount&Blade Warband WSE2\\language.txt"));
+	std::ifstream File_language(std::string(CurentDocumentsPath) + std::string("\\AppData\\Roaming\\Mount&Blade Warband WSE2\\language.txt"));
 	if (File_language.good())
 	{
 		std::getline(File_language, CurrentLanguage);

@@ -52,5 +52,6 @@ private:
 	tgui::Font Font_Latin, Font_Universal;
 	std::string CurrentLanguage = "en", PreviousLanguage = "en";
 	int MoveBar_X = -1, MoveBar_Y = 0, Options_MoveBar_X = -1, Options_MoveBar_Y = 0;
-	CHAR CurentUserPath[MAX_PATH] = "";
+	CHAR CurentDocumentsPath[MAX_PATH] = "";
+	CHAR CurentAppdataPath[MAX_PATH] = "";
 };

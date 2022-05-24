@@ -114,15 +114,21 @@ void Class_Engine::InitializeTextButton(tgui::Button::Ptr TguiButton) {
 void Class_Engine::ReadCurrentUserPath()
 {
 	tgui::Label::Ptr Label_Message1 = GUI_Main.get<tgui::Label>("Label_Message1");
-	HRESULT Result = SHGetFolderPath(NULL, CSIDL_PROFILE, NULL, SHGFP_TYPE_CURRENT, CurentUserPath);
+	HRESULT Result = SHGetFolderPath(0, CSIDL_MYDOCUMENTS, 0, 0, CurentDocumentsPath);
 	if (Result != S_OK) {
-		Label_Message1->setText(Label_Message1->getText() + "Error - could not open current user folder. ");
+		Label_Message1->setText(Label_Message1->getText() + "Error - could not open Documents folder. ");
 	}
 }
 
 void Class_Engine::ReadCurrentLanguage()
 {
-	std::ifstream File_language(std::string(CurentUserPath) + std::string("\\AppData\\Roaming\\Mount&Blade Warband WSE2\\language.txt"));
+	tgui::Label::Ptr Label_Message1 = GUI_Main.get<tgui::Label>("Label_Message1");
+	HRESULT Result = SHGetFolderPath(0, CSIDL_APPDATA, 0, 0, CurentAppdataPath);
+	if (Result != S_OK) {
+		Label_Message1->setText(Label_Message1->getText() + "Error - could not open Appdata folder. ");
+		return;
+	}
+	std::ifstream File_language(std::string(CurentAppdataPath) + std::string("\\Mount&Blade Warband WSE2\\language.txt"));
 	if (File_language.good())
 	{
 		std::getline(File_language, CurrentLanguage);
@@ -269,7 +275,7 @@ void Class_Engine::ChangeLanguage()
 {
 	tgui::ComboBox::Ptr ComboBox_Languages = GUI_Options.get<tgui::ComboBox>("ComboBox_Languages");
 	CurrentLanguage = ComboBox_Languages->getSelectedItemId().toStdString();
-	std::ofstream File_language(std::string(CurentUserPath) + std::string("\\AppData\\Roaming\\Mount&Blade Warband WSE2\\language.txt"));
+	std::ofstream File_language(std::string(CurentAppdataPath) + std::string("\\Mount&Blade Warband WSE2\\language.txt"));
 	if (File_language.good())
 	{
 		File_language << CurrentLanguage;

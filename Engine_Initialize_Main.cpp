@@ -9,16 +9,16 @@ void Class_Engine::Initialize_UI_Main()
 	GUI_Main.add(Panel_Main, "Panel_Main");
 
 	tgui::Label::Ptr Label_Message1 = tgui::Label::create(" ");
-	Label_Message1->setTextSize(14);
-	Label_Message1->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Center);
-	Label_Message1->setOrigin(0.5, 0.5);
-	Label_Message1->setPosition("50%", "24%");
+	Label_Message1->setTextSize(12);
+	Label_Message1->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Left);
+	Label_Message1->setOrigin(0, 0.5);
+	Label_Message1->setPosition("5%", "33%");
 	Panel_Main->add(Label_Message1, "Label_Message1");
 
 	tgui::Label::Ptr Label_CurrentModule = tgui::Label::create(" ");
 	Label_CurrentModule->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Right);
 	Label_CurrentModule->setOrigin(1, 0.5);
-	Label_CurrentModule->setPosition("33%", "26%");
+	Label_CurrentModule->setPosition("49%", "26%");
 	Label_CurrentModule->getRenderer()->setTextColor(tgui::Color(105, 80, 54));
 	Panel_Main->add(Label_CurrentModule, "Label_CurrentModule");
 

@@ -6,7 +6,7 @@ void Class_Engine::Initialize_UI_Options()
 	GUI_Options.add(Panel_Options, "Panel_Options");
 
 	tgui::Label::Ptr Label_Options = tgui::Label::create(" ");
-	Label_Options->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Center);
+	Label_Options->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Left);
 	Label_Options->setOrigin(0.5, 0.5);
 	Label_Options->setPosition("50%", "8%");
 	Panel_Options->add(Label_Options, "Label_Options");
@@ -168,7 +168,7 @@ void Class_Engine::CancelChanges()
 	tgui::ComboBox::Ptr ComboBox_Languages = GUI_Options.get<tgui::ComboBox>("ComboBox_Languages");
 	ComboBox_Languages->setSelectedItemById(CurrentLanguage);
 
-	std::ofstream File_language(std::string(CurentUserPath) + std::string("\\AppData\\Roaming\\Mount&Blade Warband WSE2\\language.txt"));
+	std::ofstream File_language(std::string(CurentDocumentsPath) + std::string("\\AppData\\Roaming\\Mount&Blade Warband WSE2\\language.txt"));
 	if (File_language.good())
 	{
 		File_language << CurrentLanguage;
