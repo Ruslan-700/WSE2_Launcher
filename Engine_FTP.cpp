@@ -34,29 +34,29 @@ void Class_Engine::FTPThread()
 			Current_FTPDownloadState = FTPDownloadState_Updated;
 			Button_FTP->setVisible(false);
 			Label_FTP->setVisible(true);
-			Label_FTP->setText(GetLocalizedTextEntry("ui_version_is_up_to_date"));
+			TGUIWidgetPropertyChangeRequests.push_back(Class_TGUIWidgetPropertyChangeRequest(&GUI_Main, TGUIWidget_TGUILabel, "Label_FTP", GetLocalizedTextEntry("ui_version_is_up_to_date")));
 			Label_FTP->setPosition("23%", "40%");
 		}
 		if (Current_FTPDownloadState != FTPDownloadState_WaitingUpdate && WSE2IsInstalled && IsCurrentVersionOlderThan(FTP_Version)) {
 			Current_FTPDownloadState = FTPDownloadState_WaitingUpdate;
 			Button_FTP->setVisible(true);
 			Label_FTP->setVisible(true);
-			Button_FTP->setText(GetLocalizedTextEntry("ui_update_wse2"));
-			Label_FTP->setText(GetLocalizedTextEntry("ui_newer_version_available"));
+			TGUIWidgetPropertyChangeRequests.push_back(Class_TGUIWidgetPropertyChangeRequest(&GUI_Main, TGUIWidget_TGUIButton, "Button_FTP", GetLocalizedTextEntry("ui_update_wse2")));
+			TGUIWidgetPropertyChangeRequests.push_back(Class_TGUIWidgetPropertyChangeRequest(&GUI_Main, TGUIWidget_TGUILabel, "Label_FTP", GetLocalizedTextEntry("ui_newer_version_available")));
 			Label_FTP->setPosition("23%", "32%");
 		}
 		if (Current_FTPDownloadState != FTPDownloadState_WaitingInstall && !WSE2IsInstalled) {
 			Current_FTPDownloadState = FTPDownloadState_WaitingInstall;
 			Button_FTP->setVisible(true);
 			Label_FTP->setVisible(true);
-			Button_FTP->setText(GetLocalizedTextEntry("ui_install_wse2"));
-			Label_FTP->setText(GetLocalizedTextEntry("ui_wse2_not_installed"));
+			TGUIWidgetPropertyChangeRequests.push_back(Class_TGUIWidgetPropertyChangeRequest(&GUI_Main, TGUIWidget_TGUIButton, "Button_FTP", GetLocalizedTextEntry("ui_install_wse2")));
+			TGUIWidgetPropertyChangeRequests.push_back(Class_TGUIWidgetPropertyChangeRequest(&GUI_Main, TGUIWidget_TGUILabel, "Label_FTP", GetLocalizedTextEntry("ui_wse2_not_installed")));
 			Label_FTP->setPosition("23%", "32%");
 		}
 
 		if (Current_FTPCommand == FTPCommand_DownloadAllFiles) {
 			Current_FTPCommand = FTPCommand_None;
-			Button_FTP->setText(GetLocalizedTextEntry("ui_please_wait"));
+			TGUIWidgetPropertyChangeRequests.push_back(Class_TGUIWidgetPropertyChangeRequest(&GUI_Main, TGUIWidget_TGUIButton, "Button_FTP", GetLocalizedTextEntry("ui_please_wait")));
 
 			Current_FTPDownloadState = FTPDownloadState_Downloading;
 			sf::Ftp::ListingResponse ListingResponse = FTP.getDirectoryListing();
@@ -67,7 +67,7 @@ void Class_Engine::FTPThread()
 			WSE2VersionWithDots = WSE2Version;
 			for (size_t i = 1; i < 4; i++)  WSE2VersionWithDots.insert(i * 2 - 1, L".");
 			tgui::Label::Ptr Label_WSE2Version = GUI_Main.get<tgui::Label>("Label_WSE2Version");
-			if (WSE2VersionWithDots != L"") Label_WSE2Version->setText(L"WSE2 ver. " + WSE2VersionWithDots);
+			if (WSE2VersionWithDots != L"") Label_WSE2Version->setText(L"WSE2 ver. " + WSE2VersionWithDots); TGUIWidgetPropertyChangeRequests.push_back(Class_TGUIWidgetPropertyChangeRequest(&GUI_Main, TGUIWidget_TGUILabel, "Label_FTP", "WSE2 ver. " + std::string(WSE2VersionWithDots)));
 			WSE2IsInstalled = true;
 			Current_FTPDownloadState = FTPDownloadState_Updated;
 			Button_FTP->setVisible(false);

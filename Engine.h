@@ -44,10 +44,12 @@ private:
 	void DisplayErrorMessageMain(std::string);
 	void DisplayErrorMessageOptions(std::string);
 	void CreateDefaultRglConfig();
+	void ExecuteTGUIWidgetPropertyChangeRequest();
 	bool UpdateOptions();
 	bool ApplyOptions();
 	bool FTPThread_IsRunning = false;
 	bool IsCurrentVersionOlderThan(std::wstring);
+	std::vector<Class_TGUIWidgetPropertyChangeRequest> TGUIWidgetPropertyChangeRequests;
 	FTPDownloadState Current_FTPDownloadState = FTPDownloadState_None;
 	FTPCommand Current_FTPCommand = FTPCommand_None;
 	std::future<void> FTPThread_future;
