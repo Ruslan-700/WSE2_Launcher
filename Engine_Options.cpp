@@ -3,7 +3,6 @@
 bool Class_Engine::UpdateOptions()
 {
 	Options.clear();
-	tgui::Label::Ptr Label_Message1 = GUI_Main.get<tgui::Label>("Label_Message1");
 	std::ifstream File_rgl_config(std::string(CurentDocumentsPath) + std::string("/Mount&Blade Warband WSE2/rgl_config.ini"));
 	std::string Line;
 	if (File_rgl_config.is_open()) {
@@ -19,7 +18,7 @@ bool Class_Engine::UpdateOptions()
 		return true;
 	}
 	else {
-		Label_Message1->setText(Label_Message1->getText() + "Error - could not open rgl_config.ini.");
+		DisplayErrorMessageMain("Error - could not open rgl_config.ini. ");
 		return false;
 	}
 }
@@ -27,7 +26,6 @@ bool Class_Engine::UpdateOptions()
 bool Class_Engine::ApplyOptions()
 {
 	std::string Line;
-	tgui::Label::Ptr Label_Message1 = GUI_Options.get<tgui::Label>("Label_Message1");
 	std::ifstream File_rgl_config(std::string(CurentDocumentsPath) + std::string("/Mount&Blade Warband WSE2/rgl_config.ini"));
 	std::remove(std::string(std::string(CurentDocumentsPath) + std::string("/Mount&Blade Warband WSE2/rgl_config_temp.ini")).c_str());
 	std::ofstream OutputFile_rgl_config(std::string(CurentDocumentsPath) + std::string("/Mount&Blade Warband WSE2/rgl_config_temp.ini"));
@@ -53,7 +51,7 @@ bool Class_Engine::ApplyOptions()
 	}
 	else {
 	LABEL_ERROR:
-		Label_Message1->setText(Label_Message1->getText() + "Error - could not write to rgl_config.ini.");
+		DisplayErrorMessageOptions("Error - could not write to rgl_config.ini. ");
 		return false;
 	}
 	return false;

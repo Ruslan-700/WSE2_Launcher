@@ -11,27 +11,33 @@ void Class_Engine::Start()
 
 void Class_Engine::SetWindowTransparency()
 {
-	sf::Image image;
-	image.loadFromMemory(Image_MainBackground, Image_MainBackground_Length);
-	HWND hWnd = Window_Main->getSystemHandle();
-
-	const sf::Uint8* pixelData = image.getPixelsPtr();
-	HRGN hRegion = CreateRectRgn(0, 0, image.getSize().x, image.getSize().y);
-
-	// Determine the visible region
-	for (unsigned int y = 0; y < image.getSize().y; y++)
+	try
 	{
-		for (unsigned int x = 0; x < image.getSize().x; x++)
+		sf::Image image;
+		image.loadFromMemory(Image_MainBackground, Image_MainBackground_Length);
+		HWND hWnd = Window_Main->getSystemHandle();
+
+		const sf::Uint8* pixelData = image.getPixelsPtr();
+		HRGN hRegion = CreateRectRgn(0, 0, image.getSize().x, image.getSize().y);
+
+		for (unsigned int y = 0; y < image.getSize().y; y++)
 		{
-			if (pixelData[y * image.getSize().x * 4 + x * 4 + 3] == 0)
+			for (unsigned int x = 0; x < image.getSize().x; x++)
 			{
-				HRGN hRegionPixel = CreateRectRgn(x, y, x + 1, y + 1);
-				CombineRgn(hRegion, hRegion, hRegionPixel, RGN_XOR);
-				DeleteObject(hRegionPixel);
+				if (pixelData[y * image.getSize().x * 4 + x * 4 + 3] == 0)
+				{
+					HRGN hRegionPixel = CreateRectRgn(x, y, x + 1, y + 1);
+					CombineRgn(hRegion, hRegion, hRegionPixel, RGN_XOR);
+					DeleteObject(hRegionPixel);
+				}
 			}
 		}
-	}
 
-	SetWindowRgn(hWnd, hRegion, true);
-	DeleteObject(hRegion);
+		SetWindowRgn(hWnd, hRegion, true);
+		DeleteObject(hRegion);
+	}
+	catch (const std::exception&)
+	{
+		// ну не получилось и не получилось, хрен с ним
+	}
 }
