@@ -15,6 +15,20 @@ bool Class_Engine::UpdateOptions()
 			}
 		}
 		File_rgl_config.close();
+
+		tgui::CheckBox::Ptr Checkbox_OnDemandTextures = GUI_Options.get<tgui::CheckBox>("Checkbox_OnDemandTextures");
+		tgui::CheckBox::Ptr Checkbox_OcclusionFilter = GUI_Options.get<tgui::CheckBox>("Checkbox_OcclusionFilter");
+		tgui::CheckBox::Ptr Checkbox_HrtfFilter = GUI_Options.get<tgui::CheckBox>("Checkbox_HrtfFilter");
+		tgui::CheckBox::Ptr Checkbox_DistanceFilter = GUI_Options.get<tgui::CheckBox>("Checkbox_DistanceFilter");
+		tgui::CheckBox::Ptr Checkbox_Sound = GUI_Options.get<tgui::CheckBox>("Checkbox_Sound");
+		tgui::CheckBox::Ptr Checkbox_Music = GUI_Options.get<tgui::CheckBox>("Checkbox_Music");
+		Checkbox_OnDemandTextures->setChecked(Options["bOnDemandTextures"] == "true");
+		Checkbox_OcclusionFilter->setChecked(Options["bOcclusionFilter"] == "true");
+		Checkbox_HrtfFilter->setChecked(Options["bHrtfFilter"] == "true");
+		Checkbox_DistanceFilter->setChecked(Options["bDistanceFilter"] == "true");
+		Checkbox_Sound->setChecked(Options["bSound"] == "false");
+		Checkbox_Music->setChecked(Options["bMusic"] == "false");
+
 		return true;
 	}
 	else {

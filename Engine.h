@@ -48,6 +48,7 @@ private:
 	bool ApplyOptions();
 	bool FTPThread_IsRunning = false;
 	bool IsCurrentVersionOlderThan(std::wstring);
+	std::mutex FTPThread_Mutex;
 	FTPDownloadState Current_FTPDownloadState = FTPDownloadState_None;
 	FTPCommand Current_FTPCommand = FTPCommand_None;
 	std::future<void> FTPThread_future;
@@ -68,4 +69,5 @@ private:
 	int MoveBar_X = -1, MoveBar_Y = 0, Options_MoveBar_X = -1, Options_MoveBar_Y = 0;
 	CHAR CurentDocumentsPath[MAX_PATH] = "";
 	CHAR CurentAppdataPath[MAX_PATH] = "";
+	std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> wstring_Converter;
 };

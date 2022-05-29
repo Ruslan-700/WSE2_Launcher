@@ -4,6 +4,7 @@ void Class_Engine::Start()
 {
 	Window_Main = std::make_shared<sf::RenderWindow>();
 	Window_Main->create({ 637, 477 }, "WSE2 Launcher", sf::Style::None);
+	Window_Main->setFramerateLimit(50);
 	SetWindowTransparency();
 	Initialize();
 	Runtime();

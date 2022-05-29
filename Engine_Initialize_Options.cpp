@@ -35,7 +35,6 @@ void Class_Engine::Initialize_UI_Options()
 	tgui::CheckBox::Ptr Checkbox_OnDemandTextures = tgui::CheckBox::create();
 	Checkbox_OnDemandTextures->setOrigin(0.5, 0.5);
 	Checkbox_OnDemandTextures->setPosition("85%", "35%");
-	Checkbox_OnDemandTextures->setChecked(Options["bOnDemandTextures"] == "true");
 	Checkbox_OnDemandTextures->onCheck([&] { Options.insert_or_assign("bOnDemandTextures", "true"); });
 	Checkbox_OnDemandTextures->onUncheck([&] { Options.insert_or_assign("bOnDemandTextures", "false"); });
 	Panel_Options->add(Checkbox_OnDemandTextures, "Checkbox_OnDemandTextures");
@@ -49,7 +48,6 @@ void Class_Engine::Initialize_UI_Options()
 	tgui::CheckBox::Ptr Checkbox_OcclusionFilter = tgui::CheckBox::create();
 	Checkbox_OcclusionFilter->setOrigin(0.5, 0.5);
 	Checkbox_OcclusionFilter->setPosition("85%", "49%");
-	Checkbox_OcclusionFilter->setChecked(Options["bOcclusionFilter"] == "true");
 	Checkbox_OcclusionFilter->onCheck([&] { Options.insert_or_assign("bOcclusionFilter", "true"); });
 	Checkbox_OcclusionFilter->onUncheck([&] { Options.insert_or_assign("bOcclusionFilter", "false"); });
 	Panel_Options->add(Checkbox_OcclusionFilter, "Checkbox_OcclusionFilter");
@@ -63,7 +61,6 @@ void Class_Engine::Initialize_UI_Options()
 	tgui::CheckBox::Ptr Checkbox_HrtfFilter = tgui::CheckBox::create();
 	Checkbox_HrtfFilter->setOrigin(0.5, 0.5);
 	Checkbox_HrtfFilter->setPosition("85%", "55%");
-	Checkbox_HrtfFilter->setChecked(Options["bHrtfFilter"] == "true");
 	Checkbox_HrtfFilter->onCheck([&] { Options.insert_or_assign("bHrtfFilter", "true"); });
 	Checkbox_HrtfFilter->onUncheck([&] { Options.insert_or_assign("bHrtfFilter", "false"); });
 	Panel_Options->add(Checkbox_HrtfFilter, "Checkbox_HrtfFilter");
@@ -77,7 +74,6 @@ void Class_Engine::Initialize_UI_Options()
 	tgui::CheckBox::Ptr Checkbox_DistanceFilter = tgui::CheckBox::create();
 	Checkbox_DistanceFilter->setOrigin(0.5, 0.5);
 	Checkbox_DistanceFilter->setPosition("85%", "61%");
-	Checkbox_DistanceFilter->setChecked(Options["bDistanceFilter"] == "true");
 	Checkbox_DistanceFilter->onCheck([&] { Options.insert_or_assign("bDistanceFilter", "true"); });
 	Checkbox_DistanceFilter->onUncheck([&] { Options.insert_or_assign("bDistanceFilter", "false"); });
 	Panel_Options->add(Checkbox_DistanceFilter, "Checkbox_DistanceFilter");
@@ -90,7 +86,6 @@ void Class_Engine::Initialize_UI_Options()
 	tgui::CheckBox::Ptr Checkbox_Sound = tgui::CheckBox::create();
 	Checkbox_Sound->setOrigin(0.5, 0.5);
 	Checkbox_Sound->setPosition("85%", "74%");
-	Checkbox_Sound->setChecked(Options["bSound"] == "true");
 	Checkbox_Sound->onCheck([&] { Options.insert_or_assign("bSound", "false"); });
 	Checkbox_Sound->onUncheck([&] { Options.insert_or_assign("bSound", "true"); });
 
@@ -103,7 +98,6 @@ void Class_Engine::Initialize_UI_Options()
 	tgui::CheckBox::Ptr Checkbox_Music = tgui::CheckBox::create();
 	Checkbox_Music->setOrigin(0.5, 0.5);
 	Checkbox_Music->setPosition("85%", "80%");
-	Checkbox_Music->setChecked(Options["bMusic"] == "true");
 	Checkbox_Music->onCheck([&] { Options.insert_or_assign("bMusic", "false"); });
 	Checkbox_Music->onUncheck([&] { Options.insert_or_assign("bMusic", "true"); });
 

@@ -98,7 +98,6 @@ std::string Class_Engine::GetLocalizedTextEntry(std::string Key)
 }
 
 void Class_Engine::InitializeTextButton(tgui::Button::Ptr TguiButton) {
-	//TguiButton->getRenderer()->setTextStyle(tgui::TextStyle::Bold);
 	TguiButton->getRenderer()->setBorders(tgui::Borders::Outline(0));
 	TguiButton->getRenderer()->setBackgroundColor(tgui::Color::Transparent);
 	TguiButton->getRenderer()->setBackgroundColorDown(tgui::Color::Transparent);
@@ -270,7 +269,7 @@ void Class_Engine::ReadWSE2Version()
 		for (size_t i = 1; i < 4; i++)  WSE2VersionWithDots.insert(i * 2 - 1, L".");
 	}
 	tgui::Label::Ptr Label_WSE2Version = GUI_Main.get<tgui::Label>("Label_WSE2Version");
-	if (WSE2VersionWithDots != L"") Label_WSE2Version->setText(L"WSE2 ver. " + WSE2VersionWithDots);
+	if (WSE2VersionWithDots != L"") Label_WSE2Version->setText(wstring_Converter.to_bytes(L"WSE2 ver. " + WSE2VersionWithDots));
 }
 
 Class_Engine::~Class_Engine()
