@@ -5,7 +5,6 @@
 class Class_Engine {
 public:
 	void Start();
-	~Class_Engine();
 private:
 	std::shared_ptr<sf::RenderWindow> Window_Main = nullptr, Window_Options = nullptr;
 	std::shared_ptr<tgui::Panel> Panel_Main = nullptr, Panel_Options = nullptr;
@@ -38,25 +37,12 @@ private:
 	void MoveWindow_Main();
 	void MoveWindow_Options();
 	void ReadWSE2Version();
-	void SetLastModule();
-	void FTPThread();
-	void FTPDownloadContent(std::string);
-	void DisplayErrorMessageMain(std::string);
-	void DisplayErrorMessageOptions(std::string);
-	void CreateDefaultRglConfig();
-	bool UpdateOptions();
-	bool ApplyOptions();
-	bool FTPThread_IsRunning = false;
-	bool IsCurrentVersionOlderThan(std::wstring);
-	FTPDownloadState Current_FTPDownloadState = FTPDownloadState_None;
-	FTPCommand Current_FTPCommand = FTPCommand_None;
-	std::future<void> FTPThread_future;
-	sf::Ftp FTP;
-	bool WSE2IsInstalled = false;
 	std::string GetLanguageNameById(std::string);
 	std::string GetLocalizedTextEntry(std::string);
 	std::wstring GetLastModule();
-	std::wstring WSE2VersionWithDots = L"";
+	void SetLastModule();
+	bool UpdateOptions();
+	bool ApplyOptions();
 	std::wstring WSE2Version = L"";
 	std::string GetCurrentModule();
 	std::vector<std::string> Modules;

@@ -3,7 +3,6 @@
 void Class_Engine::Runtime()
 {
 	while (Window_Main->isOpen()) {
-		if (!FTPThread_IsRunning) FTPThread_future = std::async(std::launch::async, [&] {FTPThread_IsRunning = true;  Class_Engine::FTPThread(); FTPThread_IsRunning = false; });
 		Interact_Main();
 		Window_Main->clear(sf::Color::White);
 		GUI_Main.draw();

@@ -6,6 +6,7 @@ void Class_Engine::Initialize_UI_Options()
 	GUI_Options.add(Panel_Options, "Panel_Options");
 
 	tgui::Label::Ptr Label_Options = tgui::Label::create(" ");
+	Label_Options->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Left);
 	Label_Options->setOrigin(0.5, 0.5);
 	Label_Options->setPosition("50%", "8%");
 	Panel_Options->add(Label_Options, "Label_Options");
