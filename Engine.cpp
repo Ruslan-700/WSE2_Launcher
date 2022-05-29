@@ -302,22 +302,3 @@ void Class_Engine::CreateDefaultRglConfig()
 		}
 	}
 }
-
-void Class_Engine::ExecuteTGUIWidgetPropertyChangeRequest()
-{
-	for (size_t i = 0; i < TGUIWidgetPropertyChangeRequests.size(); i++)
-	{
-		switch (TGUIWidgetPropertyChangeRequests[i].WidgetType)
-		{
-		TGUIWidget_TGUIButton:
-			tgui::Button::Ptr Button = TGUIWidgetPropertyChangeRequests[i].Panel->get<tgui::Button>(TGUIWidgetPropertyChangeRequests[i].WidgetName);
-			Button->setText(TGUIWidgetPropertyChangeRequests[i].Parameter1);
-			break;
-		TGUIWidget_TGUILabel:
-			tgui::Label::Ptr Label = TGUIWidgetPropertyChangeRequests[i].Panel->get<tgui::Label>(TGUIWidgetPropertyChangeRequests[i].WidgetName);
-			Label->setText(TGUIWidgetPropertyChangeRequests[i].Parameter1);
-			break;
-		}
-	}
-	TGUIWidgetPropertyChangeRequests.clear();
-}
