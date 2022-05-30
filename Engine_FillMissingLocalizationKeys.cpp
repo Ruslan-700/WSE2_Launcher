@@ -106,6 +106,13 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_language", u8"El Idioma:"));
 		LocalizedText.insert(std::pair("ui_current_module", u8"Mód actual:"));
 		LocalizedText.insert(std::pair("ui_ondemand_textures", u8"Cargar texturas sobre demanda:"));
+		LocalizedText.insert(std::pair("ui_update_wse2", u8"Actualizar WSE2"));
+		LocalizedText.insert(std::pair("ui_install_wse2", u8"Instalar WSE2"));
+		LocalizedText.insert(std::pair("ui_version_is_up_to_date", u8"Tu versión WSE2 está desactualizada."));
+		LocalizedText.insert(std::pair("ui_newer_version_available", u8"Hay una nueva versión WSE2 disponible."));
+		LocalizedText.insert(std::pair("ui_wse2_not_installed", u8"No tienes WSE2 instalado."));
+		LocalizedText.insert(std::pair("ui_please_wait", u8"Por favor espera..."));
+		LocalizedText.insert(std::pair("ui_downloading_", u8"Descargando "));
 	}
 	if (CurrentLanguage == "tr") {
 		LocalizedText.insert(std::pair("ui_play", u8"M&B Warband WSE2'i Oyna"));

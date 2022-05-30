@@ -10,9 +10,11 @@ void Class_Engine::Initialize_UI_Main()
 
 	tgui::Label::Ptr Label_Message1 = tgui::Label::create(" ");
 	Label_Message1->setTextSize(11);
-	Label_Message1->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Left);
-	Label_Message1->setOrigin(0, 0.5);
-	Label_Message1->setPosition("3%", "33%");
+	Label_Message1->setOrigin(0, 0);
+	Label_Message1->setPosition("2%", "74%");
+	Label_Message1->setSize("20%", "15%");
+	Label_Message1->setAutoSize(1);
+	Label_Message1->setMaximumTextWidth(270);
 	Panel_Main->add(Label_Message1, "Label_Message1");
 
 	tgui::Label::Ptr Label_CurrentModule = tgui::Label::create(" ");
@@ -41,14 +43,13 @@ void Class_Engine::Initialize_UI_Main()
 
 	tgui::Label::Ptr Label_FTP = tgui::Label::create(u8" ");
 	Label_FTP->setOrigin(0.5, 0.5);
-	Label_FTP->setPosition("23%", "31%");
 	Label_FTP->getRenderer()->setTextColor(tgui::Color(105, 80, 54));
 	Panel_Main->add(Label_FTP, "Label_FTP");
 	Label_FTP->setVisible(false);
 
 	tgui::Button::Ptr Button_FTP = tgui::Button::create(" ");
 	InitializeTextButton(Button_FTP);
-	Button_FTP->setPosition("23%", "36%");
+	Button_FTP->setPosition("23%", "39%");
 	Button_FTP->setSize("30%", "12%");
 	Panel_Main->add(Button_FTP, "Button_FTP");
 	Button_FTP->setVisible(false);
@@ -56,28 +57,30 @@ void Class_Engine::Initialize_UI_Main()
 
 	tgui::Button::Ptr Button_Launch = tgui::Button::create(" ");
 	InitializeTextButton(Button_Launch);
-	Button_Launch->setPosition("23%", "44%");
+	Button_Launch->setPosition("23%", "47%");
 	Button_Launch->setSize("30%", "12%");
 	Button_Launch->onClick(&Class_Engine::Button_Launch_onClick, this);
 	Panel_Main->add(Button_Launch, "Button_Launch");
 
 	tgui::Button::Ptr Button_Launch_Dedicated = tgui::Button::create(" ");
 	InitializeTextButton(Button_Launch_Dedicated);
-	Button_Launch_Dedicated->setPosition("23%", "52%");
+	Button_Launch_Dedicated->setPosition("23%", "48%");
 	Button_Launch_Dedicated->setSize("35%", "12%");
 	Button_Launch_Dedicated->onClick(&Class_Engine::Button_Launch_Dedicated_onClick, this);
 	Panel_Main->add(Button_Launch_Dedicated, "Button_Launch_Dedicated");
+	Button_Launch_Dedicated->setEnabled(false);
+	Button_Launch_Dedicated->setVisible(false);
 
 	tgui::Button::Ptr Button_Options = tgui::Button::create(" ");
 	InitializeTextButton(Button_Options);
-	Button_Options->setPosition("23%", "60%");
+	Button_Options->setPosition("23%", "55%");
 	Button_Options->setSize("25%", "9%");
 	Button_Options->onClick(&Class_Engine::Button_Options_onClick, this);
 	Panel_Main->add(Button_Options, "Button_Options");
 
 	tgui::Button::Ptr Button_Exit = tgui::Button::create(" ");
 	InitializeTextButton(Button_Exit);
-	Button_Exit->setPosition("23%", "68%");
+	Button_Exit->setPosition("23%", "63%");
 	Button_Exit->setSize("25%", "8%");
 	Button_Exit->onClick(&Class_Engine::Close, this);
 	Panel_Main->add(Button_Exit, "Button_Exit");

@@ -15,7 +15,9 @@ void Class_Engine::RefreshModulesList()
 			}
 		}
 	}
-	catch (const std::exception& Exception) { DisplayErrorMessageMain("Error (unhandled exception in RefreshModulesList) - ''" + std::string(Exception.what()) + "''. "); }
+	catch (const std::exception& Exception) { 
+	//	DisplayErrorMessageMain("Error (unhandled exception in RefreshModulesList) - ''" + std::string(Exception.what()) + "''. "); 
+	}
 
 	for (size_t i = 0; i < Modules.size(); i++)
 	{

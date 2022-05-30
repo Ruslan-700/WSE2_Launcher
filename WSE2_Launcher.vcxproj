@@ -173,6 +173,13 @@
     <ClInclude Include="Fonts.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="Images.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WSE2_Launcher.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="MAINICON.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

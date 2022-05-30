@@ -14,6 +14,9 @@ void Class_Engine::SetWindowTransparency()
 {
 	try
 	{
+		sf::Image Icon;
+		Icon.loadFromMemory(Image_Icon, Image_Icon_Length);
+		Window_Main->setIcon(Icon.getSize().x, Icon.getSize().y, Icon.getPixelsPtr());
 		sf::Image image;
 		image.loadFromMemory(Image_MainBackground, Image_MainBackground_Length);
 		HWND hWnd = Window_Main->getSystemHandle();

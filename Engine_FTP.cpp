@@ -32,13 +32,13 @@ void Class_Engine::FTPThread()
 		tgui::Button::Ptr Button_FTP = GUI_Main.get<tgui::Button>("Button_FTP");
 		tgui::Label::Ptr Label_FTP = GUI_Main.get<tgui::Label>("Label_FTP");
 		FTPThread_Mutex.unlock();
-		if (Current_FTPDownloadState != FTPDownloadState_Updated && WSE2IsInstalled && !IsCurrentVersionOlderThan(FTP_Version)) {
+		if (Current_FTPDownloadState != FTPDownloadState_Updated && WSE2IsInstalled && WSE2Version.length() == 4 && !IsCurrentVersionOlderThan(FTP_Version)) {
 			Current_FTPDownloadState = FTPDownloadState_Updated;
 			FTPThread_Mutex.lock();
 			Button_FTP->setVisible(false);
 			Label_FTP->setVisible(true);
 			Label_FTP->setText(GetLocalizedTextEntry("ui_version_is_up_to_date"));
-			Label_FTP->setPosition("23%", "40%");
+			Label_FTP->setPosition("23%", "43%");
 			FTPThread_Mutex.unlock();
 		}
 		if (Current_FTPDownloadState != FTPDownloadState_WaitingUpdate && WSE2IsInstalled && IsCurrentVersionOlderThan(FTP_Version)) {
@@ -48,7 +48,7 @@ void Class_Engine::FTPThread()
 			Label_FTP->setVisible(true);
 			Button_FTP->setText(GetLocalizedTextEntry("ui_update_wse2"));
 			Label_FTP->setText(GetLocalizedTextEntry("ui_newer_version_available"));
-			Label_FTP->setPosition("23%", "32%");
+			Label_FTP->setPosition("23%", "35%");
 			FTPThread_Mutex.unlock();
 		}
 		if (Current_FTPDownloadState != FTPDownloadState_WaitingInstall && !WSE2IsInstalled) {
@@ -58,7 +58,7 @@ void Class_Engine::FTPThread()
 			Label_FTP->setVisible(true);
 			Button_FTP->setText(GetLocalizedTextEntry("ui_install_wse2"));
 			Label_FTP->setText(GetLocalizedTextEntry("ui_wse2_not_installed"));
-			Label_FTP->setPosition("23%", "32%");
+			Label_FTP->setPosition("23%", "35%");
 			FTPThread_Mutex.unlock();
 		}
 
@@ -84,7 +84,7 @@ void Class_Engine::FTPThread()
 			Button_FTP->setVisible(false);
 			Label_FTP->setVisible(true);
 			Label_FTP->setText(GetLocalizedTextEntry("ui_version_is_up_to_date"));
-			Label_FTP->setPosition("23%", "40%");
+			Label_FTP->setPosition("23%", "43%");
 			FTPThread_Mutex.unlock();
 			HKEY Key;
 			RegOpenKeyExW(HKEY_CURRENT_USER, L"SOFTWARE\\MountAndBladeWarbandKeys", 0, KEY_WRITE, &Key);

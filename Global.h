@@ -15,6 +15,8 @@
 #include <cstdio>
 #include <WinUser.h>
 #include <future>
+#include <cwctype>
+#include <clocale>
 
 enum ExeType { ExeType_DedicatedServer, ExeType_NotDedicatedServer};
 enum FTPCommand { FTPCommand_None, FTPCommand_DownloadAllFiles, FTPCommand_Stop};

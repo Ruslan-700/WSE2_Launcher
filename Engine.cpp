@@ -106,8 +106,8 @@ void Class_Engine::InitializeTextButton(tgui::Button::Ptr TguiButton) {
 	TguiButton->getRenderer()->setBackgroundColorDownFocused(tgui::Color::Transparent);
 	TguiButton->setOrigin(0.5, 0.5);
 	TguiButton->getRenderer()->setTextColor(tgui::Color(97, 70, 43));
-	TguiButton->getRenderer()->setTextColorHover(tgui::Color(182, 60, 41));
-	TguiButton->getRenderer()->setTextColorDown(tgui::Color(182, 60, 41));
+	TguiButton->getRenderer()->setTextColorHover(tgui::Color(159, 52, 35));
+	TguiButton->getRenderer()->setTextColorDown(tgui::Color(159, 52, 35));
 	TguiButton->getRenderer()->setTextOutlineThickness(0.17);
 }
 
@@ -240,11 +240,10 @@ void Class_Engine::ReadWSE2Version()
 		{
 			try { std::getline(File_rgl_log, Line); }
 			catch (const std::exception& Exception) { DisplayErrorMessageMain("Error (unhandled exception in ReadWSE2Version) - ''" + std::string(Exception.what()) + "''. "); continue; }
-			auto Pos = Line.find(u8"WSE2");
+			auto Pos = Line.find(u8"WSE2 version:");
 			if (Pos != std::string::npos) {
 				for (size_t i = 0; i < 3; i++) Pos = Line.find_first_of(u8" ", Pos + 1);
-				std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> Converter;
-				WSE2Version = Converter.from_bytes(Line.substr(Pos + 1, 4));
+				WSE2Version = wstring_Converter.from_bytes(Line.substr(Pos + 1, 4));
 				break;
 			}
 		}
@@ -257,8 +256,8 @@ void Class_Engine::ReadWSE2Version()
 	HKEY Key1;
 	RegOpenKeyExW(HKEY_CURRENT_USER, L"SOFTWARE\\MountAndBladeWarbandKeys", 0, KEY_READ, &Key1);
 	Error = RegQueryValueExW(Key1, L"wse2_version", 0, NULL, (LPBYTE)Buffer, &BufferSize);
-	if (Error == ERROR_SUCCESS && (WSE2Version == L"" || IsCurrentVersionOlderThan(Buffer))) WSE2Version = Buffer;
-	else {
+	if (Error == ERROR_SUCCESS && (bool)std::iswdigit(Buffer[0]) && (WSE2Version == L"" || IsCurrentVersionOlderThan(Buffer))) WSE2Version = Buffer;
+	else if (WSE2Version != L"") {
 		HKEY Key2;
 		RegOpenKeyExW(HKEY_CURRENT_USER, L"SOFTWARE\\MountAndBladeWarbandKeys", 0, KEY_WRITE, &Key2);
 		RegSetValueExW(Key2, L"wse2_version", 0, REG_SZ, (LPBYTE)WSE2Version.c_str(), wcslen(WSE2Version.c_str()) * sizeof(wchar_t));
