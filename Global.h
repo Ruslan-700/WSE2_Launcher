@@ -17,6 +17,7 @@
 #include <future>
 #include <cwctype>
 #include <clocale>
+#include <codecvt>
 
 enum ExeType { ExeType_DedicatedServer, ExeType_NotDedicatedServer};
 enum FTPCommand { FTPCommand_None, FTPCommand_DownloadAllFiles, FTPCommand_Stop};
