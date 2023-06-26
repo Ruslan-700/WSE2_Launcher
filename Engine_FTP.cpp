@@ -4,13 +4,13 @@ void Class_Engine::FTPThread()
 {
 	if (CurentAppdataPath == "") return;
 	sf::Ftp::Response ConnectionResponse, LoginResponse, FileResponse, AliveResponse;
-	ConnectionResponse = FTP.connect("ftp.fianna.ru", 2121, sf::seconds(10));
+	ConnectionResponse = FTP.connect(FTP_ADDRESS, FTP_PORT, sf::seconds(10));
 	if (!ConnectionResponse.isOk()) return;
-	LoginResponse = FTP.login("WSE2", "WSE2");
+	LoginResponse = FTP.login(FTP_LOGIN, "");
 	if (!LoginResponse.isOk()) return;
-	FileResponse = FTP.download("\\version.txt", std::string(CurentAppdataPath) + u8"\\Mount&Blade Warband WSE2");
+	FileResponse = FTP.download("\\version.txt", std::string(CurentAppdataPath) + u8"\\" + MB_NAME);
 	if (!FileResponse.isOk()) return;
-	std::ifstream File_version(std::string(CurentAppdataPath) + std::string("\\Mount&Blade Warband WSE2\\version.txt"));
+	std::ifstream File_version(std::string(CurentAppdataPath) + MB_VERSION);
 	std::string Line = "";
 	std::wstring FTP_Version = L"";
 	if (File_version.good())
@@ -19,11 +19,11 @@ void Class_Engine::FTPThread()
 		std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> Converter;
 		FTP_Version = Converter.from_bytes(Line);
 		File_version.close();
-		std::remove(std::string(std::string(CurentAppdataPath) + "\\Mount&Blade Warband WSE2\\version.txt").c_str());
+		std::remove(std::string(std::string(CurentAppdataPath) + MB_VERSION).c_str());
 	}
 	else return;
 	struct stat StatBuffer;
-	WSE2IsInstalled = (stat(std::string("mb_warband_wse2.exe").c_str(), &StatBuffer) == 0);
+	WSE2IsInstalled = (stat(std::string(EXECUTABLE).c_str(), &StatBuffer) == 0);
 	while (Current_FTPCommand != FTPCommand_Stop) {
 		AliveResponse = FTP.sendCommand("FEAT");
 		if (!AliveResponse.isOk()) return;
@@ -87,7 +87,7 @@ void Class_Engine::FTPThread()
 			Label_FTP->setPosition("23%", "43%");
 			FTPThread_Mutex.unlock();
 			HKEY Key;
-			RegOpenKeyExW(HKEY_CURRENT_USER, L"SOFTWARE\\MountAndBladeWarbandKeys", 0, KEY_WRITE, &Key);
+			RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_WRITE, &Key);
 			RegSetValueExW(Key, L"wse2_version", 0, REG_SZ, (LPBYTE)WSE2Version.c_str(), wcslen(WSE2Version.c_str()) * sizeof(wchar_t));
 		}
 	}

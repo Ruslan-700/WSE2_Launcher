@@ -161,7 +161,7 @@ void Class_Engine::CancelChanges()
 	tgui::ComboBox::Ptr ComboBox_Languages = GUI_Options.get<tgui::ComboBox>("ComboBox_Languages");
 	ComboBox_Languages->setSelectedItemById(CurrentLanguage);
 
-	std::ofstream File_language(std::string(CurentDocumentsPath) + std::string("\\AppData\\Roaming\\Mount&Blade Warband WSE2\\language.txt"));
+	std::ofstream File_language(std::string(CurentDocumentsPath) + std::string("\\AppData\\Roaming") + MB_LANGUAGE);
 	if (File_language.good())
 	{
 		File_language << CurrentLanguage;

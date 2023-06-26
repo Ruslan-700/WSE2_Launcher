@@ -3,7 +3,7 @@
 bool Class_Engine::UpdateOptions()
 {
 	Options.clear();
-	std::ifstream File_rgl_config(std::string(CurentDocumentsPath) + std::string("/Mount&Blade Warband WSE2/rgl_config.ini"));
+	std::ifstream File_rgl_config(std::string(CurentDocumentsPath) + RGL_CONFIG);
 	std::string Line;
 	if (File_rgl_config.is_open()) {
 		while (std::getline(File_rgl_config, Line))
@@ -40,9 +40,9 @@ bool Class_Engine::UpdateOptions()
 bool Class_Engine::ApplyOptions()
 {
 	std::string Line;
-	std::ifstream File_rgl_config(std::string(CurentDocumentsPath) + std::string("/Mount&Blade Warband WSE2/rgl_config.ini"));
-	std::remove(std::string(std::string(CurentDocumentsPath) + std::string("/Mount&Blade Warband WSE2/rgl_config_temp.ini")).c_str());
-	std::ofstream OutputFile_rgl_config(std::string(CurentDocumentsPath) + std::string("/Mount&Blade Warband WSE2/rgl_config_temp.ini"));
+	std::ifstream File_rgl_config(std::string(CurentDocumentsPath) + RGL_CONFIG);
+	std::remove(std::string(std::string(CurentDocumentsPath) + RGL_CONFIG_TEMP).c_str());
+	std::ofstream OutputFile_rgl_config(std::string(CurentDocumentsPath) + RGL_CONFIG_TEMP);
 	if (File_rgl_config.is_open() && OutputFile_rgl_config) {
 		while (std::getline(File_rgl_config, Line))
 		{
@@ -59,8 +59,8 @@ bool Class_Engine::ApplyOptions()
 		}
 		File_rgl_config.close();
 		OutputFile_rgl_config.close();
-		if (std::remove(std::string(std::string(CurentDocumentsPath) + std::string("/Mount&Blade Warband WSE2/rgl_config.ini")).c_str()) != 0) goto LABEL_ERROR;
-		if (std::rename(std::string(std::string(CurentDocumentsPath) + std::string("/Mount&Blade Warband WSE2/rgl_config_temp.ini")).c_str(), std::string(std::string(CurentDocumentsPath) + "/Mount&Blade Warband WSE2/rgl_config.ini").c_str()) != 0) goto LABEL_ERROR;
+		if (std::remove(std::string(std::string(CurentDocumentsPath) + RGL_CONFIG).c_str()) != 0) goto LABEL_ERROR;
+		if (std::rename(std::string(std::string(CurentDocumentsPath) + RGL_CONFIG_TEMP).c_str(), std::string(std::string(CurentDocumentsPath) + RGL_CONFIG).c_str()) != 0) goto LABEL_ERROR;
 		return true;
 	}
 	else {

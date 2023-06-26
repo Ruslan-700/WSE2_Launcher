@@ -29,7 +29,7 @@ std::wstring Class_Engine::GetLastModule()
 	DWORD BufferSize = sizeof(Buffer);
 	ULONG Error;
 	HKEY Key;
-	RegOpenKeyExW(HKEY_CURRENT_USER, L"SOFTWARE\\MountAndBladeWarbandKeys", 0, KEY_READ, &Key);
+	RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_READ, &Key);
 	Error = RegQueryValueExW(Key, L"last_module_warband", 0, NULL, (LPBYTE)Buffer, &BufferSize);
 	if (Error == ERROR_SUCCESS) Result = Buffer;
 	return Result;
@@ -38,7 +38,7 @@ std::wstring Class_Engine::GetLastModule()
 void Class_Engine::SetLastModule()
 {
 	HKEY Key;
-	RegOpenKeyExW(HKEY_CURRENT_USER, L"SOFTWARE\\MountAndBladeWarbandKeys", 0, KEY_WRITE, &Key);
+	RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_WRITE, &Key);
 	LONG error = RegSetValueEx(Key, "last_module_warband", 0, REG_SZ, (LPBYTE)GetCurrentModule().c_str(), strlen(GetCurrentModule().c_str()) + 1);
 }
 
@@ -117,13 +117,13 @@ void Class_Engine::ReadCurrentUserPath()
 	if (Result1 != S_OK) DisplayErrorMessageMain("Error - could not open Documents folder. ");
 	HRESULT Result2 = SHGetFolderPath(0, CSIDL_APPDATA, 0, 0, CurentAppdataPath);
 	if (Result2 != S_OK) DisplayErrorMessageMain("Error - could not open Appdata folder. ");
-	else try { if (!std::filesystem::is_directory(std::filesystem::path(CurentAppdataPath + std::string("/Mount&Blade Warband WSE2")))) std::filesystem::create_directory(std::filesystem::path(CurentAppdataPath + std::string("/Mount&Blade Warband WSE2"))); }
+	else try { if (!std::filesystem::is_directory(std::filesystem::path(CurentAppdataPath + std::string(MB_NAME_PATH)))) std::filesystem::create_directory(std::filesystem::path(CurentAppdataPath + std::string(MB_NAME_PATH))); }
 	catch (const std::exception& Exception) { DisplayErrorMessageMain("Error (unhandled exception in ReadCurrentUserPath) - ''" + std::string(Exception.what()) + "''. ");  }
 }
 
 void Class_Engine::ReadCurrentLanguage()
 {
-	std::ifstream File_language(std::string(CurentAppdataPath) + std::string("\\Mount&Blade Warband WSE2\\language.txt"));
+	std::ifstream File_language(std::string(CurentAppdataPath) + MB_LANGUAGE);
 	if (File_language.good())
 	{
 		try { std::getline(File_language, CurrentLanguage); }
@@ -181,7 +181,7 @@ void Class_Engine::ChangeLanguage()
 {
 	tgui::ComboBox::Ptr ComboBox_Languages = GUI_Options.get<tgui::ComboBox>("ComboBox_Languages");
 	CurrentLanguage = ComboBox_Languages->getSelectedItemId().toStdString();
-	std::ofstream File_language(std::string(CurentAppdataPath) + std::string("\\Mount&Blade Warband WSE2\\language.txt"));
+	std::ofstream File_language(std::string(CurentAppdataPath) + MB_LANGUAGE);
 	if (File_language.good())
 	{
 		File_language << CurrentLanguage;
@@ -254,12 +254,12 @@ void Class_Engine::ReadWSE2Version()
 	DWORD BufferSize = sizeof(Buffer);
 	ULONG Error;
 	HKEY Key1;
-	RegOpenKeyExW(HKEY_CURRENT_USER, L"SOFTWARE\\MountAndBladeWarbandKeys", 0, KEY_READ, &Key1);
+	RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_READ, &Key1);
 	Error = RegQueryValueExW(Key1, L"wse2_version", 0, NULL, (LPBYTE)Buffer, &BufferSize);
 	if (Error == ERROR_SUCCESS && (bool)std::iswdigit(Buffer[0]) && (WSE2Version == L"" || IsCurrentVersionOlderThan(Buffer))) WSE2Version = Buffer;
 	else if (WSE2Version != L"") {
 		HKEY Key2;
-		RegOpenKeyExW(HKEY_CURRENT_USER, L"SOFTWARE\\MountAndBladeWarbandKeys", 0, KEY_WRITE, &Key2);
+		RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_WRITE, &Key2);
 		RegSetValueExW(Key2, L"wse2_version", 0, REG_SZ, (LPBYTE)WSE2Version.c_str(), wcslen(WSE2Version.c_str()) * sizeof(wchar_t));
 	}
 
@@ -291,8 +291,8 @@ void Class_Engine::DisplayErrorMessageOptions(std::string ErrorMessage)
 void Class_Engine::CreateDefaultRglConfig()
 {
 	struct stat StatBuffer;
-	if (stat(std::string((CurentDocumentsPath) + std::string("/Mount&Blade Warband WSE2/rgl_config.ini")).c_str(), &StatBuffer) != 0) {
-		std::ofstream File_RglConfig(std::string((CurentDocumentsPath)+std::string("/Mount&Blade Warband WSE2/rgl_config.ini")).c_str(), std::ios::binary);
+	if (stat(std::string((CurentDocumentsPath) + std::string(RGL_CONFIG)).c_str(), &StatBuffer) != 0) {
+		std::ofstream File_RglConfig(std::string((CurentDocumentsPath) + std::string(RGL_CONFIG)).c_str(), std::ios::binary);
 		if (File_RglConfig.good())
 		{
 		File_RglConfig.write(RawText_DefaultRglConfig, RawText_DefaultRglConfig_Length);

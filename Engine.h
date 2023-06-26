@@ -71,3 +71,25 @@ private:
 	CHAR CurentAppdataPath[MAX_PATH] = "";
 	std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> wstring_Converter;
 };
+
+#if defined WFAS
+#define MB_NAME "Mount&Blade WFaS WSE2"
+#define REGISTRY_KEY L"SOFTWARE\\MountAndBladeWarbandWFASKeys"
+#define EXECUTABLE "mb_wfas_wse2.exe"
+#define EXECUTABLE_DEDICATED "mb_wfas_wse2_dedicated.exe"
+#define FTP_LOGIN "WSE2_WFaS"
+#else
+#define MB_NAME "Mount&Blade Warband WSE2"
+#define REGISTRY_KEY L"SOFTWARE\\MountAndBladeWarbandKeys"
+#define EXECUTABLE "mb_warband_wse2.exe"
+#define EXECUTABLE_DEDICATED "mb_warband_wse2_dedicated.exe"
+#define FTP_LOGIN "WSE2"
+#endif
+
+#define MB_NAME_PATH "/" MB_NAME
+#define RGL_CONFIG "/" MB_NAME "/rgl_config.ini"
+#define RGL_CONFIG_TEMP "/" MB_NAME "/rgl_config_temp.ini"
+#define MB_LANGUAGE "\\" MB_NAME "\\language.txt"
+#define MB_VERSION "\\" MB_NAME "\\version.txt"
+#define FTP_ADDRESS "ftp.fianna.ru"
+#define FTP_PORT 2121
