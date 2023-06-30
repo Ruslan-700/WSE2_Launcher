@@ -28,6 +28,11 @@ void Class_Engine::LaunchGame(ExeType L_ExeType)
 	{
 		CloseHandle(processInfo.hProcess);
 		CloseHandle(processInfo.hThread);
+
+#if !defined WFAS
+		if (isSteamAPIInit)
+			SteamAPI_Shutdown();
+#endif
 		Window_Main->close();
 	}
 }

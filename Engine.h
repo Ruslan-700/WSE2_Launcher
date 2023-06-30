@@ -2,6 +2,21 @@
 #include "Global.h"
 #include <windows.h>
 
+#if !defined WFAS
+class steamWorkshopItem
+{
+public:
+	std::string m_moduleName;
+	std::string m_modulePath;
+	bool m_detailsLoaded;
+	CCallResult<steamWorkshopItem, SteamUGCRequestUGCDetailsResult_t> m_steamCallResultUGCDetails;
+
+public:
+	steamWorkshopItem();
+	void OnUGCDetailsResult(SteamUGCRequestUGCDetailsResult_t* pCallback, bool bIOFailure);
+};
+#endif
+
 class Class_Engine {
 public:
 	void Start();
@@ -70,6 +85,13 @@ private:
 	CHAR CurentDocumentsPath[MAX_PATH] = "";
 	CHAR CurentAppdataPath[MAX_PATH] = "";
 	std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> wstring_Converter;
+	bool isSteamAPIInit = false;
+#if !defined WFAS
+	int m_numWorkshopItems;
+	steamWorkshopItem* m_workshopItems[255];
+	bool IsItemFromWorkshop(const std::string& name);
+	std::string getPathOfWorkshopItem(const std::string& name);
+#endif
 };
 
 #if defined WFAS

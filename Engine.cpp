@@ -2,6 +2,10 @@
 
 void Class_Engine::Initialize()
 {
+#if !defined WFAS
+	isSteamAPIInit = SteamAPI_Init();
+#endif
+
 	Initialize_UI_Main();
 	Initialize_UI_Options();
 
@@ -18,7 +22,12 @@ void Class_Engine::Initialize()
 	UpdateModPreviewImage();
 }
 
-void Class_Engine::Close() {
+void Class_Engine::Close() 
+{
+#if !defined WFAS
+	if (isSteamAPIInit)
+		SteamAPI_Shutdown();
+#endif
 	Window_Main->close();
 }
 
@@ -154,7 +163,21 @@ void Class_Engine::ReadLocalizationFiles()
 void Class_Engine::UpdateModPreviewImage()
 {
 	tgui::Picture::Ptr Picture_ModPreview = GUI_Main.get<tgui::Picture>("Picture_ModPreview");
-	Texture_ModPreview.loadFromFile("Modules\\" + GetCurrentModule() + "\\main.bmp");
+	std::string currentModule = GetCurrentModule();
+
+#if defined WFAS
+	Texture_ModPreview.loadFromFile("Modules\\" + currentModule + "\\main.bmp");
+#else
+	if (IsItemFromWorkshop(currentModule))
+	{
+		Texture_ModPreview.loadFromFile(getPathOfWorkshopItem(currentModule) + "\\main.bmp");
+	}
+	else
+	{
+		Texture_ModPreview.loadFromFile("Modules\\" + currentModule + "\\main.bmp");
+	}
+#endif
+
 	Picture_ModPreview->getRenderer()->setTexture(Texture_ModPreview);
 }
 

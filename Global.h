@@ -19,6 +19,10 @@
 #include <clocale>
 #include <codecvt>
 
+#if !defined WFAS
+#include "steam_api.h"
+#endif
+
 enum ExeType { ExeType_DedicatedServer, ExeType_NotDedicatedServer};
 enum FTPCommand { FTPCommand_None, FTPCommand_DownloadAllFiles, FTPCommand_Stop};
 enum FTPDownloadState { FTPDownloadState_None, FTPDownloadState_WaitingInstall, FTPDownloadState_WaitingUpdate, FTPDownloadState_Downloading, FTPDownloadState_Updated };

@@ -157,7 +157,7 @@
       <SDLCheck>false</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <AdditionalIncludeDirectories>$(SolutionDir)SDK\SFML\include;$(SolutionDir)SDK\TGUI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)SDK\SFML\include;$(SolutionDir)SDK\TGUI\include;$(SolutionDir)SDK\steamworks_sdk_157\sdk\public\steam;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>SFML_STATIC;TGUI_STATIC;ZLIB_WINAPI;ZLIB_DLL;ZLIB_INTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
@@ -165,8 +165,8 @@
       <SubSystem>NotSet</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>sfml-window-s.lib;sfml-system-s.lib;opengl32.lib;winmm.lib;sfml-graphics-s.lib;freetype.lib;tgui-s.lib;ws2_32.lib;sfml-network-s.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)SDK\SFML\lib;$(SolutionDir)SDK\TGUI\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-window-s.lib;sfml-system-s.lib;opengl32.lib;winmm.lib;sfml-graphics-s.lib;freetype.lib;tgui-s.lib;ws2_32.lib;sfml-network-s.lib;steam_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)SDK\SFML\lib;$(SolutionDir)SDK\TGUI\lib;$(SolutionDir)SDK\steamworks_sdk_157\sdk\redistributable_bin\win;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WFaS|Win32'">
@@ -246,6 +246,7 @@
     <ClCompile Include="Engine_Options.cpp" />
     <ClCompile Include="Engine_UpdateText.cpp" />
     <ClCompile Include="Start.cpp" />
+    <ClCompile Include="steamWorkshopItem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine.h" />

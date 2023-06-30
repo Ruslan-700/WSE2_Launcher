@@ -6,7 +6,14 @@ void Class_Engine::Interact_Main()
 	sf::Event event;
 	while (Window_Main->pollEvent(event))
 	{
-		if (event.type == sf::Event::Closed) Window_Main->close();
+		if (event.type == sf::Event::Closed)
+		{
+#if !defined WFAS
+			if (isSteamAPIInit)
+				SteamAPI_Shutdown();
+#endif
+			Window_Main->close();
+		}
 		bool InteractionResult = GUI_Main.handleEvent(event);
 	}
 }
