@@ -20,6 +20,7 @@
 #include <codecvt>
 
 #if !defined WFAS
+#include <delayimp.h>
 #include "steam_api.h"
 #endif
 
@@ -33,3 +34,7 @@ class Class_Engine;
 
 #include "Images.h"
 #include "Fonts.h"
+
+#ifndef DELAYIMP_INSECURE_WRITABLE_HOOKS
+#define DELAYIMP_INSECURE_WRITABLE_HOOKS
+#endif

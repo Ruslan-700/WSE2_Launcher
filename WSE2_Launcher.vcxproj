@@ -133,6 +133,7 @@
       <SubSystem>Console</SubSystem>
       <AdditionalLibraryDirectories>C:\src\sfml\SFML-2.5.1\lib;C:\src\sfml\TGUI-0.9\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-window-s-d.lib;sfml-system-s-d.lib;opengl32.lib;winmm.lib;sfml-graphics-s-d.lib;freetype.lib;tgui-s-d.lib;ws2_32.lib;sfml-network-s-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>steam_api.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -167,6 +168,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>sfml-window-s.lib;sfml-system-s.lib;opengl32.lib;winmm.lib;sfml-graphics-s.lib;freetype.lib;tgui-s.lib;ws2_32.lib;sfml-network-s.lib;steam_api.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)SDK\SFML\lib;$(SolutionDir)SDK\TGUI\lib;$(SolutionDir)SDK\steamworks_sdk_157\sdk\redistributable_bin\win;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>steam_api.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WFaS|Win32'">
