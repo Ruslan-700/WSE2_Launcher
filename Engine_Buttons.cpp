@@ -46,7 +46,7 @@ void Class_Engine::Button_Options_onClick()
 	if (Window_Options == nullptr) {
 		if (UpdateOptions()) {
 			Window_Options = std::make_shared<sf::RenderWindow>();
-			Window_Options->create({ 421, 489 }, "Options", sf::Style::None);
+			Window_Options->create({ (unsigned int)(421 * ScaleFactor), (unsigned int)(489 * ScaleFactor) }, "Options", sf::Style::None);
 			GUI_Options.setTarget(*Window_Options);
 			PreviousLanguage = CurrentLanguage;
 		}

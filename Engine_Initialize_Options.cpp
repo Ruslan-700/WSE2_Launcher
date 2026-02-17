@@ -23,7 +23,7 @@ void Class_Engine::Initialize_UI_Options()
 	ComboBox_Languages->onItemSelect(&Class_Engine::ChangeLanguage, this);
 	ComboBox_Languages->setChangeItemOnScroll(true);
 	ComboBox_Languages->getRenderer()->setBorders(0);
-	ComboBox_Languages->getRenderer()->setPadding({ 5, 0, 0, 0 });
+	ComboBox_Languages->getRenderer()->setPadding({ Scaled(5), 0, 0, 0 });
 	Panel_Options->add(ComboBox_Languages, "ComboBox_Languages");
 
 	tgui::Label::Ptr Label_OnDemandTextures = tgui::Label::create(" ");
@@ -90,7 +90,7 @@ void Class_Engine::Initialize_UI_Options()
 	Checkbox_Sound->onUncheck([this] { Options.insert_or_assign("bSound", "true"); });
 
 	tgui::Label::Ptr Label_Music = tgui::Label::create(" ");
-	Label_Music->setTextSize(15);
+	Label_Music->setTextSize(Scaled(15));
 	Label_Music->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Left);
 	Label_Music->setOrigin(0, 0.5);
 	Label_Music->setPosition("8%", "80%");
@@ -102,7 +102,7 @@ void Class_Engine::Initialize_UI_Options()
 	Checkbox_Music->onUncheck([this] { Options.insert_or_assign("bMusic", "true"); });
 
 	tgui::Label::Ptr Label_Message1 = tgui::Label::create(" ");
-	Label_Message1->setTextSize(10);
+	Label_Message1->setTextSize(Scaled(10));
 	Label_Message1->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Center);
 	Label_Message1->setOrigin(0.5, 0.5);
 	Label_Message1->setPosition("50%", "85%");
@@ -111,27 +111,27 @@ void Class_Engine::Initialize_UI_Options()
 	Button_Save->getRenderer()->setBorders(0);
 	Button_Save->setOrigin(0.5, 0.5);
 	Button_Save->setPosition("30%", "91%");
-	Button_Save->setSize(111, 34);
+	Button_Save->setSize(Scaled(111), Scaled(34));
 	Button_Save->onClick([this] { if (ApplyOptions()) { Window_Options->close(); }});
 
 	tgui::Button::Ptr Button_Cancel = tgui::Button::create(" ");
 	Button_Cancel->getRenderer()->setBorders(0);
 	Button_Cancel->setOrigin(0.5, 0.5);
 	Button_Cancel->setPosition("70%", "91%");
-	Button_Cancel->setSize(111, 34);
+	Button_Cancel->setSize(Scaled(111), Scaled(34));
 	Button_Cancel->onClick(&Class_Engine::CancelChanges, this);
 
 	tgui::Button::Ptr Button_Close = tgui::Button::create();
 	Button_Close->getRenderer()->setBorders(0);
 	Button_Close->setPosition("86%", "6%");
-	Button_Close->setSize(31, 32);
+	Button_Close->setSize(Scaled(31), Scaled(32));
 	Button_Close->onClick(&Class_Engine::CancelChanges, this);
 	Panel_Options->add(Button_Close, "Button_Close");
 
 	tgui::Button::Ptr Button_Minimize = tgui::Button::create();
 	Button_Minimize->getRenderer()->setBorders(0);
 	Button_Minimize->setPosition("78%", "6%");
-	Button_Minimize->setSize(31, 32);
+	Button_Minimize->setSize(Scaled(31), Scaled(32));
 	Button_Minimize->onClick([this] { ShowWindow(Window_Options->getSystemHandle(), SW_SHOWMINIMIZED); });
 	Panel_Options->add(Button_Minimize, "Button_Minimize");
 

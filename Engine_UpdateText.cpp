@@ -27,12 +27,12 @@ void Class_Engine::UpdateText()
 	GUI_Main.setFont(Font_Latin);
 	GUI_Options.setFont(Font_Latin);
 
-	float DefaultTextSize = 18;
+	float DefaultTextSize = 18 * ScaleFactor;
 
 	if (CurrentLanguage == "ru" || CurrentLanguage == "tr") { // mordred doesnt support these languages so use pt serif instead
 		GUI_Main.setFont(Font_Universal);
 		GUI_Options.setFont(Font_Universal);
-		DefaultTextSize = 15;
+		DefaultTextSize = 15 * ScaleFactor;
 	}
 
 	Button_Launch->setText(GetLocalizedTextEntry("ui_play"));
@@ -85,7 +85,7 @@ void Class_Engine::UpdateText()
 	ComboBox_Languages->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.8));
 	Label_Options->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.1));
 	Label_OnDemandTextures->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.9));
-	Label_FTP->setTextSize(12);
+	Label_FTP->setTextSize(Scaled(12));
 
 	ComboBox_Languages->getRenderer()->setFont(Font_Universal);
 	ComboBox_Languages->getRenderer()->setListBox(tgui::ListBoxRenderer(ComboBox_Languages->getRenderer()->getListBox()).clone());

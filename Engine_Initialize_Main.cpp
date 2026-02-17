@@ -9,12 +9,12 @@ void Class_Engine::Initialize_UI_Main()
 	GUI_Main.add(Panel_Main, "Panel_Main");
 
 	tgui::Label::Ptr Label_Message1 = tgui::Label::create(" ");
-	Label_Message1->setTextSize(11);
+	Label_Message1->setTextSize(Scaled(11));
 	Label_Message1->setOrigin(0, 0);
 	Label_Message1->setPosition("2%", "74%");
 	Label_Message1->setSize("20%", "15%");
 	Label_Message1->setAutoSize(1);
-	Label_Message1->setMaximumTextWidth(270);
+	Label_Message1->setMaximumTextWidth(Scaled(270));
 	Panel_Main->add(Label_Message1, "Label_Message1");
 
 	tgui::Label::Ptr Label_CurrentModule = tgui::Label::create(" ");
@@ -36,7 +36,7 @@ void Class_Engine::Initialize_UI_Main()
 	ComboBoxModule->setSize("60%", "6%");
 	ComboBoxModule->setChangeItemOnScroll(true);
 	ComboBoxModule->getRenderer()->setBorders(0);
-	ComboBoxModule->getRenderer()->setPadding({ 5, 0, 0, 0 });
+	ComboBoxModule->getRenderer()->setPadding({ Scaled(5), 0, 0, 0 });
 	ComboBoxModule->setItemsToDisplay(10);
 	ComboBoxModule->onItemSelect([this] {UpdateModPreviewImage(); SetLastModule(); });
 	Panel_Main->add(ComboBoxModule, "ComboBoxModule");
@@ -94,14 +94,14 @@ void Class_Engine::Initialize_UI_Main()
 	tgui::Button::Ptr Button_Close = tgui::Button::create();
 	Button_Close->getRenderer()->setBorders(0);
 	Button_Close->setPosition("90%", "6%");
-	Button_Close->setSize(31, 32);
+	Button_Close->setSize(Scaled(31), Scaled(32));
 	Button_Close->onClick(&Class_Engine::Close, this);
 	Panel_Main->add(Button_Close, "Button_Close");
 
 	tgui::Button::Ptr Button_Minimize = tgui::Button::create();
 	Button_Minimize->getRenderer()->setBorders(0);
 	Button_Minimize->setPosition("85%", "6%");
-	Button_Minimize->setSize(31, 32);
+	Button_Minimize->setSize(Scaled(31), Scaled(32));
 	Button_Minimize->onClick([this] { ShowWindow(Window_Main->getSystemHandle(), SW_SHOWMINIMIZED); });
 	Panel_Main->add(Button_Minimize, "Button_Minimize");
 

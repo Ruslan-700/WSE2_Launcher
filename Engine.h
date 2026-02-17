@@ -22,6 +22,9 @@ public:
 	void Start();
 	~Class_Engine();
 private:
+	float ScaleFactor = 1.0f;
+	int Scaled(int px) { return static_cast<int>(px * ScaleFactor); }
+	void DetectDPIScale();
 	std::shared_ptr<sf::RenderWindow> Window_Main = nullptr, Window_Options = nullptr;
 	std::shared_ptr<tgui::Panel> Panel_Main = nullptr, Panel_Options = nullptr;
 	tgui::Gui GUI_Main, GUI_Options;

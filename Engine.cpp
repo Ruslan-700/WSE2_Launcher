@@ -123,7 +123,7 @@ void Class_Engine::InitializeTextButton(tgui::Button::Ptr TguiButton) {
 	TguiButton->getRenderer()->setTextColor(tgui::Color(97, 70, 43));
 	TguiButton->getRenderer()->setTextColorHover(tgui::Color(159, 52, 35));
 	TguiButton->getRenderer()->setTextColorDown(tgui::Color(159, 52, 35));
-	TguiButton->getRenderer()->setTextOutlineThickness(0.17f);
+	TguiButton->getRenderer()->setTextOutlineThickness(0.17f * ScaleFactor);
 }
 
 void Class_Engine::ReadCurrentUserPath()
