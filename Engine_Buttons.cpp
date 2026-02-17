@@ -15,7 +15,7 @@ void Class_Engine::LaunchGame(ExeType L_ExeType)
 	std::string ExeName, Arguments;
 	if (L_ExeType == ExeType_DedicatedServer) {
 		ExeName = EXECUTABLE_DEDICATED;
-		Arguments = ExeName + "--config-path server_config.ini -r " + GetCurrentModule() + ".txt --module" + GetCurrentModule();
+		Arguments = ExeName + " --config-path server_config.ini -r " + GetCurrentModule() + ".txt --module " + GetCurrentModule();
 	}
 	else  {
 		ExeName = EXECUTABLE;
@@ -24,14 +24,18 @@ void Class_Engine::LaunchGame(ExeType L_ExeType)
 
 	STARTUPINFO info = { sizeof(info) };
 	PROCESS_INFORMATION processInfo;
-	if (CreateProcess((LPCSTR)ExeName.c_str(), (LPSTR)Arguments.c_str(), NULL, NULL, TRUE, 0, NULL, NULL, &info, &processInfo))
+	std::vector<char> argBuffer(Arguments.begin(), Arguments.end());
+	argBuffer.push_back('\0');
+	if (CreateProcess((LPCSTR)ExeName.c_str(), argBuffer.data(), NULL, NULL, TRUE, 0, NULL, NULL, &info, &processInfo))
 	{
 		CloseHandle(processInfo.hProcess);
 		CloseHandle(processInfo.hThread);
 
 #if !defined WFAS
-		if (isSteamAPIInit)
+		if (isSteamAPIInit) {
 			SteamAPI_Shutdown();
+			isSteamAPIInit = false;
+		}
 #endif
 		Window_Main->close();
 	}

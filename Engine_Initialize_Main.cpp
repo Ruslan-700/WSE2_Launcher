@@ -38,7 +38,7 @@ void Class_Engine::Initialize_UI_Main()
 	ComboBoxModule->getRenderer()->setBorders(0);
 	ComboBoxModule->getRenderer()->setPadding({ 5, 0, 0, 0 });
 	ComboBoxModule->setItemsToDisplay(10);
-	ComboBoxModule->onItemSelect([&] {Class_Engine::UpdateModPreviewImage(); SetLastModule(); });
+	ComboBoxModule->onItemSelect([this] {UpdateModPreviewImage(); SetLastModule(); });
 	Panel_Main->add(ComboBoxModule, "ComboBoxModule");
 
 	tgui::Label::Ptr Label_FTP = tgui::Label::create(u8" ");
@@ -53,7 +53,7 @@ void Class_Engine::Initialize_UI_Main()
 	Button_FTP->setSize("30%", "12%");
 	Panel_Main->add(Button_FTP, "Button_FTP");
 	Button_FTP->setVisible(false);
-	Button_FTP->onClick([&] {  Current_FTPCommand = FTPCommand_DownloadAllFiles; });
+	Button_FTP->onClick([this] {  Current_FTPCommand.store(FTPCommand_DownloadAllFiles); });
 
 	tgui::Button::Ptr Button_Launch = tgui::Button::create(" ");
 	InitializeTextButton(Button_Launch);
@@ -102,7 +102,7 @@ void Class_Engine::Initialize_UI_Main()
 	Button_Minimize->getRenderer()->setBorders(0);
 	Button_Minimize->setPosition("85%", "6%");
 	Button_Minimize->setSize(31, 32);
-	Button_Minimize->onClick([&] { { ShowWindow(Window_Main->getSystemHandle(), SW_SHOWMINIMIZED); }});
+	Button_Minimize->onClick([this] { ShowWindow(Window_Main->getSystemHandle(), SW_SHOWMINIMIZED); });
 	Panel_Main->add(Button_Minimize, "Button_Minimize");
 
 	tgui::Button::Ptr Button_MoveBar = tgui::Button::create();

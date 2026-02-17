@@ -35,8 +35,8 @@ void Class_Engine::Initialize_UI_Options()
 	tgui::CheckBox::Ptr Checkbox_OnDemandTextures = tgui::CheckBox::create();
 	Checkbox_OnDemandTextures->setOrigin(0.5, 0.5);
 	Checkbox_OnDemandTextures->setPosition("85%", "35%");
-	Checkbox_OnDemandTextures->onCheck([&] { Options.insert_or_assign("bOnDemandTextures", "true"); });
-	Checkbox_OnDemandTextures->onUncheck([&] { Options.insert_or_assign("bOnDemandTextures", "false"); });
+	Checkbox_OnDemandTextures->onCheck([this] { Options.insert_or_assign("bOnDemandTextures", "true"); });
+	Checkbox_OnDemandTextures->onUncheck([this] { Options.insert_or_assign("bOnDemandTextures", "false"); });
 	Panel_Options->add(Checkbox_OnDemandTextures, "Checkbox_OnDemandTextures");
 
 	tgui::Label::Ptr Label_OcclusionFilter = tgui::Label::create("Occlusion Low-Pass Filter");
@@ -48,8 +48,8 @@ void Class_Engine::Initialize_UI_Options()
 	tgui::CheckBox::Ptr Checkbox_OcclusionFilter = tgui::CheckBox::create();
 	Checkbox_OcclusionFilter->setOrigin(0.5, 0.5);
 	Checkbox_OcclusionFilter->setPosition("85%", "49%");
-	Checkbox_OcclusionFilter->onCheck([&] { Options.insert_or_assign("bOcclusionFilter", "true"); });
-	Checkbox_OcclusionFilter->onUncheck([&] { Options.insert_or_assign("bOcclusionFilter", "false"); });
+	Checkbox_OcclusionFilter->onCheck([this] { Options.insert_or_assign("bOcclusionFilter", "true"); });
+	Checkbox_OcclusionFilter->onUncheck([this] { Options.insert_or_assign("bOcclusionFilter", "false"); });
 	Panel_Options->add(Checkbox_OcclusionFilter, "Checkbox_OcclusionFilter");
 
 	tgui::Label::Ptr Label_HrtfFilter = tgui::Label::create("HRTF Low-Pass Filter");
@@ -61,8 +61,8 @@ void Class_Engine::Initialize_UI_Options()
 	tgui::CheckBox::Ptr Checkbox_HrtfFilter = tgui::CheckBox::create();
 	Checkbox_HrtfFilter->setOrigin(0.5, 0.5);
 	Checkbox_HrtfFilter->setPosition("85%", "55%");
-	Checkbox_HrtfFilter->onCheck([&] { Options.insert_or_assign("bHrtfFilter", "true"); });
-	Checkbox_HrtfFilter->onUncheck([&] { Options.insert_or_assign("bHrtfFilter", "false"); });
+	Checkbox_HrtfFilter->onCheck([this] { Options.insert_or_assign("bHrtfFilter", "true"); });
+	Checkbox_HrtfFilter->onUncheck([this] { Options.insert_or_assign("bHrtfFilter", "false"); });
 	Panel_Options->add(Checkbox_HrtfFilter, "Checkbox_HrtfFilter");
 
 	tgui::Label::Ptr Label_DistanceFilter = tgui::Label::create("Distance Low/High-Pass Filter");
@@ -74,8 +74,8 @@ void Class_Engine::Initialize_UI_Options()
 	tgui::CheckBox::Ptr Checkbox_DistanceFilter = tgui::CheckBox::create();
 	Checkbox_DistanceFilter->setOrigin(0.5, 0.5);
 	Checkbox_DistanceFilter->setPosition("85%", "61%");
-	Checkbox_DistanceFilter->onCheck([&] { Options.insert_or_assign("bDistanceFilter", "true"); });
-	Checkbox_DistanceFilter->onUncheck([&] { Options.insert_or_assign("bDistanceFilter", "false"); });
+	Checkbox_DistanceFilter->onCheck([this] { Options.insert_or_assign("bDistanceFilter", "true"); });
+	Checkbox_DistanceFilter->onUncheck([this] { Options.insert_or_assign("bDistanceFilter", "false"); });
 	Panel_Options->add(Checkbox_DistanceFilter, "Checkbox_DistanceFilter");
 
 	tgui::Label::Ptr Label_Sound = tgui::Label::create(" ");
@@ -86,8 +86,8 @@ void Class_Engine::Initialize_UI_Options()
 	tgui::CheckBox::Ptr Checkbox_Sound = tgui::CheckBox::create();
 	Checkbox_Sound->setOrigin(0.5, 0.5);
 	Checkbox_Sound->setPosition("85%", "74%");
-	Checkbox_Sound->onCheck([&] { Options.insert_or_assign("bSound", "false"); });
-	Checkbox_Sound->onUncheck([&] { Options.insert_or_assign("bSound", "true"); });
+	Checkbox_Sound->onCheck([this] { Options.insert_or_assign("bSound", "false"); });
+	Checkbox_Sound->onUncheck([this] { Options.insert_or_assign("bSound", "true"); });
 
 	tgui::Label::Ptr Label_Music = tgui::Label::create(" ");
 	Label_Music->setTextSize(15);
@@ -98,8 +98,8 @@ void Class_Engine::Initialize_UI_Options()
 	tgui::CheckBox::Ptr Checkbox_Music = tgui::CheckBox::create();
 	Checkbox_Music->setOrigin(0.5, 0.5);
 	Checkbox_Music->setPosition("85%", "80%");
-	Checkbox_Music->onCheck([&] { Options.insert_or_assign("bMusic", "false"); });
-	Checkbox_Music->onUncheck([&] { Options.insert_or_assign("bMusic", "true"); });
+	Checkbox_Music->onCheck([this] { Options.insert_or_assign("bMusic", "false"); });
+	Checkbox_Music->onUncheck([this] { Options.insert_or_assign("bMusic", "true"); });
 
 	tgui::Label::Ptr Label_Message1 = tgui::Label::create(" ");
 	Label_Message1->setTextSize(10);
@@ -112,7 +112,7 @@ void Class_Engine::Initialize_UI_Options()
 	Button_Save->setOrigin(0.5, 0.5);
 	Button_Save->setPosition("30%", "91%");
 	Button_Save->setSize(111, 34);
-	Button_Save->onClick([&] { if (ApplyOptions()) { Window_Options->close(); }});
+	Button_Save->onClick([this] { if (ApplyOptions()) { Window_Options->close(); }});
 
 	tgui::Button::Ptr Button_Cancel = tgui::Button::create(" ");
 	Button_Cancel->getRenderer()->setBorders(0);
@@ -132,7 +132,7 @@ void Class_Engine::Initialize_UI_Options()
 	Button_Minimize->getRenderer()->setBorders(0);
 	Button_Minimize->setPosition("78%", "6%");
 	Button_Minimize->setSize(31, 32);
-	Button_Minimize->onClick([&] { ShowWindow(Window_Options->getSystemHandle(), SW_SHOWMINIMIZED); });
+	Button_Minimize->onClick([this] { ShowWindow(Window_Options->getSystemHandle(), SW_SHOWMINIMIZED); });
 	Panel_Options->add(Button_Minimize, "Button_Minimize");
 
 	tgui::Button::Ptr Button_MoveBar = tgui::Button::create();
@@ -161,7 +161,7 @@ void Class_Engine::CancelChanges()
 	tgui::ComboBox::Ptr ComboBox_Languages = GUI_Options.get<tgui::ComboBox>("ComboBox_Languages");
 	ComboBox_Languages->setSelectedItemById(CurrentLanguage);
 
-	std::ofstream File_language(std::string(CurentDocumentsPath) + std::string("\\AppData\\Roaming") + MB_LANGUAGE);
+	std::ofstream File_language(std::string(CurentAppdataPath) + MB_LANGUAGE);
 	if (File_language.good())
 	{
 		File_language << CurrentLanguage;

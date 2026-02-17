@@ -49,8 +49,8 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_play", u8"M&B Warband WSE2 spielen"));
 #endif
 		LocalizedText.insert(std::pair("ui_start_dedicated", u8"Starten dedizierten server"));
-		LocalizedText.insert(std::pair("ui_disable_sound", u8"Musik deaktivieren"));
-		LocalizedText.insert(std::pair("ui_disable_music", u8"Sound deaktivieren"));
+		LocalizedText.insert(std::pair("ui_disable_sound", u8"Sound deaktivieren"));
+		LocalizedText.insert(std::pair("ui_disable_music", u8"Musik deaktivieren"));
 		LocalizedText.insert(std::pair("ui_language", u8"Sprache:"));
 		LocalizedText.insert(std::pair("ui_current_module", u8"Aktuelles Mod:"));
 		LocalizedText.insert(std::pair("ui_ondemand_textures", u8"Texturen nach Bedarf laden:"));
@@ -136,7 +136,7 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_ondemand_textures", u8"Cargar texturas sobre demanda:"));
 		LocalizedText.insert(std::pair("ui_update_wse2", u8"Actualizar WSE2"));
 		LocalizedText.insert(std::pair("ui_install_wse2", u8"Instalar WSE2"));
-		LocalizedText.insert(std::pair("ui_version_is_up_to_date", u8"Tu versión WSE2 está desactualizada."));
+		LocalizedText.insert(std::pair("ui_version_is_up_to_date", u8"Tu versión WSE2 está actualizada."));
 		LocalizedText.insert(std::pair("ui_newer_version_available", u8"Hay una nueva versión WSE2 disponible."));
 		LocalizedText.insert(std::pair("ui_wse2_not_installed", u8"No tienes WSE2 instalado."));
 		LocalizedText.insert(std::pair("ui_please_wait", u8"Por favor espera..."));

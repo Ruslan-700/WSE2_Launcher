@@ -61,11 +61,11 @@ private:
 	void CreateDefaultRglConfig();
 	bool UpdateOptions();
 	bool ApplyOptions();
-	bool FTPThread_IsRunning = false;
+	std::atomic<bool> FTPThread_IsRunning{false};
 	bool IsCurrentVersionOlderThan(std::wstring);
 	std::mutex FTPThread_Mutex;
-	FTPDownloadState Current_FTPDownloadState = FTPDownloadState_None;
-	FTPCommand Current_FTPCommand = FTPCommand_None;
+	std::atomic<FTPDownloadState> Current_FTPDownloadState{FTPDownloadState_None};
+	std::atomic<FTPCommand> Current_FTPCommand{FTPCommand_None};
 	std::future<void> FTPThread_future;
 	sf::Ftp FTP;
 	bool WSE2IsInstalled = false;
@@ -87,8 +87,8 @@ private:
 	std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> wstring_Converter;
 	bool isSteamAPIInit = false;
 #if !defined WFAS
-	int m_numWorkshopItems;
-	steamWorkshopItem* m_workshopItems[255];
+	int m_numWorkshopItems = 0;
+	steamWorkshopItem* m_workshopItems[255] = {};
 	bool IsItemFromWorkshop(const std::string& name);
 	std::string getPathOfWorkshopItem(const std::string& name);
 #endif

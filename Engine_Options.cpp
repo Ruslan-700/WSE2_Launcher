@@ -22,12 +22,16 @@ bool Class_Engine::UpdateOptions()
 		tgui::CheckBox::Ptr Checkbox_DistanceFilter = GUI_Options.get<tgui::CheckBox>("Checkbox_DistanceFilter");
 		tgui::CheckBox::Ptr Checkbox_Sound = GUI_Options.get<tgui::CheckBox>("Checkbox_Sound");
 		tgui::CheckBox::Ptr Checkbox_Music = GUI_Options.get<tgui::CheckBox>("Checkbox_Music");
-		Checkbox_OnDemandTextures->setChecked(Options["bOnDemandTextures"] == "true");
-		Checkbox_OcclusionFilter->setChecked(Options["bOcclusionFilter"] == "true");
-		Checkbox_HrtfFilter->setChecked(Options["bHrtfFilter"] == "true");
-		Checkbox_DistanceFilter->setChecked(Options["bDistanceFilter"] == "true");
-		Checkbox_Sound->setChecked(Options["bSound"] == "false");
-		Checkbox_Music->setChecked(Options["bMusic"] == "false");
+		auto getOpt = [&](const std::string& key) -> std::string {
+			auto it = Options.find(key);
+			return it != Options.end() ? it->second : "";
+		};
+		Checkbox_OnDemandTextures->setChecked(getOpt("bOnDemandTextures") == "true");
+		Checkbox_OcclusionFilter->setChecked(getOpt("bOcclusionFilter") == "true");
+		Checkbox_HrtfFilter->setChecked(getOpt("bHrtfFilter") == "true");
+		Checkbox_DistanceFilter->setChecked(getOpt("bDistanceFilter") == "true");
+		Checkbox_Sound->setChecked(getOpt("bSound") == "false");
+		Checkbox_Music->setChecked(getOpt("bMusic") == "false");
 
 		return true;
 	}
@@ -59,14 +63,16 @@ bool Class_Engine::ApplyOptions()
 		}
 		File_rgl_config.close();
 		OutputFile_rgl_config.close();
-		if (std::remove(std::string(std::string(CurentDocumentsPath) + RGL_CONFIG).c_str()) != 0) goto LABEL_ERROR;
-		if (std::rename(std::string(std::string(CurentDocumentsPath) + RGL_CONFIG_TEMP).c_str(), std::string(std::string(CurentDocumentsPath) + RGL_CONFIG).c_str()) != 0) goto LABEL_ERROR;
+		std::string configPath = std::string(CurentDocumentsPath) + RGL_CONFIG;
+		std::string tempPath = std::string(CurentDocumentsPath) + RGL_CONFIG_TEMP;
+		if (std::remove(configPath.c_str()) != 0 || std::rename(tempPath.c_str(), configPath.c_str()) != 0) {
+			DisplayErrorMessageOptions("Error - could not write to rgl_config.ini. ");
+			return false;
+		}
 		return true;
 	}
 	else {
-	LABEL_ERROR:
 		DisplayErrorMessageOptions("Error - could not write to rgl_config.ini. ");
 		return false;
 	}
-	return false;
 }

@@ -3,7 +3,7 @@
 void Class_Engine::Runtime()
 {
 	while (Window_Main->isOpen()) {
-		if (!FTPThread_IsRunning) FTPThread_future = std::async(std::launch::async, [&] {FTPThread_IsRunning = true;  Class_Engine::FTPThread(); FTPThread_IsRunning = false; });
+		if (!FTPThread_IsRunning.load()) FTPThread_future = std::async(std::launch::async, [this] {FTPThread_IsRunning.store(true);  FTPThread(); FTPThread_IsRunning.store(false); });
 		FTPThread_Mutex.lock();
 		Interact_Main();
 		FTPThread_Mutex.unlock();

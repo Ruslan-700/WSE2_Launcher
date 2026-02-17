@@ -38,8 +38,11 @@ void Class_Engine::RefreshModulesList()
 
 					pItem->m_steamCallResultUGCDetails.Set(hSteamAPICall, pItem, &steamWorkshopItem::OnUGCDetailsResult);
 
-					while (!pItem->m_detailsLoaded)
+					auto startTime = std::chrono::steady_clock::now();
+					while (!pItem->m_detailsLoaded) {
 						SteamAPI_RunCallbacks();
+						if (std::chrono::steady_clock::now() - startTime > std::chrono::seconds(10)) break;
+					}
 				}
 			}
 		}
@@ -59,8 +62,7 @@ void Class_Engine::RefreshModulesList()
 			}
 		}
 	}
-	catch (const std::exception& Exception) { 
-	//	DisplayErrorMessageMain("Error (unhandled exception in RefreshModulesList) - ''" + std::string(Exception.what()) + "''. "); 
+	catch (const std::exception&) {
 	}
 
 #if !defined WFAS

@@ -1,4 +1,5 @@
 #pragma once
+#define _SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING
 #include <SFML/Graphics.hpp>
 #include <SFML/Network.hpp>
 #include <TGUI/TGUI.hpp>
@@ -15,13 +16,20 @@
 #include <cstdio>
 #include <WinUser.h>
 #include <future>
+#include <atomic>
 #include <cwctype>
 #include <clocale>
 #include <codecvt>
 
 #if !defined WFAS
+#ifndef DELAYIMP_INSECURE_WRITABLE_HOOKS
+#define DELAYIMP_INSECURE_WRITABLE_HOOKS
+#endif
 #include <delayimp.h>
+#pragma warning(push)
+#pragma warning(disable: 4996)
 #include "steam_api.h"
+#pragma warning(pop)
 #endif
 
 enum ExeType { ExeType_DedicatedServer, ExeType_NotDedicatedServer};
@@ -34,7 +42,3 @@ class Class_Engine;
 
 #include "Images.h"
 #include "Fonts.h"
-
-#ifndef DELAYIMP_INSECURE_WRITABLE_HOOKS
-#define DELAYIMP_INSECURE_WRITABLE_HOOKS
-#endif

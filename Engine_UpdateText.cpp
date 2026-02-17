@@ -67,24 +67,24 @@ void Class_Engine::UpdateText()
 		break;
 	}
 
-	Button_FTP->setTextSize(DefaultTextSize * 1.13);
-	Button_Launch->setTextSize(DefaultTextSize * 1.13);
-	Button_Launch_Dedicated->setTextSize(DefaultTextSize * 1.13);
-	Button_Options->setTextSize(DefaultTextSize * 1.13);
-	Button_Exit->setTextSize(DefaultTextSize * 1.13);
-	Label_CurrentModule->setTextSize(DefaultTextSize);
-	Label_Sound->setTextSize(DefaultTextSize * 0.9);
-	Label_Music->setTextSize(DefaultTextSize * 0.9);
-	Label_HrtfFilter->setTextSize(DefaultTextSize * 0.9);
-	Label_DistanceFilter->setTextSize(DefaultTextSize * 0.9);
-	Label_OcclusionFilter->setTextSize(DefaultTextSize * 0.9);
-	Label_Language->setTextSize(DefaultTextSize * 0.9);
-	Button_Save->setTextSize(DefaultTextSize * 0.92);
-	Button_Cancel->setTextSize(DefaultTextSize * 0.92);
-	ComboBoxModule->setTextSize(DefaultTextSize);
-	ComboBox_Languages->setTextSize(DefaultTextSize * 0.8);
-	Label_Options->setTextSize(DefaultTextSize * 1.1);
-	Label_OnDemandTextures->setTextSize(DefaultTextSize * 0.9);
+	Button_FTP->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.13));
+	Button_Launch->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.13));
+	Button_Launch_Dedicated->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.13));
+	Button_Options->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.13));
+	Button_Exit->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.13));
+	Label_CurrentModule->setTextSize(static_cast<unsigned int>(DefaultTextSize));
+	Label_Sound->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.9));
+	Label_Music->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.9));
+	Label_HrtfFilter->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.9));
+	Label_DistanceFilter->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.9));
+	Label_OcclusionFilter->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.9));
+	Label_Language->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.9));
+	Button_Save->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.92));
+	Button_Cancel->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.92));
+	ComboBoxModule->setTextSize(static_cast<unsigned int>(DefaultTextSize));
+	ComboBox_Languages->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.8));
+	Label_Options->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.1));
+	Label_OnDemandTextures->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.9));
 	Label_FTP->setTextSize(12);
 
 	ComboBox_Languages->getRenderer()->setFont(Font_Universal);

@@ -22,11 +22,13 @@ void Class_Engine::Initialize()
 	UpdateModPreviewImage();
 }
 
-void Class_Engine::Close() 
+void Class_Engine::Close()
 {
 #if !defined WFAS
-	if (isSteamAPIInit)
+	if (isSteamAPIInit) {
 		SteamAPI_Shutdown();
+		isSteamAPIInit = false;
+	}
 #endif
 	Window_Main->close();
 }
@@ -36,19 +38,23 @@ std::wstring Class_Engine::GetLastModule()
 	std::wstring Result = L"Native";
 	WCHAR Buffer[128];
 	DWORD BufferSize = sizeof(Buffer);
-	ULONG Error;
 	HKEY Key;
-	RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_READ, &Key);
-	Error = RegQueryValueExW(Key, L"last_module_warband", 0, NULL, (LPBYTE)Buffer, &BufferSize);
-	if (Error == ERROR_SUCCESS) Result = Buffer;
+	if (RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_READ, &Key) == ERROR_SUCCESS) {
+		if (RegQueryValueExW(Key, L"last_module_warband", 0, NULL, (LPBYTE)Buffer, &BufferSize) == ERROR_SUCCESS)
+			Result = Buffer;
+		RegCloseKey(Key);
+	}
 	return Result;
 }
 
 void Class_Engine::SetLastModule()
 {
 	HKEY Key;
-	RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_WRITE, &Key);
-	LONG error = RegSetValueEx(Key, "last_module_warband", 0, REG_SZ, (LPBYTE)GetCurrentModule().c_str(), strlen(GetCurrentModule().c_str()) + 1);
+	if (RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_WRITE, &Key) == ERROR_SUCCESS) {
+		std::string module = GetCurrentModule();
+		RegSetValueExA(Key, "last_module_warband", 0, REG_SZ, (LPBYTE)module.c_str(), (DWORD)(module.length() + 1));
+		RegCloseKey(Key);
+	}
 }
 
 void Class_Engine::UpdateTextures()
@@ -117,7 +123,7 @@ void Class_Engine::InitializeTextButton(tgui::Button::Ptr TguiButton) {
 	TguiButton->getRenderer()->setTextColor(tgui::Color(97, 70, 43));
 	TguiButton->getRenderer()->setTextColorHover(tgui::Color(159, 52, 35));
 	TguiButton->getRenderer()->setTextColorDown(tgui::Color(159, 52, 35));
-	TguiButton->getRenderer()->setTextOutlineThickness(0.17);
+	TguiButton->getRenderer()->setTextOutlineThickness(0.17f);
 }
 
 void Class_Engine::ReadCurrentUserPath()
@@ -191,9 +197,11 @@ void Class_Engine::BuildLanguagesList()
 			return;
 		}
 		for (const auto& Entry : std::filesystem::directory_iterator(Path)) {
-			std::size_t Pos = Entry.path().generic_string().find("\\");
-			if (std::filesystem::exists(Entry.path().generic_string() + "\\uimain.csv")) {
-				ComboBox_Languages->addItem(GetLanguageNameById(Entry.path().generic_string().substr(Pos + 11)), Entry.path().generic_string().substr(Pos + 11));
+			std::string entryPath = Entry.path().generic_string();
+			std::size_t Pos = entryPath.rfind("/");
+			if (Pos != std::string::npos && std::filesystem::exists(entryPath + "/uimain.csv")) {
+				std::string langId = entryPath.substr(Pos + 1);
+				ComboBox_Languages->addItem(GetLanguageNameById(langId), langId);
 			}
 		}
 	} catch (const std::exception& Exception) { DisplayErrorMessageMain("Error (unhandled exception in BuildLanguagesList) - ''" + std::string(Exception.what()) + "''. "); }
@@ -265,8 +273,13 @@ void Class_Engine::ReadWSE2Version()
 			catch (const std::exception& Exception) { DisplayErrorMessageMain("Error (unhandled exception in ReadWSE2Version) - ''" + std::string(Exception.what()) + "''. "); continue; }
 			auto Pos = Line.find(u8"WSE2 version:");
 			if (Pos != std::string::npos) {
-				for (size_t i = 0; i < 3; i++) Pos = Line.find_first_of(u8" ", Pos + 1);
-				WSE2Version = wstring_Converter.from_bytes(Line.substr(Pos + 1, 4));
+				for (size_t j = 0; j < 3; j++) {
+					auto Next = Line.find_first_of(u8" ", Pos + 1);
+					if (Next == std::string::npos) { Pos = std::string::npos; break; }
+					Pos = Next;
+				}
+				if (Pos != std::string::npos && Pos + 1 + 4 <= Line.length())
+					WSE2Version = wstring_Converter.from_bytes(Line.substr(Pos + 1, 4));
 				break;
 			}
 		}
@@ -275,15 +288,18 @@ void Class_Engine::ReadWSE2Version()
 
 	WCHAR Buffer[32];
 	DWORD BufferSize = sizeof(Buffer);
-	ULONG Error;
 	HKEY Key1;
-	RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_READ, &Key1);
-	Error = RegQueryValueExW(Key1, L"wse2_version", 0, NULL, (LPBYTE)Buffer, &BufferSize);
-	if (Error == ERROR_SUCCESS && (bool)std::iswdigit(Buffer[0]) && (WSE2Version == L"" || IsCurrentVersionOlderThan(Buffer))) WSE2Version = Buffer;
-	else if (WSE2Version != L"") {
+	if (RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_READ, &Key1) == ERROR_SUCCESS) {
+		ULONG Error = RegQueryValueExW(Key1, L"wse2_version", 0, NULL, (LPBYTE)Buffer, &BufferSize);
+		if (Error == ERROR_SUCCESS && (bool)std::iswdigit(Buffer[0]) && (WSE2Version == L"" || IsCurrentVersionOlderThan(Buffer))) WSE2Version = Buffer;
+		RegCloseKey(Key1);
+	}
+	if (WSE2Version != L"") {
 		HKEY Key2;
-		RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_WRITE, &Key2);
-		RegSetValueExW(Key2, L"wse2_version", 0, REG_SZ, (LPBYTE)WSE2Version.c_str(), wcslen(WSE2Version.c_str()) * sizeof(wchar_t));
+		if (RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_WRITE, &Key2) == ERROR_SUCCESS) {
+			RegSetValueExW(Key2, L"wse2_version", 0, REG_SZ, (LPBYTE)WSE2Version.c_str(), (DWORD)((wcslen(WSE2Version.c_str()) + 1) * sizeof(wchar_t)));
+			RegCloseKey(Key2);
+		}
 	}
 
 	if (WSE2Version != L"") {
@@ -296,7 +312,14 @@ void Class_Engine::ReadWSE2Version()
 
 Class_Engine::~Class_Engine()
 {
-	Current_FTPCommand = FTPCommand_Stop;
+	Current_FTPCommand.store(FTPCommand_Stop);
+	if (FTPThread_future.valid()) FTPThread_future.wait();
+#if !defined WFAS
+	for (int i = 0; i < m_numWorkshopItems; i++) {
+		delete m_workshopItems[i];
+		m_workshopItems[i] = nullptr;
+	}
+#endif
 }
 
 void Class_Engine::DisplayErrorMessageMain(std::string ErrorMessage)

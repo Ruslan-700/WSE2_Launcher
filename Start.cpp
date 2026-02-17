@@ -9,15 +9,18 @@ FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
 	{
 		case dliNotePreLoadLibrary:
 		{
-			if (!strcmp(pdli->szDll, "steam_api.dll"))
-				return (FARPROC)LoadLibrary("steam_api_wse2.dll");
+			if (!strcmp(pdli->szDll, "steam_api.dll")) {
+				HMODULE hModule = LoadLibrary("steam_api_wse2.dll");
+				if (hModule) return (FARPROC)hModule;
+			}
+			break;
 		}
 	}
 
 	return NULL;
 }
 
-const PfnDliHook __pfnDliNotifyHook2 = delayHook;
+PfnDliHook __pfnDliNotifyHook2 = delayHook;
 #endif
 
 int main() {

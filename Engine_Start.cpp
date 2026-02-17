@@ -38,10 +38,9 @@ void Class_Engine::SetWindowTransparency()
 		}
 
 		SetWindowRgn(hWnd, hRegion, true);
-		DeleteObject(hRegion);
 	}
 	catch (const std::exception&)
 	{
-		// ну не получилось и не получилось, хрен с ним
+		// пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ
 	}
 }

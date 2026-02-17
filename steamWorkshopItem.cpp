@@ -8,7 +8,9 @@ steamWorkshopItem::steamWorkshopItem()
 
 void steamWorkshopItem::OnUGCDetailsResult(SteamUGCRequestUGCDetailsResult_t* pCallback, bool bIOFailure)
 {
-	m_moduleName = pCallback->m_details.m_rgchTitle;
+	if (!bIOFailure && pCallback) {
+		m_moduleName = pCallback->m_details.m_rgchTitle;
+	}
 	m_detailsLoaded = true;
 }
 
