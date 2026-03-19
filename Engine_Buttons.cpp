@@ -5,6 +5,11 @@ void Class_Engine::Button_Launch_onClick()
 	LaunchGame(ExeType_NotDedicatedServer);
 }
 
+void Class_Engine::Button_Launch_x64_onClick()
+{
+	LaunchGame(ExeType_x64);
+}
+
 void Class_Engine::Button_Launch_Dedicated_onClick()
 {
 	LaunchGame(ExeType_DedicatedServer);
@@ -16,6 +21,10 @@ void Class_Engine::LaunchGame(ExeType L_ExeType)
 	if (L_ExeType == ExeType_DedicatedServer) {
 		ExeName = EXECUTABLE_DEDICATED;
 		Arguments = ExeName + " --config-path server_config.ini -r " + GetCurrentModule() + ".txt --module " + GetCurrentModule();
+	}
+	else if (L_ExeType == ExeType_x64) {
+		ExeName = EXECUTABLE_X64;
+		Arguments = ExeName + " --module " + GetCurrentModule() + " --no-intro";
 	}
 	else  {
 		ExeName = EXECUTABLE;

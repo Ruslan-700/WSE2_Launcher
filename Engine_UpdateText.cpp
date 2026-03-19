@@ -5,6 +5,7 @@ void Class_Engine::UpdateText()
 
 	tgui::Button::Ptr Button_FTP = GUI_Main.get<tgui::Button>("Button_FTP");
 	tgui::Button::Ptr Button_Launch = GUI_Main.get<tgui::Button>("Button_Launch");
+	tgui::Button::Ptr Button_Launch_x64 = GUI_Main.get<tgui::Button>("Button_Launch_x64");
 	tgui::Button::Ptr Button_Launch_Dedicated = GUI_Main.get<tgui::Button>("Button_Launch_Dedicated");
 	tgui::Button::Ptr Button_Options = GUI_Main.get<tgui::Button>("Button_Options");
 	tgui::Button::Ptr Button_Exit = GUI_Main.get<tgui::Button>("Button_Exit");
@@ -36,6 +37,7 @@ void Class_Engine::UpdateText()
 	}
 
 	Button_Launch->setText(GetLocalizedTextEntry("ui_play"));
+	Button_Launch_x64->setText(GetLocalizedTextEntry("ui_play_x64"));
 	Button_Launch_Dedicated->setText(GetLocalizedTextEntry("ui_start_dedicated"));
 	Button_Options->setText(GetLocalizedTextEntry("ui_options"));
 	Button_Exit->setText(GetLocalizedTextEntry("ui_exit"));
@@ -69,6 +71,7 @@ void Class_Engine::UpdateText()
 
 	Button_FTP->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.13));
 	Button_Launch->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.13));
+	Button_Launch_x64->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.13));
 	Button_Launch_Dedicated->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.13));
 	Button_Options->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.13));
 	Button_Exit->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.13));

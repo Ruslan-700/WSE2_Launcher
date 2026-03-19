@@ -32,7 +32,7 @@
 #pragma warning(pop)
 #endif
 
-enum ExeType { ExeType_DedicatedServer, ExeType_NotDedicatedServer};
+enum ExeType { ExeType_DedicatedServer, ExeType_NotDedicatedServer, ExeType_x64};
 enum FTPCommand { FTPCommand_None, FTPCommand_DownloadAllFiles, FTPCommand_Stop};
 enum FTPDownloadState { FTPDownloadState_None, FTPDownloadState_WaitingInstall, FTPDownloadState_WaitingUpdate, FTPDownloadState_Downloading, FTPDownloadState_Updated };
 

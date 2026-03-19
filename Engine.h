@@ -37,6 +37,7 @@ private:
 	void Interact_Options();
 	void LaunchGame(ExeType);
 	void Button_Launch_onClick();
+	void Button_Launch_x64_onClick();
 	void Button_Launch_Dedicated_onClick();
 	void Button_Options_onClick();
 	void RefreshModulesList();
@@ -101,12 +102,14 @@ private:
 #define MB_NAME "Mount&Blade WFaS WSE2"
 #define REGISTRY_KEY L"SOFTWARE\\MountAndBladeWarbandWFASKeys"
 #define EXECUTABLE "mb_wfas_wse2.exe"
+#define EXECUTABLE_X64 "mb_wfas_wse2_x64.exe"
 #define EXECUTABLE_DEDICATED "mb_wfas_wse2_dedicated.exe"
 #define FTP_LOGIN "WSE2_WFaS"
 #else
 #define MB_NAME "Mount&Blade Warband WSE2"
 #define REGISTRY_KEY L"SOFTWARE\\MountAndBladeWarbandKeys"
 #define EXECUTABLE "mb_warband_wse2.exe"
+#define EXECUTABLE_X64 "mb_warband_wse2_x64.exe"
 #define EXECUTABLE_DEDICATED "mb_warband_wse2_dedicated.exe"
 #define FTP_LOGIN "WSE2"
 #endif

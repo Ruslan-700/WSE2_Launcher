@@ -5,8 +5,10 @@ void Class_Engine::FillMissingLocalizationKeys()
 	if (CurrentLanguage == "en" || CurrentLanguage == "cns" || CurrentLanguage == "cnt") {
 #if defined WFAS
 		LocalizedText.insert(std::pair("ui_play", "Play M&B WFaS WSE2"));
+		LocalizedText.insert(std::pair("ui_play_x64", "Play M&B WFaS WSE2 x64"));
 #else
 		LocalizedText.insert(std::pair("ui_play", "Play M&B Warband WSE2"));
+		LocalizedText.insert(std::pair("ui_play_x64", "Play M&B Warband WSE2 x64"));
 #endif
 		LocalizedText.insert(std::pair("ui_start_dedicated", "Start dedicated server"));
 		LocalizedText.insert(std::pair("ui_disable_sound", u8"Disable sound"));
@@ -25,8 +27,10 @@ void Class_Engine::FillMissingLocalizationKeys()
 	if (CurrentLanguage == "ru") {
 #if defined WFAS
 		LocalizedText.insert(std::pair("ui_play", u8"Играть в M&B WFaS WSE2"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"Играть в M&B WFaS WSE2 x64"));
 #else
 		LocalizedText.insert(std::pair("ui_play", u8"Играть в M&B Warband WSE2"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"Играть в M&B Warband WSE2 x64"));
 #endif
 		LocalizedText.insert(std::pair("ui_start_dedicated", u8"Запустить выделенный сервер"));
 		LocalizedText.insert(std::pair("ui_disable_sound", u8"Отключить звук"));
@@ -45,8 +49,10 @@ void Class_Engine::FillMissingLocalizationKeys()
 	if (CurrentLanguage == "de") {
 #if defined WFAS
 		LocalizedText.insert(std::pair("ui_play", u8"M&B WFaS WSE2 spielen"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"M&B WFaS WSE2 x64 spielen"));
 #else
 		LocalizedText.insert(std::pair("ui_play", u8"M&B Warband WSE2 spielen"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"M&B Warband WSE2 x64 spielen"));
 #endif
 		LocalizedText.insert(std::pair("ui_start_dedicated", u8"Starten dedizierten server"));
 		LocalizedText.insert(std::pair("ui_disable_sound", u8"Sound deaktivieren"));
@@ -65,8 +71,10 @@ void Class_Engine::FillMissingLocalizationKeys()
 	if (CurrentLanguage == "fr") {
 #if defined WFAS
 		LocalizedText.insert(std::pair("ui_play", u8"Jouer a M&B WFaS WSE2"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"Jouer a M&B WFaS WSE2 x64"));
 #else
 		LocalizedText.insert(std::pair("ui_play", u8"Jouer a M&B Warband WSE2"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"Jouer a M&B Warband WSE2 x64"));
 #endif
 		LocalizedText.insert(std::pair("ui_start_dedicated", u8"Démarrer le serveur dédié"));
 		LocalizedText.insert(std::pair("ui_disable_sound", u8"Désactiver les sons"));
@@ -85,8 +93,10 @@ void Class_Engine::FillMissingLocalizationKeys()
 	if (CurrentLanguage == "cz") {
 #if defined WFAS
 		LocalizedText.insert(std::pair("ui_play", u8"Hrát M&B WFaS WSE2"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"Hrát M&B WFaS WSE2 x64"));
 #else
 		LocalizedText.insert(std::pair("ui_play", u8"Hrát M&B Warband WSE2"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"Hrát M&B Warband WSE2 x64"));
 #endif
 		LocalizedText.insert(std::pair("ui_start_dedicated", u8"Spusťte dedikovaný server"));
 		LocalizedText.insert(std::pair("ui_disable_sound", u8"Vypnout zvuk"));
@@ -105,8 +115,10 @@ void Class_Engine::FillMissingLocalizationKeys()
 	if (CurrentLanguage == "hu") {
 #if defined WFAS
 		LocalizedText.insert(std::pair("ui_play", u8"A M&B WFaS WSE2 indítása"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"A M&B WFaS WSE2 x64 indítása"));
 #else
 		LocalizedText.insert(std::pair("ui_play", u8"A M&B Warband WSE2 indítása"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"A M&B Warband WSE2 x64 indítása"));
 #endif
 		LocalizedText.insert(std::pair("ui_start_dedicated", u8"Indítsa el a dedikált szervert"));
 		LocalizedText.insert(std::pair("ui_disable_sound", u8"Hangok kikapcsolása"));
@@ -125,8 +137,10 @@ void Class_Engine::FillMissingLocalizationKeys()
 	if (CurrentLanguage == "es") {
 #if defined WFAS
 		LocalizedText.insert(std::pair("ui_play", u8"Jugar M&B WFaS WSE2"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"Jugar M&B WFaS WSE2 x64"));
 #else
 		LocalizedText.insert(std::pair("ui_play", u8"Jugar M&B Warband WSE2"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"Jugar M&B Warband WSE2 x64"));
 #endif
 		LocalizedText.insert(std::pair("ui_start_dedicated", u8"Iniciar servidor dedicado"));
 		LocalizedText.insert(std::pair("ui_disable_sound", u8"Desactivar sonido"));
@@ -145,8 +159,10 @@ void Class_Engine::FillMissingLocalizationKeys()
 	if (CurrentLanguage == "tr") {
 #if defined WFAS
 		LocalizedText.insert(std::pair("ui_play", u8"M&B WFaS WSE2'i Oyna"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"M&B WFaS WSE2 x64'i Oyna"));
 #else
 		LocalizedText.insert(std::pair("ui_play", u8"M&B Warband WSE2'i Oyna"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"M&B Warband WSE2 x64'i Oyna"));
 #endif
 		LocalizedText.insert(std::pair("ui_start_dedicated", u8"Özel sunucuyu başlat"));
 		LocalizedText.insert(std::pair("ui_disable_sound", u8"Sesi Kapat"));
@@ -165,8 +181,10 @@ void Class_Engine::FillMissingLocalizationKeys()
 	if (CurrentLanguage == "pl") {
 #if defined WFAS
 		LocalizedText.insert(std::pair("ui_play", u8"Graj w M&B WFaS WSE2"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"Graj w M&B WFaS WSE2 x64"));
 #else
 		LocalizedText.insert(std::pair("ui_play", u8"Graj w M&B Warband WSE2"));
+		LocalizedText.insert(std::pair("ui_play_x64", u8"Graj w M&B Warband WSE2 x64"));
 #endif
 		LocalizedText.insert(std::pair("ui_start_dedicated", u8"Uruchom serwer dedykowany"));
 		LocalizedText.insert(std::pair("ui_disable_sound", u8"Wyłącz dźwięki"));

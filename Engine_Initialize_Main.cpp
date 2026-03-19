@@ -58,9 +58,16 @@ void Class_Engine::Initialize_UI_Main()
 	tgui::Button::Ptr Button_Launch = tgui::Button::create(" ");
 	InitializeTextButton(Button_Launch);
 	Button_Launch->setPosition("23%", "47%");
-	Button_Launch->setSize("30%", "12%");
+	Button_Launch->setSize("30%", "8%");
 	Button_Launch->onClick(&Class_Engine::Button_Launch_onClick, this);
 	Panel_Main->add(Button_Launch, "Button_Launch");
+
+	tgui::Button::Ptr Button_Launch_x64 = tgui::Button::create(" ");
+	InitializeTextButton(Button_Launch_x64);
+	Button_Launch_x64->setPosition("23%", "54%");
+	Button_Launch_x64->setSize("30%", "8%");
+	Button_Launch_x64->onClick(&Class_Engine::Button_Launch_x64_onClick, this);
+	Panel_Main->add(Button_Launch_x64, "Button_Launch_x64");
 
 	tgui::Button::Ptr Button_Launch_Dedicated = tgui::Button::create(" ");
 	InitializeTextButton(Button_Launch_Dedicated);
@@ -73,15 +80,15 @@ void Class_Engine::Initialize_UI_Main()
 
 	tgui::Button::Ptr Button_Options = tgui::Button::create(" ");
 	InitializeTextButton(Button_Options);
-	Button_Options->setPosition("23%", "55%");
-	Button_Options->setSize("25%", "9%");
+	Button_Options->setPosition("23%", "61%");
+	Button_Options->setSize("25%", "8%");
 	Button_Options->onClick(&Class_Engine::Button_Options_onClick, this);
 	Panel_Main->add(Button_Options, "Button_Options");
 
 	tgui::Button::Ptr Button_Exit = tgui::Button::create(" ");
 	InitializeTextButton(Button_Exit);
-	Button_Exit->setPosition("23%", "63%");
-	Button_Exit->setSize("25%", "8%");
+	Button_Exit->setPosition("23%", "68%");
+	Button_Exit->setSize("25%", "7%");
 	Button_Exit->onClick(&Class_Engine::Close, this);
 	Panel_Main->add(Button_Exit, "Button_Exit");
 
