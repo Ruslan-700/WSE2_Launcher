@@ -59,7 +59,8 @@ private:
 	void ReadWSE2Version();
 	void SetLastModule();
 	void FTPThread();
-	void FTPDownloadContent(std::string);
+	bool FTPDownloadContent(std::string);
+	std::chrono::steady_clock::time_point FTPThread_LastSpawn{};
 	void DisplayErrorMessageMain(std::string);
 	void DisplayErrorMessageOptions(std::string);
 	void CreateDefaultRglConfig();

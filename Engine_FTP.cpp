@@ -1,4 +1,5 @@
 #include "Engine.h"
+#include <filesystem>
 
 void Class_Engine::FTPThread()
 {
@@ -8,7 +9,7 @@ void Class_Engine::FTPThread()
 	if (!ConnectionResponse.isOk()) return;
 	LoginResponse = FTP.login(FTP_LOGIN, "");
 	if (!LoginResponse.isOk()) return;
-	FileResponse = FTP.download("\\version.txt", std::string(CurentAppdataPath) + u8"\\" + MB_NAME);
+	FileResponse = FTP.download("/version.txt", std::string(CurentAppdataPath) + u8"\\" + MB_NAME);
 	if (!FileResponse.isOk()) return;
 	std::ifstream File_version(std::string(CurentAppdataPath) + MB_VERSION);
 	std::string Line = "";
@@ -24,10 +25,15 @@ void Class_Engine::FTPThread()
 	else return;
 	struct stat StatBuffer;
 	WSE2IsInstalled = (stat(std::string(EXECUTABLE).c_str(), &StatBuffer) == 0);
+	auto lastKeepAlive = std::chrono::steady_clock::now() - std::chrono::seconds(30);
 	while (Current_FTPCommand.load() != FTPCommand_Stop) {
-		AliveResponse = FTP.sendCommand("FEAT");
-		if (!AliveResponse.isOk()) return;
-		FTP.keepAlive();
+		auto now = std::chrono::steady_clock::now();
+		if (now - lastKeepAlive >= std::chrono::seconds(30)) {
+			AliveResponse = FTP.sendCommand("FEAT");
+			if (!AliveResponse.isOk()) return;
+			FTP.keepAlive();
+			lastKeepAlive = now;
+		}
 
 		if (Current_FTPDownloadState.load() != FTPDownloadState_Updated && WSE2IsInstalled && WSE2Version.length() == 4 && !IsCurrentVersionOlderThan(FTP_Version)) {
 			Current_FTPDownloadState.store(FTPDownloadState_Updated);
@@ -62,8 +68,8 @@ void Class_Engine::FTPThread()
 			Label_FTP->setPosition("23%", "35%");
 		}
 
-		if (Current_FTPCommand.load() == FTPCommand_DownloadAllFiles) {
-			Current_FTPCommand.store(FTPCommand_None);
+		FTPCommand expectedDownload = FTPCommand_DownloadAllFiles;
+		if (Current_FTPCommand.compare_exchange_strong(expectedDownload, FTPCommand_None)) {
 			{
 				std::lock_guard<std::mutex> lock(FTPThread_Mutex);
 				tgui::Button::Ptr Button_FTP = GUI_Main.get<tgui::Button>("Button_FTP");
@@ -72,31 +78,43 @@ void Class_Engine::FTPThread()
 
 			Current_FTPDownloadState.store(FTPDownloadState_Downloading);
 			sf::Ftp::ListingResponse ListingResponse = FTP.getDirectoryListing();
-			if (!ListingResponse.isOk()) return;
-			for (size_t i = 0; i < ListingResponse.getListing().size(); i++) FTPDownloadContent(ListingResponse.getListing()[i]);
-
-			WSE2Version = FTP_Version;
-			WSE2VersionWithDots = WSE2Version;
-			for (size_t i = 1; i < 4; i++)  WSE2VersionWithDots.insert(i * 2 - 1, L".");
-			{
-				std::lock_guard<std::mutex> lock(FTPThread_Mutex);
-				tgui::Label::Ptr Label_WSE2Version = GUI_Main.get<tgui::Label>("Label_WSE2Version");
-				tgui::Button::Ptr Button_FTP = GUI_Main.get<tgui::Button>("Button_FTP");
-				tgui::Label::Ptr Label_FTP = GUI_Main.get<tgui::Label>("Label_FTP");
-				if (WSE2VersionWithDots != L"") Label_WSE2Version->setText(wstring_Converter.to_bytes(L"WSE2 ver. " + WSE2VersionWithDots));
-				WSE2IsInstalled = true;
-				Current_FTPDownloadState.store(FTPDownloadState_Updated);
-				Button_FTP->setVisible(false);
-				Label_FTP->setVisible(true);
-				Label_FTP->setText(GetLocalizedTextEntry("ui_version_is_up_to_date"));
-				Label_FTP->setPosition("23%", "43%");
+			bool downloadOk = ListingResponse.isOk();
+			if (downloadOk) {
+				for (size_t i = 0; i < ListingResponse.getListing().size(); i++) {
+					if (Current_FTPCommand.load() == FTPCommand_Stop) { downloadOk = false; break; }
+					if (!FTPDownloadContent(ListingResponse.getListing()[i])) { downloadOk = false; break; }
+				}
 			}
-			HKEY Key;
-			if (RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_WRITE, &Key) == ERROR_SUCCESS) {
-				RegSetValueExW(Key, L"wse2_version", 0, REG_SZ, (LPBYTE)WSE2Version.c_str(), (wcslen(WSE2Version.c_str()) + 1) * sizeof(wchar_t));
-				RegCloseKey(Key);
+
+			if (downloadOk) {
+				WSE2Version = FTP_Version;
+				WSE2VersionWithDots = WSE2Version;
+				for (size_t i = 1; i < 4; i++)  WSE2VersionWithDots.insert(i * 2 - 1, L".");
+				{
+					std::lock_guard<std::mutex> lock(FTPThread_Mutex);
+					tgui::Label::Ptr Label_WSE2Version = GUI_Main.get<tgui::Label>("Label_WSE2Version");
+					tgui::Button::Ptr Button_FTP = GUI_Main.get<tgui::Button>("Button_FTP");
+					tgui::Label::Ptr Label_FTP = GUI_Main.get<tgui::Label>("Label_FTP");
+					if (WSE2VersionWithDots != L"") Label_WSE2Version->setText(wstring_Converter.to_bytes(L"WSE2 ver. " + WSE2VersionWithDots));
+					WSE2IsInstalled = true;
+					Current_FTPDownloadState.store(FTPDownloadState_Updated);
+					Button_FTP->setVisible(false);
+					Label_FTP->setVisible(true);
+					Label_FTP->setText(GetLocalizedTextEntry("ui_version_is_up_to_date"));
+					Label_FTP->setPosition("23%", "43%");
+				}
+				HKEY Key;
+				if (RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_WRITE, &Key) == ERROR_SUCCESS) {
+					RegSetValueExW(Key, L"wse2_version", 0, REG_SZ, (LPBYTE)WSE2Version.c_str(), (DWORD)((WSE2Version.length() + 1) * sizeof(wchar_t)));
+					RegCloseKey(Key);
+				}
+			}
+			else {
+				Current_FTPDownloadState.store(FTPDownloadState_None);
 			}
 		}
+
+		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 	}
 
 }
@@ -108,24 +126,46 @@ bool Class_Engine::IsCurrentVersionOlderThan(std::wstring NewVersion)
 	return false;
 }
 
-void Class_Engine::FTPDownloadContent(std::string Name)
+bool Class_Engine::FTPDownloadContent(std::string Name)
 {
-	if (Name.find('.') == std::string::npos) {
-		FTP.changeDirectory(Name);
+	if (Current_FTPCommand.load() == FTPCommand_Stop) return false;
+	if (Name == "." || Name == "..") return true;
+
+	if (FTP.changeDirectory(Name).isOk()) {
 		sf::Ftp::ListingResponse ListingResponse = FTP.getDirectoryListing();
-		if (!ListingResponse.isOk()) return;
-		for (size_t i = 0; i < ListingResponse.getListing().size(); i++) FTPDownloadContent(ListingResponse.getListing()[i]);
-		FTP.parentDirectory();
-	}
-	else {
-		sf::Ftp::DirectoryResponse FTPWorkingDirectory = FTP.getWorkingDirectory();
-		if (!FTPWorkingDirectory.isOk()) return;
-		{
-			std::lock_guard<std::mutex> lock(FTPThread_Mutex);
-			tgui::Label::Ptr Label_FTP = GUI_Main.get<tgui::Label>("Label_FTP");
-			Label_FTP->setText(GetLocalizedTextEntry(u8"ui_downloading_") + Name);
+		if (!ListingResponse.isOk()) {
+			FTP.parentDirectory();
+			return false;
 		}
-		if (Name != "version.txt") FTP.download(Name, FTPWorkingDirectory.getDirectory() != "/" ? std::string(FTPWorkingDirectory.getDirectory() + "/").erase(0, 1) : std::string(FTPWorkingDirectory.getDirectory()).erase(0, 1));
+		bool ok = true;
+		for (size_t i = 0; i < ListingResponse.getListing().size(); i++) {
+			if (Current_FTPCommand.load() == FTPCommand_Stop) { ok = false; break; }
+			if (!FTPDownloadContent(ListingResponse.getListing()[i])) { ok = false; break; }
+		}
+		FTP.parentDirectory();
+		return ok;
 	}
 
+	if (Name == "version.txt") return true;
+
+	sf::Ftp::DirectoryResponse FTPWorkingDirectory = FTP.getWorkingDirectory();
+	if (!FTPWorkingDirectory.isOk()) return false;
+
+	std::string remoteDir = FTPWorkingDirectory.getDirectory();
+	std::string localDir = (remoteDir != "/") ? std::string(remoteDir + "/").erase(0, 1) : std::string(remoteDir).erase(0, 1);
+
+	{
+		std::lock_guard<std::mutex> lock(FTPThread_Mutex);
+		tgui::Label::Ptr Label_FTP = GUI_Main.get<tgui::Label>("Label_FTP");
+		Label_FTP->setText(GetLocalizedTextEntry(u8"ui_downloading_") + Name);
+	}
+
+	try {
+		if (!localDir.empty()) std::filesystem::create_directories(localDir);
+	}
+	catch (const std::exception&) {
+		return false;
+	}
+
+	return FTP.download(Name, localDir).isOk();
 }

@@ -17,6 +17,8 @@
 #include <WinUser.h>
 #include <future>
 #include <atomic>
+#include <chrono>
+#include <thread>
 #include <cwctype>
 #include <clocale>
 #include <codecvt>
