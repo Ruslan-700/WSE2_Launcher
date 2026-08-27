@@ -12,6 +12,7 @@ void Class_Engine::Initialize()
 	ReadCurrentUserPath();
 	ReadCurrentLanguage();
 	ReadLocalizationFiles();
+	RemoveReplacedFiles();
 	ReadWSE2Version();
 	RefreshModulesList();
 	CreateDefaultRglConfig();
@@ -312,8 +313,8 @@ void Class_Engine::ReadWSE2Version()
 
 Class_Engine::~Class_Engine()
 {
-	Current_FTPCommand.store(FTPCommand_Stop);
-	if (FTPThread_future.valid()) FTPThread_future.wait();
+	Current_UpdateCommand.store(UpdateCommand_Stop);
+	if (UpdateThread_future.valid()) UpdateThread_future.wait();
 #if !defined WFAS
 	for (int i = 0; i < m_numWorkshopItems; i++) {
 		delete m_workshopItems[i];

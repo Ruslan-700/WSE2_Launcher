@@ -39,14 +39,16 @@ The entire application is the `Class_Engine` class, split across multiple `.cpp`
 - **Engine_Buttons.cpp** — Button click handlers (Launch, Launch Dedicated, Options)
 - **Engine_Options.cpp** — Reading/writing `rgl_config.ini` settings
 - **Engine_RefreshModulesList.cpp** — Discovers game modules from filesystem
-- **Engine_FTP.cpp** — Background FTP thread for checking/downloading WSE2 updates
+- **Engine_Update.cpp** — Background thread that checks GitHub Releases and installs WSE2 updates
+- **Http.cpp** — Minimal HTTPS client on WinHTTP (SFML cannot do TLS)
+- **Zip.cpp** — Zip reader with its own inflate, so no compression library has to be linked
 - **Engine_UpdateText.cpp** — Applies localized text to UI elements
 - **Engine_FillMissingLocalizationKeys.cpp** — Fallback to English for missing translations
 - **steamWorkshopItem.cpp** — Steam Workshop integration (compiled out when `WFAS` is defined)
 
 ### WFaS conditional compilation
 
-`#if !defined WFAS` / `#if defined WFAS` guards throughout the codebase switch between Warband and Fire & Sword variants. This controls: Steam Workshop support (Warband only), registry keys, executable names, and FTP login. Key defines are in `Engine.h` (lines 97-118).
+`#if !defined WFAS` / `#if defined WFAS` guards throughout the codebase switch between Warband and Fire & Sword variants. This controls: Steam Workshop support (Warband only), registry keys, executable names, and the release asset name. Key defines are in `Engine.h` (lines 97-118).
 
 ### Embedded resources
 
@@ -54,7 +56,7 @@ The entire application is the `Class_Engine` class, split across multiple `.cpp`
 
 ### Dependencies (in SDK/)
 
-- **SFML 2.5.1** — Graphics, windowing, networking (FTP client)
+- **SFML 2.5.1** — Graphics and windowing
 - **TGUI 0.9** — GUI widgets on top of SFML
 - **Steamworks SDK 1.57** — Steam Workshop (delay-loaded)
 - **FreeType, zlib, libpng, Brotli, bz2** — Font rendering and image handling
@@ -63,7 +65,9 @@ The `SDK/` directory is gitignored. Dependencies must be present locally to buil
 
 ### Threading
 
-FTP update checking runs asynchronously via `std::future` + `std::mutex`. The main thread polls `Current_FTPDownloadState` to update UI accordingly.
+Update checking and installing run asynchronously via `std::future` + `std::mutex`. The worker thread owns `Current_UpdateState` and touches widgets only under `UpdateThread_Mutex`, which the main loop holds around event handling and drawing.
+
+The launcher updates itself: files it holds open (its own exe, `steam_api_wse2.dll`) cannot be overwritten, so they are renamed to `*.wse2old` and removed on the next start.
 
 ### Data storage
 

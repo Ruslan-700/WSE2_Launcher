@@ -45,6 +45,10 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_wse2_not_installed", u8"WSE2 не установлен."));
 		LocalizedText.insert(std::pair("ui_please_wait", u8"Пожалуйста, подождите..."));
 		LocalizedText.insert(std::pair("ui_downloading_", u8"Скачивание "));
+		LocalizedText.insert(std::pair("ui_extracting", u8"Распаковка"));
+		LocalizedText.insert(std::pair("ui_update_installed", u8"Обновление установлено."));
+		LocalizedText.insert(std::pair("ui_restart_launcher", u8"Перезапустить лаунчер"));
+		LocalizedText.insert(std::pair("ui_update_failed", u8"Не удалось обновить:"));
 	}
 	if (CurrentLanguage == "de") {
 #if defined WFAS
@@ -206,4 +210,10 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert_or_assign("ui_exit", "Exit");
 		LocalizedText.insert_or_assign("ui_options", "Options");
 	}
+
+	// English is the fallback for keys a translation does not carry yet.
+	LocalizedText.insert(std::pair("ui_extracting", u8"Unpacking"));
+	LocalizedText.insert(std::pair("ui_update_installed", u8"The update has been installed."));
+	LocalizedText.insert(std::pair("ui_restart_launcher", u8"Restart launcher"));
+	LocalizedText.insert(std::pair("ui_update_failed", u8"Update failed:"));
 }

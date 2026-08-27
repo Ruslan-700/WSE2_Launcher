@@ -3,18 +3,14 @@
 void Class_Engine::Runtime()
 {
 	while (Window_Main->isOpen()) {
-		if (!FTPThread_IsRunning.load()) {
-			auto now = std::chrono::steady_clock::now();
-			if (FTPThread_LastSpawn == std::chrono::steady_clock::time_point{} || now - FTPThread_LastSpawn >= std::chrono::seconds(30)) {
-				FTPThread_LastSpawn = now;
-				FTPThread_future = std::async(std::launch::async, [this] {FTPThread_IsRunning.store(true);  FTPThread(); FTPThread_IsRunning.store(false); });
-			}
+		if (!UpdateThread_IsRunning.load() && !UpdateThread_future.valid()) {
+			UpdateThread_future = std::async(std::launch::async, [this] {UpdateThread_IsRunning.store(true);  UpdateThread(); UpdateThread_IsRunning.store(false); });
 		}
-		FTPThread_Mutex.lock();
+		UpdateThread_Mutex.lock();
 		Interact_Main();
-		FTPThread_Mutex.unlock();
 		Window_Main->clear(sf::Color::White);
 		GUI_Main.draw();
+		UpdateThread_Mutex.unlock();
 		Window_Main->display();
 		if (Window_Options != nullptr) {
 			if (Window_Options->isOpen()) {

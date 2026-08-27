@@ -58,22 +58,34 @@ private:
 	void MoveWindow_Options();
 	void ReadWSE2Version();
 	void SetLastModule();
-	void FTPThread();
-	bool FTPDownloadContent(std::string);
-	std::chrono::steady_clock::time_point FTPThread_LastSpawn{};
+	void UpdateThread();
+	void CheckForUpdates();
+	void InstallUpdate();
+	bool DownloadUpdate(const std::wstring&);
+	bool ExtractUpdate(const std::wstring&);
+	void FailUpdate(std::string);
+	void RefreshUpdateWidgets();
+	void SetUpdateProgressText(std::string);
+	void RestartLauncher();
+	void RemoveReplacedFiles();
+	std::wstring GetLauncherPath();
+	std::wstring GetLauncherDirectory();
 	void DisplayErrorMessageMain(std::string);
 	void DisplayErrorMessageOptions(std::string);
 	void CreateDefaultRglConfig();
 	bool UpdateOptions();
 	bool ApplyOptions();
-	std::atomic<bool> FTPThread_IsRunning{false};
+	std::atomic<bool> UpdateThread_IsRunning{false};
 	bool IsCurrentVersionOlderThan(std::wstring);
-	std::mutex FTPThread_Mutex;
-	std::atomic<FTPDownloadState> Current_FTPDownloadState{FTPDownloadState_None};
-	std::atomic<FTPCommand> Current_FTPCommand{FTPCommand_None};
-	std::future<void> FTPThread_future;
-	sf::Ftp FTP;
+	std::mutex UpdateThread_Mutex;
+	std::atomic<UpdateState> Current_UpdateState{UpdateState_None};
+	std::atomic<UpdateCommand> Current_UpdateCommand{UpdateCommand_None};
+	std::future<void> UpdateThread_future;
+	std::string UpdateProgressText;
+	std::wstring LatestVersion = L"";
+	std::wstring LatestDownloadUrl = L"";
 	bool WSE2IsInstalled = false;
+	bool LauncherWasReplaced = false;
 	std::string GetLanguageNameById(std::string);
 	std::string GetLocalizedTextEntry(std::string);
 	std::wstring GetLastModule();
@@ -105,14 +117,14 @@ private:
 #define EXECUTABLE "mb_wfas_wse2.exe"
 #define EXECUTABLE_X64 "mb_wfas_wse2_x64.exe"
 #define EXECUTABLE_DEDICATED "mb_wfas_wse2_dedicated.exe"
-#define FTP_LOGIN "WSE2_WFaS"
+#define UPDATE_ASSET "WSE2_WFaS.zip"
 #else
 #define MB_NAME "Mount&Blade Warband WSE2"
 #define REGISTRY_KEY L"SOFTWARE\\MountAndBladeWarbandKeys"
 #define EXECUTABLE "mb_warband_wse2.exe"
 #define EXECUTABLE_X64 "mb_warband_wse2_x64.exe"
 #define EXECUTABLE_DEDICATED "mb_warband_wse2_dedicated.exe"
-#define FTP_LOGIN "WSE2"
+#define UPDATE_ASSET "WSE2.zip"
 #endif
 
 #define MB_NAME_PATH "/" MB_NAME
@@ -120,5 +132,6 @@ private:
 #define RGL_CONFIG_TEMP "/" MB_NAME "/rgl_config_temp.ini"
 #define MB_LANGUAGE "\\" MB_NAME "\\language.txt"
 #define MB_VERSION "\\" MB_NAME "\\version.txt"
-#define FTP_ADDRESS "ftp.fianna.ru"
-#define FTP_PORT 2121
+#define UPDATE_API_URL L"https://api.github.com/repos/Ruslan-700/WSE2-Releases/releases/latest"
+#define REPLACED_FILE_SUFFIX L".wse2old"
+#define UPDATE_DOWNLOAD_URL L"https://github.com/Ruslan-700/WSE2-Releases/releases/download/"

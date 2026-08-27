@@ -41,19 +41,22 @@ void Class_Engine::Initialize_UI_Main()
 	ComboBoxModule->onItemSelect([this] {UpdateModPreviewImage(); SetLastModule(); });
 	Panel_Main->add(ComboBoxModule, "ComboBoxModule");
 
-	tgui::Label::Ptr Label_FTP = tgui::Label::create(u8" ");
-	Label_FTP->setOrigin(0.5, 0.5);
-	Label_FTP->getRenderer()->setTextColor(tgui::Color(105, 80, 54));
-	Panel_Main->add(Label_FTP, "Label_FTP");
-	Label_FTP->setVisible(false);
+	tgui::Label::Ptr Label_Update = tgui::Label::create(u8" ");
+	Label_Update->setOrigin(0.5, 0.5);
+	Label_Update->getRenderer()->setTextColor(tgui::Color(105, 80, 54));
+	Panel_Main->add(Label_Update, "Label_Update");
+	Label_Update->setVisible(false);
 
-	tgui::Button::Ptr Button_FTP = tgui::Button::create(" ");
-	InitializeTextButton(Button_FTP);
-	Button_FTP->setPosition("23%", "39%");
-	Button_FTP->setSize("30%", "12%");
-	Panel_Main->add(Button_FTP, "Button_FTP");
-	Button_FTP->setVisible(false);
-	Button_FTP->onClick([this] {  Current_FTPCommand.store(FTPCommand_DownloadAllFiles); });
+	tgui::Button::Ptr Button_Update = tgui::Button::create(" ");
+	InitializeTextButton(Button_Update);
+	Button_Update->setPosition("23%", "39%");
+	Button_Update->setSize("30%", "12%");
+	Panel_Main->add(Button_Update, "Button_Update");
+	Button_Update->setVisible(false);
+	Button_Update->onClick([this] {
+		if (Current_UpdateState.load() == UpdateState_RestartRequired) RestartLauncher();
+		else Current_UpdateCommand.store(UpdateCommand_Install);
+	});
 
 	tgui::Button::Ptr Button_Launch = tgui::Button::create(" ");
 	InitializeTextButton(Button_Launch);

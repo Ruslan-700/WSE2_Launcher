@@ -1,7 +1,6 @@
 #pragma once
 #define _SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING
 #include <SFML/Graphics.hpp>
-#include <SFML/Network.hpp>
 #include <TGUI/TGUI.hpp>
 #include <sys/stat.h>
 #include <string>
@@ -35,8 +34,8 @@
 #endif
 
 enum ExeType { ExeType_DedicatedServer, ExeType_NotDedicatedServer, ExeType_x64};
-enum FTPCommand { FTPCommand_None, FTPCommand_DownloadAllFiles, FTPCommand_Stop};
-enum FTPDownloadState { FTPDownloadState_None, FTPDownloadState_WaitingInstall, FTPDownloadState_WaitingUpdate, FTPDownloadState_Downloading, FTPDownloadState_Updated };
+enum UpdateCommand { UpdateCommand_None, UpdateCommand_Install, UpdateCommand_Stop};
+enum UpdateState { UpdateState_None, UpdateState_WaitingInstall, UpdateState_WaitingUpdate, UpdateState_Downloading, UpdateState_Extracting, UpdateState_Updated, UpdateState_RestartRequired, UpdateState_Failed };
 
 class Class_Engine;
 
