@@ -1,4 +1,4 @@
-#include "Engine.h"
+﻿#include "Engine.h"
 #include "Http.h"
 #include "Zip.h"
 #include <filesystem>
@@ -367,6 +367,10 @@ void Class_Engine::UpdateThread()
 
 		UpdateCommand ExpectedCommand = UpdateCommand_Install;
 		if (Current_UpdateCommand.compare_exchange_strong(ExpectedCommand, UpdateCommand_None)) InstallUpdate();
+
+		ShaderPatchCommand PatchCommand = Current_ShaderPatchCommand.exchange(ShaderPatchCommand_None);
+		if (PatchCommand == ShaderPatchCommand_Install) ShaderPatch_Install();
+		else if (PatchCommand == ShaderPatchCommand_Remove) ShaderPatch_Remove();
 
 		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 	}

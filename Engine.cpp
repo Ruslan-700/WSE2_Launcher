@@ -21,6 +21,7 @@ void Class_Engine::Initialize()
 	UpdateTextures();
 	UpdateText();
 	UpdateModPreviewImage();
+	ShaderPatch_Refresh();
 }
 
 void Class_Engine::Close()

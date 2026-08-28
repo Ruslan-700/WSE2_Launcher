@@ -49,6 +49,9 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_update_installed", u8"Обновление установлено."));
 		LocalizedText.insert(std::pair("ui_restart_launcher", u8"Перезапустить лаунчер"));
 		LocalizedText.insert(std::pair("ui_update_failed", u8"Не удалось обновить:"));
+		LocalizedText.insert(std::pair("ui_install_shader_patch", u8"Поставить шейдерный патч"));
+		LocalizedText.insert(std::pair("ui_remove_shader_patch", u8"Убрать шейдерный патч"));
+		LocalizedText.insert(std::pair("ui_shader_patch_not_for_module", u8"Для этого модуля патча нет"));
 	}
 	if (CurrentLanguage == "de") {
 #if defined WFAS
@@ -216,4 +219,7 @@ void Class_Engine::FillMissingLocalizationKeys()
 	LocalizedText.insert(std::pair("ui_update_installed", u8"The update has been installed."));
 	LocalizedText.insert(std::pair("ui_restart_launcher", u8"Restart launcher"));
 	LocalizedText.insert(std::pair("ui_update_failed", u8"Update failed:"));
+	LocalizedText.insert(std::pair("ui_install_shader_patch", u8"Install shader patch"));
+	LocalizedText.insert(std::pair("ui_remove_shader_patch", u8"Remove shader patch"));
+	LocalizedText.insert(std::pair("ui_shader_patch_not_for_module", u8"No patch for this module yet"));
 }

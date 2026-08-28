@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #define _SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING
 #include <SFML/Graphics.hpp>
 #include <TGUI/TGUI.hpp>
@@ -36,6 +36,10 @@
 enum ExeType { ExeType_DedicatedServer, ExeType_NotDedicatedServer, ExeType_x64};
 enum UpdateCommand { UpdateCommand_None, UpdateCommand_Install, UpdateCommand_Stop};
 enum UpdateState { UpdateState_None, UpdateState_WaitingInstall, UpdateState_WaitingUpdate, UpdateState_Downloading, UpdateState_Extracting, UpdateState_Updated, UpdateState_RestartRequired, UpdateState_Failed };
+// Kept apart from UpdateState: the shader patch and the WSE2 update share a worker
+// thread but drive their own button, and one must not overwrite the other's text.
+enum ShaderPatchCommand { ShaderPatchCommand_None, ShaderPatchCommand_Install, ShaderPatchCommand_Remove };
+enum ShaderPatchState { ShaderPatchState_None, ShaderPatchState_NotInstalled, ShaderPatchState_Installed, ShaderPatchState_Working, ShaderPatchState_Unavailable, ShaderPatchState_Failed };
 
 class Class_Engine;
 

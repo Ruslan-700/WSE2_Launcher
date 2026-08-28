@@ -1,4 +1,4 @@
-#include "Engine.h"
+﻿#include "Engine.h"
 
 void Class_Engine::Initialize_UI_Main()
 {
@@ -38,7 +38,7 @@ void Class_Engine::Initialize_UI_Main()
 	ComboBoxModule->getRenderer()->setBorders(0);
 	ComboBoxModule->getRenderer()->setPadding({ Scaled(5), 0, 0, 0 });
 	ComboBoxModule->setItemsToDisplay(10);
-	ComboBoxModule->onItemSelect([this] {UpdateModPreviewImage(); SetLastModule(); });
+	ComboBoxModule->onItemSelect([this] {UpdateModPreviewImage(); SetLastModule(); ShaderPatch_Refresh(); });
 	Panel_Main->add(ComboBoxModule, "ComboBoxModule");
 
 	tgui::Label::Ptr Label_Update = tgui::Label::create(u8" ");
@@ -88,9 +88,22 @@ void Class_Engine::Initialize_UI_Main()
 	Button_Options->onClick(&Class_Engine::Button_Options_onClick, this);
 	Panel_Main->add(Button_Options, "Button_Options");
 
+	tgui::Button::Ptr Button_ShaderPatch = tgui::Button::create(" ");
+	InitializeTextButton(Button_ShaderPatch);
+	Button_ShaderPatch->setPosition("23%", "68%");
+	Button_ShaderPatch->setSize("30%", "8%");
+	Button_ShaderPatch->onClick([this] {
+		// The worker owns the work; a click only says which way to go, and says
+		// nothing at all while it is already busy.
+		ShaderPatchState State = Current_ShaderPatchState.load();
+		if (State == ShaderPatchState_Working) return;
+		Current_ShaderPatchCommand.store(State == ShaderPatchState_Installed ? ShaderPatchCommand_Remove : ShaderPatchCommand_Install);
+	});
+	Panel_Main->add(Button_ShaderPatch, "Button_ShaderPatch");
+
 	tgui::Button::Ptr Button_Exit = tgui::Button::create(" ");
 	InitializeTextButton(Button_Exit);
-	Button_Exit->setPosition("23%", "68%");
+	Button_Exit->setPosition("23%", "75%");
 	Button_Exit->setSize("25%", "7%");
 	Button_Exit->onClick(&Class_Engine::Close, this);
 	Panel_Main->add(Button_Exit, "Button_Exit");

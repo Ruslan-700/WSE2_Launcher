@@ -1,4 +1,4 @@
-#include "Global.h"
+﻿#include "Global.h"
 
 void Class_Engine::UpdateText()
 {
@@ -9,6 +9,7 @@ void Class_Engine::UpdateText()
 	tgui::Button::Ptr Button_Launch_Dedicated = GUI_Main.get<tgui::Button>("Button_Launch_Dedicated");
 	tgui::Button::Ptr Button_Options = GUI_Main.get<tgui::Button>("Button_Options");
 	tgui::Button::Ptr Button_Exit = GUI_Main.get<tgui::Button>("Button_Exit");
+	tgui::Button::Ptr Button_ShaderPatch = GUI_Main.get<tgui::Button>("Button_ShaderPatch");
 	tgui::Label::Ptr Label_CurrentModule = GUI_Main.get<tgui::Label>("Label_CurrentModule");
 	tgui::Label::Ptr Label_Update = GUI_Main.get<tgui::Label>("Label_Update");
 	tgui::ComboBox::Ptr ComboBoxModule = GUI_Main.get<tgui::ComboBox>("ComboBoxModule");
@@ -53,6 +54,7 @@ void Class_Engine::UpdateText()
 	{
 		std::lock_guard<std::mutex> Lock(UpdateThread_Mutex);
 		RefreshUpdateWidgets();
+		RefreshShaderPatchWidgets();
 	}
 
 	Button_Update->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.13));
@@ -61,6 +63,7 @@ void Class_Engine::UpdateText()
 	Button_Launch_Dedicated->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.13));
 	Button_Options->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.13));
 	Button_Exit->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.13));
+	Button_ShaderPatch->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.95));
 	Label_CurrentModule->setTextSize(static_cast<unsigned int>(DefaultTextSize));
 	Label_Sound->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.9));
 	Label_Music->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.9));

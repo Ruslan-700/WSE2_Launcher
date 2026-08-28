@@ -1,6 +1,8 @@
-#pragma once
+﻿#pragma once
 #include "Global.h"
 #include <windows.h>
+
+namespace Zip { class Archive; }
 
 #if !defined WFAS
 class steamWorkshopItem
@@ -59,6 +61,18 @@ private:
 	void ReadWSE2Version();
 	void SetLastModule();
 	void UpdateThread();
+	void ShaderPatch_Refresh();
+	void ShaderPatch_Install();
+	void ShaderPatch_Remove();
+	void ShaderPatch_Fail(std::string);
+	bool ShaderPatch_Download(const std::wstring&);
+	bool ShaderPatch_ExtractInto(Zip::Archive&, const std::wstring&, const std::wstring&, int&);
+	bool ShaderPatch_IsInstalledIn(const std::wstring&);
+	bool ShaderPatch_ModuleHasOwnEffect(const std::wstring&);
+	std::wstring ShaderPatch_ModuleDirectory(const std::string&);
+	std::wstring ShaderPatch_TargetDirectory(const std::string&);
+	void RefreshShaderPatchWidgets();
+	void SetShaderPatchText(std::string);
 	void CheckForUpdates();
 	void InstallUpdate();
 	bool DownloadUpdate(const std::wstring&);
@@ -80,6 +94,9 @@ private:
 	std::mutex UpdateThread_Mutex;
 	std::atomic<UpdateState> Current_UpdateState{UpdateState_None};
 	std::atomic<UpdateCommand> Current_UpdateCommand{UpdateCommand_None};
+	std::atomic<ShaderPatchState> Current_ShaderPatchState{ShaderPatchState_None};
+	std::atomic<ShaderPatchCommand> Current_ShaderPatchCommand{ShaderPatchCommand_None};
+	std::string ShaderPatchText, ShaderPatchModule;
 	std::future<void> UpdateThread_future;
 	std::string UpdateProgressText;
 	std::wstring LatestVersion = L"";
@@ -118,6 +135,7 @@ private:
 #define EXECUTABLE_X64 "mb_wfas_wse2_x64.exe"
 #define EXECUTABLE_DEDICATED "mb_wfas_wse2_dedicated.exe"
 #define UPDATE_ASSET "WSE2_WFaS.zip"
+#define SHADER_PATCH_ASSET L"WSE2_WFaS_Shader_Patch.zip"
 #else
 #define MB_NAME "Mount&Blade Warband WSE2"
 #define REGISTRY_KEY L"SOFTWARE\\MountAndBladeWarbandKeys"
@@ -125,6 +143,7 @@ private:
 #define EXECUTABLE_X64 "mb_warband_wse2_x64.exe"
 #define EXECUTABLE_DEDICATED "mb_warband_wse2_dedicated.exe"
 #define UPDATE_ASSET "WSE2.zip"
+#define SHADER_PATCH_ASSET L"WSE2_Shader_Patch.zip"
 #endif
 
 #define MB_NAME_PATH "/" MB_NAME
@@ -135,3 +154,6 @@ private:
 #define UPDATE_API_URL L"https://api.github.com/repos/Ruslan-700/WSE2-Releases/releases/latest"
 #define REPLACED_FILE_SUFFIX L".wse2old"
 #define UPDATE_DOWNLOAD_URL L"https://github.com/Ruslan-700/WSE2-Releases/releases/download/"
+#define SHADER_PATCH_DOWNLOAD_URL L"https://github.com/Ruslan-700/WSE2_Shader_Patch/releases/latest/download/" SHADER_PATCH_ASSET
+#define SHADER_PATCH_BACKUP_SUFFIX L".wse2bak"
+#define SHADER_PATCH_MANIFEST L"wse2_shader_patch.installed"
