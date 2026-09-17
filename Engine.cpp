@@ -108,6 +108,62 @@ void Class_Engine::UpdateTextures()
 	Font_Universal = tgui::Font(RawFont_Universal, RawFont_Universal_Length);
 }
 
+static bool IsCJKFontFile(std::string FileName)
+{
+	std::transform(FileName.begin(), FileName.end(), FileName.begin(), [](unsigned char Char) { return (char)std::tolower(Char); });
+	for (const CHAR* Known : { "msyh", "simsun", "simhei", "msjh", "mingliu", "notosanscjk", "notoserifcjk",
+		"sourcehansans", "sourcehanserif", "wqy-zenhei", "wqy-microhei", "droidsansfallback", "unifont" })
+	{
+		if (FileName.find(Known) != std::string::npos) return true;
+	}
+	return false;
+}
+
+bool Class_Engine::TryLoadCJKFont(std::string Path)
+{
+	std::error_code Error;
+	if (!std::filesystem::exists(Path, Error) || Error) return false;
+	try { Font_CJK = tgui::Font(Path); return true; }
+	catch (const std::exception&) { return false; } // tgui throws when it cannot read the file as a font
+}
+
+bool Class_Engine::SearchCJKFont(std::string Directory, int MaxDepth)
+{
+	std::error_code Error;
+	std::filesystem::recursive_directory_iterator Entry(Directory, std::filesystem::directory_options::skip_permission_denied, Error), End;
+	if (Error) return false;
+	for (; Entry != End; Entry.increment(Error))
+	{
+		if (Error) return false;
+		if (Entry.depth() >= MaxDepth) Entry.disable_recursion_pending();
+		if (Entry->is_directory(Error) || Error) continue;
+		if (IsCJKFontFile(Entry->path().filename().string()) && TryLoadCJKFont(Entry->path().string())) return true;
+	}
+	return false;
+}
+
+bool Class_Engine::LoadCJKFont()
+{
+	if (Font_CJK) return true;
+	if (CJKFontChecked) return false;
+	CJKFontChecked = true;
+
+	// Neither bundled font holds a single CJK glyph and one that does runs to ~20 MB, far too much to
+	// embed, so borrow one from the system. YaHei comes first: it covers simplified and traditional
+	// Chinese plus Latin and Cyrillic, so one face is enough for the whole window.
+	CHAR WindowsPath[MAX_PATH];
+	std::string FontsPath = (GetWindowsDirectoryA(WindowsPath, MAX_PATH) != 0) ? std::string(WindowsPath) + "\\Fonts" : "C:\\Windows\\Fonts";
+	for (const CHAR* FontFile : { "\\msyh.ttc", "\\simsun.ttc", "\\msjh.ttc" })
+		if (TryLoadCJKFont(FontsPath + FontFile)) return true;
+
+	// Wine and Proton ship none of those, so search instead: first the prefix's own font folder, then
+	// the Linux font directories, which Wine maps onto Z:.
+	if (SearchCJKFont(FontsPath, 1)) return true;
+	for (const CHAR* Root : { "Z:\\usr\\share\\fonts", "Z:\\usr\\local\\share\\fonts" })
+		if (SearchCJKFont(Root, 4)) return true;
+	return false;
+}
+
 std::string Class_Engine::GetLocalizedTextEntry(std::string Key)
 {
 	if (LocalizedText.find(Key) != LocalizedText.end()) return LocalizedText.find(Key)->second;
@@ -149,23 +205,34 @@ void Class_Engine::ReadCurrentLanguage()
 	}
 }
 
+void Class_Engine::ReadLocalizationFile(std::string FileName)
+{
+	std::ifstream File(std::string("languages\\" + CurrentLanguage + "\\" + FileName));
+	if (!File.good()) return;
+	std::string Line;
+	bool FirstLine = true;
+	try { while (std::getline(File, Line)) {
+			if (FirstLine) { // editors on Windows like to save these files with a BOM
+				if (Line.compare(0, 3, "\xEF\xBB\xBF") == 0) Line.erase(0, 3);
+				FirstLine = false;
+			}
+			std::string::size_type Position = Line.find('|');
+			if (Position != std::string::npos)
+			{
+				LocalizedText.insert(std::pair(Line.substr(0, Position), Line.substr(Position + 1)));
+			}
+		}
+	} catch (const std::exception& Exception) { DisplayErrorMessageMain("Error (unhandled exception in ReadLocalizationFile) - ''" + std::string(Exception.what()) + "''. "); }
+	File.close();
+}
+
 void Class_Engine::ReadLocalizationFiles()
 {
-		LocalizedText.clear();
-		std::ifstream File_ui(std::string("languages\\" + CurrentLanguage + "\\ui.csv"));
-		std::string Line;
-		if (File_ui.good()) {
-			try { while (std::getline(File_ui, Line)) {
-					std::string::size_type Position = Line.find('|');
-					if (Position != std::string::npos)
-					{
-						LocalizedText.insert(std::pair(Line.substr(0, Position), Line.substr(Position + 1)));
-					}
-				}
-			} catch (const std::exception& Exception) { DisplayErrorMessageMain("Error (unhandled exception in ReadLocalizationFiles) - ''" + std::string(Exception.what()) + "''. "); }
-			File_ui.close();
-		}
-		FillMissingLocalizationKeys();
+	LocalizedText.clear();
+	// wse2.csv belongs to WSE2, ui.csv to the game, so wse2.csv is read first: insert() keeps the first value.
+	ReadLocalizationFile("wse2.csv");
+	ReadLocalizationFile("ui.csv");
+	FillMissingLocalizationKeys();
 }
 
 void Class_Engine::UpdateModPreviewImage()

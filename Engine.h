@@ -49,6 +49,10 @@ private:
 	void InitializeTextButton(tgui::Button::Ptr);
 	void ReadCurrentUserPath();
 	void ReadCurrentLanguage();
+	bool LoadCJKFont();
+	bool TryLoadCJKFont(std::string Path);
+	bool SearchCJKFont(std::string Directory, int MaxDepth);
+	void ReadLocalizationFile(std::string FileName);
 	void ReadLocalizationFiles();
 	void BuildLanguagesList();
 	void ChangeLanguage();
@@ -113,7 +117,8 @@ private:
 	sf::Texture Texture_Options, Texture_MainBackground, Texture_OptionsBackground, Texture_ModPreview, Texture_Close, Texture_CloseDown, Texture_Minimize, Texture_MinimizeDown, Texture_Button, Texture_Button_Hover, Texture_Button_Down, Texture_Combobox, Texture_Combobox_Arrow;
 	std::map<std::string, std::string> Options;
 	std::map<std::string, std::string> LocalizedText;
-	tgui::Font Font_Latin, Font_Universal;
+	tgui::Font Font_Latin, Font_Universal, Font_CJK;
+	bool CJKFontChecked = false;
 	std::string CurrentLanguage = "en", PreviousLanguage = "en";
 	int MoveBar_X = -1, MoveBar_Y = 0, Options_MoveBar_X = -1, Options_MoveBar_Y = 0;
 	CHAR CurentDocumentsPath[MAX_PATH] = "";

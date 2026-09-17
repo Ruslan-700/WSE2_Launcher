@@ -1,4 +1,4 @@
-#include "Engine.h"
+﻿#include "Engine.h"
 
 void Class_Engine::Initialize_UI_Options()
 {
@@ -39,7 +39,7 @@ void Class_Engine::Initialize_UI_Options()
 	Checkbox_OnDemandTextures->onUncheck([this] { Options.insert_or_assign("bOnDemandTextures", "false"); });
 	Panel_Options->add(Checkbox_OnDemandTextures, "Checkbox_OnDemandTextures");
 
-	tgui::Label::Ptr Label_OcclusionFilter = tgui::Label::create("Occlusion Low-Pass Filter");
+	tgui::Label::Ptr Label_OcclusionFilter = tgui::Label::create(" ");
 	Label_OcclusionFilter->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Left);
 	Label_OcclusionFilter->setOrigin(0, 0.5);
 	Label_OcclusionFilter->setPosition("8%", "49%");
@@ -52,7 +52,7 @@ void Class_Engine::Initialize_UI_Options()
 	Checkbox_OcclusionFilter->onUncheck([this] { Options.insert_or_assign("bOcclusionFilter", "false"); });
 	Panel_Options->add(Checkbox_OcclusionFilter, "Checkbox_OcclusionFilter");
 
-	tgui::Label::Ptr Label_HrtfFilter = tgui::Label::create("HRTF Low-Pass Filter");
+	tgui::Label::Ptr Label_HrtfFilter = tgui::Label::create(" ");
 	Label_HrtfFilter->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Left);
 	Label_HrtfFilter->setOrigin(0, 0.5);
 	Label_HrtfFilter->setPosition("8%", "55%");
@@ -65,7 +65,7 @@ void Class_Engine::Initialize_UI_Options()
 	Checkbox_HrtfFilter->onUncheck([this] { Options.insert_or_assign("bHrtfFilter", "false"); });
 	Panel_Options->add(Checkbox_HrtfFilter, "Checkbox_HrtfFilter");
 
-	tgui::Label::Ptr Label_DistanceFilter = tgui::Label::create("Distance Low/High-Pass Filter");
+	tgui::Label::Ptr Label_DistanceFilter = tgui::Label::create(" ");
 	Label_DistanceFilter->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Left);
 	Label_DistanceFilter->setOrigin(0, 0.5);
 	Label_DistanceFilter->setPosition("8%", "61%");
