@@ -31,10 +31,20 @@ void Class_Engine::UpdateText()
 
 	float DefaultTextSize = 18 * ScaleFactor;
 
-	if (CurrentLanguage == "ru" || CurrentLanguage == "tr") { // mordred doesnt support these languages so use pt serif instead
+	// Mordred has no glyphs for these alphabets (Cyrillic, and pl/cz/hu/tr diacritics), so use PT Serif instead.
+	if (CurrentLanguage == "ru" || CurrentLanguage == "tr" || CurrentLanguage == "pl"
+		|| CurrentLanguage == "cz" || CurrentLanguage == "hu") {
 		GUI_Main.setFont(Font_Universal);
 		GUI_Options.setFont(Font_Universal);
 		DefaultTextSize = 15 * ScaleFactor;
+	}
+
+	// Chinese needs a font Windows lends us; without one the text stays English and Mordred is fine.
+	const bool UseCJKFont = (CurrentLanguage == "cns" || CurrentLanguage == "cnt") && LoadCJKFont();
+	if (UseCJKFont) {
+		GUI_Main.setFont(Font_CJK);
+		GUI_Options.setFont(Font_CJK);
+		DefaultTextSize = 16 * ScaleFactor;
 	}
 
 	Button_Launch->setText(GetLocalizedTextEntry("ui_play"));
@@ -50,6 +60,9 @@ void Class_Engine::UpdateText()
 	Button_Cancel->setText(GetLocalizedTextEntry("ui_cancel"));
 	Label_CurrentModule->setText(GetLocalizedTextEntry("ui_current_module"));
 	Label_OnDemandTextures->setText(GetLocalizedTextEntry("ui_ondemand_textures"));
+	Label_OcclusionFilter->setText(GetLocalizedTextEntry("ui_sound_occlusion_filter"));
+	Label_HrtfFilter->setText(GetLocalizedTextEntry("ui_sound_hrtf_filter"));
+	Label_DistanceFilter->setText(GetLocalizedTextEntry("ui_sound_distance_filter"));
 
 	{
 		std::lock_guard<std::mutex> Lock(UpdateThread_Mutex);
@@ -79,9 +92,11 @@ void Class_Engine::UpdateText()
 	Label_OnDemandTextures->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.9));
 	Label_Update->setTextSize(Scaled(12));
 
-	ComboBox_Languages->getRenderer()->setFont(Font_Universal);
+	// These four always pin their own font, so they need the CJK one too when it is in use.
+	const tgui::Font& WideFont = UseCJKFont ? Font_CJK : Font_Universal;
+	ComboBox_Languages->getRenderer()->setFont(WideFont);
 	ComboBox_Languages->getRenderer()->setListBox(tgui::ListBoxRenderer(ComboBox_Languages->getRenderer()->getListBox()).clone());
-	tgui::ListBoxRenderer(ComboBox_Languages->getRenderer()->getListBox()).setFont(Font_Universal);
-	Label_WSE2Version->getRenderer()->setFont(Font_Universal);
-	Label_Update->getRenderer()->setFont(Font_Universal);
+	tgui::ListBoxRenderer(ComboBox_Languages->getRenderer()->getListBox()).setFont(WideFont);
+	Label_WSE2Version->getRenderer()->setFont(WideFont);
+	Label_Update->getRenderer()->setFont(WideFont);
 }
