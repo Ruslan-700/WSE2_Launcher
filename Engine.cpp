@@ -21,7 +21,6 @@ void Class_Engine::Initialize()
 	UpdateTextures();
 	UpdateText();
 	UpdateModPreviewImage();
-	ShaderPatch_Refresh();
 }
 
 void Class_Engine::Close()
@@ -414,4 +413,4 @@ void Class_Engine::CreateDefaultRglConfig()
 			File_RglConfig.close();
 		}
 	}
-}
+}

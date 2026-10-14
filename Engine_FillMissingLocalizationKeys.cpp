@@ -27,9 +27,6 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_update_installed", u8"Обновление установлено."));
 		LocalizedText.insert(std::pair("ui_restart_launcher", u8"Перезапустить лаунчер"));
 		LocalizedText.insert(std::pair("ui_update_failed", u8"Не удалось обновить:"));
-		LocalizedText.insert(std::pair("ui_install_shader_patch", u8"Поставить шейдерный патч"));
-		LocalizedText.insert(std::pair("ui_remove_shader_patch", u8"Убрать шейдерный патч"));
-		LocalizedText.insert(std::pair("ui_shader_patch_not_for_module", u8"Для этого модуля патча нет"));
 		LocalizedText.insert(std::pair("ui_options", u8"Настройки"));
 		LocalizedText.insert(std::pair("ui_save", u8"Сохранить"));
 		LocalizedText.insert(std::pair("ui_cancel", u8"Отмена"));
@@ -60,9 +57,6 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_update_installed", u8"Das Update wurde installiert."));
 		LocalizedText.insert(std::pair("ui_restart_launcher", u8"Launcher neu starten"));
 		LocalizedText.insert(std::pair("ui_update_failed", u8"Update fehlgeschlagen:"));
-		LocalizedText.insert(std::pair("ui_install_shader_patch", u8"Shader-Patch installieren"));
-		LocalizedText.insert(std::pair("ui_remove_shader_patch", u8"Shader-Patch entfernen"));
-		LocalizedText.insert(std::pair("ui_shader_patch_not_for_module", u8"Für dieses Modul gibt es noch keinen Patch"));
 		LocalizedText.insert(std::pair("ui_options", u8"Optionen"));
 		LocalizedText.insert(std::pair("ui_save", u8"Speichern"));
 		LocalizedText.insert(std::pair("ui_cancel", u8"Abbrechen"));
@@ -93,9 +87,6 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_update_installed", u8"La mise à jour a été installée."));
 		LocalizedText.insert(std::pair("ui_restart_launcher", u8"Redémarrer le lanceur"));
 		LocalizedText.insert(std::pair("ui_update_failed", u8"Échec de la mise à jour:"));
-		LocalizedText.insert(std::pair("ui_install_shader_patch", u8"Installer le patch de shaders"));
-		LocalizedText.insert(std::pair("ui_remove_shader_patch", u8"Supprimer le patch de shaders"));
-		LocalizedText.insert(std::pair("ui_shader_patch_not_for_module", u8"Pas encore de patch pour ce module"));
 		LocalizedText.insert(std::pair("ui_options", u8"Options"));
 		LocalizedText.insert(std::pair("ui_save", u8"Sauvegarder"));
 		LocalizedText.insert(std::pair("ui_cancel", u8"Annuler"));
@@ -126,9 +117,6 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_update_installed", u8"Aktualizace byla nainstalována."));
 		LocalizedText.insert(std::pair("ui_restart_launcher", u8"Restartovat launcher"));
 		LocalizedText.insert(std::pair("ui_update_failed", u8"Aktualizace se nezdařila:"));
-		LocalizedText.insert(std::pair("ui_install_shader_patch", u8"Nainstalovat shader patch"));
-		LocalizedText.insert(std::pair("ui_remove_shader_patch", u8"Odebrat shader patch"));
-		LocalizedText.insert(std::pair("ui_shader_patch_not_for_module", u8"Pro tento mod zatím není patch"));
 		LocalizedText.insert(std::pair("ui_options", u8"Nastavení"));
 		LocalizedText.insert(std::pair("ui_save", u8"Uložit"));
 		LocalizedText.insert(std::pair("ui_cancel", u8"Zrušit"));
@@ -159,9 +147,6 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_update_installed", u8"A frissítés telepítve lett."));
 		LocalizedText.insert(std::pair("ui_restart_launcher", u8"Indítóprogram újraindítása"));
 		LocalizedText.insert(std::pair("ui_update_failed", u8"A frissítés sikertelen:"));
-		LocalizedText.insert(std::pair("ui_install_shader_patch", u8"Shader patch telepítése"));
-		LocalizedText.insert(std::pair("ui_remove_shader_patch", u8"Shader patch eltávolítása"));
-		LocalizedText.insert(std::pair("ui_shader_patch_not_for_module", u8"Ehhez a modhoz még nincs patch"));
 		LocalizedText.insert(std::pair("ui_options", u8"Beállítások"));
 		LocalizedText.insert(std::pair("ui_save", u8"Mentés"));
 		LocalizedText.insert(std::pair("ui_cancel", u8"Mégsem"));
@@ -192,9 +177,6 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_update_installed", u8"La actualización se ha instalado."));
 		LocalizedText.insert(std::pair("ui_restart_launcher", u8"Reiniciar el lanzador"));
 		LocalizedText.insert(std::pair("ui_update_failed", u8"Error al actualizar:"));
-		LocalizedText.insert(std::pair("ui_install_shader_patch", u8"Instalar el parche de shaders"));
-		LocalizedText.insert(std::pair("ui_remove_shader_patch", u8"Quitar el parche de shaders"));
-		LocalizedText.insert(std::pair("ui_shader_patch_not_for_module", u8"Todavía no hay parche para este mod"));
 		LocalizedText.insert(std::pair("ui_options", u8"Opciones"));
 		LocalizedText.insert(std::pair("ui_save", u8"Guardar"));
 		LocalizedText.insert(std::pair("ui_cancel", u8"Cancelar"));
@@ -225,9 +207,6 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_update_installed", u8"Güncelleme kuruldu."));
 		LocalizedText.insert(std::pair("ui_restart_launcher", u8"Başlatıcıyı yeniden başlat"));
 		LocalizedText.insert(std::pair("ui_update_failed", u8"Güncelleme başarısız:"));
-		LocalizedText.insert(std::pair("ui_install_shader_patch", u8"Gölgelendirici yamasını kur"));
-		LocalizedText.insert(std::pair("ui_remove_shader_patch", u8"Gölgelendirici yamasını kaldır"));
-		LocalizedText.insert(std::pair("ui_shader_patch_not_for_module", u8"Bu mod için henüz yama yok"));
 		LocalizedText.insert(std::pair("ui_options", u8"Seçenekler"));
 		LocalizedText.insert(std::pair("ui_save", u8"Kaydet"));
 		LocalizedText.insert(std::pair("ui_cancel", u8"İptal"));
@@ -258,9 +237,6 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_update_installed", u8"Aktualizacja została zainstalowana."));
 		LocalizedText.insert(std::pair("ui_restart_launcher", u8"Uruchom ponownie launcher"));
 		LocalizedText.insert(std::pair("ui_update_failed", u8"Aktualizacja nie powiodła się:"));
-		LocalizedText.insert(std::pair("ui_install_shader_patch", u8"Zainstaluj łatkę shaderów"));
-		LocalizedText.insert(std::pair("ui_remove_shader_patch", u8"Usuń łatkę shaderów"));
-		LocalizedText.insert(std::pair("ui_shader_patch_not_for_module", u8"Brak jeszcze łatki dla tego modułu"));
 		LocalizedText.insert(std::pair("ui_options", u8"Opcje"));
 		LocalizedText.insert(std::pair("ui_save", u8"Zapisz"));
 		LocalizedText.insert(std::pair("ui_cancel", u8"Anuluj"));
@@ -291,9 +267,6 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_update_installed", u8"更新已安装。"));
 		LocalizedText.insert(std::pair("ui_restart_launcher", u8"重启启动器"));
 		LocalizedText.insert(std::pair("ui_update_failed", u8"更新失败："));
-		LocalizedText.insert(std::pair("ui_install_shader_patch", u8"安装着色器补丁"));
-		LocalizedText.insert(std::pair("ui_remove_shader_patch", u8"移除着色器补丁"));
-		LocalizedText.insert(std::pair("ui_shader_patch_not_for_module", u8"暂无适用于此模组的补丁"));
 		LocalizedText.insert(std::pair("ui_options", u8"选项"));
 		LocalizedText.insert(std::pair("ui_save", u8"保存"));
 		LocalizedText.insert(std::pair("ui_cancel", u8"取消"));
@@ -324,9 +297,6 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_update_installed", u8"更新已安裝。"));
 		LocalizedText.insert(std::pair("ui_restart_launcher", u8"重新啟動啟動器"));
 		LocalizedText.insert(std::pair("ui_update_failed", u8"更新失敗："));
-		LocalizedText.insert(std::pair("ui_install_shader_patch", u8"安裝著色器修補檔"));
-		LocalizedText.insert(std::pair("ui_remove_shader_patch", u8"移除著色器修補檔"));
-		LocalizedText.insert(std::pair("ui_shader_patch_not_for_module", u8"暫無適用於此模組的修補檔"));
 		LocalizedText.insert(std::pair("ui_options", u8"選項"));
 		LocalizedText.insert(std::pair("ui_save", u8"保存"));
 		LocalizedText.insert(std::pair("ui_cancel", u8"取消"));
@@ -366,9 +336,6 @@ void Class_Engine::FillMissingLocalizationKeys()
 	LocalizedText.insert(std::pair("ui_update_installed", u8"The update has been installed."));
 	LocalizedText.insert(std::pair("ui_restart_launcher", u8"Restart launcher"));
 	LocalizedText.insert(std::pair("ui_update_failed", u8"Update failed:"));
-	LocalizedText.insert(std::pair("ui_install_shader_patch", u8"Install shader patch"));
-	LocalizedText.insert(std::pair("ui_remove_shader_patch", u8"Remove shader patch"));
-	LocalizedText.insert(std::pair("ui_shader_patch_not_for_module", u8"No patch for this module yet"));
 	LocalizedText.insert(std::pair("ui_options", u8"Options"));
 	LocalizedText.insert(std::pair("ui_save", u8"Save"));
 	LocalizedText.insert(std::pair("ui_cancel", u8"Cancel"));
@@ -376,4 +343,4 @@ void Class_Engine::FillMissingLocalizationKeys()
 	LocalizedText.insert(std::pair("ui_sound_occlusion_filter", u8"Occlusion Low-Pass Filter"));
 	LocalizedText.insert(std::pair("ui_sound_hrtf_filter", u8"HRTF Low-Pass Filter"));
 	LocalizedText.insert(std::pair("ui_sound_distance_filter", u8"Distance Low/High-Pass Filter"));
-}
+}

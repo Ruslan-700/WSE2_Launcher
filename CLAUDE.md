@@ -10,15 +10,22 @@ WSE2 Launcher is a Windows GUI application for launching Mount & Blade Warband W
 
 Visual Studio 2022 (MSVC v143, PlatformToolset v143). Solution file: `WSE2_Launcher.sln`.
 
-**Build configurations:**
-- `Release|x64` / `Release|Win32` — Standard Warband WSE2 launcher
-- `WFaS|x64` / `WFaS|Win32` — Warband: Fire and Sword variant (defines `WFAS` preprocessor macro)
-- `Debug|x64` / `Debug|Win32` — Debug builds
+**The launcher ships x86 only.** Build `Win32`, which the solution names `x86`:
+
+- `Release|Win32` — Standard Warband WSE2 launcher
+- `WFaS|Win32` — Warband: Fire and Sword variant (defines `WFAS` preprocessor macro)
+- `Debug|Win32` — Debug build
 
 **Build from command line:**
 ```
-msbuild WSE2_Launcher.sln /p:Configuration=Release /p:Platform=x64
+msbuild WSE2_Launcher.sln /p:Configuration=Release /p:Platform=x86
+msbuild WSE2_Launcher.sln /p:Configuration=WFaS /p:Platform=x86
 ```
+
+The `x64` configurations exist in the project but are not used and do not build here:
+they point their include and library paths at a vcpkg tree (`C:\src\vcpkg\...`, x86 at
+that) instead of the bundled `SDK/`, which only the `Win32` configurations use.
+`Debug|Win32` likewise points at a hardcoded `C:\src\sfml\...`.
 
 **Output:** `wse2_launcher.exe`
 

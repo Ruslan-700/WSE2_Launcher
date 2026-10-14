@@ -237,7 +237,6 @@
   <ItemGroup>
     <ClCompile Include="Engine_Buttons.cpp" />
     <ClCompile Include="Engine_FillMissingLocalizationKeys.cpp" />
-    <ClCompile Include="Engine_ShaderPatch.cpp" />
     <ClCompile Include="Engine_Update.cpp" />
     <ClCompile Include="Http.cpp" />
     <ClCompile Include="Zip.cpp" />
@@ -271,4 +270,4 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
-</Project>
+</Project>
