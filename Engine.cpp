@@ -1,4 +1,5 @@
 ﻿#include "Engine.h"
+#pragma comment(lib, "version.lib")
 
 void Class_Engine::Initialize()
 {
@@ -329,9 +330,38 @@ std::string Class_Engine::GetLanguageNameById(std::string LanguageId)
 	return LanguageId;
 }
 
+// The version resource of the installed WSE2 executable, in the four digit form, or empty
+// for executables built before WSE2 carried one.
+std::wstring Class_Engine::ReadExecutableVersion()
+{
+	const char* Executables[] = { EXECUTABLE, EXECUTABLE_X64, EXECUTABLE_DEDICATED };
+	for (const char* Executable : Executables) {
+		std::wstring Path = GetLauncherDirectory() + L"\\" + wstring_Converter.from_bytes(Executable);
+		DWORD Size = GetFileVersionInfoSizeW(Path.c_str(), NULL);
+		if (Size == 0) continue;
+
+		std::vector<BYTE> Data(Size);
+		VS_FIXEDFILEINFO* Info = NULL;
+		UINT InfoSize = 0;
+		if (!GetFileVersionInfoW(Path.c_str(), 0, Size, Data.data()) || !VerQueryValueW(Data.data(), L"\\", (LPVOID*)&Info, &InfoSize) || Info == NULL || InfoSize < sizeof(VS_FIXEDFILEINFO)) continue;
+
+		WORD Parts[4] = { HIWORD(Info->dwFileVersionMS), LOWORD(Info->dwFileVersionMS), HIWORD(Info->dwFileVersionLS), LOWORD(Info->dwFileVersionLS) };
+		std::wstring Version;
+		for (WORD Part : Parts) if (Part <= 9) Version += (wchar_t)(L'0' + Part);
+		if (Version.length() == 4) return Version;
+	}
+	return L"";
+}
+
 void Class_Engine::ReadWSE2Version()
 {
-	std::ifstream File_rgl_log("rgl_log.txt");
+	// The executable knows its own version even before the game has ever run. Older
+	// ones leave rgl_log.txt and the version the launcher last installed to go by.
+	WSE2Version = ReadExecutableVersion();
+	bool VersionIsKnown = WSE2Version != L"";
+
+	std::ifstream File_rgl_log;
+	if (!VersionIsKnown) File_rgl_log.open("rgl_log.txt");
 	std::string Line;
 	if (File_rgl_log.good())
 	{
@@ -357,7 +387,7 @@ void Class_Engine::ReadWSE2Version()
 	WCHAR Buffer[32];
 	DWORD BufferSize = sizeof(Buffer);
 	HKEY Key1;
-	if (RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_READ, &Key1) == ERROR_SUCCESS) {
+	if (!VersionIsKnown && RegOpenKeyExW(HKEY_CURRENT_USER, REGISTRY_KEY, 0, KEY_READ, &Key1) == ERROR_SUCCESS) {
 		ULONG Error = RegQueryValueExW(Key1, L"wse2_version", 0, NULL, (LPBYTE)Buffer, &BufferSize);
 		if (Error == ERROR_SUCCESS && (bool)std::iswdigit(Buffer[0]) && (WSE2Version == L"" || IsCurrentVersionOlderThan(Buffer))) WSE2Version = Buffer;
 		RegCloseKey(Key1);

@@ -63,6 +63,7 @@ private:
 	void MoveWindow_Main();
 	void MoveWindow_Options();
 	void ReadWSE2Version();
+	std::wstring ReadExecutableVersion();
 	void SetLastModule();
 	void UpdateThread();
 	void CheckForUpdates();
