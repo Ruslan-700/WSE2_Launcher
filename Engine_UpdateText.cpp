@@ -21,6 +21,9 @@ void Class_Engine::UpdateText()
 	tgui::Label::Ptr Label_Music = GUI_Options.get<tgui::Label>("Label_Music");
 	tgui::Label::Ptr Label_Language = GUI_Options.get<tgui::Label>("Label_Language");
 	tgui::Label::Ptr Label_OnDemandTextures = GUI_Options.get<tgui::Label>("Label_OnDemandTextures");
+	tgui::Label::Ptr Label_UseWSE2Effect = GUI_Options.get<tgui::Label>("Label_UseWSE2Effect");
+	tgui::Label::Ptr Label_EffectShaderModel = GUI_Options.get<tgui::Label>("Label_EffectShaderModel");
+	tgui::ComboBox::Ptr ComboBox_EffectShaderModel = GUI_Options.get<tgui::ComboBox>("ComboBox_EffectShaderModel");
 	tgui::Button::Ptr Button_Save = GUI_Options.get<tgui::Button>("Button_Save");
 	tgui::Button::Ptr Button_Cancel = GUI_Options.get<tgui::Button>("Button_Cancel");
 	tgui::ComboBox::Ptr ComboBox_Languages = GUI_Options.get<tgui::ComboBox>("ComboBox_Languages");
@@ -59,6 +62,9 @@ void Class_Engine::UpdateText()
 	Button_Cancel->setText(GetLocalizedTextEntry("ui_cancel"));
 	Label_CurrentModule->setText(GetLocalizedTextEntry("ui_current_module"));
 	Label_OnDemandTextures->setText(GetLocalizedTextEntry("ui_ondemand_textures"));
+	Label_UseWSE2Effect->setText(GetLocalizedTextEntry("ui_use_wse2_effect"));
+	Label_EffectShaderModel->setText(GetLocalizedTextEntry("ui_effect_shader_model"));
+	ComboBox_EffectShaderModel->changeItemById("0", GetLocalizedTextEntry("ui_effect_shader_model_auto"));
 	Label_OcclusionFilter->setText(GetLocalizedTextEntry("ui_sound_occlusion_filter"));
 	Label_HrtfFilter->setText(GetLocalizedTextEntry("ui_sound_hrtf_filter"));
 	Label_DistanceFilter->setText(GetLocalizedTextEntry("ui_sound_distance_filter"));
@@ -87,6 +93,9 @@ void Class_Engine::UpdateText()
 	ComboBox_Languages->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.8));
 	Label_Options->setTextSize(static_cast<unsigned int>(DefaultTextSize * 1.1));
 	Label_OnDemandTextures->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.9));
+	Label_UseWSE2Effect->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.9));
+	Label_EffectShaderModel->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.9));
+	ComboBox_EffectShaderModel->setTextSize(static_cast<unsigned int>(DefaultTextSize * 0.8));
 	Label_Update->setTextSize(Scaled(12));
 
 	// These four always pin their own font, so they need the CJK one too when it is in use.

@@ -81,6 +81,7 @@ void Class_Engine::UpdateTextures()
 	tgui::Button::Ptr Button_Save = GUI_Options.get<tgui::Button>("Button_Save");
 	tgui::Button::Ptr Button_Cancel = GUI_Options.get<tgui::Button>("Button_Cancel");
 	tgui::ComboBox::Ptr ComboBox_Languages = GUI_Options.get<tgui::ComboBox>("ComboBox_Languages");
+	tgui::ComboBox::Ptr ComboBox_EffectShaderModel = GUI_Options.get<tgui::ComboBox>("ComboBox_EffectShaderModel");
 
 	Button_Save->getRenderer()->setTexture(Texture_Button);
 	Button_Save->getRenderer()->setTextureHover(Texture_Button_Hover);
@@ -102,6 +103,8 @@ void Class_Engine::UpdateTextures()
 	ComboBoxModule->getRenderer()->setTextureArrow(Texture_Combobox_Arrow);
 	ComboBox_Languages->getRenderer()->setTextureBackground(Texture_Combobox);
 	ComboBox_Languages->getRenderer()->setTextureArrow(Texture_Combobox_Arrow);
+	ComboBox_EffectShaderModel->getRenderer()->setTextureBackground(Texture_Combobox);
+	ComboBox_EffectShaderModel->getRenderer()->setTextureArrow(Texture_Combobox_Arrow);
 
 
 	Font_Latin = tgui::Font(RawFont_Latin, RawFont_Latin_Length);

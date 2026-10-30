@@ -29,25 +29,60 @@ void Class_Engine::Initialize_UI_Options()
 	tgui::Label::Ptr Label_OnDemandTextures = tgui::Label::create(" ");
 	Label_OnDemandTextures->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Left);
 	Label_OnDemandTextures->setOrigin(0, 0.5);
-	Label_OnDemandTextures->setPosition("8%", "35%");
+	Label_OnDemandTextures->setPosition("8%", "33%");
 	Panel_Options->add(Label_OnDemandTextures, "Label_OnDemandTextures");
 
 	tgui::CheckBox::Ptr Checkbox_OnDemandTextures = tgui::CheckBox::create();
 	Checkbox_OnDemandTextures->setOrigin(0.5, 0.5);
-	Checkbox_OnDemandTextures->setPosition("85%", "35%");
+	Checkbox_OnDemandTextures->setPosition("85%", "33%");
 	Checkbox_OnDemandTextures->onCheck([this] { Options.insert_or_assign("bOnDemandTextures", "true"); });
 	Checkbox_OnDemandTextures->onUncheck([this] { Options.insert_or_assign("bOnDemandTextures", "false"); });
 	Panel_Options->add(Checkbox_OnDemandTextures, "Checkbox_OnDemandTextures");
 
+	tgui::Label::Ptr Label_UseWSE2Effect = tgui::Label::create(" ");
+	Label_UseWSE2Effect->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Left);
+	Label_UseWSE2Effect->setOrigin(0, 0.5);
+	Label_UseWSE2Effect->setPosition("8%", "39%");
+	Panel_Options->add(Label_UseWSE2Effect, "Label_UseWSE2Effect");
+
+	tgui::CheckBox::Ptr Checkbox_UseWSE2Effect = tgui::CheckBox::create();
+	Checkbox_UseWSE2Effect->setOrigin(0.5, 0.5);
+	Checkbox_UseWSE2Effect->setPosition("85%", "39%");
+	Panel_Options->add(Checkbox_UseWSE2Effect, "Checkbox_UseWSE2Effect");
+
+	tgui::Label::Ptr Label_EffectShaderModel = tgui::Label::create(" ");
+	Label_EffectShaderModel->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Left);
+	Label_EffectShaderModel->setOrigin(0, 0.5);
+	Label_EffectShaderModel->setPosition("8%", "45%");
+	Panel_Options->add(Label_EffectShaderModel, "Label_EffectShaderModel");
+
+	// The item id is what goes into rgl_config.ini; 0 lets the engine pick by what the card supports.
+	tgui::ComboBox::Ptr ComboBox_EffectShaderModel = tgui::ComboBox::create();
+	ComboBox_EffectShaderModel->setOrigin(1, 0.5);
+	ComboBox_EffectShaderModel->setPosition("85%", "45%");
+	ComboBox_EffectShaderModel->setSize("20%", "4%");
+	ComboBox_EffectShaderModel->addItem(" ", "0");
+	ComboBox_EffectShaderModel->addItem("2.0", "2");
+	ComboBox_EffectShaderModel->addItem("3.0", "3");
+	ComboBox_EffectShaderModel->onItemSelect([this](const tgui::String&, const tgui::String& Id) { Options.insert_or_assign("iEffectShaderModel", Id.toStdString()); });
+	ComboBox_EffectShaderModel->setChangeItemOnScroll(true);
+	ComboBox_EffectShaderModel->getRenderer()->setBorders(0);
+	ComboBox_EffectShaderModel->getRenderer()->setPadding({ Scaled(5), 0, 0, 0 });
+	Panel_Options->add(ComboBox_EffectShaderModel, "ComboBox_EffectShaderModel");
+
+	// The engine reads the shader model only when it loads its own effect.
+	Checkbox_UseWSE2Effect->onCheck([this, ComboBox_EffectShaderModel] { Options.insert_or_assign("bUseWSE2Effect", "true"); ComboBox_EffectShaderModel->setEnabled(true); });
+	Checkbox_UseWSE2Effect->onUncheck([this, ComboBox_EffectShaderModel] { Options.insert_or_assign("bUseWSE2Effect", "false"); ComboBox_EffectShaderModel->setEnabled(false); });
+
 	tgui::Label::Ptr Label_OcclusionFilter = tgui::Label::create(" ");
 	Label_OcclusionFilter->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Left);
 	Label_OcclusionFilter->setOrigin(0, 0.5);
-	Label_OcclusionFilter->setPosition("8%", "49%");
+	Label_OcclusionFilter->setPosition("8%", "51%");
 	Panel_Options->add(Label_OcclusionFilter, "Label_OcclusionFilter");
 
 	tgui::CheckBox::Ptr Checkbox_OcclusionFilter = tgui::CheckBox::create();
 	Checkbox_OcclusionFilter->setOrigin(0.5, 0.5);
-	Checkbox_OcclusionFilter->setPosition("85%", "49%");
+	Checkbox_OcclusionFilter->setPosition("85%", "51%");
 	Checkbox_OcclusionFilter->onCheck([this] { Options.insert_or_assign("bOcclusionFilter", "true"); });
 	Checkbox_OcclusionFilter->onUncheck([this] { Options.insert_or_assign("bOcclusionFilter", "false"); });
 	Panel_Options->add(Checkbox_OcclusionFilter, "Checkbox_OcclusionFilter");
@@ -55,12 +90,12 @@ void Class_Engine::Initialize_UI_Options()
 	tgui::Label::Ptr Label_HrtfFilter = tgui::Label::create(" ");
 	Label_HrtfFilter->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Left);
 	Label_HrtfFilter->setOrigin(0, 0.5);
-	Label_HrtfFilter->setPosition("8%", "55%");
+	Label_HrtfFilter->setPosition("8%", "57%");
 	Panel_Options->add(Label_HrtfFilter, "Label_HrtfFilter");
 
 	tgui::CheckBox::Ptr Checkbox_HrtfFilter = tgui::CheckBox::create();
 	Checkbox_HrtfFilter->setOrigin(0.5, 0.5);
-	Checkbox_HrtfFilter->setPosition("85%", "55%");
+	Checkbox_HrtfFilter->setPosition("85%", "57%");
 	Checkbox_HrtfFilter->onCheck([this] { Options.insert_or_assign("bHrtfFilter", "true"); });
 	Checkbox_HrtfFilter->onUncheck([this] { Options.insert_or_assign("bHrtfFilter", "false"); });
 	Panel_Options->add(Checkbox_HrtfFilter, "Checkbox_HrtfFilter");
@@ -68,12 +103,12 @@ void Class_Engine::Initialize_UI_Options()
 	tgui::Label::Ptr Label_DistanceFilter = tgui::Label::create(" ");
 	Label_DistanceFilter->setHorizontalAlignment(tgui::Label::HorizontalAlignment::Left);
 	Label_DistanceFilter->setOrigin(0, 0.5);
-	Label_DistanceFilter->setPosition("8%", "61%");
+	Label_DistanceFilter->setPosition("8%", "63%");
 	Panel_Options->add(Label_DistanceFilter, "Label_DistanceFilter");
 
 	tgui::CheckBox::Ptr Checkbox_DistanceFilter = tgui::CheckBox::create();
 	Checkbox_DistanceFilter->setOrigin(0.5, 0.5);
-	Checkbox_DistanceFilter->setPosition("85%", "61%");
+	Checkbox_DistanceFilter->setPosition("85%", "63%");
 	Checkbox_DistanceFilter->onCheck([this] { Options.insert_or_assign("bDistanceFilter", "true"); });
 	Checkbox_DistanceFilter->onUncheck([this] { Options.insert_or_assign("bDistanceFilter", "false"); });
 	Panel_Options->add(Checkbox_DistanceFilter, "Checkbox_DistanceFilter");

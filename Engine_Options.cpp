@@ -1,4 +1,5 @@
 #include "Engine.h"
+#include <set>
 
 bool Class_Engine::UpdateOptions()
 {
@@ -15,6 +16,7 @@ bool Class_Engine::UpdateOptions()
 			}
 		}
 		File_rgl_config.close();
+		const std::map<std::string, std::string> FileOptions = Options;
 
 		tgui::CheckBox::Ptr Checkbox_OnDemandTextures = GUI_Options.get<tgui::CheckBox>("Checkbox_OnDemandTextures");
 		tgui::CheckBox::Ptr Checkbox_OcclusionFilter = GUI_Options.get<tgui::CheckBox>("Checkbox_OcclusionFilter");
@@ -22,6 +24,8 @@ bool Class_Engine::UpdateOptions()
 		tgui::CheckBox::Ptr Checkbox_DistanceFilter = GUI_Options.get<tgui::CheckBox>("Checkbox_DistanceFilter");
 		tgui::CheckBox::Ptr Checkbox_Sound = GUI_Options.get<tgui::CheckBox>("Checkbox_Sound");
 		tgui::CheckBox::Ptr Checkbox_Music = GUI_Options.get<tgui::CheckBox>("Checkbox_Music");
+		tgui::CheckBox::Ptr Checkbox_UseWSE2Effect = GUI_Options.get<tgui::CheckBox>("Checkbox_UseWSE2Effect");
+		tgui::ComboBox::Ptr ComboBox_EffectShaderModel = GUI_Options.get<tgui::ComboBox>("ComboBox_EffectShaderModel");
 		auto getOpt = [&](const std::string& key) -> std::string {
 			auto it = Options.find(key);
 			return it != Options.end() ? it->second : "";
@@ -32,6 +36,16 @@ bool Class_Engine::UpdateOptions()
 		Checkbox_DistanceFilter->setChecked(getOpt("bDistanceFilter") == "true");
 		Checkbox_Sound->setChecked(getOpt("bSound") == "false");
 		Checkbox_Music->setChecked(getOpt("bMusic") == "false");
+		// A config without these keys predates them; show the engine's defaults: effect on, shader model 0 (auto).
+		Checkbox_UseWSE2Effect->setChecked(getOpt("bUseWSE2Effect") != "false");
+		std::string EffectShaderModel = getOpt("iEffectShaderModel");
+		if (EffectShaderModel.empty()) EffectShaderModel = "0";
+		if (!ComboBox_EffectShaderModel->containsId(EffectShaderModel)) ComboBox_EffectShaderModel->addItem(EffectShaderModel, EffectShaderModel);
+		ComboBox_EffectShaderModel->setSelectedItemById(EffectShaderModel);
+
+		// Setting the widgets above runs their handlers, which write into Options; undo that,
+		// so only what the user changes is saved, and a key the file lacks is not added by merely showing it.
+		Options = FileOptions;
 
 		return true;
 	}
@@ -48,6 +62,7 @@ bool Class_Engine::ApplyOptions()
 	std::remove(std::string(std::string(CurentDocumentsPath) + RGL_CONFIG_TEMP).c_str());
 	std::ofstream OutputFile_rgl_config(std::string(CurentDocumentsPath) + RGL_CONFIG_TEMP);
 	if (File_rgl_config.is_open() && OutputFile_rgl_config) {
+		std::set<std::string> WrittenKeys;
 		while (std::getline(File_rgl_config, Line))
 		{
 			std::string::size_type Position = Line.find('=');
@@ -56,10 +71,15 @@ bool Class_Engine::ApplyOptions()
 				auto Pair = Options.find(Line.substr(0, Position));
 				if (Pair != Options.end()) {
 					OutputFile_rgl_config << Pair->first << '=' << Pair->second << std::endl;
+					WrittenKeys.insert(Pair->first);
 				}
 				else OutputFile_rgl_config << Line << std::endl;
 			}
 			else OutputFile_rgl_config << Line << std::endl;
+		}
+		// Keys the file does not have yet, such as ones a newer WSE2 reads.
+		for (const auto& Pair : Options) {
+			if (WrittenKeys.find(Pair.first) == WrittenKeys.end()) OutputFile_rgl_config << Pair.first << '=' << Pair.second << std::endl;
 		}
 		File_rgl_config.close();
 		OutputFile_rgl_config.close();

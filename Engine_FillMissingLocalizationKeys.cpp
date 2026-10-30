@@ -16,6 +16,9 @@ void Class_Engine::FillMissingLocalizationKeys()
 		LocalizedText.insert(std::pair("ui_language", u8"Язык:"));
 		LocalizedText.insert(std::pair("ui_current_module", u8"Текущий мод:"));
 		LocalizedText.insert(std::pair("ui_ondemand_textures", u8"Загружать текстуры по требованию:"));
+		LocalizedText.insert(std::pair("ui_use_wse2_effect", u8"Использовать эффект WSE2:"));
+		LocalizedText.insert(std::pair("ui_effect_shader_model", u8"Модель шейдеров эффекта:"));
+		LocalizedText.insert(std::pair("ui_effect_shader_model_auto", u8"Авто"));
 		LocalizedText.insert(std::pair("ui_update_wse2", u8"Обновить WSE2"));
 		LocalizedText.insert(std::pair("ui_install_wse2", u8"Установить WSE2"));
 		LocalizedText.insert(std::pair("ui_version_is_up_to_date", u8"У вас последняя версия WSE2."));
@@ -325,6 +328,9 @@ void Class_Engine::FillMissingLocalizationKeys()
 	LocalizedText.insert(std::pair("ui_language", u8"Language:"));
 	LocalizedText.insert(std::pair("ui_current_module", u8"Current mod:"));
 	LocalizedText.insert(std::pair("ui_ondemand_textures", u8"Load textures on demand:"));
+	LocalizedText.insert(std::pair("ui_use_wse2_effect", u8"Use WSE2 effect:"));
+	LocalizedText.insert(std::pair("ui_effect_shader_model", u8"Effect shader model:"));
+	LocalizedText.insert(std::pair("ui_effect_shader_model_auto", u8"Auto"));
 	LocalizedText.insert(std::pair("ui_update_wse2", u8"Update WSE2"));
 	LocalizedText.insert(std::pair("ui_install_wse2", u8"Install WSE2"));
 	LocalizedText.insert(std::pair("ui_version_is_up_to_date", u8"Your current WSE2 version is up-to-date."));
